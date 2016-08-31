@@ -1,6 +1,7 @@
 from PyTib.common import open_file, write_file, pre_process
 import re
 from xlwt import Workbook
+import os
 
 def is_punct(string):
     # put in common
@@ -32,32 +33,38 @@ def reinsert_notes(raw_text, raw_notes, basis_edition='སྡེ་'):
 
     error = False
     for n in raw_notes:
+        #print(n)
         if error:
             break
         parts = n.split(',')
-        number = str(int(parts[3])-1)
+        number = str(int(parts[2])-1)
         # DEBUG. Enables to start debugging at a given note
-        note_num = 137
+        note_num = len(raw_notes)-2
         if number == str(note_num-1):
             print('ok')
-        page_number = parts[2]
-        content = parts[5:]
+        page_number = parts[1]
+        content = parts[4:]
+        note = ''
         # keep track of which edition has already been replaced
         generated_versions = {basis_edition: False}
         for e in edition_names:
             generated_versions[e] = False
         # loop through tuples of (edition-s, note)
-        tuple_idx = [c for c in range(0, len(content)) if c % 2 == 0]
+        max_pairs = len(content)-1
+        if max_pairs > len(content):
+            max_pairs = len(content)-1
+        tuple_idx = [c for c in range(0, max_pairs) if c % 2 == 0]
         for a in tuple_idx:
             if error:
                 break
             if content[a]:
             # filters the cases where the second tuple is empty
-                if '(' in content[a+1]:
+                note = content[a+1]
+                if '(' in note:
                     print('there is a note on top of the comparison.')
                     print('\t'.join(parts))
-                    content[a+1] = content[a+1].split('(')[0].strip()
-                if '《' in content[a+1]:
+                    note = note.split('(')[0].strip()
+                if '《' in note:
                     print('The following note needs to be edited. The execution will stop now.')
                     print('\t'.join(parts))
                     error = True
@@ -65,13 +72,14 @@ def reinsert_notes(raw_text, raw_notes, basis_edition='སྡེ་'):
                 # 0 prepare
                 # separate in syllables not separating the fusioned particles
                 modif_type = ''
-                if content[a+1].startswith('m'):
+                if note.startswith('m'):
                     modif_type = 'm'
-                elif content[a+1].startswith('p'):
+                elif note.startswith('p'):
                     modif_type = 'p'
-                version = pre_process(content[a + 1].replace(modif_type, ''), mode='syls')
+                version = pre_process(note.replace(modif_type, ''), mode='syls')
                 # delete the last element in the list of the note
-                if is_punct(version[-1]):
+                #if is_punct(version[-1]):
+                if is_punct(version[-1]) and len(version) > 1:
                     del version[-1]
                     # reconstitute the punctuation for comparing the syllables:
 
@@ -211,19 +219,26 @@ def reinsert_notes(raw_text, raw_notes, basis_edition='སྡེ་'):
                 edition_refs = re.findall(edition_regex, content[a])
                 # 3.a add the versions of all the editions that require modifications from Derge and notify the edition is added
                 for e in edition_refs:
-                    work = ''.join(edition_text)
+                    chunk = ''.join(edition_text)
                     # remove the extra spaces inserted between the shad and the next verse
-                    work = work.replace('_།_', '_།')
-                    editions[e].append((work, len(version), page_number))
+                    chunk = chunk.replace('_།_', '_།').replace('།__།', '།  །')
+                    editions[e].append((chunk, len(version), page_number, note))
                     generated_versions[e] = True
 
         # 3.b add the original version of the text to the remaining
         for g in generated_versions:
             if not generated_versions[g]:
-                work = ''.join(text[number])
+                chunk = ''.join(text[number])
                 # remove the extra spaces inserted between the shad and the next verse
-                work = work.replace('_།_', '_།')
-                editions[g].append((work, '', page_number))
+                chunk = chunk.replace('_།_', '_།').replace('།__།', '།  །')
+                editions[g].append((chunk, '', page_number, note))
+
+    # 4 add the last bit of the text that corresponds to no note
+    for g in editions:
+        chunk = ''.join(text[str(len(text))])
+        chunk = chunk.replace('_།_', '_།').replace('།__།', '།  །')
+        editions[g].append((chunk, '', '', ''))
+        print(editions[g][-1])
     return editions
 
 
@@ -261,7 +276,7 @@ def generate_versions(text_name, notes_name, in_dir='input', out_dir='output', l
                     ed_start = 0
                 modif = ''.join(modif_chunk[ed_start:])
             else:
-                modif = '༡པ།'
+                modif = ''#'༡པ།'
             modifs.append((ed, modif))
             # find the length of the modification (take the longest modification)
             if editions[ed][a][1] != '' and modif_len < editions[ed][a][1]:
@@ -282,7 +297,7 @@ def generate_versions(text_name, notes_name, in_dir='input', out_dir='output', l
         else:
             sheet1.write(line_number, 0, 'མཆན་'+str(a+2)+'པ།')
         sheet1.write(line_number, 1, '༼སྡེ་༽ '+''.join(orig_modif))
-        sheet1.write(line_number, 2, ''.join(orig_modif[len(orig_modif)-modif_len:]))
+        sheet1.write(line_number, 2, editions['སྡེ་'][a][3])
         sheet1.write(line_number, 3, ''.join(orig_chunk))
         line_number += 1
         for num, m in enumerate(modifs):
@@ -291,12 +306,12 @@ def generate_versions(text_name, notes_name, in_dir='input', out_dir='output', l
     wb.save(out_dir+'/'+work_name+'_ཞུས་དག་ཆེད།.xls')
 
 # put in this list the pairs of works and their respective notes
-works = [
-    ('i-1-112 རྒྱལ་པོ་གཏམ་བྱ་བ་རིན་པོ་ཆེའི་ཕྲེང་བ།.txt', '1-112.csv'),
-    ('i-1-113རྨི་ལམ་ཡིད་བཞིན་ནོར་བུའི་གཏམ།.txt', '1-113.csv'),
-    ('i-1-114སྦྱིན་པའི་གཏམ།.txt', '1-114.csv'),
-    ('i-1-115སྲིད་པ་ལས་འདས་པའི་གཏམ།.txt', '1-115.csv')
-]
+
+#works = [a.split('\t') for a in open_file('./note-text_correspondance.csv').strip().split('\n')]
+works = [('i-1-92 རྩོད་པ་བཟློག་པའི་ཚིག་ལེའུར་བྱས་པ།.txt', '1-92 རྩོད་པ་བཟློག་པའི་ཚིག་ལེའུར་བྱས་པ།.csv'),
+        ('i-5-10 དབུ་མ་ལ་འཇུག་པ།.txt', '5-10 དབུ་མ་ལ་འཇུག་པ།.csv'),
+        ('i-1-88 རིགས་པ་དྲུག་ཅུ་པའི་ཚིག་ལེའུར་བྱས་པ།.txt', '1-88 རིགས་པ་དྲུག་ཅུ་པའི་ཚིག་ལེའུར་བྱས་པ།.csv')]
+
 for w in works:
     print(w[0])
     generate_versions(w[0], w[1])

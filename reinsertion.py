@@ -323,7 +323,7 @@ def generate_context_versions(editions, file_name, out_dir, left=5, right=5, bas
                 chunk = editions[ed][syl_num][0].replace('_', ' ')
                 pre_processed[ed] = pre_process(chunk, mode='syls')
             # c. add to common the syls that are the same in all editions and leave the others in pre_processed
-            while len(set([pre_processed[ed][0] if pre_processed[ed] != [] else '' for ed in ed_names])) == 1:
+            while len({pre_processed[ed][0] if pre_processed[ed] != [] else '' for ed in ed_names}) == 1:
                 if pre_processed[ed_names[0]]:
                     common.append(pre_processed[ed_names[0]][0])
                     for ed in ed_names:
@@ -380,9 +380,9 @@ def generate_outputs(text_name, notes_name, context, in_dir='input', out_dir='ou
 
     generate_editions(editions, out_dir, work_name)
 
-    generate_comparison_spreadsheet(editions, context, work_name, out_dir)
+    #generate_comparison_spreadsheet(editions, context, work_name, out_dir)
 
-    generate_context_versions(editions, work_name, out_dir, left=context, right=context)
+    #generate_context_versions(editions, work_name, out_dir, left=context, right=context)
 
 
 # put in this list the pairs of works and their respective notes

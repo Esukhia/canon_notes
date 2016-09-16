@@ -1,7 +1,10 @@
+import PyTib
 from PyTib.common import open_file, write_file, pre_process
 import re
 from xlwt import Workbook
+from collections import defaultdict
 import os
+import yaml
 
 def is_punct(string):
     # put in common
@@ -33,7 +36,7 @@ def reinsert_notes(raw_text, raw_notes, basis_edition='སྡེ་'):
 
     error = False
     for n in raw_notes:
-        #print(n)
+        print(n)
         if error:
             break
         parts = n.split(',')
@@ -221,7 +224,7 @@ def reinsert_notes(raw_text, raw_notes, basis_edition='སྡེ་'):
                 for e in edition_refs:
                     chunk = ''.join(edition_text)
                     # remove the extra spaces inserted between the shad and the next verse
-                    chunk = chunk.replace('_།_', '_།').replace('།__།', '།  །')
+                    chunk = chunk.replace('_།_', '_།').replace('_', ' ')
                     editions[e].append((chunk, len(version), page_number, note))
                     generated_versions[e] = True
 
@@ -230,23 +233,18 @@ def reinsert_notes(raw_text, raw_notes, basis_edition='སྡེ་'):
             if not generated_versions[g]:
                 chunk = ''.join(text[number])
                 # remove the extra spaces inserted between the shad and the next verse
-                chunk = chunk.replace('_།_', '_།').replace('།__།', '།  །')
+                chunk = chunk.replace('_།_', '_།').replace('_', ' ')
                 editions[g].append((chunk, '', page_number, note))
 
     # 4 add the last bit of the text that corresponds to no note
     for g in editions:
         chunk = ''.join(text[str(len(text))])
-        chunk = chunk.replace('_།_', '_།').replace('།__།', '།  །')
+        chunk = chunk.replace('_།_', '_།').replace('_', ' ')
         editions[g].append((chunk, '', '', ''))
-        print(editions[g][-1])
     return editions
 
 
-def generate_versions(text_name, notes_name, in_dir='input', out_dir='output', left=10):
-    in_dir += '/'
-    editions = reinsert_notes(open_file(in_dir+text_name), open_file(in_dir+notes_name))
-    work_name = text_name.split('.')[0].replace(' ', '_')
-
+def generate_editions(editions, out_dir, work_name):
     # writing all the editions in their respective folder
     for e in editions:
         path = out_dir+'/'+e+'/'
@@ -254,6 +252,8 @@ def generate_versions(text_name, notes_name, in_dir='input', out_dir='output', l
         content = ''.join([e[0] for e in editions[e]]).replace('_', ' ')
         write_file(path+file_name, content)
 
+
+def generate_comparison_spreadsheet(editions, left, work_name, out_dir):
     # generating the spreadsheet showing the changes
     wb = Workbook()
     sheet1 = wb.add_sheet('Sheet 1')
@@ -269,14 +269,14 @@ def generate_versions(text_name, notes_name, in_dir='input', out_dir='output', l
             modif_chunk = pre_process(editions[ed][a][0].replace('_', ' '), mode='syls')
             modif_size = editions[ed][a][1]
             if modif_size != '':
-                ed_start = len(modif_chunk)-modif_size
+                ed_start = len(modif_chunk) - modif_size
                 if ed_start - left > 0:
                     ed_start -= left
                 else:
                     ed_start = 0
                 modif = ''.join(modif_chunk[ed_start:])
             else:
-                modif = ''#'༡པ།'
+                modif = ''  # '༡པ།'
             modifs.append((ed, modif))
             # find the length of the modification (take the longest modification)
             if editions[ed][a][1] != '' and modif_len < editions[ed][a][1]:
@@ -293,25 +293,106 @@ def generate_versions(text_name, notes_name, in_dir='input', out_dir='output', l
         orig_modif = orig_chunk[start:]
         page = editions['སྡེ་'][a][2]
         if page != '':
-            sheet1.write(line_number, 0, 'ཤོག་གྲངས་'+page+'པར་ཡོད་པའི་མཆན་' + str(a + 2) + 'པ།')
+            sheet1.write(line_number, 0, 'ཤོག་གྲངས་' + page + 'པར་ཡོད་པའི་མཆན་' + str(a + 2) + 'པ།')
         else:
-            sheet1.write(line_number, 0, 'མཆན་'+str(a+2)+'པ།')
-        sheet1.write(line_number, 1, '༼སྡེ་༽ '+''.join(orig_modif))
+            sheet1.write(line_number, 0, 'མཆན་' + str(a + 2) + 'པ།')
+        sheet1.write(line_number, 1, '༼སྡེ་༽ ' + ''.join(orig_modif))
         sheet1.write(line_number, 2, editions['སྡེ་'][a][3])
         sheet1.write(line_number, 3, ''.join(orig_chunk))
         line_number += 1
         for num, m in enumerate(modifs):
-            sheet1.write(line_number, num, '༼'+m[0]+'༽ '+m[1])
+            sheet1.write(line_number, num, '༼' + m[0] + '༽ ' + m[1])
         line_number += 2
-    wb.save(out_dir+'/'+work_name+'_ཞུས་དག་ཆེད།.xls')
+    wb.save(out_dir + '/' + work_name + '_ཞུས་དག་ཆེད།.xls')
+
+
+def generate_context_versions(editions, file_name, out_dir, left=5, right=5, base_ed='སྡེ་'):
+    def generate_unified_version(editions):
+        '''
+        :param editions:
+        :return: a list with common syllables as separate elements, differing parts within a dict
+        '''
+        total = []
+        # a. generate the list of editions’ names
+        ed_names = [a for a in editions]
+        for syl_num in range(1, len(editions['སྡེ་'])):
+            pre_processed = {}
+            common = []
+            # b. segment in syllables and seperate on the punctuation for each version
+            for ed in ed_names:
+                chunk = editions[ed][syl_num][0].replace('_', ' ')
+                pre_processed[ed] = pre_process(chunk, mode='syls')
+            # c. add to common the syls that are the same in all editions and leave the others in pre_processed
+            while len(set([pre_processed[ed][0] if pre_processed[ed] != [] else '' for ed in ed_names])) == 1:
+                if pre_processed[ed_names[0]]:
+                    common.append(pre_processed[ed_names[0]][0])
+                    for ed in ed_names:
+                        del pre_processed[ed][0]
+                else:
+                    break
+
+            total.extend(common)
+            total.append(pre_processed)
+        return total
+
+    def calculate_contexts(unified_version, left=5, right=5, base_ed='སྡེ་'):
+        all_versions = []
+        for num, syl in enumerate(unified_version):
+            if type(syl) == dict:
+                versions = {}
+                for ed in syl:
+                    # add left context
+                    n_l = num-left
+                    if n_l < 0:
+                        n_l = 0
+                    left_context = unified_version[n_l:num]
+                    # add note
+                    note = syl[ed]
+                    # add right context
+                    n_r = num+right+1
+                    if n_r > len(unified_version)-1:
+                        n_r = len(unified_version)-1
+                    right_context = unified_version[num+1:n_r]
+                    version = left_context + note + right_context
+                    # if there is a note (if version[v] == dict), choose the base_ed version
+                    no_note_version = []
+                    for v in version:
+                        if type(v) == dict:
+                            for base_syl in v[base_ed]:
+                                no_note_version.append(base_syl)
+                        else:
+                            no_note_version.append(v)
+                    # add the versions in the versions
+                    versions[ed] = ''.join(no_note_version).replace('_', ' ')
+                all_versions.append(versions)
+        return all_versions
+
+
+    unified = generate_unified_version(editions)
+    with_context = calculate_contexts(unified, left=left, right=right, base_ed=base_ed)
+    write_file('./{}/conc_yaml/{}_conc.yaml'.format(out_dir, file_name), yaml.dump_all(with_context, allow_unicode=True, default_flow_style=False))
+
+
+def generate_outputs(text_name, notes_name, context, in_dir='input', out_dir='output'):
+    in_dir += '/'
+    editions = reinsert_notes(open_file(in_dir+text_name), open_file(in_dir+notes_name))
+    work_name = text_name.split('.')[0].replace(' ', '_')
+
+    generate_editions(editions, out_dir, work_name)
+
+    generate_comparison_spreadsheet(editions, context, work_name, out_dir)
+
+    generate_context_versions(editions, work_name, out_dir, left=context, right=context)
+
 
 # put in this list the pairs of works and their respective notes
 
 #works = [a.split('\t') for a in open_file('./note-text_correspondance.csv').strip().split('\n')]
-works = [('i-1-92 རྩོད་པ་བཟློག་པའི་ཚིག་ལེའུར་བྱས་པ།.txt', '1-92 རྩོད་པ་བཟློག་པའི་ཚིག་ལེའུར་བྱས་པ།.csv'),
-        ('i-5-10 དབུ་མ་ལ་འཇུག་པ།.txt', '5-10 དབུ་མ་ལ་འཇུག་པ།.csv'),
-        ('i-1-88 རིགས་པ་དྲུག་ཅུ་པའི་ཚིག་ལེའུར་བྱས་པ།.txt', '1-88 རིགས་པ་དྲུག་ཅུ་པའི་ཚིག་ལེའུར་བྱས་པ།.csv')]
+works = [('i-6-1 བྱང་ཆུབ་སེམས་དཔའི་སྤྱོད་པ་ལ་འཇུག་པ།.txt', '6-1 བྱང་ཆུབ་སེམས་དཔའི་སྤྱོད་པ་ལ་འཇུག་པ།.csv'),
+         ('i-1-92 རྩོད་པ་བཟློག་པའི་ཚིག་ལེའུར་བྱས་པ།.txt', '1-92 རྩོད་པ་བཟློག་པའི་ཚིག་ལེའུར་བྱས་པ།.csv'),
+         ('i-5-10 དབུ་མ་ལ་འཇུག་པ།.txt', '5-10 དབུ་མ་ལ་འཇུག་པ།.csv'),
+         ('i-1-88 རིགས་པ་དྲུག་ཅུ་པའི་ཚིག་ལེའུར་བྱས་པ།.txt', '1-88 རིགས་པ་དྲུག་ཅུ་པའི་ཚིག་ལེའུར་བྱས་པ།.csv')]
 
 for w in works:
     print(w[0])
-    generate_versions(w[0], w[1])
+    generate_outputs(w[0], w[1], 5)

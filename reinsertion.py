@@ -306,35 +306,36 @@ def generate_comparison_spreadsheet(editions, left, work_name, out_dir):
     wb.save(out_dir + '/' + work_name + '_ཞུས་དག་ཆེད།.xls')
 
 
+def generate_unified_version(editions):
+    '''
+    :param editions:
+    :return: a list with common syllables as separate elements, differing parts within a dict
+    '''
+    total = []
+    # a. generate the list of editions’ names
+    ed_names = [a for a in editions]
+    for syl_num in range(1, len(editions['སྡེ་'])):
+        pre_processed = {}
+        common = []
+        # b. segment in syllables and seperate on the punctuation for each version
+        for ed in ed_names:
+            chunk = editions[ed][syl_num][0].replace('_', ' ')
+            pre_processed[ed] = pre_process(chunk, mode='syls')
+        # c. add to common the syls that are the same in all editions and leave the others in pre_processed
+        while len({pre_processed[ed][0] if pre_processed[ed] != [] else '' for ed in ed_names}) == 1:
+            if pre_processed[ed_names[0]]:
+                common.append(pre_processed[ed_names[0]][0])
+                for ed in ed_names:
+                    del pre_processed[ed][0]
+            else:
+                break
+
+        total.extend(common)
+        total.append(pre_processed)
+    return total
+
+
 def generate_context_versions(editions, file_name, out_dir, left=5, right=5, base_ed='སྡེ་'):
-    def generate_unified_version(editions):
-        '''
-        :param editions:
-        :return: a list with common syllables as separate elements, differing parts within a dict
-        '''
-        total = []
-        # a. generate the list of editions’ names
-        ed_names = [a for a in editions]
-        for syl_num in range(1, len(editions['སྡེ་'])):
-            pre_processed = {}
-            common = []
-            # b. segment in syllables and seperate on the punctuation for each version
-            for ed in ed_names:
-                chunk = editions[ed][syl_num][0].replace('_', ' ')
-                pre_processed[ed] = pre_process(chunk, mode='syls')
-            # c. add to common the syls that are the same in all editions and leave the others in pre_processed
-            while len({pre_processed[ed][0] if pre_processed[ed] != [] else '' for ed in ed_names}) == 1:
-                if pre_processed[ed_names[0]]:
-                    common.append(pre_processed[ed_names[0]][0])
-                    for ed in ed_names:
-                        del pre_processed[ed][0]
-                else:
-                    break
-
-            total.extend(common)
-            total.append(pre_processed)
-        return total
-
     def calculate_contexts(unified_version, left=5, right=5, base_ed='སྡེ་'):
         all_versions = []
         for num, syl in enumerate(unified_version):
@@ -367,26 +368,31 @@ def generate_context_versions(editions, file_name, out_dir, left=5, right=5, bas
                 all_versions.append(versions)
         return all_versions
 
-
     unified = generate_unified_version(editions)
     with_context = calculate_contexts(unified, left=left, right=right, base_ed=base_ed)
     write_file('./{}/conc_yaml/{}_conc.yaml'.format(out_dir, file_name), yaml.dump_all(with_context, allow_unicode=True, default_flow_style=False))
 
 
+def export_unified_structure(editions, text_name, out_dir='output/unified_structure'):
+    unified = generate_unified_version(editions)
+    out = yaml.dump(unified, allow_unicode=True, default_flow_style=False)
+    write_file('{}/{}_unified_structure.yaml'.format(out_dir, text_name), out)
+
+
 def generate_outputs(text_name, notes_name, context, in_dir='input', out_dir='output'):
-    in_dir += '/'
-    editions = reinsert_notes(open_file(in_dir+text_name), open_file(in_dir+notes_name))
+    editions = reinsert_notes(open_file('{}/{}'.format(in_dir, text_name)), open_file('{}/{}'.format(in_dir, notes_name)))
     work_name = text_name.split('.')[0].replace(' ', '_')
 
     generate_editions(editions, out_dir, work_name)
+    export_unified_structure(editions, work_name)
 
     #generate_comparison_spreadsheet(editions, context, work_name, out_dir)
 
     #generate_context_versions(editions, work_name, out_dir, left=context, right=context)
 
 
-# put in this list the pairs of works and their respective notes
 
+# put in this list the pairs of works and their respective notes
 #works = [a.split('\t') for a in open_file('./note-text_correspondance.csv').strip().split('\n')]
 works = [('i-6-1 བྱང་ཆུབ་སེམས་དཔའི་སྤྱོད་པ་ལ་འཇུག་པ།.txt', '6-1 བྱང་ཆུབ་སེམས་དཔའི་སྤྱོད་པ་ལ་འཇུག་པ།.csv'),
          ('i-1-92 རྩོད་པ་བཟློག་པའི་ཚིག་ལེའུར་བྱས་པ།.txt', '1-92 རྩོད་པ་བཟློག་པའི་ཚིག་ལེའུར་བྱས་པ།.csv'),
@@ -396,3 +402,4 @@ works = [('i-6-1 བྱང་ཆུབ་སེམས་དཔའི་སྤྱ
 for w in works:
     print(w[0])
     generate_outputs(w[0], w[1], 5)
+

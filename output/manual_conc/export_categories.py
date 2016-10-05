@@ -62,11 +62,82 @@ def find_note_text(notes):
     return extracted
 
 
+def reinsert_left_context(str_conc, string, debug=False):
+    span = len(string) - (len(str_conc) * 2)
+    if debug:
+        a = string[span:]
+    mid = len(str_conc) // 2
+
+    left = 0
+    while string.find(str_conc[mid - left:mid + 1], span) != -1 and mid - left >= 0:
+        if debug:
+            b = str_conc[mid - left:mid]
+        left += 1
+    left_limit = len(string) - mid - left + 1
+    right = 0
+    while string.rfind(str_conc[mid: mid + right + 1], span) != -1 and mid + right < len(str_conc):
+        right += 1
+        if debug:
+            c = str_conc[mid: mid + right + 1]
+    right_limit = len(string) - mid + right
+    syncable = string[left_limit:right_limit]
+
+    conc_index = str_conc.rfind(syncable)
+    if conc_index == -1:
+        print('"{}" not found for in "{}"'.format(syncable, str_conc))
+    new_string = string[:left_limit] + str_conc[conc_index:]
+    if debug:
+        d = new_string[span:]
+    return new_string
+
+
+def reinsert_right_context(str_conc, string, debug=False):
+    span = len(str_conc) * 2
+    mid = len(str_conc) // 2
+
+    left = 0
+    while string.find(str_conc[mid - left:mid + 1], 0, span) != -1 and mid - left >= 0:
+        if debug:
+            a = str_conc[mid - left:mid + 1]
+        left += 1
+    left_limit = mid - left + 2
+    right = 0
+    while string.rfind(str_conc[mid - 1: mid + right], 0, span) != -1 and mid + right < len(str_conc):
+        right += 1
+        if debug:
+            b = str_conc[mid - 1: mid + right]
+    right_limit = mid + right
+    syncable = string[left_limit:right_limit]
+
+    conc_index = str_conc.find(syncable)
+    if conc_index == -1:
+        print('"{}" not found for in "{}"'.format(syncable, str_conc))
+    conc_index += len(syncable)
+    new_string = str_conc[:conc_index] + string[right_limit:]
+    return new_string
+
+
 def contextualised_text(notes, file_name):
     # finding the differing syllables from the manually checked concordance
     differing_syls = find_note_text(notes)
     # loading the structure
     unified_structure = yaml.load(open_file('/home/swan/Documents/PycharmProjects/sandbox/kangyur_notes_reinsertion/output/unified_structure/i-6-1_བྱང་ཆུབ་སེམས་དཔའི་སྤྱོད་པ་ལ་འཇུག་པ།_unified_structure.yaml'.format(file_name.split('_')[0])))
+
+    # # adjusting the contexts
+    # for num, el in enumerate(unified_structure):
+    #     if type(el) == dict:
+    #         left = []
+    #         l_counter = num-1
+    #         while type(unified_structure[l_counter]) != dict and l_counter >= 0:
+    #             left.insert(0, unified_structure[l_counter])
+    #             l_counter -= 1
+    #         right = []
+    #         r_counter = num + 1
+    #         while type(unified_structure[r_counter]) != dict and r_counter <= len(unified_structure):
+    #             right.append(unified_structure[r_counter])
+    #             r_counter += 1
+
+
 
     # formatting both the inline notes and the notes to review
     c = 0
@@ -99,81 +170,22 @@ def contextualised_text(notes, file_name):
     tmp = tmp.replace('_', ' ')
     out.append('྿{}'.format(tmp))
 
-    # adjusting the contexts using
-    def reinsert_right_context(right_conc, right_string):
-        counter = 0
-        while right_conc[counter:] not in right_string:
-            counter += 1
-        found = right_conc[counter:]
-        left_sync_point = right_string.rfind(found, ) + len(found)
-        return '྿{}{}'.format(right_conc, right_string[left_sync_point:])
 
-    def reinsert_l_context(str_conc, string):
-        len_conc = len(str_conc) - 1
-        len_str = len(string) - 1
-
-        r_counter = 0
-        while str_conc[len_conc - r_counter:] != string[len_str - r_counter:]:
-            r_counter += 1
-        conc_r_limit = len_conc - r_counter
-        conc_tmp = str_conc[:conc_r_limit + 1]
-        len_conc_tmp = len(conc_tmp) - 1
-        str_r_limit = len_str - r_counter
-        str_tmp = string[:str_r_limit + 1]
-        len_str_tmp = len(str_tmp) - 1
-
-        l_counter = 0
-        while conc_tmp[len_conc_tmp - l_counter:] == str_tmp[len_str_tmp - l_counter:]:
-            l_counter += 1
-        l_counter -= 1
-        conc_l_limit = len_conc_tmp - l_counter
-        str_l_limit = len_str_tmp - l_counter
-        conc_sync = conc_tmp[conc_l_limit:]
-        str_sync = str_tmp[str_l_limit:]
-
-        final = string[:str_l_limit] + str_conc[conc_l_limit:]
-        return final
-
-    def reinsert_r_context(str_conc, string):
-        len_conc = len(str_conc) - 1
-        len_str = len(string) - 1
-        initial_char = False
-        clean_string = copy.deepcopy(string)[1:]
-        if string.startswith('྿'):
-            clean_string = clean_string[1:]
-            initial_char = True
-
-        l_counter = 1
-        while str_conc[:l_counter] != clean_string[:l_counter]:
-            l_counter += 1
-        conc_l_limit = len_conc - l_counter
-        conc_tmp = str_conc[:conc_l_limit + 1]
-        len_conc_tmp = len(conc_tmp) - 1
-        str_l_limit = len_str - l_counter
-        str_tmp = clean_string[:str_l_limit + 1]
-        len_str_tmp = len(str_tmp) - 1
-
-        r_counter = 0
-        while str_tmp[len_str_tmp - r_counter:] == conc_tmp[len_conc_tmp - r_counter:]:
-            r_counter += 1
-        r_counter -= 1
-        conc_r_limit = len_conc_tmp - r_counter
-        str_r_limit = len_str_tmp - r_counter
-        conc_sync = conc_tmp[conc_r_limit:]
-        str_sync = str_tmp[str_r_limit:]
-
-        final = ''
-
-
-    for i in range(len(out)):
-        if not out[i].startswith('྿'):
-            print(i)
-            num = int(out[i].split('\n')[0])-1
-            left, right = differing_syls[num][1]
-            left_text = out[i-1]
-            right_text = out[i+1]
-            #out[i-1] = reinsert_l_context(left.replace('_', ' '), left_text)
-            out[i+1] = reinsert_r_context(right.replace('_', ' '), right_text)
+    # for i in range(len(out)):
+    #     if not out[i].startswith('྿'):
+    #         num = int(out[i].split('\n')[0])-1
+    #         if num == 176:
+    #             print('ok')
+    #         left, right = [a.replace('_', ' ') for a in differing_syls[num][1]]
+    #         left_text = out[i-1]
+    #         right_text = out[i+1]
+    #         l_new = reinsert_left_context(left, left_text)
+    #         r_new = '྿'+reinsert_right_context(right.replace('྿', ''), right_text, debug=True)
+    #         print('Left: "[…]{}"\n"[…]{}" ==> "[…]{}"'.format(left, left_text[len(left_text)-len(left)*2:], l_new[len(l_new)-len(left)*2:]))
+    #         print('Right: "{}[…]"\n"{}[…]" ==> "{}[…]"'.format(right, right_text[:len(right)*2], r_new[:len(right)*2]))
+    #         print()
+    #         out[i-1] = l_new
+    #         out[i+1] = r_new
 
     return '\n'.join(out)
 

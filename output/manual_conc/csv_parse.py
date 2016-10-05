@@ -180,6 +180,9 @@ def segment_space_on_particles(string):
             return False
 
     segmented = [a + '་' if not a.endswith('་') else a for a in seg.segment(string, syl_segmented=1, unknown=0).split('་ ')]
+    # taking back the tsek on last syllable if string didn’t have one
+    if not string.endswith('་') and segmented[-1].endswith('་'):
+        segmented[-1] = segmented[-1][:-1]
     out = []
     for s in segmented:
         if contains_punct(s):

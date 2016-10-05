@@ -207,11 +207,12 @@ def export_all_notes(file_name):
     export = contextualised_text(notes, file_name)
     write_file('{}_{}_tocheck.txt'.format(name, 'all'), export)
 
-file_name = 'i-6-1 བྱང་ཆུབ་སེམས་དཔའི་སྤྱོད་པ་ལ་འཇུག་པ།_conc_corrected.csv'
+if __name__ == '__main__':
+    file_name = 'i-6-1 བྱང་ཆུབ་སེམས་དཔའི་སྤྱོད་པ་ལ་འཇུག་པ།_conc_corrected.csv'
 
-#export_all_notes(file_name)
+    #export_all_notes(file_name)
 
 
-categories = ['tense']
-for cat in categories:
-    export_cat(file_name, cat)
+    categories = ['tense']
+    for cat in categories:
+        export_cat(file_name, cat)

@@ -43,7 +43,7 @@ def reorder(raw_yaml, corrected_csv):
     return '\n'.join(['{}{}'.format(a, out[a]) for a in sorted(out)])
 
 
-def main():
+if __name__ == '__main__':
     raw = 'i-6-1 བྱང་ཆུབ་སེམས་དཔའི་སྤྱོད་པ་ལ་འཇུག་པ།_conc.yaml'
     raw_reinserted = open_file('../conc_yaml/{}'.format(raw))
     yaml_notes = parse_raw(raw_reinserted)
@@ -55,5 +55,3 @@ def main():
     reordered = reorder(yaml_notes, csv_notes)
     write_file('reordered.csv', '{}\n{}'.format(legend, reordered))
 
-
-main()

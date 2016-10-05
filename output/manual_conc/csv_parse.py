@@ -251,7 +251,7 @@ def find_categories(data, categories):
         find_category(data, category)
 
 
-def main():
+if __name__ == '__main__':
     # prepare the structure
     legend, raw = open_csv('./chonjuk - Feuille 1.csv')
     data = prepare_data(raw, legend)
@@ -261,5 +261,3 @@ def main():
 
     categories = ['min mod', 'tense']
     find_categories(data, categories)
-
-#main()

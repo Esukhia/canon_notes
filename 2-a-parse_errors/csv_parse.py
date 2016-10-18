@@ -85,7 +85,7 @@ def write_types(notes, dir):
 
 def prepare_data(raw, legend):
     notes = defaultdict(list)
-    for note in raw.split('---')[1:]:
+    for note in re.split(r'-[0-9]+-', raw)[1:]:
         parts = note.split('\n')
         type = ''
         for num, p in enumerate(parts[0].split(',')):
@@ -226,7 +226,7 @@ def find_note_parts(note):
 def generate_stats(data):
     # how many mistakes of each type
     write_types(data, dir='output/error_types')
-    write_file('total_stats.txt', note_types(data))
+    write_file('output/total_stats.txt', note_types(data))
 
     # find all combinations of note differences and put together with the type
     profiles = find_profiles(data)
@@ -260,7 +260,8 @@ def find_categories(data, categories):
 
 if __name__ == '__main__':
     # prepare the structure
-    legend, raw = open_csv('./chonjuk - Feuille 1.csv')
+    legend, raw = open_csv('../1-b-manually_corrected_conc/i-6-1 བྱང་ཆུབ་སེམས་དཔའི་སྤྱོད་པ་ལ་འཇུག་པ།_conc_corrected.csv')
+    #legend, raw = open_csv('../chonjuk - Feuille 1.csv')
     data = prepare_data(raw, legend)
 
     # process

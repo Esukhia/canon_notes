@@ -256,7 +256,7 @@ def generate_editions(editions, out_dir, work_name):
         write_file(path+file_name, content)
 
 
-def generate_comparison_spreadsheet(editions, left, work_name, out_dir):
+def generate_comparison_spreadsheet(editions, left, work_name, out_dir='output/comparison_xls'):
     # generating the spreadsheet showing the changes
     wb = Workbook()
     sheet1 = wb.add_sheet('Sheet 1')
@@ -306,7 +306,7 @@ def generate_comparison_spreadsheet(editions, left, work_name, out_dir):
         for num, m in enumerate(modifs):
             sheet1.write(line_number, num, '༼' + m[0] + '༽ ' + m[1])
         line_number += 2
-    wb.save(out_dir + '/' + work_name + '_མཆན།.xls')
+    wb.save('{}/{}_མཆན།.xls'.format(out_dir, work_name))
 
 
 def generate_unified_version(editions):
@@ -387,8 +387,6 @@ def generate_context_versions(editions, file_name, out_dir, left=5, right=5, bas
     write_file('./{}/conc_yaml/{}_conc.txt'.format(out_dir, file_name), output)
 
 
-
-
 def export_unified_structure(editions, text_name, out_dir='output/unified_structure'):
     unified = generate_unified_version(editions)
     out = yaml.dump(unified, allow_unicode=True, default_flow_style=False)
@@ -402,7 +400,7 @@ def generate_outputs(text_name, notes_name, context, in_dir='input', out_dir='ou
     #generate_editions(editions, out_dir, work_name)
     export_unified_structure(editions, work_name)
 
-    generate_comparison_spreadsheet(editions, context, work_name, out_dir)
+    generate_comparison_spreadsheet(editions, context, work_name)
 
     generate_context_versions(editions, work_name, out_dir, left=context, right=context)
 
@@ -433,8 +431,8 @@ def debug_files(vol_num):
 
 note_num = 24
 debug = 0
-#debug_files(0)
+debug_files(0)
 
-for w in works:
-   print(w[0])
-   generate_outputs(w[0], w[1], 5)
+#for w in works:
+#   print(w[0])
+#   generate_outputs(w[0], w[1], 5)

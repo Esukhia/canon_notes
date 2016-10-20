@@ -3,6 +3,7 @@ from PyTib.common import open_file, write_file, pre_process, de_pre_process
 import PyTib
 import copy
 import re
+import os
 
 seg = PyTib.Segment()
 collection_eds = ['སྡེ་', 'ཅོ་', 'པེ་', 'སྣར་']
@@ -10,8 +11,13 @@ collection_eds = ['སྡེ་', 'ཅོ་', 'པེ་', 'སྣར་']
 
 def open_csv(path):
     raw = open_file(path).split('\n')
-    legend = raw[0].split(',')
-    del raw[0]
+    cats = ',who,tense,min mod,med mod,maj mod,alter,spell,formul,diff verb,diff part,+ | -,sskrt,'
+    legend = list
+    if not raw[0].startswith(cats):
+        legend = cats
+    else:
+        legend = raw[0].split(',')
+        del raw[0]
     raw = '\n'.join(raw)
     return legend, raw
 
@@ -259,13 +265,15 @@ def find_categories(data, categories):
 
 
 if __name__ == '__main__':
-    # prepare the structure
-    legend, raw = open_csv('../1-b-manually_corrected_conc/i-6-1 བྱང་ཆུབ་སེམས་དཔའི་སྤྱོད་པ་ལ་འཇུག་པ།_conc_corrected.csv')
-    #legend, raw = open_csv('../chonjuk - Feuille 1.csv')
-    data = prepare_data(raw, legend)
+    path = '../1-b-manually_corrected_conc/notes_restored'
+    for f in os.listdir(path):
+        # prepare the structure
+        legend, raw = open_csv('{}/{}'.format(path, f))
+        #legend, raw = open_csv('../chonjuk - Feuille 1.csv')
+        data = prepare_data(raw, legend)
 
-    # process
-    generate_stats(copy.deepcopy(data))
+        # process
+        generate_stats(copy.deepcopy(data))
 
-    categories = ['min mod', 'tense']
-    find_categories(data, categories)
+        categories = ['min mod', 'tense']
+        find_categories(data, categories)

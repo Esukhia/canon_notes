@@ -1,6 +1,7 @@
 from PyTib.common import open_file, write_file, pre_process, split_in_two
 import yaml
 import copy
+import re
 import sys
 path = '/home/swan/Documents/PycharmProjects/sandbox/kangyur_notes_reinsertion/output/2-a-parse_errors/'
 if sys.path[0] != path:
@@ -31,9 +32,15 @@ def find_all_notes(in_file):
     raw = open_file(in_file)
     out = []
     total = 0
-    for note in raw.split('\n-')[1:]:
-        out.append(note)
-        total += 1
+    tmp = ''
+    for t in re.split(r'\n*(-[0-9]+-)', raw):
+        if '-' not in t and t != '':
+            tmp += t
+            out.append(tmp)
+            tmp = ''
+            total += 1
+        else:
+            tmp += t
     return 'Total notes: {}'.format(total), out
 
 
@@ -53,7 +60,7 @@ def find_note_text(notes):
         note = {}
         for line in parts[1:]:
             ed, text = line.split(',')[0].split(': ')
-            note[ed] = text
+            note[ed.strip()] = text.strip()
         texts = csv_parse.find_note_parts(note)
         de = 'སྡེ་'
         context = (texts[de][0], texts[de][2])
@@ -122,11 +129,11 @@ def reinsert_right_context(str_conc, string, debug=False):
     return new_string
 
 
-def contextualised_text(notes, file_name):
+def contextualised_text(notes, file_name, uni_struct_dir='../1-a-reinsert_notes/output/unified_structure'):
     # finding the differing syllables from the manually checked concordance
     differing_syls = find_note_text(notes)
     # loading the structure
-    unified_structure = yaml.load(open_file('/home/swan/Documents/PycharmProjects/sandbox/kangyur_notes_reinsertion/output/unified_structure/i-6-1_བྱང་ཆུབ་སེམས་དཔའི་སྤྱོད་པ་ལ་འཇུག་པ།_unified_structure.yaml'.format(file_name.split('_')[0])))
+    unified_structure = yaml.load(open_file('{}/{}'.format(uni_struct_dir, file_name.replace('_conc_corrected.csv', '_unified_structure.yaml'))))
 
     # # adjusting the contexts
     # for num, el in enumerate(unified_structure):
@@ -204,18 +211,20 @@ def export_cat(file_name, cat):
     write_file('{}_{}_tocheck.txt'.format(name, cat), export)
 
 
-def export_all_notes(file_name):
+def export_all_notes(file_name, in_dir, outdir='../1-b-manually_corrected_conc'):
     name = file_name.split('.')[0]
-    total, notes = find_all_notes(file_name)
+    total, notes = find_all_notes('{}/{}'.format(in_dir, file_name))
     write_file('{}_{}.csv'.format(name, 'all'), '{}\n{}'.format(total, '\n'.join(notes)))
 
     export = contextualised_text(notes, file_name)
     write_file('{}_{}_tocheck.txt'.format(name, 'all'), export)
 
-if __name__ == '__main__':
-    file_name = 'i-6-1 བྱང་ཆུབ་སེམས་དཔའི་སྤྱོད་པ་ལ་འཇུག་པ།_conc_corrected.csv'
+import os
 
-    export_all_notes(file_name)
+if __name__ == '__main__':
+    in_dir = '../1-b-manually_corrected_conc'
+    for file_name in os.listdir(in_dir):
+        export_all_notes(file_name, in_dir)
 
 
     #categories = ['tense']

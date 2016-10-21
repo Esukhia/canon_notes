@@ -95,7 +95,6 @@ def write_types(notes, dir):
 def prepare_data(raw, legend):
     notes = defaultdict(list)
     for note in re.split(r'-[0-9]+-', raw)[1:]:
-        #print(note)
         parts = note.split('\n')
         type = ''
         for num, p in enumerate(parts[0].split(',')):
@@ -153,7 +152,7 @@ def note_indexes(note):
                 indexes[i] = len(note_conc[i])
         #
         side = True
-        while side and len(note_conc[collection_eds[0]]) > 0:
+        while side and len(note_conc) == len([a for a in note_conc if note_conc[a] != []]):#len(note_conc[collection_eds[0]]) > 0:
             # fill syls[] with the syllables of the extremity for each edition
             syls = []
             for n in note_conc:

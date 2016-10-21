@@ -1,13 +1,2 @@
-Total types: 926
-35.42% (328)	min mod
-23.54% (218)	tense
-9.07% (84)	formul
-8.86% (82)	spell
-7.02% (65)	maj mod
-6.05% (56)	med mod
-4.43% (41)	diff verb
-1.94% (18)	alter
-1.51% (14)	diff part
-1.51% (14)	+ | -
-0.54% (5)	sskrt
-0.11% (1)	
+Total types: 13
+100.00% (13)	

@@ -1,0 +1,33 @@
+1 Note reinsertion
+    a. Reinsert notes [ 1-a-reinsert_notes ]
+        1. pre-process for processing errors
+            - Pardrang column
+                * find all the csv files containing a pardrang column before the note column
+                  (csv_contains_pardrang_col.py)
+                * rectify the བསྡུར་མཆན་ file
+                  (in nalanda-corpus repo using docx_txt.sh to regenerate the csv file)
+            - replace all ; by , for the csv to be well-formed
+                * the " tr ';' ',' " command in docx_txt.sh
+            - debugging བསྡུར་མཆན་ and/or ཆོས་ཚན་ files
+                use debug_files() function to :
+                    * find and modify the discrepancies in note number and numbers in ཆོས་ཚན་ file with the enters if the reinsertion stops for a given file.
+                    * reformat the notes in the བསྡུར་མཆན་ file if the execution stops because the note is not well formatted
+                    * show the notes where a note has been included in the note text
+                        Manually separate the comments from the note and put them in the column where no other edition can have a note. if there are 3 editions not counting the basis edition(Derge), column 1 contains the edition name, column 2 contains the note. So the comments should be put after the 6th cell, so on K or L.
+                    * create a backup of the both བསྡུར་མཆན་ and ཆོས་ཚན་ files before:
+                        - deleting the lines that are too long to be correctly processed
+                        - deleting both files in case the formatting is too bad
+        2. reinsert notes
+            comment debug_files() and execute the last lines of reinsertion.py to generate the
+
+    b. manually correct the reinsertion [ 1-b-manually_corrected_conc ]
+        1. Rabten corrects the reinsertion [ 1-b-manually_corrected_conc/corrected ]
+            (the remaining 3% of the notes that can’t be correctly reinserted by my script)
+        2. reinsert the removed notes in 1.a.1 [ 1-b-manually_corrected_conc/notes_restored ]
+            - if they are long, keep them for after
+            - if they are short, reinsert them
+        3. Reintegrate discrepancies found by Rabten
+            - correct the xlsx and docx with the errors found (in nalanda_corpus repo) + regenerate the csv and txt files
+            - ???reprocess the files if the reinsertions could not be corrected???
+
+2 Note selection

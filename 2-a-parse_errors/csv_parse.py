@@ -6,10 +6,11 @@ import re
 import os
 
 seg = PyTib.Segment()
-collection_eds = ['སྡེ་', 'ཅོ་', 'པེ་', 'སྣར་']
+collection_eds = list
 
 
 def open_csv(path):
+    global collection_eds
     raw = open_file(path).split('\n')
     cats = ',who,tense,min mod,med mod,maj mod,alter,spell,formul,diff verb,diff part,+ | -,sskrt,'
     legend = list
@@ -18,7 +19,9 @@ def open_csv(path):
     else:
         legend = raw[0].split(',')
         del raw[0]
-    raw = '\n'.join(raw)
+    raw = '\n'.join(raw).strip()
+    # setting collection_eds for the current file
+    collection_eds = list({a for a in re.findall(r' ([^ ]+): ', raw)})
     return legend, raw
 
 
@@ -92,15 +95,18 @@ def write_types(notes, dir):
 def prepare_data(raw, legend):
     notes = defaultdict(list)
     for note in re.split(r'-[0-9]+-', raw)[1:]:
+        #print(note)
         parts = note.split('\n')
         type = ''
         for num, p in enumerate(parts[0].split(',')):
             if p == 'x':
                 type = legend[num]
         eds = {}
-        for e in range(1, 5):
+        for e in range(1, len(collection_eds)+1):
             ed = parts[e].split(':')[0]
+            ed = ed.strip()
             text = parts[e].split(',')[0].split(': ')[1]
+            text = text.strip()
             eds[ed] = text
         notes[type].append(eds)
     return notes
@@ -256,24 +262,31 @@ def find_category(data, category, out_dir='output/note_categories'):
         for n in note:
             csv += note[n]+'\t'
         csv += '\n'
+    if category == '':
+        category += 'undefined'
     write_file('./{}/{}.csv'.format(out_dir, category), csv)
 
 
-def find_categories(data, categories):
-    for category in categories:
-        find_category(data, category)
+def find_categories(data, categories, all=False):
+    if all:
+        for category in data.keys():
+            find_category(data, category)
+    else:
+        for category in categories:
+            find_category(data, category)
 
 
 if __name__ == '__main__':
     path = '../1-b-manually_corrected_conc/notes_restored'
     for f in os.listdir(path):
+        print(f)
         # prepare the structure
         legend, raw = open_csv('{}/{}'.format(path, f))
-        #legend, raw = open_csv('../chonjuk - Feuille 1.csv')
         data = prepare_data(raw, legend)
 
         # process
         generate_stats(copy.deepcopy(data))
 
-        categories = ['min mod', 'tense']
-        find_categories(data, categories)
+        categories = []#['min mod', 'tense']
+
+        find_categories(data, categories, all=True)

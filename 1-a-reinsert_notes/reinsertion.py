@@ -378,7 +378,7 @@ def generate_context_versions(editions, file_name, out_dir, left=5, right=5, bas
     with_context = calculate_contexts(unified, left=left, right=right, base_ed=base_ed)
     for i in range(len(with_context)):
         with_context[i] = [[a, with_context[i][a]] for a in sorted(with_context[i])]
-    output = yaml.dump_all(with_context, allow_unicode=True, default_flow_style=False)
+    output = yaml.dump_all(with_context, allow_unicode=True, default_flow_style=False, width=float("inf"))
     # reformat the page number
     output = re.sub(r'\n- -([^\n]+)\n  -', r'\n\1: ', output)
     output = re.sub(r"---\n '([0-9]+)':  ''", r'-\1-', output)
@@ -389,7 +389,7 @@ def generate_context_versions(editions, file_name, out_dir, left=5, right=5, bas
 
 def export_unified_structure(editions, text_name, out_dir='output/unified_structure'):
     unified = generate_unified_version(editions)
-    out = yaml.dump(unified, allow_unicode=True, default_flow_style=False)
+    out = yaml.dump(unified, allow_unicode=True, default_flow_style=False, width=float("inf"))
     write_file('{}/{}_unified_structure.yaml'.format(out_dir, text_name), out)
 
 
@@ -431,8 +431,8 @@ def debug_files(vol_num):
 
 note_num = 24
 debug = 0
-debug_files(0)
+#debug_files(0)
 
-#for w in works:
-#   print(w[0])
-#   generate_outputs(w[0], w[1], 5)
+for w in works:
+    print(w[0])
+    generate_outputs(w[0], w[1], 5)

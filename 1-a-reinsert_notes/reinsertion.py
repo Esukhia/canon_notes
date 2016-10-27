@@ -17,6 +17,7 @@ def is_punct(string):
 def reinsert_notes(raw_text, raw_notes, basis_edition='སྡེ་'):
     global note_num
     raw_text = raw_text.replace('a', '').split('\n')
+    raw_notes = re.sub(r'《([^《》་]+)》', r'《\1་》', raw_notes)  # add a tsek in the edition names that lack one.
     raw_notes = raw_notes.strip().split('\n')[1:]
 
     text = {}

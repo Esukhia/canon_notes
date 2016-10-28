@@ -1,0 +1,38 @@
+{
+    "automatic_categorisation": {
+        "particle_difference": {
+            "differing_particle": [],
+            "min_mod": []
+        },
+        "spelling_mistake": {
+            "missing_vowel": [],
+            "nga_da": [],
+            "non_word": [],
+            "sskrt": []
+        },
+        "verb_difference": {
+            "diff_tense": [],
+            "diff_verb": []
+        }
+    },
+    "manual_categorisation": {
+        "long_difference": {
+            "differing_formulation": [],
+            "major_modification": []
+        },
+        "manual_evaluation": {
+            "derge_correct": [],
+            "meaning_difference": {
+                "great_diff": [],
+                "medium_diff": [],
+                "small_diff": []
+            }
+        }
+    },
+    "ngram_freq": {
+        "words+context": [],
+        "words_alone": []
+    },
+    "non_standard_notes": [],
+    "profile": {}
+}

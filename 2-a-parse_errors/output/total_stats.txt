@@ -1,2 +1,2 @@
-Total types: 13
-100.00% (13)	
+Total types: 8
+100.00% (8)	

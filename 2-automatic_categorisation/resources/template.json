@@ -1,8 +1,14 @@
 {
     "automatic_categorisation": {
-        "particle_difference": {
-            "differing_particle": [],
-            "min_mod": []
+        "min_mod": {
+            "min_mod_groups": [],
+            "particle_groups": []
+        },
+        "particle_issues": {
+            "added_particle": [],
+            "agreement_issue": [],
+            "different_particles": [],
+            "other": []
         },
         "spelling_mistake": {
             "missing_vowel": [],
@@ -12,7 +18,8 @@
         },
         "verb_difference": {
             "diff_tense": [],
-            "diff_verb": []
+            "diff_verb": [],
+            "not_sure": []
         }
     },
     "manual_categorisation": {

@@ -1,0 +1,68 @@
+{
+    "automatic_categorisation": {
+        "min_mod": {
+            "min_mod_groups": [],
+            "particle_groups": []
+        },
+        "particle_issues": {
+            "added_particle": [],
+            "agreement_issue": [
+                {
+                    "8": [
+                        "lhakce",
+                        {
+                            "པེ་": [
+                                "དག་ ཐམས་ཅད་ སེམས་ ཙམ་",
+                                "ཏེ",
+                                "།_། སྒྱུ་མ་ ལྟ་བུ ར་"
+                            ],
+                            "སྡེ་": [
+                                "དག་ ཐམས་ཅད་ སེམས་ ཙམ་",
+                                "སྟེ",
+                                "།_། སྒྱུ་མ་ ལྟ་བུ ར་"
+                            ],
+                            "སྣར་": [
+                                "དག་ ཐམས་ཅད་ སེམས་ ཙམ་",
+                                "ཏེ",
+                                "།_། སྒྱུ་མ་ ལྟ་བུ ར་"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "different_particles": [],
+            "other": []
+        },
+        "spelling_mistake": {
+            "missing_vowel": [],
+            "nga_da": [],
+            "non_word": [],
+            "sskrt": []
+        },
+        "verb_difference": {
+            "diff_tense": [],
+            "diff_verb": [],
+            "not_sure": []
+        }
+    },
+    "manual_categorisation": {
+        "long_difference": {
+            "differing_formulation": [],
+            "major_modification": []
+        },
+        "manual_evaluation": {
+            "derge_correct": [],
+            "meaning_difference": {
+                "great_diff": [],
+                "medium_diff": [],
+                "small_diff": []
+            }
+        }
+    },
+    "ngram_freq": {
+        "words+context": [],
+        "words_alone": []
+    },
+    "non_standard_notes": [],
+    "profile": {}
+}

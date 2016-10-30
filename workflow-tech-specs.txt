@@ -33,7 +33,7 @@
 2 Note selection
 0 [criteria_points] : a folder with a yaml for each text that will receive all the points
 		create a template
-				- Automatic categorisation (full note)
+				- Automatic categorise (full note)
 						- ཀ་ mistake raised :
 								- ༡  missing vowel
 								- ༢ nga/da
@@ -53,7 +53,7 @@
 			    - note profile : (note ID)
 						- (depends for each text)
 
-				- Manual categorisation (full note)
+				- Manual categorise (full note)
 						- more than 2 differing syls
 								- <F> diff formulation
 								- <M> major mod
@@ -72,7 +72,7 @@
                 category correction: the number of the right category
 
 mistake = {missing_vowel: [], nga_da: [], sskrt: [], non_word: [], other: []}
-1 categorisation():
+1 categorise():
         0. prepare(ID + full note):
             def find_words()
                 for each edition:
@@ -102,7 +102,9 @@ mistake = {missing_vowel: [], nga_da: [], sskrt: [], non_word: [], other: []}
                                     return True
                     2. if the difference is a particle:
                         1. if is_min_mod()
-                            list of shifts to find (jedra/dreldra, …)
+                            - it is in the min-mod groups
+                            - it is in the particle groups
+                            - it is a particle agreement difference
                         2. else:
                             it is a differing particle
                     3. if the note word is a verb:
@@ -132,3 +134,5 @@ mistake = {missing_vowel: [], nga_da: [], sskrt: [], non_word: [], other: []}
                         8. keep all other notes for manual selection
 
 2 Ngram frequency
+
+3 Note profiling

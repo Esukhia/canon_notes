@@ -1,0 +1,121 @@
+{
+    "automatic_categorisation": {
+        "min_mod": {
+            "min_mod_groups": [],
+            "particle_groups": [
+                {
+                    "9": [
+                        [
+                            "dreldra",
+                            "jedra"
+                        ],
+                        {
+                            "པེ་": [
+                                "སྲིད་ ཆེ་ དང་ ཡང་དག་",
+                                "གིས",
+                                "། རྒྱལ་སྲིད་ འཁོར་ལོ ས་"
+                            ],
+                            "སྡེ་": [
+                                "སྲིད་ ཆེ་ དང་ ཡང་དག་",
+                                "གི",
+                                "། རྒྱལ་སྲིད་ འཁོར་ལོ ས་"
+                            ],
+                            "སྣར་": [
+                                "སྲིད་ ཆེ་ དང་ ཡང་དག་",
+                                "གིས",
+                                "། རྒྱལ་སྲིད་ འཁོར་ལོ ས་"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "13": [
+                        [
+                            "dreldra",
+                            "jedra"
+                        ],
+                        {
+                            "པེ་": [
+                                "དང་ མཐུན་པ འི་ ཆོས་ རྣམས་",
+                                "ཀྱིས",
+                                "།_། རྒྱུ་ ནི་ ཇི་ལྟར་"
+                            ],
+                            "སྡེ་": [
+                                "དང་ མཐུན་པ འི་ ཆོས་ རྣམས་",
+                                "ཀྱི",
+                                "།_། རྒྱུ་ ནི་ ཇི་ལྟར་"
+                            ],
+                            "སྣར་": [
+                                "དང་ མཐུན་པ འི་ ཆོས་ རྣམས་",
+                                "ཀྱིས",
+                                "།_། རྒྱུ་ ནི་ ཇི་ལྟར་"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "17": [
+                        [
+                            "dreldra",
+                            "jedra"
+                        ],
+                        {
+                            "པེ་": [
+                                "པོ་ རྣམས་ ནི་ བདེ་ ཆེན་",
+                                "གྱིས",
+                                "།_། སྒོ་ རུ་ སེམས་ བཞིན་"
+                            ],
+                            "སྡེ་": [
+                                "པོ་ རྣམས་ ནི་ བདེ་ ཆེན་",
+                                "གྱི",
+                                "།_། སྒོ་ རུ་ སེམས་ བཞིན་"
+                            ],
+                            "སྣར་": [
+                                "པོ་ རྣམས་ ནི་ བདེ་ ཆེན་",
+                                "གྱིས",
+                                "།_། སྒོ་ རུ་ སེམས་ བཞིན་"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "particle_issues": {
+            "added_particle": [],
+            "agreement_issue": [],
+            "different_particles": [],
+            "other": []
+        },
+        "spelling_mistake": {
+            "missing_vowel": [],
+            "nga_da": [],
+            "non_word": [],
+            "sskrt": []
+        },
+        "verb_difference": {
+            "diff_tense": [],
+            "diff_verb": [],
+            "not_sure": []
+        }
+    },
+    "manual_categorisation": {
+        "long_difference": {
+            "differing_formulation": [],
+            "major_modification": []
+        },
+        "manual_evaluation": {
+            "derge_correct": [],
+            "meaning_difference": {
+                "great_diff": [],
+                "medium_diff": [],
+                "small_diff": []
+            }
+        }
+    },
+    "ngram_freq": {
+        "words+context": [],
+        "words_alone": []
+    },
+    "non_standard_notes": [],
+    "profile": {}
+}

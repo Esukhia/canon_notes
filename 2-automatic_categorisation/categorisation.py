@@ -699,10 +699,85 @@ def categorise(note, categorised, verbs):
         categorised['empty_notes'].append(format_entry(note, 'n/a'))
 
 
+def open_ngrams():
+    ngrams = {}
+    for i in range(1, 13):
+        lines = open_file('./resources/kangyur_ngrams/{}-grams_raw.txt'.format(i)).strip().split('\n')
+        for line in lines:
+            parts = line.split(' ')
+            ngrams[''.join(parts[:-1])] = int(parts[-1])
+    return ngrams
+
+
+def ngram_frequency(prepared):
+    def prepare_syls(string):
+        return string.replace('#', '').split(' ')
+
+    def generate_all(left, middle, right):
+        rev_left = left[::-1]
+        l_parts = []
+        for l in range(1, len(rev_left) + 1):
+            l_parts.append(' '.join(rev_left[:l][::-1]))
+            l_parts.append(' '.join(rev_left[:l][::-1]))
+
+        r_parts = []
+        for r in range(1, len(right) + 1):
+            r_parts.append(' '.join(right[:r]))
+            r_parts.append(' '.join(right[:r]))
+
+        left_parts_a = copy.deepcopy(l_parts)
+        left_parts_a.insert(0, '')
+        del left_parts_a[-1]
+
+        right_parts_a = copy.deepcopy(r_parts)
+        right_parts_a.insert(0, '')
+        del right_parts_a[-1]
+
+        return  (l_parts, middle, right_parts_a), (left_parts_a, middle, r_parts)
+
+    def generate_versions(left, middle, right):
+        out = [middle]
+        if len(left) >= len(right):
+            for i in range(len(left)):
+                if i <= len(right) - 1:
+                    out.append('{} {} {}'.format(left[i], middle, right[i]))
+                else:
+                    out.append('{} {} {}'.format(left[i], middle, right[-1]))
+        else:
+            for i in range(len(right)):
+                if i <= len(left) - 1:
+                    out.append('{} {} {}'.format(left[i], middle, right[i]))
+                else:
+                    out.append('{} {} {}'.format(left[-1], middle, right[i]))
+        return out
+
+    def union_a_b(left, note_text, right):
+        first_set, second_set = generate_all(left, note_text, right)
+        versions_a = generate_versions(first_set[0], first_set[1], first_set[2])
+        versions_b = generate_versions(second_set[0], second_set[1], second_set[2])
+        union = sorted(list({a for a in versions_a + versions_b}), key=lambda x: len(x))
+        return union
+
+
+    for note in prepared:
+        note_num = note[0]
+        for ed in note[1]:
+            left = prepare_syls(note[1][ed][0])
+            note_text = note[1][ed][1].replace('#', '')
+            right = prepare_syls(note[1][ed][2])
+
+            union_versions = union_a_b(left, note_text, right)
+
+
+
+    print('ok')
+
+
 def process(in_path, template_path, total_stats):
     global collection_eds
     raw_template = open_file(template_path)
     verbs = jp.decode(open_file('./resources/monlam_verbs.json'))
+    all_ngrams = open_ngrams()
     for f in os.listdir(in_path):
         print(f)
         work_name = f.replace('_conc-corrected.yaml', '')
@@ -719,6 +794,10 @@ def process(in_path, template_path, total_stats):
 
         # categorise
         categorised_notes = jp.decode(raw_template)
+
+        # find ngram frequencies
+        frequencies = ngram_frequency(prepared)
+
         if debug:
             if file == f and note_num != 0:
                 for note in prepared:

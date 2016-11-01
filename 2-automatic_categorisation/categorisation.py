@@ -765,7 +765,7 @@ def ngram_frequency(prepared, all_ngrams):
 
     note_ngrams = {}
     for note in prepared:
-        note_ngrams[str(note)] = {}
+        note_ngrams[note[0]] = {}
         note_num = note[0]
         for ed in note[1]:
             left = prepare_syls(note[1][ed][0])
@@ -777,17 +777,18 @@ def ngram_frequency(prepared, all_ngrams):
             frequencies = []
             for chunk in union_versions:
                 if chunk in all_ngrams.keys():
-                    frequencies.append([chunk, '——'+str(all_ngrams[chunk])])
-                # else:
-                #     frequencies.append([chunk, '……'])
-            note_ngrams[str(note)][ed] = frequencies
+                    frequencies.append([chunk, str(all_ngrams[chunk])])
+            note_ngrams[note[0]][ed] = frequencies
 
-    for note in sorted(note_ngrams):
-        print(note)
-        for edition in note_ngrams[note]:
-            print('\t\t' + edition)
-            for test in note_ngrams[note][edition]:
-                print('\t\t\t\t' + ''.join(test))
+    ## prints the ngrams for the current file
+    # for note in sorted(note_ngrams):
+    #     print(note)
+    #     for edition in note_ngrams[note]:
+    #         print('\t\t' + edition)
+    #         for test in note_ngrams[note][edition]:
+    #             print('\t\t\t\t' + ''.join(test))
+
+    return note_ngrams
 
 
 def process(in_path, template_path, total_stats):
@@ -874,6 +875,7 @@ def process(in_path, template_path, total_stats):
         if encoded != raw_template:
             categorised_notes['Stats'] = stats
             categorised_notes['profile'] = profiles
+            categorised_notes['ngram_freq'] = frequencies
             write_file('output/{}_cats.json'.format(work_name), jp.encode(categorised_notes))
 
 

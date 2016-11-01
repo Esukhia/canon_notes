@@ -8,9 +8,18 @@ import os
 
 jp.set_encoder_options('simplejson', sort_keys=True, indent=4, ensure_ascii=False)
 seg = PyTib.Segment()
-comp = PyTib.getSylComponents()
+components = PyTib.getSylComponents()
 collection_eds = list
 
+
+def is_punct(string):
+    # put in common
+    if '༄' in string or '༅' in string or '༆' in string or '༇' in string or '༈' in string or \
+        '།' in string or '༎' in string or '༏' in string or '༐' in string or '༑' in string or \
+        '༔' in string or '_' in string:
+        return True
+    else:
+        return False
 
 
 def note_indexes(note):
@@ -157,15 +166,87 @@ def prepare_data(raw):
     return notes
 
 
+def strip_similar(list_of_lists):
+    lists_copy = copy.deepcopy(list_of_lists)
+
+    # keep track of all the syllables that received an extra tsek
+    no_tseks = []
+    for a, list in enumerate(lists_copy):
+        to_save = []
+        for b, syl in enumerate(list):
+            if '་' not in syl:
+                lists_copy[a][b] += '་'
+                to_save.append(syl+'་')
+        no_tseks.append(to_save)
+    no_tseks = [a[-1] if a != [] else a for a in no_tseks]
+
+    # strip on the left
+    while len({a[0] for a in lists_copy if a != []}) == 1 and [] not in lists_copy:
+        for b in range(len(lists_copy)):
+            if lists_copy[b]:
+                del lists_copy[b][0]
+    # strip on the right
+    while len({a[-1] for a in lists_copy if a != []}) == 1 and [] not in lists_copy:
+        for c in range(len(lists_copy)):
+            if lists_copy[c]:
+                del lists_copy[c][-1]
+
+    # take away the added tseks
+    for a, list in enumerate(no_tseks):
+        if len(list) > 0:
+            for b, syl in enumerate(list):
+                if len(lists_copy[a]) != 0 and syl in lists_copy[a]:
+                    lists_copy[a][b] = lists_copy[a][b].rstrip('་')
+
+    return lists_copy
+
+
 def strip_similar_syls(list_of_lists):
-    while len({a[0] for a in list_of_lists if a != []}) == 1:
-        for b in range(len(list_of_lists)):
-            if list_of_lists[b]:
-                del list_of_lists[b][0]
-    while len({a[-1] for a in list_of_lists if a != []}) == 1:
-        for c in range(len(list_of_lists)):
-            if list_of_lists[c]:
-                del list_of_lists[c][-1]
+    def contains_merged_part(lists):
+        has_merged = False
+        for list in lists:
+            if ' ' in list[0]:
+                has_merged = True
+        return has_merged
+
+    lists_copy = strip_similar(list_of_lists)
+
+    if {len(a) for a in lists_copy} == {1}:
+        if contains_merged_part(lists_copy):
+            for a in range(len(list_of_lists)):
+                lists_copy[a] = lists_copy[a][0].replace(' ', ' _').split(' ')
+
+            lists_copy = strip_similar(lists_copy)
+    return lists_copy
+
+
+def find_profiles(data):
+    profiles = {}
+    for note in data:
+        groups = defaultdict(list)
+        for n in note[1].keys():
+            groups[note[1][n]].append(n)
+        profile = ['='.join(sorted(groups[a])) for a in groups]
+        profile = ' '.join(sorted(profile))
+        if profile not in profiles.keys():
+            profiles[profile] = [0, []]
+        profiles[profile][1].append(note[0])
+
+    total = 0
+    for pro in profiles:
+        num = len(profiles[pro][1])
+        profiles[pro][0] = num
+        total += num
+
+    for pro in profiles:
+        profiles[pro].append('{:02.2f}%'.format(profiles[pro][0] * 100 / total))
+
+    final = {}
+    for p in profiles:
+        for note in profiles[p][1]:
+            final[note] = [p, profiles[p][2]]
+
+    return final, ['{}: {} ({} notes)'.format(a, profiles[a][2], profiles[a][0]) for a in profiles]
 
 
 def categorise(note, categorised, verbs):
@@ -177,19 +258,34 @@ def categorise(note, categorised, verbs):
         return yes
 
     def format_entry(note, cat):
-        return {note[0]: [cat, {n: list(note[1][n]) for n in note[1]}]}
+        if cat != 'n/a':
+            return {note[0]: [cat, {n: list(note[1][n]) for n in note[1]}]}
+        else:
+            return {note[0]: [{n: list(note[1][n]) for n in note[1]}]}
+
+    def remove_punct(note_texts):
+        new = {}
+        for ed in note_texts:
+            no_punct = []
+            syls = note_texts[ed].split(' ')
+            for syl in syls:
+                if not is_punct(syl):
+                    no_punct.append(syl)
+            new[ed] = ' '.join(no_punct)
+        return new
 
     def pre_process(note):
         # extract only note_texts
-        note_texts = {}
-        for ed in note[1]:
-            note_texts[ed] = note[1][ed][1]
+        note_texts = {ed: note[1][ed][1] for ed in note[1]}
+        note_texts = remove_punct(note_texts)
+
         # cut in syls
         for ed in note_texts:
             note_texts[ed] = re.sub(r'([^་]) ', r'\1_', note_texts[ed])  # keep the merged particles
-            note_texts[ed] = re.sub(r'(་)([^ ])', r'\1 \2', note_texts[ed]) # insert spaces where there is none
+            note_texts[ed] = re.sub(r'(་)([^ ])', r'\1 \2', note_texts[ed])  # insert spaces where there is none
             note_texts[ed] = note_texts[ed].split(' ')  # split in syllables
-            note_texts[ed] = [a.replace('_', ' ') for a in note_texts[ed]]  # restore spaces in syllables with merged particles
+            note_texts[ed] = [a.replace('_', ' ') for a in                               note_texts[ed]]  # restore spaces in syllables with merged particles
+
         return note_texts
 
     def process_mistakes(note_texts):
@@ -200,7 +296,7 @@ def categorise(note, categorised, verbs):
                 for syl in note_texts[ed]:
                     if '#' in syl:
                         syl = syl.replace('#', '')
-                        parts = comp.get_parts(syl)
+                        parts = components.get_parts(syl)
                         if parts == None:  # the syl is ill-formed
                             syl_parts[ed].append('#'+syl)
                         else:  # the syllable is well-formed and can be split
@@ -253,7 +349,7 @@ def categorise(note, categorised, verbs):
                 categorised['automatic_categorisation']['spelling_mistake']['nga_da'].append(format_entry(note, nga_da))
 
     def process_minor_modifications(note_texts):
-        particles = { "dreldra": ["གི", "ཀྱི", "གྱི", "ཡི"], "jedra": ["གིས", "ཀྱིས", "གྱིས", "ཡིས"], "ladon": ["སུ", "ཏུ", "དུ", "རུ"], "lhakce": ["སྟེ", "ཏེ", "དེ"], "gyendu": ["ཀྱང", "ཡང", "འང"], "jedu": ["གམ", "ངམ", "དམ", "ནམ", "བམ", "མམ", "འམ", "རམ", "ལམ", "སམ", "ཏམ"], "dagdra_pa": ["པ", "བ"], "dagdra_po": ["པོ", "བོ"], "lardu": ["གོ", "ངོ", "དོ", "ནོ", "བོ", "མོ", "འོ", "རོ", "ལོ", "སོ", "ཏོ"], "cing": ["ཅིང", "ཤིང", "ཞིང"], "ces": ["ཅེས", "ཞེས"], "ceo": ["ཅེའོ", "ཤེའོ", "ཞེའོ"], "cena": ["ཅེ་ན", "ཤེ་ན", "ཞེ་ན"], "cig": ["ཅིག", "ཤིག", "ཞིག"], "gin": ["ཀྱིན", "གིན", "གྱིན"], "jungkhung": ["ནས", "ལས"]}
+        particles = { "dreldra": ["གི", "ཀྱི", "གྱི", "ཡི"], "jedra": ["གིས", "ཀྱིས", "གྱིས", "ཡིས", "_ས"], "ladon": ["སུ", "ཏུ", "དུ", "རུ", "_ར"], "lhakce": ["སྟེ", "ཏེ", "དེ"], "gyendu": ["ཀྱང", "ཡང", "འང"], "jedu": ["གམ", "ངམ", "དམ", "ནམ", "བམ", "མམ", "འམ", "རམ", "ལམ", "སམ", "ཏམ"], "dagdra_pa": ["པ", "བ"], "dagdra_po": ["པོ", "བོ"], "lardu": ["གོ", "ངོ", "དོ", "ནོ", "བོ", "མོ", "འོ", "རོ", "ལོ", "སོ", "ཏོ"], "cing": ["ཅིང", "ཤིང", "ཞིང"], "ces": ["ཅེས", "ཞེས"], "ceo": ["ཅེའོ", "ཤེའོ", "ཞེའོ"], "cena": ["ཅེ་ན", "ཤེ་ན", "ཞེ་ན"], "cig": ["ཅིག", "ཤིག", "ཞིག"], "gin": ["ཀྱིན", "གིན", "གྱིན"], "jungkhung": ["ནས", "ལས"]}
         all_particles = [p for c in particles for p in particles[c]]
 
         def particle_groups(group):
@@ -303,14 +399,14 @@ def categorise(note, categorised, verbs):
             else:
                 part = True
                 for el in l:
-                    if el not in all_particles:
+                    if el not in all_particles+['']:  # empty string added to find the additions
                         part = False
                 return part
 
         # 2.0 make a list of all the note texts
         group = [note_texts[a] for a in note_texts]
-        strip_similar_syls(group)
-        group = list(set([''.join(a) for a in group]))
+        group = strip_similar_syls(group)
+        group = [b for b in set([''.join(a).strip('་') for a in group])]
 
         # 2.1 min mod groups
         min_mod_group = min_mod_groups(group)
@@ -323,20 +419,22 @@ def categorise(note, categorised, verbs):
             if part_group:
                 categorised['automatic_categorisation']['min_mod']['particle_groups'].append(format_entry(note, list(part_group)))
 
-            same_diff = particle_issues(group)
-            # 2.3 particle agreement difference
-            if same_diff[0] == 'same':
-                categorised['automatic_categorisation']['particle_issues']['agreement_issue'].append(format_entry(note, same_diff[1][0]))
             # 2.4 different cases
             elif not part_group:
+                same_diff = particle_issues(group)
+                # 2.3 particle agreement difference
+                if same_diff[0] == 'same':
+                    if 'dagdra_po' in same_diff[1]:
+                        categorised['automatic_categorisation']['particle_issues']['dagdra_po'].append(format_entry(note, same_diff[1][0]))
+                    else:
+                        categorised['automatic_categorisation']['particle_issues']['agreement_issue'].append(format_entry(note, same_diff[1][0]))
+
                 if same_diff[0] == 'added_particle':
                     categorised['automatic_categorisation']['particle_issues']['added_particle'].append(format_entry(note, same_diff[1][0]))
                 elif same_diff[0] == 'different_particles':
-                    categorised['automatic_categorisation']['particle_issues']['different_particles'].append(
-                        format_entry(note, same_diff[1][0]))
+                    categorised['automatic_categorisation']['particle_issues']['different_particles'].append(format_entry(note, same_diff[1][0]))
                 elif same_diff[0] == 'other':
-                    categorised['automatic_categorisation']['particle_issues']['other'].append(
-                        format_entry(note, same_diff[1][0]))
+                    categorised['automatic_categorisation']['particle_issues']['other'].append(format_entry(note, same_diff[1][0]))
 
     def verb_difference(note_texts, verbs):
         profiles = [
@@ -351,25 +449,27 @@ def categorise(note, categorised, verbs):
             ['བྱ་ཚིག', 'འབྲི་ཚུལ་གཞན།']
         ]
 
-        def verb_type(group, profiles):
+        def verb_type(group, profiles, verbs):
             no_tense = [profiles[3]]
             with_tense = [profiles[0], profiles[1], profiles[2]]
             a = []
             b = []
             for verb in group:
-                for meaning in verbs[verb]:
+                verb_form = verb[0]
+                for meaning in verbs[verb_form]:
                     profile = sorted([a for a in meaning])
                     if profile in no_tense:
-                        a.append(verb)
+                        a.append(verb_form)
                     elif profile in with_tense:
-                        b.append(verb)
+                        b.append(verb_form)
 
             is_with_tense = True
             is_no_tense = True
             for verb in group:
-                if verb not in b:
+                verb_form = verb[0]
+                if verb_form not in b:
                     is_with_tense = False
-                if verb not in a:
+                if verb_form not in a:
                     is_no_tense = False
 
             if is_no_tense:
@@ -379,88 +479,227 @@ def categorise(note, categorised, verbs):
             else:
                 return 'dunno'
 
-        def common_verb(group):
+        def same_verb_or_not(group, profiles):
+            '''
+            returns either a dict with the verbal form and the common meanings, or all the meanings if the verbal forms don’t have any verb in common.
+            :param group:
+            :return:
+            '''
             def intersect(*lists):
                 return list(set.intersection(*map(set, lists)))
 
             roots = {}
             meanings = {}
             for verb in group:
-                for meaning in verbs[verb]:
-                    if verb not in roots.keys():
-                        roots[verb] = []
-                    extracted_roots = list({meaning['བྱ་ཚིག'] if 'བྱ་ཚིག' in meaning.keys() else '' for a in meaning})
-                    roots[verb].extend(extracted_roots)
-                    meanings[verb] = verbs[verb]
+                verb_form = verb[0]
+                for meaning in verbs[verb_form]:
+                    if verb_form not in roots.keys():
+                        roots[verb_form] = []
+                    if sorted([a for a in meaning]) in [profiles[0], profiles[1], profiles[2]]:
+                        extracted_roots = list({meaning['བྱ་ཚིག'] if 'བྱ་ཚིག' in meaning.keys() else '' for a in meaning})
+                    else:
+                        extracted_roots = verb
+                    roots[verb_form].extend(extracted_roots)
+                    meanings[verb_form] = verbs[verb_form]
 
             lists = [roots[a] for a in roots]
             common = intersect(*lists)
 
-            common_meanings = {}
+            same_verb_meanings = {}
             for c in common:
                 for verb in meanings:
                     for meaning in meanings[verb]:
-                        if meaning['བྱ་ཚིག'] == c:  # Todo add a check of the same profile
-                            if c not in common_meanings.keys():
-                                common_meanings[c] = []
-                            common_meanings[c].append(meaning)
+                        if verb not in same_verb_meanings.keys():
+                            same_verb_meanings[verb] = []
+                        meaning_profile = sorted([a for a in meaning])
+                        if meaning_profile in [profiles[0], profiles[1], profiles[2]]:
+                            if meaning['བྱ་ཚིག'] == c:
+                                same_verb_meanings[verb].append(meaning)
+                        elif meaning_profile == profiles[3]:
+                            same_verb_meanings[verb].append(meaning)
 
-            return common_meanings
+            if same_verb_meanings:
+                return same_verb_meanings
+            else:
+                return meanings
 
         def format_meanings(meanings):
             profiles = [
                 # with tense
-                (['ཐ་དད་མི་དད།', 'དུས།', 'བྱ་ཚིག'], ('{} གི་ {} {}', 'བྱ་ཚིག', 'དུས།', 'ཐ་དད་མི་དད།')),
-                (['དུས།', 'བྱ་ཚིག'], ('{} གི་ {}', 'བྱ་ཚིག', 'དུས།')),
+                (['ཐ་དད་མི་དད།', 'དུས།', 'བྱ་ཚིག'], ('〈{}〉གི་ {} {}', 'བྱ་ཚིག', 'དུས།', 'ཐ་དད་མི་དད།')),
+                (['དུས།', 'བྱ་ཚིག'], ('〈{}〉གི་ {}', 'བྱ་ཚིག', 'དུས།')),
                 (['དུས།', 'བྱ་ཚིག', 'འབྲི་ཚུལ་གཞན།'],
-                 ('{} གི་དུས་ {} གི་ འབྲི་ཚུལ་གཞན།', 'བྱ་ཚིག', 'དུས།')),
+                 ('〈{}〉གི་ {} འབྲི་ཚུལ་གཞན།', 'བྱ་ཚིག', 'དུས།')),
                 # without tense
-                (['དུས།'], ('བྱ་ཚིག་{}', 'དུས།')),
+                (['དུས།'], ('{}', 'དུས།')),
                 # could be any
                 (['ཐ་དད་མི་དད།'], ('{}', 'ཐ་དད་མི་དད།')),
-                (['བྱ་ཚིག', 'འབྲི་ཚུལ་གཞན།'], ('{} གི་ འབྲི་ཚུལ་གཞན།', 'བྱ་ཚིག'))
+                (['བྱ་ཚིག', 'འབྲི་ཚུལ་གཞན།'], ('〈{}〉 འབྲི་ཚུལ་གཞན།', 'བྱ་ཚིག'))
             ]
             out = []
             for verb in meanings:
+                same_verb_meanings = []
                 for meaning in meanings[verb]:
                     profile = sorted([a for a in meaning])
                     for p in profiles:
                         if profile == p[0]:
-                            out.append(p[1][0].format(*[meaning[a] for a in p[1][1:]]))
+                            same_verb_meanings.append(p[1][0].format(*[meaning[a] for a in p[1][1:]]))
+                out.append('《'+verb+'》ཞེས་པ།【'+'】【'.join(sorted(same_verb_meanings))+'】')
             return out
 
+        def is_only_verbs(group, verbs):
+            '''
+            Checks if there are only verbs in the note and if they are all 1 syl long
+            :param group:
+            :param verbs:
+            :return:
+            '''
+            for num, g in enumerate(group):
+                group[num] = [a.rstrip('་') for a in g]
+
+            only_verbs = None
+            if {len(a) for a in group} == {1}:  # there are only one syllable per edition
+                only_verbs = True
+                group = list({a[0] for a in group})  # make it a list of words
+                for g in group:
+                    if g not in verbs:
+                        only_verbs = False
+            return only_verbs
+
+        # 3.0 prepare
         group = [note_texts[a] for a in note_texts]
-        strip_similar_syls(group)
-        if {len(a) for a in group} == {1}:  # there are only one syllable per edition
-            group = list({a[0] for a in group})  # make it a list of words
-            only_verbs = True
-            for g in group:
-                if g not in verbs:
-                    only_verbs = False
+        group = strip_similar_syls(group)
 
-            if only_verbs:
-                verb_type = verb_type(group, profiles)
-                if verb_type == 'with_tense':
-                    common = common_verb(group)
-                    if common:
-                        formatted = format_meanings(common)
+        if is_only_verbs(group, verbs):
+            # process verbs and extract the list of tenses and verbs
+            note_verbs = same_verb_or_not(group, profiles)
+            formatted = format_meanings(note_verbs)
+            note_type = verb_type(group, profiles, verbs)
 
-                    print('ok')
+            # 3.1 categorize the note
+            # find criteria to categorise
+            tenses_set = {m['དུས།'] for n in note_verbs for m in note_verbs[n] if 'དུས།' in m.keys()}
+            verbs_set = {m['བྱ་ཚིག'] if 'བྱ་ཚིག' in m.keys() else n for n in note_verbs for m in note_verbs[n]}
+
+            # categorize
+            if note_type == 'with_tense':
+                if len(tenses_set) > 1 and len(verbs_set) == 1:
+                    categorised['automatic_categorisation']['verb_difference']['diff_tense'].append(format_entry(note, formatted))
+                elif len(verbs_set) > 1:
+                    categorised['automatic_categorisation']['verb_difference']['diff_verb'].append(format_entry(note, formatted))
+            elif note_type == 'no_tense':
+                if len(verbs_set) > 1:
+                    categorised['automatic_categorisation']['verb_difference']['diff_verb'].append(format_entry(note, formatted))
+                else:
+                    categorised['automatic_categorisation']['verb_difference']['not_sure'].append(format_entry(note, formatted))
+            elif note_type == 'dunno':
+                categorised['automatic_categorisation']['verb_difference']['not_sure'].append(format_entry(note, formatted))
+
+    def already_exists(nested_dict, note_num):
+        contains_note = False
+        locations = [('min_mod_groups', nested_dict['automatic_categorisation']['min_mod']['min_mod_groups']),
+         ('particle_groups', nested_dict['automatic_categorisation']['min_mod']['particle_groups']),
+         ('added_particle', nested_dict['automatic_categorisation']['particle_issues']['added_particle']),
+         ('agreement_issue', nested_dict['automatic_categorisation']['particle_issues']['agreement_issue']),
+         ('different_particles', nested_dict['automatic_categorisation']['particle_issues']['different_particles']),
+         ('missing_vowel', nested_dict['automatic_categorisation']['spelling_mistake']['missing_vowel']),
+         ('nga_da', nested_dict['automatic_categorisation']['spelling_mistake']['nga_da']),
+         ('ill-formed', nested_dict['automatic_categorisation']['spelling_mistake']['non_word']['ill-formed']),
+         ('well-formed', nested_dict['automatic_categorisation']['spelling_mistake']['non_word']['well-formed']),
+         ('sskrt', nested_dict['automatic_categorisation']['sskrt']),
+         ('diff_tense', nested_dict['automatic_categorisation']['verb_difference']['diff_tense']),
+         ('diff_verb', nested_dict['automatic_categorisation']['verb_difference']['diff_verb']),
+         ('not_sure', nested_dict['automatic_categorisation']['verb_difference']['not_sure'])]
+        for l in locations:
+            notes_id = [b for a in l[1] for b in a]
+            if note_num in notes_id:
+                contains_note = True
+        return contains_note
+
+    def is_tibetan_text(note_texts):
+        is_tibetan = True
+        for n in note_texts:
+            for syl in note_texts[n]:
+                sy = syl.replace('#', '').replace('་', '').replace(' ', '')
+                if sy != '':
+                    if not components.get_parts(sy):
+                        is_tibetan = False
+        return is_tibetan
+
+    def contains_sskrt(note_texts):
+        # Source for regexes : Paul Hackett Visual Basic script
+        # Now do Sanskrit: Skt.vowels, [g|d|b|dz]+_h, hr, shr, Skt
+        regex1 = r"([ཀ-ཬཱ-྅ྐ-ྼ]{0,}[ཱཱཱིུ-ཹཻཽ-ྃ][ཀ-ཬཱ-྅ྐ-ྼ]{0,}|[ཀ-ཬཱ-྅ྐ-ྼ]{0,}[གཌདབཛྒྜྡྦྫ][ྷ][ཀ-ཬཱ-྅ྐ-ྼ]{0,}|[ཀ-ཬཱ-྅ྐ-ྼ]{0,}[ཤཧ][ྲ][ཀ-ཬཱ-྅ྐ-ྼ]{0,}|[ཀ-ཬཱ-྅ྐ-ྼ]{0,}[གྷཊ-ཎདྷབྷཛྷཥཀྵ-ཬཱཱཱིུ-ཹཻཽ-ྃྒྷྚ-ྞྡྷྦྷྫྷྵྐྵ-ྼ][ཀ-ཬཱ-྅ྐ-ྼ]{0,})"
+        # more Sanskrit: invalid superscript-subscript pairs
+        regex2 = r"([ཀ-ཬཱ-྅ྐ-ྼ]{0,}[ཀཁགང-ཉཏ-དན-བམ-ཛཝ-ཡཤཧཨ][ྐ-ྫྷྮ-ྰྴ-ྼ][ཀ-ཬཱ-྅ྐ-ྼ]{0,})"
+        # tsa-phru mark used in Chinese transliteration
+        regex3 = r"([ཀ-ཬཱ-྅ྐ-ྼ]{0,}[༹][ཀ-ཬཱ-྅ྐ-ྼ]{0,})"
+        is_sskrt = False
+        for n in note_texts:
+            for syl in note_texts[n]:
+                if '#' in syl:
+                    sy = syl.replace('#', '').replace('་', '')
+                    if not re.search(regex1, sy) or not re.search(regex2, sy) or not re.search(regex3, sy):
+                        is_sskrt = True
+        return is_sskrt
+
+    def differing_syls_count(note_texts):
+        def combs(xs, i=0):
+            # from http://stackoverflow.com/a/32555515
+            if i == len(xs):
+                yield ()
+                return
+            for c in combs(xs, i + 1):
+                yield c
+                yield c + (xs[i],)
+        input = [len(note_texts[a]) for a in note_texts]
+        combinations = [a for a in combs(input) if len(a) == 2]
+        count = {abs(a[0]-a[1]) for a in combinations}
+        final = 0
+        for c in count:
+            if c > final:
+                final = c
+        return final
 
     # 0. find parts
     note_texts = pre_process(note)
+    content = {syl for ed in note_texts for syl in note_texts[ed] if syl != ''}
 
-    # 1. process mistakes
-    process_mistakes(note_texts)
+    if len(content) != 0:
+        if is_tibetan_text(note_texts):
+            # 1. process mistakes
+            process_mistakes(note_texts)
 
-    # 2. if the difference is a particle
-    process_minor_modifications(note_texts)
+            # 2. if the difference is a particle
+            process_minor_modifications(note_texts)
 
-    # 3. verb differences
-    verb_difference(note_texts, verbs)
+            # 3. verb differences
+            verb_difference(note_texts, verbs)
+
+            # 4. well-formed non-words
+            if not already_exists(categorised, note[0]):
+                contains_mistake = {True for syl in content if '#' in syl}
+                if len(contains_mistake) > 0:
+                    categorised['automatic_categorisation']['spelling_mistake']['non_word']['well-formed'].append(format_entry(note, 'n/a'))
+                else:
+                    count_syls = differing_syls_count(note_texts)
+                    if count_syls == 0:
+                        categorised['dunno']['no_diff'].append(format_entry(note, 'n/a'))
+                    elif count_syls <= 2:
+                        categorised['dunno']['short_diff'].append(format_entry(note, 'n/a'))
+                    else:
+                        categorised['dunno']['long_diff'].append(format_entry(note, 'n/a'))
+        else:
+            # 5. sskrt words
+            if contains_sskrt(note_texts):
+                categorised['automatic_categorisation']['sskrt'].append(format_entry(note, 'n/a'))
+            else:
+                categorised['automatic_categorisation']['spelling_mistake']['non_word']['ill-formed'].append(format_entry(note, 'n/a'))
+    else:
+        categorised['empty_notes'].append(format_entry(note, 'n/a'))
 
 
-def process(in_path, template_path):
+def process(in_path, template_path, total_stats):
     global collection_eds
     raw_template = open_file(template_path)
     verbs = jp.decode(open_file('./resources/monlam_verbs.json'))
@@ -473,30 +712,85 @@ def process(in_path, template_path):
         collection_eds = list({a for a in re.findall(r' ([^ ]+): ', raw)})
 
         data = prepare_data(raw)
+        profiles, profile_cats = find_profiles(data)
 
         # prepare
         prepared = find_all_parts(data)
 
         # categorise
         categorised_notes = jp.decode(raw_template)
-        for note in prepared:
-            if debug:
-                if f == file and note[0] == note_num:
+        if debug:
+            if file == f and note_num != 0:
+                for note in prepared:
+                    if note[0] == note_num:
+                        categorise(note, categorised_notes, verbs)
+            elif file == f:
+                for note in prepared:
                     categorise(note, categorised_notes, verbs)
-            else:
+        else:
+            for note in prepared:
+                #print(note)
                 categorise(note, categorised_notes, verbs)
 
         # finally write the json file
+        stats = {}
+        total = 0
+        for key1, item1 in sorted(categorised_notes.items()):
+            if type(item1) == list:
+                if len(item1) != 0:
+                    stats[key1] = len(item1)
+                    total += len(item1)
+            else:
+                stats[key1] = {}
+                for key2, item2 in sorted(item1.items()):
+                    if type(item2) == list:
+                        if len(item2) != 0:
+                            stats[key1][key2] = len(item2)
+                            total += len(item2)
+                    else:
+                        stats[key1][key2] = {}
+                        for key3, item3 in sorted(item2.items()):
+                            if type(item3) == list:
+                                if len(item3) != 0:
+                                    stats[key1][key2][key3] = len(item3)
+                                    total += len(item3)
+                            else:
+                                stats[key1][key2][key3] = {}
+                                for key4, item4 in sorted(item3.items()):
+                                    if type(item4) == list:
+                                        if len(item4) != 0:
+                                            stats[key1][key2][key3][key4] = len(item4)
+                                            total += len(item4)
+        stats['Notes’ total'] = total
+        categorised = total
+        if 'long_diff' in stats['dunno'].keys():
+            categorised -= stats['dunno']['long_diff']
+        if 'short_diff' in stats['dunno'].keys():
+            categorised -= stats['dunno']['short_diff']
+        if 'no_diff' in stats['dunno'].keys():
+            categorised -= stats['dunno']['no_diff']
+        percentage = categorised * 100 / total
+        stats['Categorised'] = '{} notes ({:02.2f}%)'.format(categorised, percentage)
+        stats['Profiles'] = profile_cats
+        total_stats.append('{}\n{}'.format(work_name, jp.encode(stats)))
+
         encoded = jp.encode(categorised_notes)
         if encoded != raw_template:
-            write_file('output/{}_cats.json'.format(work_name), encoded)
+            categorised_notes['Stats'] = stats
+            categorised_notes['profile'] = profiles
+            write_file('output/{}_cats.json'.format(work_name), jp.encode(categorised_notes))
 
 
 if __name__ == '__main__':
     debug = False
-    file = '1-སྣ་ཚོགས།_ལུགས་ཀྱི་བསྟན་བཅོས་སྐྱེ་བོ་གསོ་བའི་ཐིགས་པ་ཞེས་བྱ་བ།_conc-corrected.yaml'
-    note_num = 159
+    file = '1-དབུ་མ།_ཐེག་པ་ཆེན་པོ་ཉི་ཤུ་པ།_conc-corrected.yaml'
+    note_num = 9
 
     in_path = '../1-b-manually_corrected_conc/notes_restored'
     template = './resources/template.json'
-    process(in_path, template)
+    total_stats = []
+    process(in_path, template, total_stats)
+
+    write_file('total_stats.txt', '\n\n'.join(total_stats))
+
+

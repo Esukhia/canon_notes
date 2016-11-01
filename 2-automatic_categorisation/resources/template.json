@@ -7,21 +7,31 @@
         "particle_issues": {
             "added_particle": [],
             "agreement_issue": [],
+            "dagdra_po": [],
             "different_particles": [],
             "other": []
         },
         "spelling_mistake": {
             "missing_vowel": [],
             "nga_da": [],
-            "non_word": [],
-            "sskrt": []
+            "non_word": {
+                "ill-formed": [],
+                "well-formed": []
+            }
         },
+        "sskrt": [],
         "verb_difference": {
             "diff_tense": [],
             "diff_verb": [],
             "not_sure": []
         }
     },
+    "dunno": {
+        "long_diff": [],
+        "no_diff": [],
+        "short_diff": []
+    },
+    "empty_notes": [],
     "manual_categorisation": {
         "long_difference": {
             "differing_formulation": [],

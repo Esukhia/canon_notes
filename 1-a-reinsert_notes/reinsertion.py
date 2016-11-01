@@ -430,10 +430,10 @@ def debug_files(vol_num):
         if c >= vol_num:
             generate_outputs(w[0], w[1], 5)
 
-note_num = 24
-debug = 0
-#debug_files(0)
+note_num = 213
+debug = 1
+debug_files(63)
 
-for w in works:
-    print(w[0])
-    generate_outputs(w[0], w[1], 5)
+# for w in works:
+#     print(w[0])
+#     generate_outputs(w[0], w[1], 5)

@@ -1,0 +1,979 @@
+1-དབུ་མ།_མ་རྟོགས་པ་རྟོགས་པར་བྱེད་པ་ཞེས་བྱ་བའི་རབ་ཏུ་བྱེད་པ།
+{
+    "Categorised": "14 notes (66.67%)",
+    "Notes’ total": 21,
+    "Profiles": [
+        "པེ་ སྡེ་ སྣར་: 4.76% (1 notes)",
+        "པེ་=སྣར་ སྡེ་: 85.71% (18 notes)",
+        "པེ་=སྡེ་=སྣར་: 4.76% (1 notes)",
+        "པེ་=སྡེ་ སྣར་: 4.76% (1 notes)"
+    ],
+    "automatic_categorisation": {
+        "min_mod": {
+            "min_mod_groups": 2,
+            "particle_groups": 4
+        },
+        "particle_issues": {
+            "agreement_issue": 1
+        },
+        "spelling_mistake": {
+            "non_word": {
+                "well-formed": 1
+            }
+        },
+        "sskrt": 2,
+        "verb_difference": {
+            "diff_tense": 1,
+            "diff_verb": 1,
+            "not_sure": 1
+        }
+    },
+    "dunno": {
+        "no_diff": 3,
+        "short_diff": 4
+    },
+    "empty_notes": 1,
+    "manual_categorisation": {
+        "long_difference": {},
+        "manual_evaluation": {
+            "meaning_difference": {}
+        }
+    },
+    "ngram_freq": {},
+    "profile": {}
+}
+
+1-བསྟོད་ཚོགས།_མཛད་པ་བཅུ་གཉིས་ཀྱི་ཚུལ་ལ་བསྟོད་པ།
+{
+    "Categorised": "13 notes (76.47%)",
+    "Notes’ total": 17,
+    "Profiles": [
+        "པེ་ སྡེ་ སྣར་: 5.88% (1 notes)",
+        "པེ་=སྣར་ སྡེ་: 47.06% (8 notes)",
+        "པེ་=སྡེ་=སྣར་: 5.88% (1 notes)",
+        "པེ་=སྡེ་ སྣར་: 23.53% (4 notes)",
+        "པེ་ སྡེ་=སྣར་: 17.65% (3 notes)"
+    ],
+    "automatic_categorisation": {
+        "min_mod": {
+            "min_mod_groups": 1,
+            "particle_groups": 2
+        },
+        "particle_issues": {},
+        "spelling_mistake": {
+            "non_word": {}
+        },
+        "sskrt": 6,
+        "verb_difference": {
+            "diff_tense": 1,
+            "diff_verb": 1,
+            "not_sure": 1
+        }
+    },
+    "dunno": {
+        "long_diff": 2,
+        "no_diff": 2
+    },
+    "empty_notes": 1,
+    "manual_categorisation": {
+        "long_difference": {},
+        "manual_evaluation": {
+            "meaning_difference": {}
+        }
+    },
+    "ngram_freq": {},
+    "profile": {}
+}
+
+1-བསྟོད་ཚོགས།_རྗེ་བཙུན་འཕགས་པ་འཇམ་དཔལ་གྱི་སྙིང་རྗེ་ལ་བསྟོད་པ།
+{
+    "Categorised": "3 notes (60.00%)",
+    "Notes’ total": 5,
+    "Profiles": [
+        "པེ་=སྣར་ སྡེ་: 60.00% (3 notes)",
+        "པེ་=སྡེ་=སྣར་: 20.00% (1 notes)",
+        "པེ་=སྡེ་ སྣར་: 20.00% (1 notes)"
+    ],
+    "automatic_categorisation": {
+        "min_mod": {},
+        "particle_issues": {},
+        "spelling_mistake": {
+            "non_word": {}
+        },
+        "verb_difference": {
+            "diff_tense": 1,
+            "diff_verb": 1
+        }
+    },
+    "dunno": {
+        "no_diff": 2
+    },
+    "empty_notes": 1,
+    "manual_categorisation": {
+        "long_difference": {},
+        "manual_evaluation": {
+            "meaning_difference": {}
+        }
+    },
+    "ngram_freq": {},
+    "profile": {}
+}
+
+1-དབུ་མ།_ཞིབ་མོ་རྣམ་པར་འཐག་པ་ཞེས་བྱ་བའི་མདོ།
+{
+    "Categorised": "17 notes (68.00%)",
+    "Notes’ total": 25,
+    "Profiles": [
+        "པེ་=སྣར་ སྡེ་: 88.00% (22 notes)",
+        "པེ་=སྡེ་=སྣར་: 4.00% (1 notes)",
+        "པེ་ སྡེ་ སྣར་: 4.00% (1 notes)",
+        "པེ་ སྡེ་=སྣར་: 4.00% (1 notes)"
+    ],
+    "automatic_categorisation": {
+        "min_mod": {
+            "particle_groups": 3
+        },
+        "particle_issues": {},
+        "spelling_mistake": {
+            "non_word": {
+                "well-formed": 2
+            }
+        },
+        "sskrt": 2,
+        "verb_difference": {
+            "diff_tense": 4,
+            "diff_verb": 4
+        }
+    },
+    "dunno": {
+        "long_diff": 1,
+        "no_diff": 5,
+        "short_diff": 2
+    },
+    "empty_notes": 2,
+    "manual_categorisation": {
+        "long_difference": {},
+        "manual_evaluation": {
+            "meaning_difference": {}
+        }
+    },
+    "ngram_freq": {},
+    "profile": {}
+}
+
+1-དབུ་མ།_ཐེག་པ་ཆེན་པོ་ཉི་ཤུ་པ།
+{
+    "Categorised": "10 notes (76.92%)",
+    "Notes’ total": 13,
+    "Profiles": [
+        "པེ་=སྣར་ སྡེ་: 84.62% (11 notes)",
+        "པེ་=སྡེ་=སྣར་: 7.69% (1 notes)",
+        "པེ་=སྡེ་ སྣར་: 7.69% (1 notes)"
+    ],
+    "automatic_categorisation": {
+        "min_mod": {
+            "particle_groups": 3
+        },
+        "particle_issues": {
+            "agreement_issue": 1
+        },
+        "spelling_mistake": {
+            "non_word": {}
+        },
+        "sskrt": 2,
+        "verb_difference": {
+            "diff_tense": 2,
+            "diff_verb": 1
+        }
+    },
+    "dunno": {
+        "no_diff": 2,
+        "short_diff": 1
+    },
+    "empty_notes": 1,
+    "manual_categorisation": {
+        "long_difference": {},
+        "manual_evaluation": {
+            "meaning_difference": {}
+        }
+    },
+    "ngram_freq": {},
+    "profile": {}
+}
+
+1-སྐྱེས་རབས།_རྒྱལ་པོ་གཏམ་བྱ་བ་རིན་པོ་ཆེའི་ཕྲེང་བ།
+{
+    "Categorised": "223 notes (58.07%)",
+    "Notes’ total": 384,
+    "Profiles": [
+        "ཅོ་ པེ་=སྣར་ སྡེ་: 0.78% (3 notes)",
+        "ཅོ་ པེ་=སྡེ་=སྣར་: 1.83% (7 notes)",
+        "ཅོ་=པེ་=སྡེ་ སྣར་: 11.49% (44 notes)",
+        "ཅོ་=པེ་=སྣར་ སྡེ་: 1.04% (4 notes)",
+        "ཅོ་=པེ་=སྡེ་=སྣར་: 0.26% (1 notes)",
+        "ཅོ་=སྡེ་ པེ་=སྣར་: 77.28% (296 notes)",
+        "ཅོ་=སྡེ་=སྣར་ པེ་: 3.13% (12 notes)",
+        "ཅོ་=སྡེ་ པེ་ སྣར་: 4.18% (16 notes)"
+    ],
+    "automatic_categorisation": {
+        "min_mod": {
+            "min_mod_groups": 17,
+            "particle_groups": 59
+        },
+        "particle_issues": {
+            "agreement_issue": 5,
+            "different_particles": 7
+        },
+        "spelling_mistake": {
+            "non_word": {
+                "ill-formed": 5,
+                "well-formed": 28
+            }
+        },
+        "sskrt": 6,
+        "verb_difference": {
+            "diff_tense": 34,
+            "diff_verb": 41,
+            "not_sure": 20
+        }
+    },
+    "dunno": {
+        "long_diff": 3,
+        "no_diff": 149,
+        "short_diff": 9
+    },
+    "empty_notes": 1,
+    "manual_categorisation": {
+        "long_difference": {},
+        "manual_evaluation": {
+            "meaning_difference": {}
+        }
+    },
+    "ngram_freq": {},
+    "profile": {}
+}
+
+1-དབུ་མ།_ཡི་གེ་བརྒྱ་པ།
+{
+    "Categorised": "1 notes (50.00%)",
+    "Notes’ total": 2,
+    "Profiles": [
+        "པེ་=སྣར་ སྡེ་: 50.00% (1 notes)",
+        "པེ་=སྡེ་=སྣར་: 50.00% (1 notes)"
+    ],
+    "automatic_categorisation": {
+        "min_mod": {},
+        "particle_issues": {},
+        "spelling_mistake": {
+            "non_word": {}
+        },
+        "verb_difference": {}
+    },
+    "dunno": {
+        "no_diff": 1
+    },
+    "empty_notes": 1,
+    "manual_categorisation": {
+        "long_difference": {},
+        "manual_evaluation": {
+            "meaning_difference": {}
+        }
+    },
+    "ngram_freq": {},
+    "profile": {}
+}
+
+1-མདོ་སྡེ།_འཕགས་པ་སཱ་ལུ་ལྗང་པའི་ཚིག་ལེའུར་བྱས་པ།
+{
+    "Categorised": "27 notes (36.99%)",
+    "Notes’ total": 73,
+    "Profiles": [
+        "པེ་ སྡེ་ སྣར་: 2.74% (2 notes)",
+        "པེ་=སྣར་ སྡེ་: 84.93% (62 notes)",
+        "པེ་=སྡེ་=སྣར་: 1.37% (1 notes)",
+        "པེ་=སྡེ་ སྣར་: 8.22% (6 notes)",
+        "པེ་ སྡེ་=སྣར་: 2.74% (2 notes)"
+    ],
+    "automatic_categorisation": {
+        "min_mod": {
+            "min_mod_groups": 4,
+            "particle_groups": 5
+        },
+        "particle_issues": {
+            "different_particles": 1
+        },
+        "spelling_mistake": {
+            "non_word": {
+                "well-formed": 2
+            }
+        },
+        "sskrt": 5,
+        "verb_difference": {
+            "diff_tense": 2,
+            "diff_verb": 6,
+            "not_sure": 1
+        }
+    },
+    "dunno": {
+        "long_diff": 1,
+        "no_diff": 45
+    },
+    "empty_notes": 1,
+    "manual_categorisation": {
+        "long_difference": {},
+        "manual_evaluation": {
+            "meaning_difference": {}
+        }
+    },
+    "ngram_freq": {},
+    "profile": {}
+}
+
+1-དབུ་མ།_རྩོད་པ་བཟློག་པའི་ཚིག་ལེའུར་བྱས་པ།
+{
+    "Categorised": "40 notes (65.57%)",
+    "Notes’ total": 61,
+    "Profiles": [
+        "པེ་=སྣར་ སྡེ་: 80.33% (49 notes)",
+        "པེ་=སྡེ་=སྣར་: 1.64% (1 notes)",
+        "པེ་=སྡེ་ སྣར་: 3.28% (2 notes)",
+        "པེ་ སྡེ་=སྣར་: 14.75% (9 notes)"
+    ],
+    "automatic_categorisation": {
+        "min_mod": {
+            "min_mod_groups": 5,
+            "particle_groups": 10
+        },
+        "particle_issues": {
+            "different_particles": 2
+        },
+        "spelling_mistake": {
+            "non_word": {
+                "well-formed": 1
+            }
+        },
+        "sskrt": 4,
+        "verb_difference": {
+            "diff_tense": 13,
+            "diff_verb": 4
+        }
+    },
+    "dunno": {
+        "no_diff": 21
+    },
+    "empty_notes": 1,
+    "manual_categorisation": {
+        "long_difference": {},
+        "manual_evaluation": {
+            "meaning_difference": {}
+        }
+    },
+    "ngram_freq": {},
+    "profile": {}
+}
+
+1-དབུ་མ།_རིགས་པ་དྲུག་ཅུ་པའི་ཚིག་ལེའུར་བྱས་པ།
+{
+    "Categorised": "35 notes (68.63%)",
+    "Notes’ total": 51,
+    "Profiles": [
+        "པེ་=སྣར་ སྡེ་: 86.27% (44 notes)",
+        "པེ་=སྡེ་=སྣར་: 1.96% (1 notes)",
+        "པེ་=སྡེ་ སྣར་: 1.96% (1 notes)",
+        "པེ་ སྡེ་=སྣར་: 9.80% (5 notes)"
+    ],
+    "automatic_categorisation": {
+        "min_mod": {
+            "min_mod_groups": 1,
+            "particle_groups": 6
+        },
+        "particle_issues": {
+            "agreement_issue": 3,
+            "different_particles": 1
+        },
+        "spelling_mistake": {
+            "non_word": {
+                "ill-formed": 2,
+                "well-formed": 7
+            }
+        },
+        "sskrt": 1,
+        "verb_difference": {
+            "diff_tense": 8,
+            "diff_verb": 3,
+            "not_sure": 2
+        }
+    },
+    "dunno": {
+        "long_diff": 1,
+        "no_diff": 13,
+        "short_diff": 2
+    },
+    "empty_notes": 1,
+    "manual_categorisation": {
+        "long_difference": {},
+        "manual_evaluation": {
+            "meaning_difference": {}
+        }
+    },
+    "ngram_freq": {},
+    "profile": {}
+}
+
+1-གསོ་རིག།_བཤད་པ་སྨན་ཨ་བའི་ཆོ་ག
+{
+    "Categorised": "20 notes (58.82%)",
+    "Notes’ total": 34,
+    "Profiles": [
+        "པེ་ སྡེ་ སྣར་: 5.88% (2 notes)",
+        "པེ་=སྣར་ སྡེ་: 70.59% (24 notes)",
+        "པེ་=སྡེ་=སྣར་: 2.94% (1 notes)",
+        "པེ་=སྡེ་ སྣར་: 20.59% (7 notes)"
+    ],
+    "automatic_categorisation": {
+        "min_mod": {
+            "min_mod_groups": 1,
+            "particle_groups": 1
+        },
+        "particle_issues": {
+            "agreement_issue": 2
+        },
+        "spelling_mistake": {
+            "missing_vowel": 1,
+            "non_word": {
+                "well-formed": 6
+            }
+        },
+        "verb_difference": {
+            "diff_tense": 2,
+            "diff_verb": 4,
+            "not_sure": 2
+        }
+    },
+    "dunno": {
+        "long_diff": 1,
+        "no_diff": 13
+    },
+    "empty_notes": 1,
+    "manual_categorisation": {
+        "long_difference": {},
+        "manual_evaluation": {
+            "meaning_difference": {}
+        }
+    },
+    "ngram_freq": {},
+    "profile": {}
+}
+
+1-སྐྱེས་རབས།_སྲིད་པ་ལས་འདས་པའི་གཏམ།
+{
+    "Categorised": "8 notes (72.73%)",
+    "Notes’ total": 11,
+    "Profiles": [
+        "ཅོ་=པེ་=སྡེ་=སྣར་: 9.09% (1 notes)",
+        "ཅོ་ པེ་=སྣར་ སྡེ་: 9.09% (1 notes)",
+        "ཅོ་=སྡེ་ པེ་=སྣར་: 72.73% (8 notes)",
+        "ཅོ་=པེ་=སྡེ་ སྣར་: 9.09% (1 notes)"
+    ],
+    "automatic_categorisation": {
+        "min_mod": {
+            "particle_groups": 2
+        },
+        "particle_issues": {},
+        "spelling_mistake": {
+            "non_word": {}
+        },
+        "sskrt": 2,
+        "verb_difference": {
+            "diff_tense": 1,
+            "diff_verb": 1,
+            "not_sure": 1
+        }
+    },
+    "dunno": {
+        "no_diff": 3
+    },
+    "empty_notes": 1,
+    "manual_categorisation": {
+        "long_difference": {},
+        "manual_evaluation": {
+            "meaning_difference": {}
+        }
+    },
+    "ngram_freq": {},
+    "profile": {}
+}
+
+1-བསྟོད་ཚོགས།_ཤེས་རབ་ཀྱི་ཕ་རོལ་ཏུ་ཕྱིན་མའི་བསྟོད་པ།
+{
+    "Categorised": "4 notes (50.00%)",
+    "Notes’ total": 8,
+    "Profiles": [
+        "པེ་=སྣར་ སྡེ་: 87.50% (7 notes)",
+        "པེ་=སྡེ་=སྣར་: 12.50% (1 notes)"
+    ],
+    "automatic_categorisation": {
+        "min_mod": {
+            "particle_groups": 1
+        },
+        "particle_issues": {},
+        "spelling_mistake": {
+            "non_word": {}
+        },
+        "sskrt": 1,
+        "verb_difference": {
+            "diff_verb": 1
+        }
+    },
+    "dunno": {
+        "no_diff": 4
+    },
+    "empty_notes": 1,
+    "manual_categorisation": {
+        "long_difference": {},
+        "manual_evaluation": {
+            "meaning_difference": {}
+        }
+    },
+    "ngram_freq": {},
+    "profile": {}
+}
+
+1-སྣ་ཚོགས།_ལུགས་ཀྱི་བསྟན་བཅོས་སྐྱེ་བོ་གསོ་བའི་ཐིགས་པ་ཞེས་བྱ་བ།
+{
+    "Categorised": "107 notes (59.78%)",
+    "Notes’ total": 179,
+    "Profiles": [
+        "ཅོ་ པེ་=སྣར་ སྡེ་: 0.56% (1 notes)",
+        "ཅོ་=པེ་=སྡེ་ སྣར་: 10.06% (18 notes)",
+        "ཅོ་=པེ་=སྡེ་=སྣར་: 1.12% (2 notes)",
+        "ཅོ་=སྡེ་ པེ་=སྣར་: 77.09% (138 notes)",
+        "ཅོ་ པེ་ སྡེ་ སྣར་: 0.56% (1 notes)",
+        "ཅོ་=སྡེ་=སྣར་ པེ་: 3.35% (6 notes)",
+        "ཅོ་=སྡེ་ པེ་ སྣར་: 7.26% (13 notes)"
+    ],
+    "automatic_categorisation": {
+        "min_mod": {
+            "min_mod_groups": 2,
+            "particle_groups": 14
+        },
+        "particle_issues": {
+            "agreement_issue": 3,
+            "different_particles": 5
+        },
+        "spelling_mistake": {
+            "nga_da": 1,
+            "non_word": {
+                "ill-formed": 2,
+                "well-formed": 36
+            }
+        },
+        "sskrt": 6,
+        "verb_difference": {
+            "diff_tense": 15,
+            "diff_verb": 17,
+            "not_sure": 4
+        }
+    },
+    "dunno": {
+        "long_diff": 2,
+        "no_diff": 54,
+        "short_diff": 16
+    },
+    "empty_notes": 2,
+    "manual_categorisation": {
+        "long_difference": {},
+        "manual_evaluation": {
+            "meaning_difference": {}
+        }
+    },
+    "ngram_freq": {},
+    "profile": {}
+}
+
+1-དབུ་མ།_བསྒོམ་པའི་རིམ་པ།
+{
+    "Categorised": "12 notes (46.15%)",
+    "Notes’ total": 26,
+    "Profiles": [
+        "པེ་ སྡེ་ སྣར་: 3.85% (1 notes)",
+        "པེ་=སྣར་ སྡེ་: 80.77% (21 notes)",
+        "པེ་=སྡེ་=སྣར་: 3.85% (1 notes)",
+        "པེ་=སྡེ་ སྣར་: 3.85% (1 notes)",
+        "པེ་ སྡེ་=སྣར་: 7.69% (2 notes)"
+    ],
+    "automatic_categorisation": {
+        "min_mod": {
+            "particle_groups": 1
+        },
+        "particle_issues": {
+            "agreement_issue": 1
+        },
+        "spelling_mistake": {
+            "non_word": {}
+        },
+        "sskrt": 1,
+        "verb_difference": {
+            "diff_tense": 4,
+            "diff_verb": 3,
+            "not_sure": 1
+        }
+    },
+    "dunno": {
+        "long_diff": 1,
+        "no_diff": 12,
+        "short_diff": 1
+    },
+    "empty_notes": 1,
+    "manual_categorisation": {
+        "long_difference": {},
+        "manual_evaluation": {
+            "meaning_difference": {}
+        }
+    },
+    "ngram_freq": {},
+    "profile": {}
+}
+
+1-བསྟོད་ཚོགས།_བླ་ན་མེད་པའི་བསྟོད་པ།
+{
+    "Categorised": "5 notes (83.33%)",
+    "Notes’ total": 6,
+    "Profiles": [
+        "པེ་=སྣར་ སྡེ་: 66.67% (4 notes)",
+        "པེ་=སྡེ་=སྣར་: 16.67% (1 notes)",
+        "པེ་ སྡེ་=སྣར་: 16.67% (1 notes)"
+    ],
+    "automatic_categorisation": {
+        "min_mod": {
+            "particle_groups": 3
+        },
+        "particle_issues": {},
+        "spelling_mistake": {
+            "non_word": {}
+        },
+        "sskrt": 1,
+        "verb_difference": {}
+    },
+    "dunno": {
+        "no_diff": 1
+    },
+    "empty_notes": 1,
+    "manual_categorisation": {
+        "long_difference": {},
+        "manual_evaluation": {
+            "meaning_difference": {}
+        }
+    },
+    "ngram_freq": {},
+    "profile": {}
+}
+
+1-བསྟོད་ཚོགས།_ཕྱག་འཚལ་བའི་བསྟོད་པ་ཞེས་བྱ་བ།
+{
+    "Categorised": "2 notes (66.67%)",
+    "Notes’ total": 3,
+    "Profiles": [
+        "པེ་=སྣར་ སྡེ་: 33.33% (1 notes)",
+        "པེ་=སྡེ་=སྣར་: 33.33% (1 notes)",
+        "པེ་=སྡེ་ སྣར་: 33.33% (1 notes)"
+    ],
+    "automatic_categorisation": {
+        "min_mod": {},
+        "particle_issues": {},
+        "spelling_mistake": {
+            "non_word": {}
+        },
+        "sskrt": 1,
+        "verb_difference": {}
+    },
+    "dunno": {
+        "no_diff": 1
+    },
+    "empty_notes": 1,
+    "manual_categorisation": {
+        "long_difference": {},
+        "manual_evaluation": {
+            "meaning_difference": {}
+        }
+    },
+    "ngram_freq": {},
+    "profile": {}
+}
+
+1-དབུ་མ།_བྱང་ཆུབ་ཏུ་སེམས་བསྐྱེད་པའི་ཆོ་ག
+{
+    "Categorised": "18 notes (64.29%)",
+    "Notes’ total": 28,
+    "Profiles": [
+        "ཅོ་=པེ་=སྡེ་=སྣར་: 3.57% (1 notes)",
+        "ཅོ་ པེ་=སྣར་ སྡེ་: 3.57% (1 notes)",
+        "ཅོ་=པེ་=སྡེ་ སྣར་: 14.29% (4 notes)",
+        "ཅོ་ པེ་=སྡེ་ སྣར་: 3.57% (1 notes)",
+        "ཅོ་=སྡེ་ པེ་=སྣར་: 64.29% (18 notes)",
+        "ཅོ་=སྡེ་=སྣར་ པེ་: 10.71% (3 notes)"
+    ],
+    "automatic_categorisation": {
+        "min_mod": {
+            "particle_groups": 2
+        },
+        "particle_issues": {
+            "different_particles": 1
+        },
+        "spelling_mistake": {
+            "non_word": {
+                "well-formed": 2
+            }
+        },
+        "sskrt": 4,
+        "verb_difference": {
+            "diff_tense": 6,
+            "diff_verb": 2
+        }
+    },
+    "dunno": {
+        "no_diff": 7,
+        "short_diff": 3
+    },
+    "empty_notes": 1,
+    "manual_categorisation": {
+        "long_difference": {},
+        "manual_evaluation": {
+            "meaning_difference": {}
+        }
+    },
+    "ngram_freq": {},
+    "profile": {}
+}
+
+1-བསྟོད་ཚོགས།_བསམ་གྱིས་མི་ཁྱབ་པར་བསྟོད་པ།
+{
+    "Categorised": "15 notes (68.18%)",
+    "Notes’ total": 22,
+    "Profiles": [
+        "པེ་=སྣར་ སྡེ་: 86.36% (19 notes)",
+        "པེ་=སྡེ་=སྣར་: 4.55% (1 notes)",
+        "པེ་ སྡེ་=སྣར་: 9.09% (2 notes)"
+    ],
+    "automatic_categorisation": {
+        "min_mod": {
+            "particle_groups": 2
+        },
+        "particle_issues": {
+            "agreement_issue": 2
+        },
+        "spelling_mistake": {
+            "non_word": {
+                "well-formed": 4
+            }
+        },
+        "sskrt": 1,
+        "verb_difference": {
+            "diff_tense": 2,
+            "diff_verb": 2,
+            "not_sure": 1
+        }
+    },
+    "dunno": {
+        "no_diff": 7
+    },
+    "empty_notes": 1,
+    "manual_categorisation": {
+        "long_difference": {},
+        "manual_evaluation": {
+            "meaning_difference": {}
+        }
+    },
+    "ngram_freq": {},
+    "profile": {}
+}
+
+1-བསྟོད་ཚོགས།_འཕགས་པ་རྗེ་བཙུན་འཇམ་དཔལ་གྱི་དོན་དམ་པའི་བསྟོད་པ།
+{
+    "Categorised": "5 notes (83.33%)",
+    "Notes’ total": 6,
+    "Profiles": [
+        "པེ་=སྣར་ སྡེ་: 50.00% (3 notes)",
+        "པེ་=སྡེ་=སྣར་: 16.67% (1 notes)",
+        "པེ་=སྡེ་ སྣར་: 16.67% (1 notes)",
+        "པེ་ སྡེ་=སྣར་: 16.67% (1 notes)"
+    ],
+    "automatic_categorisation": {
+        "min_mod": {},
+        "particle_issues": {},
+        "spelling_mistake": {
+            "non_word": {}
+        },
+        "sskrt": 2,
+        "verb_difference": {
+            "diff_verb": 2
+        }
+    },
+    "dunno": {
+        "short_diff": 1
+    },
+    "empty_notes": 1,
+    "manual_categorisation": {
+        "long_difference": {},
+        "manual_evaluation": {
+            "meaning_difference": {}
+        }
+    },
+    "ngram_freq": {},
+    "profile": {}
+}
+
+1-བསྟོད་ཚོགས།_གནས་ཆེན་པོ་བརྒྱད་ཀྱི་མཆོད་རྟེན་ལ་བསྟོད་པ།a
+{
+    "Categorised": "6 notes (60.00%)",
+    "Notes’ total": 10,
+    "Profiles": [
+        "པེ་=སྣར་ སྡེ་: 90.00% (9 notes)",
+        "པེ་=སྡེ་=སྣར་: 10.00% (1 notes)"
+    ],
+    "automatic_categorisation": {
+        "min_mod": {
+            "particle_groups": 1
+        },
+        "particle_issues": {},
+        "spelling_mistake": {
+            "non_word": {
+                "well-formed": 1
+            }
+        },
+        "sskrt": 3,
+        "verb_difference": {}
+    },
+    "dunno": {
+        "no_diff": 4
+    },
+    "empty_notes": 1,
+    "manual_categorisation": {
+        "long_difference": {},
+        "manual_evaluation": {
+            "meaning_difference": {}
+        }
+    },
+    "ngram_freq": {},
+    "profile": {}
+}
+
+1-སྐྱེས་རབས།_རྨི་ལམ་ཡིད་བཞིན་ནོར་བུའི་གཏམ།
+{
+    "Categorised": "17 notes (56.67%)",
+    "Notes’ total": 30,
+    "Profiles": [
+        "པེ་=སྣར་ སྡེ་: 90.00% (27 notes)",
+        "པེ་=སྡེ་=སྣར་: 3.33% (1 notes)",
+        "པེ་=སྡེ་ སྣར་: 6.67% (2 notes)"
+    ],
+    "automatic_categorisation": {
+        "min_mod": {
+            "min_mod_groups": 1,
+            "particle_groups": 4
+        },
+        "particle_issues": {
+            "different_particles": 1
+        },
+        "spelling_mistake": {
+            "non_word": {
+                "well-formed": 1
+            }
+        },
+        "verb_difference": {
+            "diff_tense": 7,
+            "diff_verb": 2
+        }
+    },
+    "dunno": {
+        "no_diff": 13
+    },
+    "empty_notes": 1,
+    "manual_categorisation": {
+        "long_difference": {},
+        "manual_evaluation": {
+            "meaning_difference": {}
+        }
+    },
+    "ngram_freq": {},
+    "profile": {}
+}
+
+1-སྐྱེས་རབས།_སྦྱིན་པའི་གཏམ།
+{
+    "Categorised": "11 notes (55.00%)",
+    "Notes’ total": 20,
+    "Profiles": [
+        "པེ་=སྣར་ སྡེ་: 90.00% (18 notes)",
+        "པེ་=སྡེ་=སྣར་: 5.00% (1 notes)",
+        "པེ་=སྡེ་ སྣར་: 5.00% (1 notes)"
+    ],
+    "automatic_categorisation": {
+        "min_mod": {
+            "min_mod_groups": 2,
+            "particle_groups": 1
+        },
+        "particle_issues": {},
+        "spelling_mistake": {
+            "non_word": {
+                "well-formed": 2
+            }
+        },
+        "verb_difference": {
+            "diff_tense": 3,
+            "diff_verb": 1,
+            "not_sure": 1
+        }
+    },
+    "dunno": {
+        "no_diff": 8,
+        "short_diff": 1
+    },
+    "empty_notes": 1,
+    "manual_categorisation": {
+        "long_difference": {},
+        "manual_evaluation": {
+            "meaning_difference": {}
+        }
+    },
+    "ngram_freq": {},
+    "profile": {}
+}
+
+1-བསྟོད་ཚོགས།_བསྟོད་པ་ལས་འདས་པར་བསྟོད་པ།
+{
+    "Categorised": "7 notes (87.50%)",
+    "Notes’ total": 8,
+    "Profiles": [
+        "པེ་=སྣར་ སྡེ་: 62.50% (5 notes)",
+        "པེ་=སྡེ་=སྣར་: 12.50% (1 notes)",
+        "པེ་=སྡེ་ སྣར་: 12.50% (1 notes)",
+        "པེ་ སྡེ་=སྣར་: 12.50% (1 notes)"
+    ],
+    "automatic_categorisation": {
+        "min_mod": {
+            "particle_groups": 2
+        },
+        "particle_issues": {},
+        "spelling_mistake": {
+            "non_word": {}
+        },
+        "sskrt": 1,
+        "verb_difference": {
+            "diff_tense": 1,
+            "diff_verb": 2
+        }
+    },
+    "dunno": {
+        "no_diff": 1
+    },
+    "empty_notes": 1,
+    "manual_categorisation": {
+        "long_difference": {},
+        "manual_evaluation": {
+            "meaning_difference": {}
+        }
+    },
+    "ngram_freq": {},
+    "profile": {}
+}

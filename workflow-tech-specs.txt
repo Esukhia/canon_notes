@@ -114,17 +114,18 @@ mistake = {missing_vowel: [], nga_da: [], sskrt: [], non_word: [], other: []}
                             return true
                         2. if is_diff_verb()
                             return true
+                    4. if none of the above, it is a wellformed non-word
 
                 else:
                     either sskrt or non-word
                     4.  if is_sskrt()
                             if a regex of Hackett detects is as sskrt:
                                 return True
-                        else :
+                        else:
                             5. it is a non-word
 
 
-                for notes not in any category:
+                for notes in the dunno category:
                     if differing number of note syllables:
                         6. if 2 or less:
                            it is most likely a addition or deletion
@@ -136,3 +137,5 @@ mistake = {missing_vowel: [], nga_da: [], sskrt: [], non_word: [], other: []}
 2 Ngram frequency
 
 3 Note profiling
+
+

@@ -705,11 +705,12 @@ def open_ngrams():
         lines = open_file('./resources/kangyur_ngrams/{}-grams_raw.txt'.format(i)).strip().split('\n')
         for line in lines:
             parts = line.split(' ')
-            ngrams[''.join(parts[:-1])] = int(parts[-1])
+            text = ''.join(parts[:-1]).strip().strip('་')
+            ngrams[text] = int(parts[-1])
     return ngrams
 
 
-def ngram_frequency(prepared):
+def ngram_frequency(prepared, all_ngrams):
     def prepare_syls(string):
         return string.replace('#', '').split(' ')
 
@@ -717,13 +718,13 @@ def ngram_frequency(prepared):
         rev_left = left[::-1]
         l_parts = []
         for l in range(1, len(rev_left) + 1):
-            l_parts.append(' '.join(rev_left[:l][::-1]))
-            l_parts.append(' '.join(rev_left[:l][::-1]))
+            l_parts.append(''.join(rev_left[:l][::-1]))
+            l_parts.append(''.join(rev_left[:l][::-1]))
 
         r_parts = []
         for r in range(1, len(right) + 1):
-            r_parts.append(' '.join(right[:r]))
-            r_parts.append(' '.join(right[:r]))
+            r_parts.append(''.join(right[:r]))
+            r_parts.append(''.join(right[:r]))
 
         left_parts_a = copy.deepcopy(l_parts)
         left_parts_a.insert(0, '')
@@ -736,19 +737,23 @@ def ngram_frequency(prepared):
         return  (l_parts, middle, right_parts_a), (left_parts_a, middle, r_parts)
 
     def generate_versions(left, middle, right):
-        out = [middle]
+        out = [middle.strip().strip('་')]
         if len(left) >= len(right):
             for i in range(len(left)):
                 if i <= len(right) - 1:
-                    out.append('{} {} {}'.format(left[i], middle, right[i]))
+                    w = '{}{}{}'.format(left[i], middle, right[i]).strip().strip('་')
+                    out.append(w)
                 else:
-                    out.append('{} {} {}'.format(left[i], middle, right[-1]))
+                    x = '{}{}{}'.format(left[i], middle, right[-1]).strip().strip('་')
+                    out.append(x)
         else:
             for i in range(len(right)):
                 if i <= len(left) - 1:
-                    out.append('{} {} {}'.format(left[i], middle, right[i]))
+                    y = '{}{}{}'.format(left[i], middle, right[i]).strip().strip('་')
+                    out.append(y)
                 else:
-                    out.append('{} {} {}'.format(left[-1], middle, right[i]))
+                    z = '{}{}{}'.format(left[-1], middle, right[i]).strip().strip('་')
+                    out.append(z)
         return out
 
     def union_a_b(left, note_text, right):
@@ -758,19 +763,31 @@ def ngram_frequency(prepared):
         union = sorted(list({a for a in versions_a + versions_b}), key=lambda x: len(x))
         return union
 
-
+    note_ngrams = {}
     for note in prepared:
+        note_ngrams[str(note)] = {}
         note_num = note[0]
         for ed in note[1]:
             left = prepare_syls(note[1][ed][0])
-            note_text = note[1][ed][1].replace('#', '')
+            note_text = note[1][ed][1].replace('#', '').replace(' ', '')
             right = prepare_syls(note[1][ed][2])
 
             union_versions = union_a_b(left, note_text, right)
 
+            frequencies = []
+            for chunk in union_versions:
+                if chunk in all_ngrams.keys():
+                    frequencies.append([chunk, '——'+str(all_ngrams[chunk])])
+                # else:
+                #     frequencies.append([chunk, '……'])
+            note_ngrams[str(note)][ed] = frequencies
 
-
-    print('ok')
+    for note in sorted(note_ngrams):
+        print(note)
+        for edition in note_ngrams[note]:
+            print('\t\t' + edition)
+            for test in note_ngrams[note][edition]:
+                print('\t\t\t\t' + ''.join(test))
 
 
 def process(in_path, template_path, total_stats):
@@ -796,7 +813,7 @@ def process(in_path, template_path, total_stats):
         categorised_notes = jp.decode(raw_template)
 
         # find ngram frequencies
-        frequencies = ngram_frequency(prepared)
+        frequencies = ngram_frequency(prepared, all_ngrams)
 
         if debug:
             if file == f and note_num != 0:

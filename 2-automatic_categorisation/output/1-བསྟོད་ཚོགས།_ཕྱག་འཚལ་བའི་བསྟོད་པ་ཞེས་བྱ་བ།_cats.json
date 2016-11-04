@@ -3,8 +3,8 @@
         "Categorised": "2 notes (66.67%)",
         "Notes’ total": 3,
         "Profiles": [
-            "པེ་=སྣར་ སྡེ་: 33.33% (1 notes)",
             "པེ་=སྡེ་ སྣར་: 33.33% (1 notes)",
+            "པེ་=སྣར་ སྡེ་: 33.33% (1 notes)",
             "པེ་=སྡེ་=སྣར་: 33.33% (1 notes)"
         ],
         "automatic_categorisation": {
@@ -45,8 +45,8 @@
             "missing_vowel": [],
             "nga_da": [],
             "non_word": {
-                "ill-formed": [],
-                "well-formed": []
+                "ill_formed": [],
+                "well_formed": []
             }
         },
         "sskrt": [

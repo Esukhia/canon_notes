@@ -109,7 +109,7 @@ def reinsert_right_context(str_conc, string, debug=False):
 
 def contextualised_text(notes, file_name, uni_struct_dir='../1-a-reinsert_notes/output/unified_structure'):
     # finding the differing syllables from the manually checked concordance
-    #differing_syls = find_note_text(notes)
+    differing_syls = find_note_text(notes)
     # loading the structure
     unified_structure = yaml.load(open_file('{}/{}'.format(uni_struct_dir, file_name.replace('_conc_corrected.csv', '_unified_structure.yaml'))))
 
@@ -234,21 +234,31 @@ def reorder_by_note(nested_dict):
     categorised['non_standard_notes'] = flat_list_dicts(nested_dict['non_standard_notes'])
     categorised['profile'] = nested_dict['profile']
 
-    reorded_notes = {}
+    reordered_notes = {}
     # reinsert the notes in the new structure
     for note_num in sorted_strnum([a for a in nested_dict['profile'].keys()]):
         for cat in categorised:
             if note_num in categorised[cat] and cat != 'profile' and cat != 'ngram_freq':
-                reorded_notes[note_num] = {'note': categorised[cat][note_num][0]}
+                if len(categorised[cat][note_num]) == 2:
+                    n = categorised[cat][note_num][1]
+                else:
+                    n = categorised[cat][note_num][0]
+                reordered_notes[note_num] = {'note': n}
 
 
     # create dict structure with
     for cat in categorised:
         for el in categorised[cat]:
-            reorded_notes[el][cat] = True
-            print('ok')
+            if cat == 'profile' or cat == 'ngram_freq':
+                reordered_notes[el][cat] = categorised[cat][el]
+            else:
+                if len(categorised[cat][el]) == 2:
+                    reordered_notes[el][cat] = categorised[cat][el][0]
+                else:
+                    reordered_notes[el][cat] = True
+    reordered_notes['Stats'] = nested_dict['Stats']
 
-    return reorded_notes
+    return reordered_notes
 
 
 if __name__ == '__main__':
@@ -256,4 +266,3 @@ if __name__ == '__main__':
     for file_name in os.listdir(in_dir):
         json_structure = jp.decode(open_file(in_dir+file_name))
         reordered_structure = reorder_by_note(json_structure)
-        print('ok')

@@ -604,8 +604,8 @@ def categorise(note, categorised, verbs):
          ('different_particles', nested_dict['automatic_categorisation']['particle_issues']['different_particles']),
          ('missing_vowel', nested_dict['automatic_categorisation']['spelling_mistake']['missing_vowel']),
          ('nga_da', nested_dict['automatic_categorisation']['spelling_mistake']['nga_da']),
-         ('ill-formed', nested_dict['automatic_categorisation']['spelling_mistake']['non_word']['ill-formed']),
-         ('well-formed', nested_dict['automatic_categorisation']['spelling_mistake']['non_word']['well-formed']),
+         ('ill_formed', nested_dict['automatic_categorisation']['spelling_mistake']['non_word']['ill_formed']),
+         ('well_formed', nested_dict['automatic_categorisation']['spelling_mistake']['non_word']['well_formed']),
          ('sskrt', nested_dict['automatic_categorisation']['sskrt']),
          ('diff_tense', nested_dict['automatic_categorisation']['verb_difference']['diff_tense']),
          ('diff_verb', nested_dict['automatic_categorisation']['verb_difference']['diff_verb']),
@@ -680,7 +680,7 @@ def categorise(note, categorised, verbs):
             if not already_exists(categorised, note[0]):
                 contains_mistake = {True for syl in content if '#' in syl}
                 if len(contains_mistake) > 0:
-                    categorised['automatic_categorisation']['spelling_mistake']['non_word']['well-formed'].append(format_entry(note, 'n/a'))
+                    categorised['automatic_categorisation']['spelling_mistake']['non_word']['well_formed'].append(format_entry(note, 'n/a'))
                 else:
                     count_syls = differing_syls_count(note_texts)
                     if count_syls == 0:
@@ -694,7 +694,7 @@ def categorise(note, categorised, verbs):
             if contains_sskrt(note_texts):
                 categorised['automatic_categorisation']['sskrt'].append(format_entry(note, 'n/a'))
             else:
-                categorised['automatic_categorisation']['spelling_mistake']['non_word']['ill-formed'].append(format_entry(note, 'n/a'))
+                categorised['automatic_categorisation']['spelling_mistake']['non_word']['ill_formed'].append(format_entry(note, 'n/a'))
     else:
         categorised['empty_notes'].append(format_entry(note, 'n/a'))
 

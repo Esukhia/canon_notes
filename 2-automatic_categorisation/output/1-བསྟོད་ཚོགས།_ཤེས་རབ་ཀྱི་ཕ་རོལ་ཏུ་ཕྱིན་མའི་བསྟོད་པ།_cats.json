@@ -74,8 +74,8 @@
             "missing_vowel": [],
             "nga_da": [],
             "non_word": {
-                "ill-formed": [],
-                "well-formed": []
+                "ill_formed": [],
+                "well_formed": []
             }
         },
         "sskrt": [

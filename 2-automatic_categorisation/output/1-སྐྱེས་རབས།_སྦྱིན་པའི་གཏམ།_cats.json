@@ -3,8 +3,8 @@
         "Categorised": "11 notes (55.00%)",
         "Notes’ total": 20,
         "Profiles": [
-            "པེ་=སྣར་ སྡེ་: 90.00% (18 notes)",
             "པེ་=སྡེ་ སྣར་: 5.00% (1 notes)",
+            "པེ་=སྣར་ སྡེ་: 90.00% (18 notes)",
             "པེ་=སྡེ་=སྣར་: 5.00% (1 notes)"
         ],
         "automatic_categorisation": {
@@ -15,7 +15,7 @@
             "particle_issues": {},
             "spelling_mistake": {
                 "non_word": {
-                    "well-formed": 2
+                    "well_formed": 2
                 }
             },
             "verb_difference": {
@@ -72,8 +72,8 @@
                     "17": [
                         [
                             [
-                                "ནི",
-                                "འདི"
+                                "འདི",
+                                "ནི"
                             ]
                         ],
                         {
@@ -134,8 +134,8 @@
             "missing_vowel": [],
             "nga_da": [],
             "non_word": {
-                "ill-formed": [],
-                "well-formed": [
+                "ill_formed": [],
+                "well_formed": [
                     {
                         "3": [
                             {
@@ -1156,12 +1156,12 @@
                     "417"
                 ],
                 [
-                    "ཀྱི་འཇུག་པ",
-                    "69"
-                ],
-                [
                     "འཇུག་པ་ཡིན",
                     "73"
+                ],
+                [
+                    "ཀྱི་འཇུག་པ",
+                    "69"
                 ]
             ],
             "སྣར་": [

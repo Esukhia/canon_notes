@@ -3,9 +3,9 @@
     "Categorised": "14 notes (66.67%)",
     "Notes’ total": 21,
     "Profiles": [
-        "པེ་=སྣར་ སྡེ་: 85.71% (18 notes)",
-        "པེ་ སྡེ་ སྣར་: 4.76% (1 notes)",
         "པེ་=སྡེ་ སྣར་: 4.76% (1 notes)",
+        "པེ་ སྡེ་ སྣར་: 4.76% (1 notes)",
+        "པེ་=སྣར་ སྡེ་: 85.71% (18 notes)",
         "པེ་=སྡེ་=སྣར་: 4.76% (1 notes)"
     ],
     "automatic_categorisation": {
@@ -18,7 +18,7 @@
         },
         "spelling_mistake": {
             "non_word": {
-                "well-formed": 1
+                "well_formed": 1
             }
         },
         "sskrt": 2,
@@ -48,10 +48,10 @@
     "Categorised": "13 notes (76.47%)",
     "Notes’ total": 17,
     "Profiles": [
-        "པེ་=སྣར་ སྡེ་: 47.06% (8 notes)",
-        "པེ་ སྡེ་ སྣར་: 5.88% (1 notes)",
         "པེ་=སྡེ་ སྣར་: 23.53% (4 notes)",
+        "པེ་ སྡེ་ སྣར་: 5.88% (1 notes)",
         "པེ་ སྡེ་=སྣར་: 17.65% (3 notes)",
+        "པེ་=སྣར་ སྡེ་: 47.06% (8 notes)",
         "པེ་=སྡེ་=སྣར་: 5.88% (1 notes)"
     ],
     "automatic_categorisation": {
@@ -90,8 +90,8 @@
     "Categorised": "3 notes (60.00%)",
     "Notes’ total": 5,
     "Profiles": [
-        "པེ་=སྣར་ སྡེ་: 60.00% (3 notes)",
         "པེ་=སྡེ་ སྣར་: 20.00% (1 notes)",
+        "པེ་=སྣར་ སྡེ་: 60.00% (3 notes)",
         "པེ་=སྡེ་=སྣར་: 20.00% (1 notes)"
     ],
     "automatic_categorisation": {
@@ -124,9 +124,9 @@
     "Categorised": "17 notes (68.00%)",
     "Notes’ total": 25,
     "Profiles": [
-        "པེ་=སྣར་ སྡེ་: 88.00% (22 notes)",
         "པེ་ སྡེ་ སྣར་: 4.00% (1 notes)",
         "པེ་ སྡེ་=སྣར་: 4.00% (1 notes)",
+        "པེ་=སྣར་ སྡེ་: 88.00% (22 notes)",
         "པེ་=སྡེ་=སྣར་: 4.00% (1 notes)"
     ],
     "automatic_categorisation": {
@@ -136,7 +136,7 @@
         "particle_issues": {},
         "spelling_mistake": {
             "non_word": {
-                "well-formed": 2
+                "well_formed": 2
             }
         },
         "sskrt": 2,
@@ -166,8 +166,8 @@
     "Categorised": "10 notes (76.92%)",
     "Notes’ total": 13,
     "Profiles": [
-        "པེ་=སྣར་ སྡེ་: 84.62% (11 notes)",
         "པེ་=སྡེ་ སྣར་: 7.69% (1 notes)",
+        "པེ་=སྣར་ སྡེ་: 84.62% (11 notes)",
         "པེ་=སྡེ་=སྣར་: 7.69% (1 notes)"
     ],
     "automatic_categorisation": {
@@ -206,14 +206,14 @@
     "Categorised": "223 notes (58.07%)",
     "Notes’ total": 384,
     "Profiles": [
-        "ཅོ་=སྡེ་=སྣར་ པེ་: 3.13% (12 notes)",
+        "ཅོ་=པེ་=སྣར་ སྡེ་: 1.04% (4 notes)",
         "ཅོ་=སྡེ་ པེ་=སྣར་: 77.28% (296 notes)",
-        "ཅོ་ པེ་=སྡེ་=སྣར་: 1.83% (7 notes)",
-        "ཅོ་=སྡེ་ པེ་ སྣར་: 4.18% (16 notes)",
-        "ཅོ་=པེ་=སྡེ་ སྣར་: 11.49% (44 notes)",
+        "ཅོ་=སྡེ་=སྣར་ པེ་: 3.13% (12 notes)",
         "ཅོ་=པེ་=སྡེ་=སྣར་: 0.26% (1 notes)",
+        "ཅོ་=སྡེ་ པེ་ སྣར་: 4.18% (16 notes)",
         "ཅོ་ པེ་=སྣར་ སྡེ་: 0.78% (3 notes)",
-        "ཅོ་=པེ་=སྣར་ སྡེ་: 1.04% (4 notes)"
+        "ཅོ་=པེ་=སྡེ་ སྣར་: 11.49% (44 notes)",
+        "ཅོ་ པེ་=སྡེ་=སྣར་: 1.83% (7 notes)"
     ],
     "automatic_categorisation": {
         "min_mod": {
@@ -226,8 +226,8 @@
         },
         "spelling_mistake": {
             "non_word": {
-                "ill-formed": 5,
-                "well-formed": 28
+                "ill_formed": 5,
+                "well_formed": 28
             }
         },
         "sskrt": 6,
@@ -288,10 +288,10 @@
     "Categorised": "27 notes (36.99%)",
     "Notes’ total": 73,
     "Profiles": [
-        "པེ་=སྣར་ སྡེ་: 84.93% (62 notes)",
-        "པེ་ སྡེ་ སྣར་: 2.74% (2 notes)",
         "པེ་=སྡེ་ སྣར་: 8.22% (6 notes)",
+        "པེ་ སྡེ་ སྣར་: 2.74% (2 notes)",
         "པེ་ སྡེ་=སྣར་: 2.74% (2 notes)",
+        "པེ་=སྣར་ སྡེ་: 84.93% (62 notes)",
         "པེ་=སྡེ་=སྣར་: 1.37% (1 notes)"
     ],
     "automatic_categorisation": {
@@ -304,7 +304,7 @@
         },
         "spelling_mistake": {
             "non_word": {
-                "well-formed": 2
+                "well_formed": 2
             }
         },
         "sskrt": 5,
@@ -334,9 +334,9 @@
     "Categorised": "40 notes (65.57%)",
     "Notes’ total": 61,
     "Profiles": [
-        "པེ་=སྣར་ སྡེ་: 80.33% (49 notes)",
         "པེ་=སྡེ་ སྣར་: 3.28% (2 notes)",
         "པེ་ སྡེ་=སྣར་: 14.75% (9 notes)",
+        "པེ་=སྣར་ སྡེ་: 80.33% (49 notes)",
         "པེ་=སྡེ་=སྣར་: 1.64% (1 notes)"
     ],
     "automatic_categorisation": {
@@ -349,7 +349,7 @@
         },
         "spelling_mistake": {
             "non_word": {
-                "well-formed": 1
+                "well_formed": 1
             }
         },
         "sskrt": 4,
@@ -377,9 +377,9 @@
     "Categorised": "35 notes (68.63%)",
     "Notes’ total": 51,
     "Profiles": [
-        "པེ་=སྣར་ སྡེ་: 86.27% (44 notes)",
         "པེ་=སྡེ་ སྣར་: 1.96% (1 notes)",
         "པེ་ སྡེ་=སྣར་: 9.80% (5 notes)",
+        "པེ་=སྣར་ སྡེ་: 86.27% (44 notes)",
         "པེ་=སྡེ་=སྣར་: 1.96% (1 notes)"
     ],
     "automatic_categorisation": {
@@ -393,8 +393,8 @@
         },
         "spelling_mistake": {
             "non_word": {
-                "ill-formed": 2,
-                "well-formed": 7
+                "ill_formed": 2,
+                "well_formed": 7
             }
         },
         "sskrt": 1,
@@ -425,9 +425,9 @@
     "Categorised": "20 notes (58.82%)",
     "Notes’ total": 34,
     "Profiles": [
-        "པེ་=སྣར་ སྡེ་: 70.59% (24 notes)",
-        "པེ་ སྡེ་ སྣར་: 5.88% (2 notes)",
         "པེ་=སྡེ་ སྣར་: 20.59% (7 notes)",
+        "པེ་ སྡེ་ སྣར་: 5.88% (2 notes)",
+        "པེ་=སྣར་ སྡེ་: 70.59% (24 notes)",
         "པེ་=སྡེ་=སྣར་: 2.94% (1 notes)"
     ],
     "automatic_categorisation": {
@@ -441,7 +441,7 @@
         "spelling_mistake": {
             "missing_vowel": 1,
             "non_word": {
-                "well-formed": 6
+                "well_formed": 6
             }
         },
         "verb_difference": {
@@ -470,10 +470,10 @@
     "Categorised": "8 notes (72.73%)",
     "Notes’ total": 11,
     "Profiles": [
-        "ཅོ་ པེ་=སྣར་ སྡེ་: 9.09% (1 notes)",
+        "ཅོ་=སྡེ་ པེ་=སྣར་: 72.73% (8 notes)",
         "ཅོ་=པེ་=སྡེ་ སྣར་: 9.09% (1 notes)",
         "ཅོ་=པེ་=སྡེ་=སྣར་: 9.09% (1 notes)",
-        "ཅོ་=སྡེ་ པེ་=སྣར་: 72.73% (8 notes)"
+        "ཅོ་ པེ་=སྣར་ སྡེ་: 9.09% (1 notes)"
     ],
     "automatic_categorisation": {
         "min_mod": {
@@ -544,13 +544,13 @@
     "Categorised": "107 notes (59.78%)",
     "Notes’ total": 179,
     "Profiles": [
+        "ཅོ་=སྡེ་ པེ་=སྣར་: 77.09% (138 notes)",
         "ཅོ་=སྡེ་=སྣར་ པེ་: 3.35% (6 notes)",
-        "ཅོ་ པེ་ སྡེ་ སྣར་: 0.56% (1 notes)",
+        "ཅོ་=པེ་=སྡེ་=སྣར་: 1.12% (2 notes)",
         "ཅོ་=སྡེ་ པེ་ སྣར་: 7.26% (13 notes)",
         "ཅོ་=པེ་=སྡེ་ སྣར་: 10.06% (18 notes)",
-        "ཅོ་=པེ་=སྡེ་=སྣར་: 1.12% (2 notes)",
-        "ཅོ་ པེ་=སྣར་ སྡེ་: 0.56% (1 notes)",
-        "ཅོ་=སྡེ་ པེ་=སྣར་: 77.09% (138 notes)"
+        "ཅོ་ པེ་ སྡེ་ སྣར་: 0.56% (1 notes)",
+        "ཅོ་ པེ་=སྣར་ སྡེ་: 0.56% (1 notes)"
     ],
     "automatic_categorisation": {
         "min_mod": {
@@ -564,8 +564,8 @@
         "spelling_mistake": {
             "nga_da": 1,
             "non_word": {
-                "ill-formed": 2,
-                "well-formed": 36
+                "ill_formed": 2,
+                "well_formed": 36
             }
         },
         "sskrt": 6,
@@ -596,10 +596,10 @@
     "Categorised": "12 notes (46.15%)",
     "Notes’ total": 26,
     "Profiles": [
-        "པེ་=སྣར་ སྡེ་: 80.77% (21 notes)",
-        "པེ་ སྡེ་ སྣར་: 3.85% (1 notes)",
         "པེ་=སྡེ་ སྣར་: 3.85% (1 notes)",
+        "པེ་ སྡེ་ སྣར་: 3.85% (1 notes)",
         "པེ་ སྡེ་=སྣར་: 7.69% (2 notes)",
+        "པེ་=སྣར་ སྡེ་: 80.77% (21 notes)",
         "པེ་=སྡེ་=སྣར་: 3.85% (1 notes)"
     ],
     "automatic_categorisation": {
@@ -640,8 +640,8 @@
     "Categorised": "5 notes (83.33%)",
     "Notes’ total": 6,
     "Profiles": [
-        "པེ་=སྣར་ སྡེ་: 66.67% (4 notes)",
         "པེ་ སྡེ་=སྣར་: 16.67% (1 notes)",
+        "པེ་=སྣར་ སྡེ་: 66.67% (4 notes)",
         "པེ་=སྡེ་=སྣར་: 16.67% (1 notes)"
     ],
     "automatic_categorisation": {
@@ -674,8 +674,8 @@
     "Categorised": "2 notes (66.67%)",
     "Notes’ total": 3,
     "Profiles": [
-        "པེ་=སྣར་ སྡེ་: 33.33% (1 notes)",
         "པེ་=སྡེ་ སྣར་: 33.33% (1 notes)",
+        "པེ་=སྣར་ སྡེ་: 33.33% (1 notes)",
         "པེ་=སྡེ་=སྣར་: 33.33% (1 notes)"
     ],
     "automatic_categorisation": {
@@ -706,12 +706,12 @@
     "Categorised": "18 notes (64.29%)",
     "Notes’ total": 28,
     "Profiles": [
-        "ཅོ་=སྡེ་=སྣར་ པེ་: 10.71% (3 notes)",
-        "ཅོ་ པེ་=སྣར་ སྡེ་: 3.57% (1 notes)",
-        "ཅོ་=པེ་=སྡེ་ སྣར་: 14.29% (4 notes)",
-        "ཅོ་=པེ་=སྡེ་=སྣར་: 3.57% (1 notes)",
+        "ཅོ་=སྡེ་ པེ་=སྣར་: 64.29% (18 notes)",
         "ཅོ་ པེ་=སྡེ་ སྣར་: 3.57% (1 notes)",
-        "ཅོ་=སྡེ་ པེ་=སྣར་: 64.29% (18 notes)"
+        "ཅོ་=སྡེ་=སྣར་ པེ་: 10.71% (3 notes)",
+        "ཅོ་=པེ་=སྡེ་=སྣར་: 3.57% (1 notes)",
+        "ཅོ་ པེ་=སྣར་ སྡེ་: 3.57% (1 notes)",
+        "ཅོ་=པེ་=སྡེ་ སྣར་: 14.29% (4 notes)"
     ],
     "automatic_categorisation": {
         "min_mod": {
@@ -722,7 +722,7 @@
         },
         "spelling_mistake": {
             "non_word": {
-                "well-formed": 2
+                "well_formed": 2
             }
         },
         "sskrt": 4,
@@ -751,8 +751,8 @@
     "Categorised": "15 notes (68.18%)",
     "Notes’ total": 22,
     "Profiles": [
-        "པེ་=སྣར་ སྡེ་: 86.36% (19 notes)",
         "པེ་ སྡེ་=སྣར་: 9.09% (2 notes)",
+        "པེ་=སྣར་ སྡེ་: 86.36% (19 notes)",
         "པེ་=སྡེ་=སྣར་: 4.55% (1 notes)"
     ],
     "automatic_categorisation": {
@@ -764,7 +764,7 @@
         },
         "spelling_mistake": {
             "non_word": {
-                "well-formed": 4
+                "well_formed": 4
             }
         },
         "sskrt": 1,
@@ -793,9 +793,9 @@
     "Categorised": "5 notes (83.33%)",
     "Notes’ total": 6,
     "Profiles": [
-        "པེ་=སྣར་ སྡེ་: 50.00% (3 notes)",
         "པེ་=སྡེ་ སྣར་: 16.67% (1 notes)",
         "པེ་ སྡེ་=སྣར་: 16.67% (1 notes)",
+        "པེ་=སྣར་ སྡེ་: 50.00% (3 notes)",
         "པེ་=སྡེ་=སྣར་: 16.67% (1 notes)"
     ],
     "automatic_categorisation": {
@@ -838,7 +838,7 @@
         "particle_issues": {},
         "spelling_mistake": {
             "non_word": {
-                "well-formed": 1
+                "well_formed": 1
             }
         },
         "sskrt": 3,
@@ -863,8 +863,8 @@
     "Categorised": "17 notes (56.67%)",
     "Notes’ total": 30,
     "Profiles": [
-        "པེ་=སྣར་ སྡེ་: 90.00% (27 notes)",
         "པེ་=སྡེ་ སྣར་: 6.67% (2 notes)",
+        "པེ་=སྣར་ སྡེ་: 90.00% (27 notes)",
         "པེ་=སྡེ་=སྣར་: 3.33% (1 notes)"
     ],
     "automatic_categorisation": {
@@ -877,7 +877,7 @@
         },
         "spelling_mistake": {
             "non_word": {
-                "well-formed": 1
+                "well_formed": 1
             }
         },
         "verb_difference": {
@@ -904,8 +904,8 @@
     "Categorised": "11 notes (55.00%)",
     "Notes’ total": 20,
     "Profiles": [
-        "པེ་=སྣར་ སྡེ་: 90.00% (18 notes)",
         "པེ་=སྡེ་ སྣར་: 5.00% (1 notes)",
+        "པེ་=སྣར་ སྡེ་: 90.00% (18 notes)",
         "པེ་=སྡེ་=སྣར་: 5.00% (1 notes)"
     ],
     "automatic_categorisation": {
@@ -916,7 +916,7 @@
         "particle_issues": {},
         "spelling_mistake": {
             "non_word": {
-                "well-formed": 2
+                "well_formed": 2
             }
         },
         "verb_difference": {
@@ -945,9 +945,9 @@
     "Categorised": "7 notes (87.50%)",
     "Notes’ total": 8,
     "Profiles": [
-        "པེ་=སྣར་ སྡེ་: 62.50% (5 notes)",
         "པེ་=སྡེ་ སྣར་: 12.50% (1 notes)",
         "པེ་ སྡེ་=སྣར་: 12.50% (1 notes)",
+        "པེ་=སྣར་ སྡེ་: 62.50% (5 notes)",
         "པེ་=སྡེ་=སྣར་: 12.50% (1 notes)"
     ],
     "automatic_categorisation": {

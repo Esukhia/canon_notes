@@ -135,6 +135,9 @@ mistake = {missing_vowel: [], nga_da: [], sskrt: [], non_word: [], other: []}
                         8. keep all other notes for manual selection
 
 2 Ngram frequency
+use the raw ngrams from 1 to 12
+from bigram onwards, the ngrams with lower frequency than 40 were removed from the results
+
 
 3 Note profiling
 

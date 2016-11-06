@@ -14,44 +14,6 @@ components = PyTib.getSylComponents()
 collection_eds = list
 
 
-def note_indexes(note):
-    def side_indexes(note, extremity):
-        # copy to avoid modifying directly the note
-        note_conc = copy.deepcopy(note)
-        # dict for the indexes of each edition
-        indexes = {t: 0 for t in collection_eds}
-        # initiate the indexes values to the lenght of syllables for the right context
-        if extremity == -1:
-            for i in indexes:
-                indexes[i] = len(note_conc[i])
-        #
-        side = True
-        while side and len(note_conc) == len([a for a in note_conc if note_conc[a] != []]):
-            # fill syls[] with the syllables of the extremity for each edition
-            syls = []
-            for n in note_conc:
-                syls.append(note_conc[n][extremity])
-            # check wether the syllables are identical or not. yes: change index accordingly no: stop the while loop
-            if len(set(syls)) == 1:
-                for n in note_conc:
-                    # change indexes
-                    if extremity == 0:
-                        indexes[n] += 1
-                    if extremity == -1:
-                        indexes[n] -= 1
-                    # delete the identical syllables of all editions
-                    del note_conc[n][extremity]
-            else:
-                side = False
-        return indexes
-
-    left, right = 0, -1
-    l_index = side_indexes(note, left)
-    r_index = side_indexes(note, right)
-    combined_indexes = {ed: {'left': l_index[ed], 'right': r_index[ed]} for ed in l_index}
-    return combined_indexes
-
-
 def reinsert_left_context(str_conc, string, debug=False):
     span = len(string) - (len(str_conc) * 2)
     if debug:
@@ -109,9 +71,18 @@ def reinsert_right_context(str_conc, string, debug=False):
 
 def contextualised_text(notes, file_name, uni_struct_dir='../1-a-reinsert_notes/output/unified_structure'):
     # finding the differing syllables from the manually checked concordance
-    differing_syls = find_note_text(notes)
+
+    differing_syls = {}  # {'note_num': ( {texts}, (left, right))}
+    for k, v in notes.items():
+        if k != 'Stats':
+            editions = v['note']
+            context = (editions['སྡེ་'][0], editions['སྡེ་'][2])
+            for e in editions:
+                editions[e] = editions[e][1]
+            differing_syls[k] = (editions, context)
+
     # loading the structure
-    unified_structure = yaml.load(open_file('{}/{}'.format(uni_struct_dir, file_name.replace('_conc_corrected.csv', '_unified_structure.yaml'))))
+    unified_structure = yaml.load(open_file('{}/{}'.format(uni_struct_dir, file_name.replace('_cats.json', '_unified_structure.yaml'))))
 
     # # adjusting the contexts
     # for num, el in enumerate(unified_structure):
@@ -135,10 +106,11 @@ def contextualised_text(notes, file_name, uni_struct_dir='../1-a-reinsert_notes/
     tmp = ''
     for u in unified_structure:
         if type(u) == dict:
-            if c in differing_syls.keys():
+            if str(c+1) in differing_syls.keys():
                 #tmp +=  '《{}》'.format(''.join(u['སྡེ་']))
                 tmp = tmp.replace('_', ' ')
-                out.append('྿{}'.format(tmp))
+                #out.append('྿{}'.format(tmp))
+                out.append(tmp)
                 tmp = ''
                 # example review note format :
                 # 123
@@ -146,9 +118,34 @@ def contextualised_text(notes, file_name, uni_struct_dir='../1-a-reinsert_notes/
                 # པེ་༽  བཟུང་︰
                 # སྡེ་༽  གཟུང་︰
                 # སྣར་༽  བཟུང་︰
-                note = ['{}༽\t{}︰'.format(a, ''.join(differing_syls[c][0][a]).replace('། ', '།_').replace(' ', '').replace('_', ' ')) for a in sorted(differing_syls[c][0])]
-                note = '\n'.join(note)
-                note = '{}\n{}'.format(str(c+1), note)
+                #note = ['{}༽\t{}︰'.format(a, ''.join(differing_syls[c][0][a]).replace('། ', '།_').replace(' ', '').replace('_', ' ')) for a in sorted(differing_syls[c][0])]
+                # note = '\n'.join(note)
+                # note = '{}\n{}'.format(str(c+1), note)
+
+                ### ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                # [7, p ཕུལ་ ཞིང་, n ཕུལ་ ཞིང་, d འབུལ་བ འི་, dunno__no_diff, p=n d, 90.00%, ngram ཕུལ་ཞིང(44), n ཕུལ་ཞིང(44), d འབུལ་བའི(80)]
+                note_num = str(c+1)
+                note_texts = differing_syls[note_num][0]
+                note_profile = notes[note_num]['profile']
+                note_freq = notes[note_num]['ngram_freq']
+                note_other_cats = [a for a in notes[note_num] if a not in ['ngram_freq', 'profile', 'ngram_freq', 'note']]  # all the other categories
+
+                text_string = ', '.join([k+': '+v for k, v in sorted(note_texts.items())])
+                text_string = text_string.replace('པེ་:', 'p').replace('སྡེ་:', 'd').replace('སྣར་:', 'n').replace('ཅོ་:', 'c')
+                profile_string = ' '.join(note_profile)
+                profile_string = profile_string.replace('པེ་', 'p').replace('སྡེ་', 'd').replace('སྣར་', 'n').replace('ཅོ་', 'c')
+                freq_string = ''
+                for k, v in sorted(note_freq.items()):
+                    tm = []
+                    for a in v:
+                        tm.append('{}({})'.format(a[0], a[1]))
+                    freq_string += '{}: {}'.format(k, ', '.join(tm))
+                freq_string = freq_string.replace('པེ་:', 'p').replace('སྡེ་:', 'd').replace('སྣར་:', 'n').replace('ཅོ་:', 'c')
+                other_string = ', '.join(note_other_cats)
+
+                note = '[{}, {}, {}, {}, ngram: {}]'.format(note_num, text_string, other_string, profile_string, freq_string)
+                ### ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
                 out.append(note)
             else:
                 # inline note format :
@@ -158,7 +155,8 @@ def contextualised_text(notes, file_name, uni_struct_dir='../1-a-reinsert_notes/
         else:
             tmp += u
     tmp = tmp.replace('_', ' ')
-    out.append('྿{}'.format(tmp))
+    #out.append('྿{}'.format(tmp))
+    out.append(tmp)
 
 
     # for i in range(len(out)):
@@ -177,7 +175,8 @@ def contextualised_text(notes, file_name, uni_struct_dir='../1-a-reinsert_notes/
     #         out[i-1] = l_new
     #         out[i+1] = r_new
 
-    return '\n'.join(out)
+    #return '\n'.join(out)
+    return ''.join(out)
 
 
 def sorted_strnum(thing):
@@ -266,3 +265,4 @@ if __name__ == '__main__':
     for file_name in os.listdir(in_dir):
         json_structure = jp.decode(open_file(in_dir+file_name))
         reordered_structure = reorder_by_note(json_structure)
+        truc = contextualised_text(reordered_structure,file_name)

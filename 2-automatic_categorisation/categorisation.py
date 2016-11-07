@@ -153,11 +153,14 @@ def prepare_data(raw):
     notes = []
     splitted = re.split(r'-([0-9]+)-', raw)[1:]
     for id in range(len(splitted)):
+        #print(id)
         if id % 2 != 0:
             note = splitted[id]
             parts = note.split('\n')
+            #print(parts)
             eds = {}
             for e in range(1, len(collection_eds)+1):
+                #print(e)
                 ed = parts[e].split(':')[0].strip()
                 text = parts[e].split(',')[0].split(': ')[1].strip()
                 eds[ed] = text
@@ -424,8 +427,8 @@ def categorise(note, categorised, verbs):
                 same_diff = particle_issues(group)
                 # 2.3 particle agreement difference
                 if same_diff[0] == 'same':
-                    if 'dagdra_po' in same_diff[1]:
-                        categorised['automatic_categorisation']['particle_issues']['dagdra_po'].append(format_entry(note, same_diff[1][0]))
+                    if 'dagdra_po' in same_diff[1] or 'dagdra_pa' in same_diff[1]:
+                        categorised['automatic_categorisation']['particle_issues']['po-bo-pa-ba'].append(format_entry(note, same_diff[1][0]))
                     else:
                         categorised['automatic_categorisation']['particle_issues']['agreement_issue'].append(format_entry(note, same_diff[1][0]))
 
@@ -798,7 +801,8 @@ def process(in_path, template_path, total_stats):
     all_ngrams = open_ngrams()
     for f in os.listdir(in_path):
         print(f)
-        work_name = f.replace('_conc-corrected.yaml', '')
+        #if f == '1-བསྟོད་ཚོགས།_སྐུ་གསུམ་ལ་བསྟོད་པ་ཞེས་བྱ་བའི་རྣམ་པར་འགྲེལ་པ།_conc-corrected.txt':
+        work_name = f.replace('_conc-corrected.txt', '')
 
         raw = open_file('{}/{}'.format(in_path, f))
         # setting collection_eds for the current file
@@ -881,10 +885,10 @@ def process(in_path, template_path, total_stats):
 
 if __name__ == '__main__':
     debug = False
-    file = '1-དབུ་མ།_ཐེག་པ་ཆེན་པོ་ཉི་ཤུ་པ།_conc-corrected.yaml'
-    note_num = 9
+    file = '1-བསྟོད་ཚོགས།_སྐུ་གསུམ་ལ་བསྟོད་པ་ཞེས་བྱ་བའི་རྣམ་པར་འགྲེལ་པ།_conc-corrected.txt'
+    note_num = 1
 
-    in_path = '../1-b-manually_corrected_conc/notes_restored'
+    in_path = '../1-b-manually_corrected_conc/notes_formatted'
     template = './resources/template.json'
     total_stats = []
     process(in_path, template, total_stats)

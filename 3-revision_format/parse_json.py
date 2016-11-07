@@ -261,8 +261,12 @@ def reorder_by_note(nested_dict):
 
 
 if __name__ == '__main__':
-    in_dir = '../2-b-manually_corrected_automatic_categorisation/'
+    #in_dir = '../2-b-manually_corrected_automatic_categorisation/'
+    in_dir = '../2-automatic_categorisation/output/'
     for file_name in os.listdir(in_dir):
+        work_name = file_name.replace('_cats.json', '')
+        print(file_name)
         json_structure = jp.decode(open_file(in_dir+file_name))
         reordered_structure = reorder_by_note(json_structure)
         truc = contextualised_text(reordered_structure,file_name)
+        write_file('output/antconc_format/{}_antconc_format.txt'.format(work_name), truc)

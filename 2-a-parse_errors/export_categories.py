@@ -222,7 +222,7 @@ def export_all_notes(file_name, in_dir, outdir='../1-b-manually_corrected_conc')
 import os
 
 if __name__ == '__main__':
-    in_dir = '../1-b-manually_corrected_conc/notes_restored'
+    in_dir = '../1-b-manually_corrected_conc/notes_formatted'
     for file_name in os.listdir(in_dir):
         export_all_notes(file_name, in_dir)
 

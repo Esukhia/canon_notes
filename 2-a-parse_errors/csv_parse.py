@@ -276,7 +276,7 @@ def find_categories(data, categories, all=False):
 
 
 if __name__ == '__main__':
-    path = '../1-b-manually_corrected_conc/notes_restored'
+    path = '../1-b-manually_corrected_conc/notes_formatted'
     for f in os.listdir(path):
         print(f)
         # prepare the structure

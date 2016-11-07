@@ -1,0 +1,168 @@
+{
+    "Stats": {
+        "Categorised": "1 notes (100.00%)",
+        "Notes’ total": 1,
+        "Profiles": [
+            "ཅོ=པེ་=སྡེ=སྣར་: 100.00% (1 notes)"
+        ],
+        "automatic_categorisation": {
+            "min_mod": {},
+            "particle_issues": {},
+            "spelling_mistake": {
+                "non_word": {}
+            },
+            "verb_difference": {}
+        },
+        "dunno": {},
+        "empty_notes": 1,
+        "manual_categorisation": {
+            "long_difference": {},
+            "manual_evaluation": {
+                "meaning_difference": {}
+            }
+        },
+        "ngram_freq": {},
+        "profile": {}
+    },
+    "automatic_categorisation": {
+        "min_mod": {
+            "min_mod_groups": [],
+            "particle_groups": []
+        },
+        "particle_issues": {
+            "added_particle": [],
+            "agreement_issue": [],
+            "different_particles": [],
+            "other": [],
+            "po-bo-pa-ba": []
+        },
+        "spelling_mistake": {
+            "missing_vowel": [],
+            "nga_da": [],
+            "non_word": {
+                "ill_formed": [],
+                "well_formed": []
+            }
+        },
+        "sskrt": [],
+        "verb_difference": {
+            "diff_tense": [],
+            "diff_verb": [],
+            "not_sure": []
+        }
+    },
+    "dunno": {
+        "long_diff": [],
+        "no_diff": [],
+        "short_diff": []
+    },
+    "empty_notes": [
+        {
+            "1": [
+                {
+                    "ཅོ": [
+                        "བཟང་པོ ས་ བསྒྱུར་བ འོ །།_།། ",
+                        "",
+                        "བཟང་པོ ས་ བསྒྱུར་བ འོ །།_།། "
+                    ],
+                    "པེ་": [
+                        "བཟང་པོ ས་ བསྒྱུར་བ འོ །།_།། ",
+                        "",
+                        "བཟང་པོ ས་ བསྒྱུར་བ འོ །།_།། "
+                    ],
+                    "སྡེ": [
+                        "བཟང་པོ ས་ བསྒྱུར་བ འོ །།_།། ",
+                        "",
+                        "བཟང་པོ ས་ བསྒྱུར་བ འོ །།_།། "
+                    ],
+                    "སྣར་": [
+                        "བཟང་པོ ས་ བསྒྱུར་བ འོ །།_།། ",
+                        "",
+                        "བཟང་པོ ས་ བསྒྱུར་བ འོ །།_།། "
+                    ]
+                }
+            ]
+        }
+    ],
+    "manual_categorisation": {
+        "long_difference": {
+            "differing_formulation": [],
+            "major_modification": []
+        },
+        "manual_evaluation": {
+            "derge_correct": [],
+            "meaning_difference": {
+                "great_diff": [],
+                "medium_diff": [],
+                "small_diff": []
+            }
+        }
+    },
+    "ngram_freq": {
+        "1": {
+            "ཅོ": [
+                [
+                    "",
+                    "1"
+                ],
+                [
+                    "བཟང་པོ",
+                    "209"
+                ],
+                [
+                    "བཟང་པོས",
+                    "41"
+                ]
+            ],
+            "པེ་": [
+                [
+                    "",
+                    "1"
+                ],
+                [
+                    "བཟང་པོ",
+                    "209"
+                ],
+                [
+                    "བཟང་པོས",
+                    "41"
+                ]
+            ],
+            "སྡེ": [
+                [
+                    "",
+                    "1"
+                ],
+                [
+                    "བཟང་པོ",
+                    "209"
+                ],
+                [
+                    "བཟང་པོས",
+                    "41"
+                ]
+            ],
+            "སྣར་": [
+                [
+                    "",
+                    "1"
+                ],
+                [
+                    "བཟང་པོ",
+                    "209"
+                ],
+                [
+                    "བཟང་པོས",
+                    "41"
+                ]
+            ]
+        }
+    },
+    "non_standard_notes": [],
+    "profile": {
+        "1": [
+            "ཅོ=པེ་=སྡེ=སྣར་",
+            "100.00%"
+        ]
+    }
+}

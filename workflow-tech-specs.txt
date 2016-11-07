@@ -39,6 +39,8 @@
 								- ༢ nga/da
 								- ༣ sskrt
 								- ༤ non-word
+								    - ill-formed
+								    - well-formed
 						- ཁ་ particle difference
 								- ༡ min mod
 								- ༢ differing part

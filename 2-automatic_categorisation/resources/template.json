@@ -7,7 +7,7 @@
         "particle_issues": {
             "added_particle": [],
             "agreement_issue": [],
-            "dagdra_po": [],
+            "po-bo-pa-ba": [],
             "different_particles": [],
             "other": []
         },
@@ -46,10 +46,7 @@
             }
         }
     },
-    "ngram_freq": {
-        "words+context": [],
-        "words_alone": []
-    },
+    "ngram_freq": {},
     "non_standard_notes": [],
     "profile": {}
 }

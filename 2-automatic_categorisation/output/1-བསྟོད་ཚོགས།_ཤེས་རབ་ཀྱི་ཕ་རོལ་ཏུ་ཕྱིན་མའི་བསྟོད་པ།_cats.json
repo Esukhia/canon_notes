@@ -66,9 +66,9 @@
         "particle_issues": {
             "added_particle": [],
             "agreement_issue": [],
-            "dagdra_po": [],
             "different_particles": [],
-            "other": []
+            "other": [],
+            "po-bo-pa-ba": []
         },
         "spelling_mistake": {
             "missing_vowel": [],

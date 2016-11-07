@@ -3,10 +3,10 @@
         "Categorised": "14 notes (66.67%)",
         "Notes’ total": 21,
         "Profiles": [
-            "པེ་ སྡེ་ སྣར་: 4.76% (1 notes)",
+            "པེ་=སྡེ་ སྣར་: 4.76% (1 notes)",
             "པེ་=སྣར་ སྡེ་: 85.71% (18 notes)",
             "པེ་=སྡེ་=སྣར་: 4.76% (1 notes)",
-            "པེ་=སྡེ་ སྣར་: 4.76% (1 notes)"
+            "པེ་ སྡེ་ སྣར་: 4.76% (1 notes)"
         ],
         "automatic_categorisation": {
             "min_mod": {
@@ -76,8 +76,8 @@
                     "19": [
                         [
                             [
-                                "ནས",
-                                "ན"
+                                "ན",
+                                "ནས"
                             ]
                         ],
                         {
@@ -229,9 +229,9 @@
                     ]
                 }
             ],
-            "dagdra_po": [],
             "different_particles": [],
-            "other": []
+            "other": [],
+            "po-bo-pa-ba": []
         },
         "spelling_mistake": {
             "missing_vowel": [],

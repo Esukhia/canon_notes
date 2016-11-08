@@ -1,6 +1,6 @@
 import jsonpickle as jp
 from collections import defaultdict
-from PyTib.common import open_file, write_file, pre_process, de_pre_process
+from PyTib.common import open_file, write_file, pre_process, de_pre_process, tib_sort
 import PyTib
 import copy
 import os
@@ -69,20 +69,7 @@ def reinsert_right_context(str_conc, string, debug=False):
     return new_string
 
 
-def contextualised_text(notes, file_name, uni_struct_dir='../1-a-reinsert_notes/output/unified_structure'):
-    # finding the differing syllables from the manually checked concordance
-
-    differing_syls = {}  # {'note_num': ( {texts}, (left, right))}
-    for k, v in notes.items():
-        if k != 'Stats':
-            editions = v['note']
-            context = (editions['སྡེ་'][0], editions['སྡེ་'][2])
-            for e in editions:
-                editions[e] = editions[e][1]
-            differing_syls[k] = (editions, context)
-
-    # loading the structure
-    unified_structure = yaml.load(open_file('{}/{}'.format(uni_struct_dir, file_name.replace('_cats.json', '_unified_structure.yaml'))))
+def contextualised_text(notes, differing_syls, unified_structure, text_name):
 
     # # adjusting the contexts
     # for num, el in enumerate(unified_structure):
@@ -103,27 +90,16 @@ def contextualised_text(notes, file_name, uni_struct_dir='../1-a-reinsert_notes/
     # formatting both the inline notes and the notes to review
     c = 0
     out = []
-    tmp = ''
-    for u in unified_structure:
+    for num, u in enumerate(unified_structure):
         if type(u) == dict:
             if str(c+1) in differing_syls.keys():
-                #tmp +=  '《{}》'.format(''.join(u['སྡེ་']))
-                tmp = tmp.replace('_', ' ')
-                #out.append('྿{}'.format(tmp))
-                out.append(tmp)
-                tmp = ''
-                # example review note format :
-                # 123
-                # ཅོ་༽  གཟུང་︰
-                # པེ་༽  བཟུང་︰
-                # སྡེ་༽  གཟུང་︰
-                # སྣར་༽  བཟུང་︰
-                #note = ['{}༽\t{}︰'.format(a, ''.join(differing_syls[c][0][a]).replace('། ', '།_').replace(' ', '').replace('_', ' ')) for a in sorted(differing_syls[c][0])]
-                # note = '\n'.join(note)
-                # note = '{}\n{}'.format(str(c+1), note)
+                # data structure in the spreadsheet
+                # left, note, right, min_mod, particle_issues, spelling_mistake, sskrt, verb_difference, dunno, manual_cat, profile, ngram_freq
+                struct = ['', '', '', '', '', '', '', '', '', '', '', '', '', '']
+                left = [''.join(u['སྡེ་']) if type(u) == dict else u for u in unified_structure[num - 10:num]]
+                right = [''.join(u['སྡེ་']) if type(u) == dict else u for u in unified_structure[num + 1:num + 11]]
 
-                ### ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                # [7, p ཕུལ་ ཞིང་, n ཕུལ་ ཞིང་, d འབུལ་བ འི་, dunno__no_diff, p=n d, 90.00%, ngram ཕུལ་ཞིང(44), n ཕུལ་ཞིང(44), d འབུལ་བའི(80)]
+                ### prepare note
                 note_num = str(c+1)
                 note_texts = differing_syls[note_num][0]
                 note_profile = notes[note_num]['profile']
@@ -141,22 +117,42 @@ def contextualised_text(notes, file_name, uni_struct_dir='../1-a-reinsert_notes/
                         tm.append('{}({})'.format(a[0], a[1]))
                     freq_string += '{}: {}'.format(k, ', '.join(tm))
                 freq_string = freq_string.replace('པེ་:', 'p').replace('སྡེ་:', 'd').replace('སྣར་:', 'n').replace('ཅོ་:', 'c')
-                other_string = ', '.join(note_other_cats)
 
-                note = '[{}, {}, {}, {}, ngram: {}]'.format(note_num, text_string, other_string, profile_string, freq_string)
+                struct[0] = ''.join(left).replace('_', ' ')
+                struct[1] = text_string
+                struct[2] = ''.join(right).replace('_', ' ')
+                for o in note_other_cats:
+                    if o.startswith('automatic__min_mod'):
+                        struct[3] = o
+                    if o.startswith('automatic__particle_issues'):
+                        struct[4] = o
+                    if o.startswith('automatic__spelling_mistake'):
+                        struct[5] = o
+                    if o.startswith('automatic__sskrt'):
+                        struct[6] = o
+                    if o.startswith('automatic__verb_difference'):
+                        struct[7] = o
+                    if o.startswith('dunno'):
+                        struct[8] = o
+                struct[10] = profile_string
+                struct[11] = freq_string
+                struct[12] = note_num
+                struct[13] = text_name
+                note = '\t'.join(struct)
+
                 ### ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
                 out.append(note)
-            else:
-                # inline note format :
-                # 【ཅོ་〈འགྲེ་〉 པེ་〈འདྲེ་〉 སྡེ་〈འགྲེ་〉 སྣར་〈འདྲེ་〉】
-                tmp += '【{}】'.format(' '.join(['{}〈{}〉'.format(a, ''.join(u[a])) for a in sorted(u)]))
+    #         else:
+    #             # inline note format :
+    #             # 【ཅོ་〈འགྲེ་〉 པེ་〈འདྲེ་〉 སྡེ་〈འགྲེ་〉 སྣར་〈འདྲེ་〉】
+    #             tmp.append('【{}】'.format(' '.join(['{}〈{}〉'.format(a, ''.join(u[a])) for a in sorted(u)])))
             c += 1
-        else:
-            tmp += u
-    tmp = tmp.replace('_', ' ')
-    #out.append('྿{}'.format(tmp))
-    out.append(tmp)
+    #     else:
+    #         tmp.append(u)
+    # tmp = tmp.replace('_', ' ')
+    # #out.append('྿{}'.format(tmp))
+    # out.append(tmp)
 
 
     # for i in range(len(out)):
@@ -176,7 +172,38 @@ def contextualised_text(notes, file_name, uni_struct_dir='../1-a-reinsert_notes/
     #         out[i+1] = r_new
 
     #return '\n'.join(out)
-    return ''.join(out)
+    return '\n'.join(out)
+
+
+def extract_categories(notes, text_name, cat_list=False):
+    def find_cat_notes(notes, cat):
+        differing_syls = {}  # {'note_num': ( {texts}, (left, right))}
+        for k, v in notes.items():
+            if k != 'Stats' and cat in v.keys():
+                editions = v['note']
+                context = (editions['སྡེ་'][0], editions['སྡེ་'][2])
+                for e in editions:
+                    editions[e] = editions[e][1]
+                differing_syls[k] = (editions, context)
+        return differing_syls
+    all_categories = ['automatic__min_mod__min_mod_groups', 'automatic__min_mod__particle_groups', 'automatic__particle_issues__added_particle', 'automatic__particle_issues__agreement_issue', 'automatic__particle_issues__dagdra_po', 'automatic__particle_issues__different_particles', 'automatic__particle_issues__other', 'automatic__spelling_mistake__missing_vowel', 'automatic__spelling_mistake__nga_da', 'automatic__spelling_mistake__non_word__ill_formed', 'automatic__spelling_mistake__non_word__well_formed', 'automatic__sskrt', 'automatic__verb_difference__diff_tense', 'automatic__verb_difference__diff_verb', 'automatic__verb_difference__not_sure', 'dunno__long_diff', 'dunno__no_diff', 'dunno__short_diff', 'empty_notes']
+    # loading the structure
+    unified_structure = yaml.load(open_file('../1-a-reinsert_notes/output/unified_structure/{}'.format(text_name+'_unified_structure.yaml')))
+    if not cat_list:
+        for cat in all_categories:
+            syls = find_cat_notes(notes, cat)
+            if syls:
+                out = contextualised_text(notes, syls, unified_structure, text_name)
+                write_file('output/antconc_format/{}_{}_antconc_format.txt'.format(text_name, cat), out)
+    else:
+        out = []
+        for cat in cat_list:
+            syls = find_cat_notes(notes, cat)
+            if syls:
+                out.append(contextualised_text(notes, syls, unified_structure, text_name))
+
+        #write_file('output/antconc_format/{}_antconc_format.txt'.format(text_name), '\n'.join(out))
+        return '\n'.join(out)
 
 
 def sorted_strnum(thing):
@@ -202,13 +229,13 @@ def flat_list_dicts(l):
 
 
 def reorder_by_note(nested_dict):
-    # turn the complex structure into a simple dict
+    # turn the complex structure into a 1-level-dict
     categorised = {}
     categorised['automatic__min_mod__min_mod_groups'] = flat_list_dicts(nested_dict['automatic_categorisation']['min_mod']['min_mod_groups'])
     categorised['automatic__min_mod__particle_groups'] = flat_list_dicts(nested_dict['automatic_categorisation']['min_mod']['particle_groups'])
     categorised['automatic__particle_issues__added_particle'] = flat_list_dicts(nested_dict['automatic_categorisation']['particle_issues']['added_particle'])
     categorised['automatic__particle_issues__agreement_issue'] = flat_list_dicts(nested_dict['automatic_categorisation']['particle_issues']['agreement_issue'])
-    categorised['automatic__particle_issues__dagdra_po'] = flat_list_dicts(nested_dict['automatic_categorisation']['particle_issues']['dagdra_po'])
+    categorised['automatic__particle_issues__dagdra_po'] = flat_list_dicts(nested_dict['automatic_categorisation']['particle_issues']['po-bo-pa-ba'])
     categorised['automatic__particle_issues__different_particles'] = flat_list_dicts(nested_dict['automatic_categorisation']['particle_issues']['different_particles'])
     categorised['automatic__particle_issues__other'] = flat_list_dicts(nested_dict['automatic_categorisation']['particle_issues']['other'])
     categorised['automatic__spelling_mistake__missing_vowel'] = flat_list_dicts(nested_dict['automatic_categorisation']['spelling_mistake']['missing_vowel'])
@@ -263,10 +290,15 @@ def reorder_by_note(nested_dict):
 if __name__ == '__main__':
     #in_dir = '../2-b-manually_corrected_automatic_categorisation/'
     in_dir = '../2-automatic_categorisation/output/'
+    output = []
     for file_name in os.listdir(in_dir):
         work_name = file_name.replace('_cats.json', '')
         print(file_name)
         json_structure = jp.decode(open_file(in_dir+file_name))
         reordered_structure = reorder_by_note(json_structure)
-        truc = contextualised_text(reordered_structure,file_name)
-        write_file('output/antconc_format/{}_antconc_format.txt'.format(work_name), truc)
+
+        cat_lists = ['automatic__min_mod__min_mod_groups', 'automatic__min_mod__particle_groups', 'automatic__particle_issues__added_particle', 'automatic__particle_issues__agreement_issue', 'automatic__particle_issues__dagdra_po', 'automatic__particle_issues__different_particles', 'automatic__particle_issues__other', 'automatic__spelling_mistake__missing_vowel', 'automatic__spelling_mistake__nga_da', 'automatic__spelling_mistake__non_word__ill_formed', 'automatic__spelling_mistake__non_word__well_formed', 'automatic__sskrt', 'automatic__verb_difference__diff_tense', 'automatic__verb_difference__diff_verb', 'automatic__verb_difference__not_sure', 'dunno__long_diff', 'dunno__no_diff', 'dunno__short_diff', 'empty_notes']
+
+        output.append(extract_categories(reordered_structure, work_name, cat_list=cat_lists))
+    write_file('./output/all_notes.txt', '\n'.join(output))
+

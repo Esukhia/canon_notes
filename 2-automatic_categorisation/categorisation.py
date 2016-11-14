@@ -604,7 +604,9 @@ def categorise(note, categorised, verbs):
          ('particle_groups', nested_dict['automatic_categorisation']['min_mod']['particle_groups']),
          ('added_particle', nested_dict['automatic_categorisation']['particle_issues']['added_particle']),
          ('agreement_issue', nested_dict['automatic_categorisation']['particle_issues']['agreement_issue']),
+         # ('po-bo-pa-ba', nested_dict['automatic_categorisation']['spelling_mistake']['po-bo-pa-ba']),
          ('different_particles', nested_dict['automatic_categorisation']['particle_issues']['different_particles']),
+         # ('other', nested_dict['automatic_categorisation']['spelling_mistake']['other']),
          ('missing_vowel', nested_dict['automatic_categorisation']['spelling_mistake']['missing_vowel']),
          ('nga_da', nested_dict['automatic_categorisation']['spelling_mistake']['nga_da']),
          ('ill_formed', nested_dict['automatic_categorisation']['spelling_mistake']['non_word']['ill_formed']),
@@ -801,7 +803,7 @@ def process(in_path, template_path, total_stats):
     all_ngrams = open_ngrams()
     for f in os.listdir(in_path):
         print(f)
-        #if f == '1-བསྟོད་ཚོགས།_སྐུ་གསུམ་ལ་བསྟོད་པ་ཞེས་བྱ་བའི་རྣམ་པར་འགྲེལ་པ།_conc-corrected.txt':
+        #if f == '1-སྐྱེས་རབས།_རྒྱལ་པོ་གཏམ་བྱ་བ་རིན་པོ་ཆེའི་ཕྲེང་བ།_conc-corrected.txt':
         work_name = f.replace('_conc-corrected.txt', '')
 
         raw = open_file('{}/{}'.format(in_path, f))
@@ -885,8 +887,8 @@ def process(in_path, template_path, total_stats):
 
 if __name__ == '__main__':
     debug = False
-    file = '1-བསྟོད་ཚོགས།_སྐུ་གསུམ་ལ་བསྟོད་པ་ཞེས་བྱ་བའི་རྣམ་པར་འགྲེལ་པ།_conc-corrected.txt'
-    note_num = 1
+    file = '1-གསོ་རིག།_སྨན་འཚོ་བའི་མདོ་ཚིགས་སུ་བཅད་པ།_conc-corrected.txt'
+    note_num = 24
 
     in_path = '../1-b-manually_corrected_conc/notes_formatted'
     template = './resources/template.json'

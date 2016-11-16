@@ -1,10 +1,11 @@
 import jsonpickle as jp
-from PyTib.common import open_file, write_file, tib_sort, pre_process, de_pre_process
+from PyTib.common import open_file, write_file, tib_sort, pre_process, get_longest_common_subseq, find_sub_list_indexes
 import PyTib
 import copy
 import os
 import re
 import yaml
+from time import time
 
 jp.set_encoder_options('simplejson', sort_keys=True, indent=4, ensure_ascii=False, parse_int=True)
 seg = PyTib.Segment()
@@ -332,20 +333,8 @@ def reinsert_right_context(str_conc, string, debug=False):
 
 
 def update_unified_structure(unified_structure, notes):
-    # def find_contexts(unified_structure, note_index):
-    #     left = []
-    #     l_counter = note_index - 1
-    #     while type(unified_structure[l_counter]) != dict and l_counter >= 0:
-    #         left.insert(0, unified_structure[l_counter])
-    #         l_counter -= 1
-    #     right = []
-    #     r_counter = note_index + 1
-    #     while type(unified_structure[r_counter]) != dict and r_counter <= len(unified_structure):
-    #         right.append(unified_structure[r_counter])
-    #         r_counter += 1
-    #     return left, right
-
-    def find_contexts(unified_structure, note_index, conc_length):
+    unified = copy.deepcopy(unified_structure)
+    def find_contexts(unified, note_index, conc_length):
         def choose_edition_text(side):
             c = len(side)
             while c > 0:
@@ -360,32 +349,44 @@ def update_unified_structure(unified_structure, notes):
             return side
 
         if note_index - conc_length <= 0:
-            left = choose_edition_text(unified_structure[:note_index])
+            left = choose_edition_text(unified[:note_index])
         else:
-            left = choose_edition_text(unified_structure[note_index - conc_length:note_index])
-        if note_index + conc_length + 1 > len(unified_structure)-1:
-            right = choose_edition_text(unified_structure[note_index + 1:])
+            left = choose_edition_text(unified[note_index - conc_length:note_index])
+        if note_index + conc_length + 1 > len(unified)-1:
+            right = choose_edition_text(unified[note_index + 1:])
         else:
-            right = choose_edition_text(unified_structure[note_index+1:note_index+conc_length+1])
+            right = choose_edition_text(unified[note_index+1:note_index+conc_length+1])
         return left, right
 
-    def find_sub_list(sl, l):
-        # find the indexes of the first occurence of a sublist
-        # from http://stackoverflow.com/a/17870684
-        sll = len(sl)
-        for ind in (i for i, e in enumerate(l) if e == sl[0]):
-            if l[ind:ind + sll] == sl:
-                return ind, ind + sll - 1
+    def until_next_note(unified, counter):
+        next_syls = []
+        i = 1
+        while len(unified)-1 >= counter + i and type(unified[counter + i]) != dict:
+            next_syls.append(unified[counter + i])
+            i += 1
+        return next_syls
+
+    def until_previous_note(updated_structure):
+        previous_syls = []
+        i = len(updated_structure)-1
+        while i >= 0 and type(updated_structure[i]) != dict:
+            previous_syls.insert(0, updated_structure[i])
+            i -= 1
+        return previous_syls
 
     updated_structure = []
     note_num = 0
-    for num, el in enumerate(unified_structure):
+    #for num, el in enumerate(unified_structure):
+    counter = 0
+    while counter <= len(unified)-1:
+        el = unified[counter]
         if type(el) == dict:
             note_num += 1
             print(note_num)
-
+            if note_num == 8:
+                print('ok')
             # find the syllable that precede and follow the current note
-            left_side, right_side = find_contexts(unified_structure, num, conc_length=20)
+            left_side, right_side = find_contexts(unified, counter, conc_length=20)
             left_string = ''.join(left_side)
             right_string = ''.join(right_side)
 
@@ -397,24 +398,41 @@ def update_unified_structure(unified_structure, notes):
 
             # adjusting the context if necessary
             if not left_string.endswith(left_conc):
-                new_left_side = reinsert_left_context(left_conc, left_string)  #, debug=True)
-                new_left_syls = pre_process(new_left_side, mode='syls')
+                #new_left_side = reinsert_left_context(left_conc, left_string)  #, debug=True)
+                #new_left_syls = pre_process(new_left_side, mode='syls')
+                previous_syls = until_previous_note(updated_structure)
+                left_conc_syls = pre_process(left_conc, mode='syls')
+                common = get_longest_common_subseq([previous_syls, left_conc_syls])
+                if common:
+                    to_insert = left_conc_syls[find_sub_list_indexes(get_longest_common_subseq([common, left_conc_syls]), left_conc_syls)[0]:]
+                    indexes = find_sub_list_indexes(common, updated_structure[len(updated_structure)-len(previous_syls):])
+                    # if indexes == None:
+                    #     indexes = (0, 0)
+                    l_index = len(updated_structure) - len(previous_syls) + indexes[0]
+                    updated_structure[l_index:] = to_insert
+                else:
+                    for i in range(len(previous_syls)):
+                        del updated_structure[-1]
 
             if not right_string.startswith(right_conc):
-                new_right_side = reinsert_right_context(right_conc, right_string)  #, debug=True)
-                new_right_syls = pre_process(new_right_side, mode='syls')
-                for n, syl in enumerate(new_right_syls):
-                    new_syls = pre_process(right_conc, mode='syls')[n:]
-                    new_string = ''.join(new_syls)
-                    if right_string.rfind(new_string) != -1:
-                        indexes = find_sub_list(new_syls, unified_structure)
-                        print(new_string)
+                #new_right_side = reinsert_right_context(right_conc, right_string)  #, debug=True)
+                #new_right_syls = pre_process(new_right_side, mode='syls')
+                # take all the syllables until the next note
+                next_syls = until_next_note(unified, counter)
+                if next_syls != []:
+                    # find the common syllables
+                    right_conc_syls = pre_process(right_conc, mode='syls')
+                    common = get_longest_common_subseq([next_syls, right_conc_syls])
+                    if common:
+                        l_index, r_index = find_sub_list_indexes(common, unified[counter:])
+                        unified[counter + 1:counter + r_index + 1] = right_conc_syls
 
             # add the new note
             updated_structure.append({k: v[1] for k, v in notes[index]['note'].items()})
         else:
             updated_structure.append(el)
-
+        counter += 1
+    return updated_structure
 
 
 def extract_categories(notes, text_name, cat_list=False):
@@ -438,14 +456,14 @@ def extract_categories(notes, text_name, cat_list=False):
         for cat in all_categories:
             syls = find_cat_notes(notes, cat)
             if syls:
-                out = contextualised_text(notes, syls, unified_structure, text_name)
+                out = contextualised_text(notes, syls, updated_structure, text_name)
                 write_file('output/antconc_format/{}_{}_antconc_format.txt'.format(text_name, cat), out)
     else:
         out = []
         for cat in cat_list:
             syls = find_cat_notes(notes, cat)
             if syls:
-                new_notes = contextualised_text(notes, syls, unified_structure, text_name)
+                new_notes = contextualised_text(notes, syls, updated_structure, text_name)
                 for new in new_notes:
                     if new not in out:
                         out.append(new)
@@ -460,14 +478,14 @@ if __name__ == '__main__':
     in_dir = '../2-automatic_categorisation/output/'
     output = []
     for file_name in os.listdir(in_dir):
-        # if file_name == '1-རྒྱུད།_སེང་ལྡེང་ནགས་ཀྱི་སྒྲོལ་མའི་སྒྲུབ་ཐབས།_cats.json':
-        work_name = file_name.replace('_cats.json', '')
-        print(file_name)
-        json_structure = jp.decode(open_file(in_dir+file_name))
-        reordered_structure = reorder_by_note(json_structure)
+        if file_name == '1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།_cats.json':
+            work_name = file_name.replace('_cats.json', '')
+            print(file_name)
+            json_structure = jp.decode(open_file(in_dir+file_name))
+            reordered_structure = reorder_by_note(json_structure)
 
-        cat_lists = ['automatic__min_mod__min_mod_groups', 'automatic__min_mod__particle_groups', 'automatic__particle_issues__added_particle', 'automatic__particle_issues__agreement_issue', 'automatic__particle_issues__po-bo-pa-ba', 'automatic__particle_issues__different_particles', 'automatic__particle_issues__other', 'automatic__spelling_mistake__missing_vowel', 'automatic__spelling_mistake__nga_da', 'automatic__spelling_mistake__non_word__ill_formed', 'automatic__spelling_mistake__non_word__well_formed', 'automatic__sskrt', 'automatic__verb_difference__diff_tense', 'automatic__verb_difference__diff_verb', 'automatic__verb_difference__not_sure', 'dunno__long_diff', 'dunno__no_diff', 'dunno__short_diff', 'empty_notes']
+            cat_lists = ['automatic__min_mod__min_mod_groups', 'automatic__min_mod__particle_groups', 'automatic__particle_issues__added_particle', 'automatic__particle_issues__agreement_issue', 'automatic__particle_issues__po-bo-pa-ba', 'automatic__particle_issues__different_particles', 'automatic__particle_issues__other', 'automatic__spelling_mistake__missing_vowel', 'automatic__spelling_mistake__nga_da', 'automatic__spelling_mistake__non_word__ill_formed', 'automatic__spelling_mistake__non_word__well_formed', 'automatic__sskrt', 'automatic__verb_difference__diff_tense', 'automatic__verb_difference__diff_verb', 'automatic__verb_difference__not_sure', 'dunno__long_diff', 'dunno__no_diff', 'dunno__short_diff', 'empty_notes']
 
-        output.append(extract_categories(reordered_structure, work_name, cat_list=cat_lists))
+            output.append(extract_categories(reordered_structure, work_name, cat_list=cat_lists))
     write_file('./output/all_notes.txt', '\n'.join(output))
 

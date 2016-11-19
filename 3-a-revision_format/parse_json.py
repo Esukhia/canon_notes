@@ -13,6 +13,17 @@ components = PyTib.getSylComponents()
 collection_eds = list
 
 
+def is_punct(string):
+    # put in common
+    puncts = ['༄', '༅', '༆', '༇', '༈', '།', '༎', '༏', '༐', '༑', '༔', '_']
+    for p in puncts:
+        string = string.replace(p, '')
+    if string == '':
+        return True
+    else:
+        return False
+
+
 def contextualised_text(notes, differing_syls, unified_structure, text_name):
     def spreadsheet_format(notes, note_num):
         struct = ['' for x in range(19)]
@@ -215,7 +226,7 @@ def flat_list_dicts(l):
 
 
 def reorder_by_note(nested_dict):
-    # turn the complex structure into a 1-level-dict
+    # turn the complex updated_structure into a 1-level-dict
     categorised = {}
     categorised['automatic__min_mod__min_mod_groups'] = flat_list_dicts(nested_dict['automatic_categorisation']['min_mod']['min_mod_groups'])
     categorised['automatic__min_mod__particle_groups'] = flat_list_dicts(nested_dict['automatic_categorisation']['min_mod']['particle_groups'])
@@ -247,7 +258,7 @@ def reorder_by_note(nested_dict):
     categorised['profile'] = nested_dict['profile']
 
     reordered_notes = {}
-    # reinsert the notes in the new structure
+    # reinsert the notes in the new updated_structure
     for note_num in sorted_strnum([a for a in nested_dict['profile'].keys()]):
         for cat in categorised:
             if note_num in categorised[cat] and cat != 'profile' and cat != 'ngram_freq':
@@ -258,7 +269,7 @@ def reorder_by_note(nested_dict):
                 reordered_notes[note_num] = {'note': n}
 
 
-    # create dict structure with
+    # create dict updated_structure with
     for cat in categorised:
         for el in categorised[cat]:
             if cat == 'profile' or cat == 'ngram_freq':
@@ -374,6 +385,21 @@ def update_unified_structure(unified_structure, notes):
             i -= 1
         return previous_syls
 
+    def group_syllables(structure):
+        grouped = []
+        tmp = []
+        for u in structure:
+            if type(u) != dict:
+                tmp.append(u)
+            else:
+                grouped.append(tmp)
+                grouped.append(u)
+                tmp = []
+        if tmp:
+            grouped.append(tmp)
+        return grouped
+
+    # A. insert the notes from the manually checked concordance
     updated_structure = []
     note_num = 0
     #for num, el in enumerate(unified_structure):
@@ -383,56 +409,115 @@ def update_unified_structure(unified_structure, notes):
         if type(el) == dict:
             note_num += 1
             print(note_num)
-            if note_num == 8:
+            if note_num == 40:
                 print('ok')
             # find the syllable that precede and follow the current note
-            left_side, right_side = find_contexts(unified, counter, conc_length=20)
-            left_string = ''.join(left_side)
-            right_string = ''.join(right_side)
+            # left_side, right_side = find_contexts(unified, counter, conc_length=20)
+            # left_string = ''.join(left_side)
+            # right_string = ''.join(right_side)
 
             # find the conc syllables from the manually checked notes in notes{}
             index = str(note_num)
-            random_ed = list(notes[index]['note'].keys())[0]
-            left_conc = notes[index]['note'][random_ed][0].replace('#', '').replace(' ', '')
-            right_conc = notes[index]['note'][random_ed][2].replace('#', '').replace(' ', '')
+            # random_ed = list(notes[index]['note'].keys())[0]
+            # left_conc = notes[index]['note'][random_ed][0].replace('#', '').replace(' ', '')
+            # right_conc = notes[index]['note'][random_ed][2].replace('#', '').replace(' ', '')
 
-            # adjusting the context if necessary
-            if not left_string.endswith(left_conc):
-                #new_left_side = reinsert_left_context(left_conc, left_string)  #, debug=True)
-                #new_left_syls = pre_process(new_left_side, mode='syls')
-                previous_syls = until_previous_note(updated_structure)
-                left_conc_syls = pre_process(left_conc, mode='syls')
-                common = get_longest_common_subseq([previous_syls, left_conc_syls])
-                if common:
-                    to_insert = left_conc_syls[find_sub_list_indexes(get_longest_common_subseq([common, left_conc_syls]), left_conc_syls)[0]:]
-                    indexes = find_sub_list_indexes(common, updated_structure[len(updated_structure)-len(previous_syls):])
-                    # if indexes == None:
-                    #     indexes = (0, 0)
-                    l_index = len(updated_structure) - len(previous_syls) + indexes[0]
-                    updated_structure[l_index:] = to_insert
-                else:
-                    for i in range(len(previous_syls)):
-                        del updated_structure[-1]
-
-            if not right_string.startswith(right_conc):
-                #new_right_side = reinsert_right_context(right_conc, right_string)  #, debug=True)
-                #new_right_syls = pre_process(new_right_side, mode='syls')
-                # take all the syllables until the next note
-                next_syls = until_next_note(unified, counter)
-                if next_syls != []:
-                    # find the common syllables
-                    right_conc_syls = pre_process(right_conc, mode='syls')
-                    common = get_longest_common_subseq([next_syls, right_conc_syls])
-                    if common:
-                        l_index, r_index = find_sub_list_indexes(common, unified[counter:])
-                        unified[counter + 1:counter + r_index + 1] = right_conc_syls
+            # # adjusting the context if necessary
+            # if not left_string.endswith(left_conc):
+            #     #new_left_side = reinsert_left_context(left_conc, left_string)  #, debug=True)
+            #     #new_left_syls = pre_process(new_left_side, mode='syls')
+            #     previous_syls = until_previous_note(updated_structure)
+            #     left_conc_syls = pre_process(left_conc, mode='syls')
+            #     common = get_longest_common_subseq([previous_syls, left_conc_syls])
+            #     if common:
+            #         to_insert = left_conc_syls[find_sub_list_indexes(get_longest_common_subseq([common, left_conc_syls]), left_conc_syls)[0]:]
+            #         indexes = find_sub_list_indexes(common, updated_structure[len(updated_structure)-len(previous_syls):])
+            #         # if indexes == None:
+            #         #     indexes = (0, 0)
+            #         l_index = len(updated_structure) - len(previous_syls) + indexes[0]
+            #         updated_structure[l_index:] = to_insert
+            #     else:
+            #         for i in range(len(previous_syls)):
+            #             del updated_structure[-1]
+            #
+            # if not right_string.startswith(right_conc):
+            #     #new_right_side = reinsert_right_context(right_conc, right_string)  #, debug=True)
+            #     #new_right_syls = pre_process(new_right_side, mode='syls')
+            #     # take all the syllables until the next note
+            #     next_syls = until_next_note(unified, counter)
+            #     if next_syls != []:
+            #         # find the common syllables
+            #         right_conc_syls = pre_process(right_conc, mode='syls')
+            #         common = get_longest_common_subseq([next_syls, right_conc_syls])
+            #         if common:
+            #             # check if there is some syllables to strip in right_conc_syls TODO adjust the check: the output is worse than before
+            #             previous = until_previous_note(updated_structure)
+            #             sub_list = get_longest_common_subseq([previous, right_conc_syls])
+            #             if sub_list and ''.join(previous).endswith(''.join(sub_list)):
+            #                 to_insert = right_conc_syls[find_sub_list_indexes(sub_list, right_conc_syls)[1]:]
+            #             else:
+            #                 to_insert = right_conc_syls
+            #             l_index, r_index = find_sub_list_indexes(common, unified[counter:])
+            #             differing_els = ''.join(set(unified[counter + 1:counter + r_index + 1]).difference(to_insert))
+            #             if not is_punct(differing_els):
+            #                 unified[counter + 1:counter + r_index + 1] = to_insert
 
             # add the new note
-            updated_structure.append({k: v[1] for k, v in notes[index]['note'].items()})
+            updated_structure.append({k: pre_process(v[1].replace(' ', '').replace('#', ''), mode='syls') for k, v in notes[index]['note'].items()})
         else:
             updated_structure.append(el)
         counter += 1
-    return updated_structure
+
+    # B. adjust the contexts
+    total_notes = 0
+
+    grouped_unified = group_syllables(unified_structure)
+    grouped_updated = group_syllables(updated_structure)
+    for i in range(len(grouped_updated)):
+        if type(grouped_updated[i]) == dict:
+            # calculating the percentage of similar notes
+            total_notes += 1
+            editions = [e for e in grouped_updated[i]]
+            all_left = []
+            all_right = []
+            for ed in editions:
+                upd = grouped_updated[i][ed]
+                uni = grouped_unified[i][ed]
+                common = get_longest_common_subseq([upd, uni])
+                if common:
+                    l_index, r_index = find_sub_list_indexes(common, upd)
+                    left = upd[:l_index]
+                    right = upd[r_index + 1:]
+                    all_left.append(left)
+                    all_right.append(right)
+            all_left = [list(k) for k in set(map(tuple, all_left)) if k]
+            all_right = [list(k) for k in set(map(tuple, all_right)) if k]
+
+            # ONE : All left contexts are same
+            if len(all_left) == 1:
+                # left context ends with left
+                left_context = grouped_updated[i - 1]
+                # left context ends with left
+                if ''.join(left_context).endswith(''.join(all_left[0])):
+                    for j in range(len(all_left[0])):
+                        del grouped_updated[i - 1][-1]
+
+            # TWO : All right contexts are same
+            if len(all_right) == 1:
+                # right context starts with right
+                right_context = grouped_updated[i + 1]
+                if ''.join(right_context).startswith(''.join(all_right[0])):
+                    for j in range(len(all_right[0])):
+                        del grouped_updated[i + 1][0]
+
+    degrouped_updated = []
+    for el in grouped_updated:
+        if type(el) == list:
+            degrouped_updated.extend(el)
+        else:
+            degrouped_updated.append(el)
+
+    return degrouped_updated
 
 
 def extract_categories(notes, text_name, cat_list=False):
@@ -449,9 +534,10 @@ def extract_categories(notes, text_name, cat_list=False):
         return differing_syls
 
     all_categories = ['automatic__min_mod__min_mod_groups', 'automatic__min_mod__particle_groups', 'automatic__particle_issues__added_particle', 'automatic__particle_issues__agreement_issue', 'automatic__particle_issues__po-bo-pa-ba', 'automatic__particle_issues__different_particles', 'automatic__particle_issues__other', 'automatic__spelling_mistake__missing_vowel', 'automatic__spelling_mistake__nga_da', 'automatic__spelling_mistake__non_word__ill_formed', 'automatic__spelling_mistake__non_word__well_formed', 'automatic__sskrt', 'automatic__verb_difference__diff_tense', 'automatic__verb_difference__diff_verb', 'automatic__verb_difference__not_sure', 'dunno__long_diff', 'dunno__no_diff', 'dunno__short_diff', 'empty_notes']
-    # loading the structure
+    # loading the updated_structure
     unified_structure = yaml.load(open_file('../1-a-reinsert_notes/output/unified_structure/{}'.format(text_name+'_unified_structure.yaml')))
     updated_structure = update_unified_structure(unified_structure, notes)
+    write_file('output/updated_structure/{}_updated_structure.txt'.format(text_name), yaml.dump(updated_structure, allow_unicode=True, default_flow_style=False, width=float("inf")))
     if not cat_list:
         for cat in all_categories:
             syls = find_cat_notes(notes, cat)

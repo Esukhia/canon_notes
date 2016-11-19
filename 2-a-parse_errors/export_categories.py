@@ -132,7 +132,7 @@ def reinsert_right_context(str_conc, string, debug=False):
 def contextualised_text(notes, file_name, uni_struct_dir='../1-a-reinsert_notes/output/unified_structure'):
     # finding the differing syllables from the manually checked concordance
     differing_syls = find_note_text(notes)
-    # loading the structure
+    # loading the updated_structure
     unified_structure = yaml.load(open_file('{}/{}'.format(uni_struct_dir, file_name.replace('_conc_corrected.csv', '_unified_structure.yaml'))))
 
     # # adjusting the contexts

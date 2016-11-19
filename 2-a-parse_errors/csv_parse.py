@@ -28,7 +28,7 @@ def open_csv(path):
 def write_profiles(notes, dir):
     '''
 
-    :param notes: must be of this structure to work {type1: [{ed1: conc, edN: con}, {ed1: conc, edN: con}], typeN: [{ed1: conc, edN: con}, {ed1: conc, edN: con}]}
+    :param notes: must be of this updated_structure to work {type1: [{ed1: conc, edN: con}, {ed1: conc, edN: con}], typeN: [{ed1: conc, edN: con}, {ed1: conc, edN: con}]}
     :return: writes files to the given directory
     '''
     # format the data
@@ -70,7 +70,7 @@ def write_profiles(notes, dir):
 def write_types(notes, dir):
     '''
 
-    :param notes: must be of this structure to work {type1: [{ed1: conc, edN: con}, {ed1: conc, edN: con}], typeN: [{ed1: conc, edN: con}, {ed1: conc, edN: con}]}
+    :param notes: must be of this updated_structure to work {type1: [{ed1: conc, edN: con}, {ed1: conc, edN: con}], typeN: [{ed1: conc, edN: con}, {ed1: conc, edN: con}]}
     :return: writes files to the given directory
     '''
     # format the data
@@ -279,7 +279,7 @@ if __name__ == '__main__':
     path = '../1-b-manually_corrected_conc/notes_formatted'
     for f in os.listdir(path):
         print(f)
-        # prepare the structure
+        # prepare the updated_structure
         legend, raw = open_csv('{}/{}'.format(path, f))
         data = prepare_data(raw, legend)
 

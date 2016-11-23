@@ -2,8 +2,8 @@ from PyTib.common import open_file, write_file, tib_sort
 import PyTib
 import os
 
-in_path = 'output/corrected_unmarked'
-out_path = 'output/corrected_segmented'
+in_path = 'output/1-1-unmarked'
+out_path = 'output/1-2-segmented'
 for f in os.listdir(in_path):
     work_name = f.replace('_unmarked.txt', '')
     content = open_file('{}/{}'.format(in_path, f))

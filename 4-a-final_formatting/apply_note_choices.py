@@ -1,10 +1,11 @@
 import jsonpickle as jp
 from PyTib.common import open_file, write_file, tib_sort, pre_process, get_longest_common_subseq, find_sub_list_indexes
-import PyTib
+from PyTib import Agreement
 import copy
 import os
 import re
 import yaml
+from collections import defaultdict
 from time import time
 
 jp.set_encoder_options('simplejson', sort_keys=True, indent=4, ensure_ascii=False, parse_int=True)
@@ -28,6 +29,52 @@ def group_syllables(structure):
     if tmp:
         grouped.append(tmp)
     return grouped
+
+
+def format_footnote(note, chosen, ref):
+    def agree_zhas(chosen_ed):
+        last_syl = pre_process(chosen_ed, mode='syls')[-1]
+        return Agreement().part_agreement(last_syl, 'ཞེས')
+
+    def strip_punct(string):
+        punct = ['༄', '༅', '༆', '༇', '༈', '།', '༎', '༏', '༐', '༑', '༔', '་', ' ']
+        while string != '' and string[-1] in punct:
+            string = string[:-1]
+        return string
+
+    def clean_ed_text(ed):
+        return ''.join(ed).replace(' ', '').replace('#', '').replace('_', ' ')
+
+    if chosen == 'K':
+        ordered = defaultdict(list)
+        for k, v in note.items():
+            if k != 'སྡེ་':
+                ordered[strip_punct(clean_ed_text(v))].append(k)
+        final = []
+        full_names = {'སྡེ་': 'སྡེ་དགེ', 'ཅོ་': 'ཅོ་ནེ', 'པེ་': 'པེ་ཅིན', 'སྣར་': 'སྣར་ཐང་'}
+        for text in tib_sort(ordered.keys()):
+            if text != '':
+                final.append(text)
+                final.extend([full_names[ed] for ed in tib_sort(ordered[text]) if ed != 'ཞོལ་'])
+        return '{} {}།'.format(ref, '། '.join(final))
+
+    elif chosen == 'b':
+        derge = strip_punct(clean_ed_text(note['སྡེ་']))
+        both = strip_punct(clean_ed_text(note['སྣར་']))
+        zhas = agree_zhas(both)
+        return '{} མ་དཔེར་{}། བྱུང་ཡང་པེ་ཅིན་དང་སྣར་ཐང་བཞིན། {}། {}་བཅོས།'.format(ref, derge, both, zhas)
+    elif chosen == 'n':
+        if note_num == 370:
+            print('ok')
+        derge = strip_punct(clean_ed_text(note['སྡེ་']))
+        narthang = strip_punct(clean_ed_text(note['སྣར་']))
+        zhas = agree_zhas(narthang)
+        return '{} མ་དཔེར་{}། བྱུང་ཡང་སྣར་ཐང་བཞིན། {}། {}་བཅོས།'.format(ref, derge, narthang, zhas)
+    elif chosen == 'p':
+        derge = strip_punct(clean_ed_text(note['སྡེ་']))
+        pecing = strip_punct(clean_ed_text(note['པེ་']))
+        zhas = agree_zhas(pecing)
+        return '{} མ་དཔེར་{}། བྱུང་ཡང་པེ་ཅིན་བཞིན། {}། {}་བཅོས།'.format(ref, derge, pecing, zhas)
 
 
 reviewed_path = '../3-b-reviewed_texts'
@@ -59,8 +106,10 @@ for f in os.listdir(reviewed_path):
             if decision == '?':
                 # take Derge and keep the note
                 note = ''.join(s['སྡེ་'])
-                note = '({})?'.format(note)
+                ref = '[^{}K]'.format(note_num)
+                note = '{}{}'.format(note, ref)
                 output.append(note)
+                notes.append(format_footnote(s, 'K', ref))
                 note_map.append('?')
                 stats[decision] += 1
                 if grouped_unified[num] == s:
@@ -81,31 +130,47 @@ for f in os.listdir(reviewed_path):
                 chosen = decision[1]
                 if chosen == 'p':
                     note = ''.join(s['པེ་'])
-                    note = '({})C[p]'.format(note)
+                    ref = '[^{}C]'.format(note_num)
+                    note = '{}{}'.format(note, ref)
                     output.append(note)
+                    notes.append(format_footnote(s, chosen, ref))
                     note_map.append('C[p]')
                     stats['C'] += 1
                     if grouped_unified[num] == s:
                         similar_notes += 1
                 elif chosen == 'n':
                     note = ''.join(s['སྣར་'])
-                    note = '({})C[n]'.format(note)
+                    ref = '[^{}C]'.format(note_num)
+                    note = '{}{}'.format(note, ref)
                     output.append(note)
+                    notes.append(format_footnote(s, chosen, ref))
+                    note_map.append('C[n]')
+                    stats['C'] += 1
+                    if grouped_unified[num] == s:
+                        similar_notes += 1
+                elif chosen == 'b':
+                    note = ''.join(s['སྣར་'])
+                    ref = '[^{}C]'.format(note_num)
+                    note = '{}{}'.format(note, ref)
+                    output.append(note)
+                    notes.append(format_footnote(s, chosen, ref))
                     note_map.append('C[n]')
                     stats['C'] += 1
                     if grouped_unified[num] == s:
                         similar_notes += 1
             elif decision == 'K':
                 note = ''.join(s['སྡེ་'])
-                note = '({})K'.format(note)
+                ref = '[^{}K]'.format(note_num)
+                note = '{}{}'.format(note, ref)
                 output.append(note)
+                notes.append(format_footnote(s, decision, ref))
                 note_map.append('K')
                 stats[decision] += 1
                 if grouped_unified[num] == s:
                     similar_notes += 1
 
-    prepared = ''.join(output).replace(' ', '').replace('#', '').replace('_', ' ')
-    write_file('output/formatted/{}_formatted.txt'.format(work_name), prepared)
+    prepared = ''.join(output).replace(' ', '').replace('#', '').replace('_', ' ').replace(' ', '\n')
+    write_file('output/0-1-formatted/{}_formatted.txt'.format(work_name), prepared+'\n\n'+'\n'.join(notes))
 
     # Stats
     total = 0

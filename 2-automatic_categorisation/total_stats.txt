@@ -1,49 +1,42 @@
-1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།
+1-སྤྲིང་ཡིག།_བཤེས་པའི་སྤྲིང་ཡིག
 {
-    "Categorised": "202 notes (54.01%)",
-    "Notes’ total": 374,
+    "Categorised": "94 notes (63.51%)",
+    "Notes’ total": 148,
     "Profiles": [
-        "ཅོ་=ཞོལ་ པེ་ སྡེ་ སྣར་: 0.27% (1 notes)",
-        "ཅོ་=པེ་=ཞོལ་=སྣར་ སྡེ་: 0.27% (1 notes)",
-        "ཅོ་=ཞོལ་=སྡེ་ པེ་=སྣར་: 84.45% (315 notes)",
-        "ཅོ་=ཞོལ་=སྡེ་ པེ་ སྣར་: 3.49% (13 notes)",
-        "ཅོ་ པེ་=ཞོལ་=སྡེ་=སྣར་: 0.54% (2 notes)",
-        "ཅོ་=པེ་=ཞོལ་=སྡེ་=སྣར་: 0.54% (2 notes)",
-        "ཅོ་=པེ་=ཞོལ་=སྡེ་ སྣར་: 6.97% (26 notes)",
-        "ཅོ་=པེ་=སྡེ་ ཞོལ་=སྣར་: 0.54% (2 notes)",
-        "ཅོ་ པེ་=སྣར་ ཞོལ་=སྡེ་: 0.27% (1 notes)",
-        "ཅོ་=ཞོལ་=སྡེ་=སྣར་ པེ་: 2.68% (10 notes)"
+        "ཅོ་=པེ་=སྡེ་=སྣར་: 0.68% (1 notes)",
+        "ཅོ་=སྡེ་ པེ་=སྣར་: 93.92% (139 notes)",
+        "ཅོ་ པེ་=སྡེ་=སྣར་: 0.68% (1 notes)",
+        "ཅོ་=སྡེ་=སྣར་ པེ་: 2.03% (3 notes)",
+        "ཅོ་=པེ་=སྡེ་ སྣར་: 2.70% (4 notes)"
     ],
     "automatic_categorisation": {
         "min_mod": {
-            "min_mod_groups": 18,
-            "particle_groups": 47
+            "min_mod_groups": 8,
+            "particle_groups": 23
         },
         "particle_issues": {
-            "agreement_issue": 5,
-            "different_particles": 10,
-            "po-bo-pa-ba": 1
+            "agreement_issue": 2,
+            "different_particles": 1
         },
         "spelling_mistake": {
-            "missing_vowel": 1,
+            "nga_da": 1,
             "non_word": {
-                "ill_formed": 7,
-                "well_formed": 9
+                "ill_formed": 4,
+                "well_formed": 7
             }
         },
-        "sskrt": 9,
+        "sskrt": 1,
         "verb_difference": {
-            "diff_tense": 48,
-            "diff_verb": 39,
+            "diff_tense": 24,
+            "diff_verb": 16,
             "not_sure": 6
         }
     },
     "dunno": {
-        "long_diff": 4,
-        "no_diff": 150,
-        "short_diff": 18
+        "no_diff": 47,
+        "short_diff": 7
     },
-    "empty_notes": 2,
+    "empty_notes": 1,
     "manual_categorisation": {
         "long_difference": {},
         "manual_evaluation": {

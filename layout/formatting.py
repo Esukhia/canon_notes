@@ -1,6 +1,8 @@
 from PyTib.common import open_file
 import os
 import pypandoc
+from sarge import run
+import sh
 
 text = '''༄༅༅། །རྒྱ་གར་སྐད་དུ། བོ་དྷི་སཏྭ་ཙརྱ་ཨ་བ་ཏཱ་ར། བོད་སྐད་དུ། བྱང་ཆུབ་སེམས་དཔའི་སྤྱོད་པ་ལ་འཇུག་པ། སངས་རྒྱས་དང་བྱང་ཆུབ་སེམས་དཔའ་ཐམས་ཅད་ལ་ཕྱག་འཚལ་ལོ། །བདེ་གཤེགས་ཆོས་ཀྱི་སྐུ་མངའ་སྲས་བཅས་དང་། །ཕྱག་འོས་ཀུན་ལའང་གུས་པར་ཕྱག་འཚལ་ཏེ། །བདེ་གཤེགས་[^1]སྲས་ཀྱི་སྡོམ་ལ་འཇུག་པ་ནི། །ལུང་བཞིན་མདོར་བསྡུས་ནས་ནི་བརྗོད་པར་བྱ།\[ར་3\] །སྔོན་ཆད་མ་བྱུང་བ་ཡང་འདིར་བརྗོད་མེད། །སྡེབ་སྦྱོར་མཁས་པའང་བདག་ལ་ཡོད་མིན་ཏེ། །དེ་ཕྱིར་གཞན་དོན་བསམ་པ་བདག་ལ་མེད། །རང་གི་ཡིད་ལ་བསྒོམ་ཕྱིར་ངས་འདི་བརྩམས། །དགེ་བ་བསྒོམ་ཕྱིར་བདག་གི་དད་པའི་ཤུགས། །འདི་དག་གིས་ཀྱང་རེ་ཞིག་འཕེལ་འགྱུར་ལ། །བདག་དང་སྐལ་བ་མཉམ་པ་གཞན་གྱིས་ཀྱང་།
 
@@ -19,4 +21,5 @@ in_path = '../4-a-final_formatting/output/3-3-final'
 for f in os.listdir(in_path):
     work_name = f.replace('_final.txt', '')
     content = open_file('{}/{}'.format(in_path, f))
-    output = pypandoc.convert(content, 'docx', format='markdown', outputfile='{}.docx'.format(work_name))
+    #output = pypandoc.convert(content, 'docx', format='markdown', outputfile='{}.docx'.format(work_name), extra_args=['--reference-docx', './resources/reference.docx'])
+    p = run('pandoc -f markdown -t docx {} -o {}.docx'.format('{}/{}'.format(in_path, f), work_name))

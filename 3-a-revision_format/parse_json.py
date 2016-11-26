@@ -554,7 +554,7 @@ def extract_categories(notes, text_name, cat_list=False):
                     if new not in out:
                         out.append(new)
 
-        #write_file('output/antconc_format/{}_antconc_format.txt'.format(text_name), '\n'.join(out))
+        write_file('output/antconc_format/{}_antconc_format.txt'.format(text_name), '\n'.join(out))
         final = '\n'.join(out)
         return final
 
@@ -564,7 +564,7 @@ if __name__ == '__main__':
     in_dir = '../2-automatic_categorisation/output/'
     output = []
     for file_name in os.listdir(in_dir):
-        if file_name == '1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།_cats.json':
+        if file_name == '1-སྤྲིང་ཡིག།_བཤེས་པའི་སྤྲིང་ཡིག_cats.json':
             work_name = file_name.replace('_cats.json', '')
             print(file_name)
             json_structure = jp.decode(open_file(in_dir+file_name))

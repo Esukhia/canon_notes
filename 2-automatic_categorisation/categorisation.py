@@ -807,7 +807,7 @@ def process(in_path, template_path, total_stats):
     all_ngrams = open_ngrams()
     for f in os.listdir(in_path):
         print(f)
-        if f == '1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།_conc-corrected.txt':
+        if f == '1-སྤྲིང་ཡིག།_བཤེས་པའི་སྤྲིང་ཡིག_conc-corrected.txt':
             work_name = f.replace('_conc-corrected.txt', '')
 
             raw = open_file('{}/{}'.format(in_path, f))

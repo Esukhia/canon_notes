@@ -1,40 +1,34 @@
-1-སྤྲིང་ཡིག།_བཤེས་པའི་སྤྲིང་ཡིག
+1-དབུ་མ།_ཞིབ་མོ་རྣམ་པར་འཐག་པ་ཞེས་བྱ་བའི་མདོ།
 {
-    "Categorised": "94 notes (63.51%)",
-    "Notes’ total": 148,
+    "Categorised": "15 notes (60.00%)",
+    "Notes’ total": 25,
     "Profiles": [
-        "ཅོ་=པེ་=སྡེ་=སྣར་: 0.68% (1 notes)",
-        "ཅོ་=སྡེ་ པེ་=སྣར་: 93.92% (139 notes)",
-        "ཅོ་ པེ་=སྡེ་=སྣར་: 0.68% (1 notes)",
-        "ཅོ་=སྡེ་=སྣར་ པེ་: 2.03% (3 notes)",
-        "ཅོ་=པེ་=སྡེ་ སྣར་: 2.70% (4 notes)"
+        "པེ་ སྡེ་=སྣར་: 4.00% (1 notes)",
+        "པེ་=སྡེ་=སྣར་: 4.00% (1 notes)",
+        "པེ་=སྣར་ སྡེ་: 88.00% (22 notes)",
+        "པེ་ སྡེ་ སྣར་: 4.00% (1 notes)"
     ],
     "automatic_categorisation": {
         "min_mod": {
-            "min_mod_groups": 8,
-            "particle_groups": 23
+            "particle_groups": 3
         },
-        "particle_issues": {
-            "agreement_issue": 2,
-            "different_particles": 1
-        },
+        "particle_issues": {},
         "spelling_mistake": {
-            "nga_da": 1,
             "non_word": {
-                "ill_formed": 4,
-                "well_formed": 7
+                "ill_formed": 1,
+                "well_formed": 1
             }
         },
         "sskrt": 1,
         "verb_difference": {
-            "diff_tense": 24,
-            "diff_verb": 16,
-            "not_sure": 6
+            "diff_tense": 4,
+            "diff_verb": 4
         }
     },
     "dunno": {
-        "no_diff": 47,
-        "short_diff": 7
+        "long_diff": 1,
+        "no_diff": 7,
+        "short_diff": 2
     },
     "empty_notes": 1,
     "manual_categorisation": {

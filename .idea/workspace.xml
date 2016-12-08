@@ -2,16 +2,508 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aaa25fd1-4142-4d50-a2d0-e78d7f332a9d" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/output/2-1-post_seg_tag_removed/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།_formatted.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།.docx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/formatting.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/somefile.docx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/test.docx" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/4-a-final_formatting/apply_note_choices.py" afterPath="$PROJECT_DIR$/4-a-final_formatting/0-apply_note_choices.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3-b-reviewed_texts/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།_DUCKed.csv" afterPath="$PROJECT_DIR$/3-b-reviewed_texts/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།_DUCKed.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4-a-final_formatting/Derge/with_page_marker/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།_with_a.txt" afterPath="$PROJECT_DIR$/4-a-final_formatting/Derge/with_page_marker/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།_with_a.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4-a-final_formatting/output/3-1-page_reinserted/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།_a_reinserted.txt" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/3-1-page_reinserted/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།_a_reinserted.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4-a-final_formatting/reinsert_page_nums.py" afterPath="$PROJECT_DIR$/4-a-final_formatting/reinsert_page_nums.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།/beita/Capture du 2016-11-23 00:32:05.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།/beita/Capture du 2016-11-23 00:32:47.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།/beita/Capture du 2016-11-23 00:33:09.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།/beita/Capture du 2016-11-23 00:33:57.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།/beita/Capture du 2016-11-23 00:34:29.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།/beita/Capture du 2016-11-23 00:34:52.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།/beita/Capture du 2016-11-23 00:35:21.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།/beita/Capture du 2016-11-23 00:35:53.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།/beita/Capture du 2016-11-23 00:36:23.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།/beita/Capture du 2016-11-23 00:36:44.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།/beita/Capture du 2016-11-23 00:37:25.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།/beita/Capture du 2016-11-23 00:38:13.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།/beita/Capture du 2016-11-23 00:39:11.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།/beita/Capture du 2016-11-23 00:39:37.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།/beita/Capture du 2016-11-23 00:39:59.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།/seraje/Capture du 2016-11-23 00:43:13.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།/seraje/Capture du 2016-11-23 00:44:11.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།/seraje/Capture du 2016-11-23 00:44:34.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།/seraje/Capture du 2016-11-23 00:44:59.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།/seraje/Capture du 2016-11-23 00:45:18.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།/seraje/Capture du 2016-11-23 00:45:40.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།/seraje/Capture du 2016-11-23 00:46:10.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།/seraje/Capture du 2016-11-23 00:46:26.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།/seraje/Capture du 2016-11-23 00:46:50.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།/seraje/Capture du 2016-11-23 00:47:08.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།/seraje/Capture du 2016-11-23 00:47:42.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།/seraje/Capture du 2016-11-23 00:48:00.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།/seraje/Capture du 2016-11-23 00:48:15.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།/seraje/Capture du 2016-11-23 00:48:31.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།/seraje/Capture du 2016-11-23 00:48:58.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།/seraje/Capture du 2016-11-23 00:49:17.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།/seraje/Capture du 2016-11-23 00:49:45.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།/seraje/Capture du 2016-11-23 00:50:05.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།/seraje/Capture du 2016-11-23 00:50:28.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།/seraje/Capture du 2016-11-23 00:50:46.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།/seraje/Capture du 2016-11-23 00:51:06.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།/seraje/Capture du 2016-11-23 00:52:17.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།/seraje/Capture du 2016-11-23 00:52:46.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།/seraje/Capture du 2016-11-23 00:53:21.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།/seraje/Capture du 2016-11-23 00:53:42.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།/seraje/Capture du 2016-11-23 00:54:13.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།/seraje/Capture du 2016-11-23 00:54:34.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།/seraje/Capture du 2016-11-23 00:54:57.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།/seraje/Capture du 2016-11-23 00:55:31.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།/seraje/Capture du 2016-11-23 00:55:58.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།/seraje/Capture du 2016-11-23 00:56:12.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།/seraje/Capture du 2016-11-23 00:56:28.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།/seraje/Capture du 2016-11-23 00:57:05.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།/seraje/Capture du 2016-11-23 00:57:31.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།/seraje/Capture du 2016-11-23 00:58:47.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།/seraje/Capture du 2016-11-23 01:00:11.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།/seraje/Capture du 2016-11-23 01:00:35.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།/seraje/Capture du 2016-11-23 01:01:04.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།/seraje/Capture du 2016-11-23 01:01:24.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།/seraje/Capture du 2016-11-23 01:01:54.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།/seraje/Capture du 2016-11-23 01:02:09.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།/seraje/Capture du 2016-11-23 01:02:32.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།/seraje/Capture du 2016-11-23 01:02:54.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།/seraje/Capture du 2016-11-23 01:03:17.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།/seraje/Capture du 2016-11-23 01:03:36.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།/seraje/Capture du 2016-11-23 01:04:29.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།/seraje/Capture du 2016-11-23 01:05:10.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།/seraje/Capture du 2016-11-23 05:26:45.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།/tsashé.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/3-0-pdfs/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/3-0-pdfs/1-དབུ་མ།_ཞིབ་མོ་རྣམ་པར་འཐག་པ་ཞེས་བྱ་བའི་མདོ།.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/3-0-pdfs/1-དབུ་མ།_རིགས་པ་དྲུག་ཅུ་པའི་ཚིག་ལེའུར་བྱས་པ།.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/3-0-pdfs/1-སྤྲིང་ཡིག།_བཤེས་པའི་སྤྲིང་ཡིག.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layout/output/1-དབུ་མ།_ཞིབ་མོ་རྣམ་པར་འཐག་པ་ཞེས་བྱ་བའི་མདོ།.docx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layout/output/1-དབུ་མ།_རིགས་པ་དྲུག་ཅུ་པའི་ཚིག་ལེའུར་བྱས་པ།.docx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/new_entries.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-གསོ་རིག།_བཤད་པ་སྨན་ཨ་བའི་ཆོ་ག_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-གསོ་རིག།_སྦྱོར་བ་བརྒྱ་པ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-གསོ་རིག།_སྨན་འཚོ་བའི་མདོ་ཚིགས་སུ་བཅད་པ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-དབུ་མ།_ཐེག་པ་ཆེན་པོ་ཉི་ཤུ་པ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-དབུ་མ།_དབུ་མ་རྩ་བའི་འགྲེལ་པ་ག་ལས་འཇིགས་མེད།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-དབུ་མ།_བསྒོམ་པའི་རིམ་པ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-དབུ་མ།_བྱང་ཆུབ་ཏུ་སེམས་བསྐྱེད་པའི་ཆོ་ག_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-དབུ་མ།_མ་རྟོགས་པ་རྟོགས་པར་བྱེད་པ་ཞེས་བྱ་བའི་རབ་ཏུ་བྱེད་པ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-དབུ་མ།_མདོ་ཀུན་ལས་བཏུས་པ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-དབུ་མ།_ཞིབ་མོ་རྣམ་པར་འཐག་པ་ཞེས་བྱ་བའི་མདོ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-དབུ་མ།_ཞིབ་མོ་རྣམ་པར་འཐག་པ་ཞེས་བྱ་བའི་རབ་ཏུ་བྱེད་པ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-དབུ་མ།_ཡི་གེ་བརྒྱ་པ་ཞེས་བྱ་བའི་འགྲེལ་པ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-དབུ་མ།_ཡི་གེ་བརྒྱ་པ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-དབུ་མ།_རང་བཞིན་གསུམ་ལ་འཇུག་པའི་སྒྲུབ་པ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-དབུ་མ།_རིགས་པ་དྲུག་ཅུ་པའི་ཚིག་ལེའུར་བྱས་པ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-དབུ་མ།_རྟེན་ཅིང་འབྲེལ་པར་འབྱུང་བའི་སྙིང་པོའི་ཚིག་ལེའུར་བ_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-དབུ་མ།_རྟེན་ཅིང་འབྲེལ་པར་འབྱུང་བའི་སྙིང་པོའི་རྣམ་པར་བཤད་པ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-དབུ་མ།_རྩོད་པ་བཟློག་པའི་ཚིག་ལེའུར་བྱས་པ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-དབུ་མ།_རྩོད་པ་བཟློག་པའི་འགྲེལ་པ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-དབུ་མ།_སྐྱེ་མེད་རིན་པོ་ཆེའི་མཛོད།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-དབུ་མ།_སྟོང་པ་ཉིད་བདུན་ཅུ་པའི་ཚིག་ལེའུར་བྱས་པ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-དབུ་མ།_སྟོང་པ་བདུན་ཅུ་པའི་འགྲེལ་པ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-དབུ་མ།_སྲིད་པ་འཕོ་བ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-བསྟོད་ཚོགས།_གནས་ཆེན་པོ་བརྒྱད་ཀྱི་མཆོད་རྟེན་ལ་བསྟོད་པ།a_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-བསྟོད་ཚོགས།_གནས་ཆེན་པོ་བརྒྱད་ཀྱི་མཆོད་རྟེན་ལ་བསྟོད་པ།b_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-བསྟོད་ཚོགས།_ཆོས་ཀྱི་དབྱིངས་སུ་བསྟོད་པ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-བསྟོད་ཚོགས།_དཔེ་མེད་པར་བསྟོད་པ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-བསྟོད་ཚོགས།_དམྱལ་བ་ནས་འདོན་པ་ཞེས་བྱ་བ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-བསྟོད་ཚོགས།_དོན་དམ་པར་བསྟོད་པ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-བསྟོད་ཚོགས།_ཕྱག་འཚལ་བའི་བསྟོད་པ་ཞེས་བྱ་བ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-བསྟོད་ཚོགས།_བསམ་གྱིས་མི་ཁྱབ་པར་བསྟོད་པ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-བསྟོད་ཚོགས།_བསྟོད་པ་ལས་འདས་པར་བསྟོད་པ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-བསྟོད་ཚོགས།_བླ་ན་མེད་པའི་བསྟོད་པ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-བསྟོད་ཚོགས།_མཛད་པ་བཅུ་གཉིས་ཀྱི་ཚུལ་ལ་བསྟོད་པ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-བསྟོད་ཚོགས།_འཇིག་རྟེན་ལས་འདས་པར་བསྟོད་པ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-བསྟོད་ཚོགས།_འཕགས་པ་རྗེ་བཙུན་འཇམ་དཔལ་གྱི་དོན་དམ་པའི་བསྟོད་པ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-བསྟོད་ཚོགས།_རྗེ་བཙུན་འཕགས་པ་འཇམ་དཔལ་གྱི་སྙིང་རྗེ་ལ་བསྟོད་པ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-བསྟོད་ཚོགས།_ཤེས་རབ་ཀྱི་ཕ་རོལ་ཏུ་ཕྱིན་མའི་བསྟོད་པ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-བསྟོད་ཚོགས།_སེམས་ཀྱི་རྡོ་རྗེའི་བསྟོད་པ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-བསྟོད་ཚོགས།_སེམས་ཅན་མགུ་བར་བྱ་བའི་བསྟོད་པ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-བསྟོད་ཚོགས།_སྐུ་གསུམ་བསྟོད་པ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-བསྟོད་ཚོགས།_སྐུ་གསུམ་ལ་བསྟོད་པ་ཞེས་བྱ་བའི་རྣམ་པར་འགྲེལ་པ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-མངོན་པ།_འཕགས་པ་ཆོས་ཀྱི་དབྱིངས་ཀྱི་སྙིང་པོའི་རྣམ་པར་འགྲེལ་པ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-མདོ་སྡེ།_བྱང་ཆུབ་ཀྱི་ལྟུང་བ་བཤགས་པའི་འགྲེལ་པ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-མདོ་སྡེ།_འཕགས་པ་སཱ་ལུ་ལྗང་པའི་ཚིག་ལེའུར་བྱས་པ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-འདུལ་བ།_བསླབ་པ་བཅུའི་ཆོ་ག_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-འདུལ་བ།_འཕགས་པ་གཞི་ཐམས་ཅད་ཡོད་པར་སྨྲ་བའི་དགེ་ཚུལ་གྱི་ཚིག་ལེའུར་བྱས་པ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_ཀླུ་སྒྲུབ་ཀྱི་གླུ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_ཀླུའི་དབང་ཕྱུག་རྒྱལ་པོའི་སྒྲུབ་ཐབས།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_གནོད་པ་སེལ་བའི་བདུད་རྩི།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_གནོད་སྦྱིན་མ་ཀུན་ནས་འཁྱིལ་པའི་གྭ་ཐབས་ཀྱི་དོན་བསྡུས་པའི་འགྲེལ་པ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_གཡུའི་ཐང་མ་ཀྲས་དགུ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_གོས་སྔོན་པོ་ཅན་གྱི་དངོས་གྲུབ་ཉེ་བ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_གླང་པོ་རིན་པོ་ཆེ་ལ་ནོར་བླང་བའི་མན་ངག_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_ཉམ་གྱི་མན་ངག་ཐིག་ལེ་གསེར་གྱི་ཕྲེང་བ་ཞེས་བྱ་བ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_ཐམས་ཅད་གྲུབ་པ་དཔལ་འཕེལ་ལྷ་མོ་ལ་བསྟོད་པ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_ཐུགས་རྗེ་ཆེན་པོ་འཕགས་མ་སྒྲོལ་མའི་སྒྲུབ་ཐབས་སྤྱིའི་མངོན་པར་རྟོགས་པ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_དགེ་བའི་འདོད་འཇོ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_དགོངས་པའི་འགྲེལ་སྐད་ཀྱི་འགྲེལ་པ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_དངོས་པོ་སྦྱོང་བ་ཞེས་བྱ་བ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_དཔལ་གསང་བ་འདུས་པའི་དཀྱིལ་འཁོར་གྱི་ཆོ་ག_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_དཔལ་གསང་བ་འདུས་པའི་རྒྱུད་ཀྱི་རྒྱུད་འགྲེལ་ཞེས་བྱ་བ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_དཔལ་ནག་པོ་ཆེན་པོ་ཡུམ་ཅན་གྱི་སྒྲུབ་ཐབས་ཞེས་བྱ་བ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_དཔལ་ནག་པོ་ཆེན་པོ་ལ་བསྟོད་པ་བརྒྱད་པ་ཞེས་བྱ་བ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_དཔལ་ནག་པོ་ཆེན་པོ་ལ་བསྟོད་པ་རྐང་པ་བརྒྱད་པ་ཞེས་བྱ་བ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_དཔལ་ནག་པོ་ཆེན་པོའི་བསྟོད་པ་རྐང་པ་བརྒྱད་པ་ཞེས་བྱ་བ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_དཔལ་ནག་པོ་ཆེན་པོའི་སྒྲུབ་ཐབས་ཞེས་བྱ་བ།a_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_དཔལ་ནག་པོ་ཆེན་པོའི་སྒྲུབ་ཐབས་ཞེས་བྱ་བ།b_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_དཔལ་ནག་པོ་ཆེན་པོའི་སྒྲུབ་ཐབས།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_དཔལ་མགོན་པོ་ནག་པོ་ཆེན་པོའི་སྒྲུབ་ཐབས་ཀྱི་རིམ་པ་ཞེས་བྱ་བ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_དབང་གི་རིམ་པ་བསྟན་པ་ཞེས་བྱ་བ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_དབང་བཞི་པའི་རབ་ཏུ་བྱེད་པ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_དེ་ཁོ་ན་ཉིད་སྒྲོན་མ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_ནག་པོ་ཆེན་པོ་ཕྱག་བཞི་པའི་སྒྲུབ་ཐབས།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_ནག་པོ་ཆེན་པོའི་སྒྲུབ་ཐབས།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_ཕྱག་ན་རྡོ་རྗེ་གཏུམ་པོ་ཆེན་པོ་ཁྲོས་པ་ཞེས་བྱ་བའི་སྒྲུབ་ཐབས།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_ཕྱག་ན་རྡོ་རྗེའི་དཀྱིལ་འཁོར་གྱི་ཆོ་ག_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_ཕྱག་ན་རྡོ་རྗེའི་ལམ་ཡན་ལག་བརྒྱད་པ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_ཕྱག་རྒྱ་བཞི་གཏན་ལ་འབབ་པ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_བསྡུས་པའི་རིམ་པའི་སྒྲུབ་ཐབས།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_བྱང་ཆུབ་སེམས་ཀྱི་འགྲེལ་པ།a_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_བྱང་ཆུབ་སེམས་ཀྱི་འགྲེལ་པ།b_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_བླ་མ་གསང་བར་སྒྲུབ་པ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_མགོན་པོ་བྱ་རོག་གདོང་གི་གཏོར་མདོས།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_མཆན་ཁུང་གི་སྦྱོར་བ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_ཚིགས་སུ་བཅད་པ་ཕྱེད་དང་ལྔ་ཞེས་བྱ་བ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_ཞེན་ལོག་སྒྲོན་མ་བཞུགས།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_འཇམ་དཔལ་རྡོ་རྗེ་བློ་གྲོས་འཕེལ་བ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_འཇིག་རྟེན་དབང་ཕྱུག་གི་སྒྲུབ་ཐབས།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_འཇིག་རྟེན་ལས་རྣམ་པར་རྒྱལ་བ་འཕགས་མ་སྒྲོལ་མ་སྒྲུབ་པའི་ཐབས་ཞེས་བྱ་བ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_འཕགས་པ་འཇིག་རྟེན་དབང་ཕྱུག་ཡི་གེ་དྲུག་པའི་སྒྲུབ་ཐབས།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_འཕགས་པ་སྤྱན་རས་གཟིགས་དབང་ཕྱུག་ཕྱག་སྟོང་པའི་སྒྲུབ་ཐབས།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_འཕགས་མ་རིག་མ་ཆེན་མོ་སོ་སོར་འབྲང་མའི་འཁོར་ལོ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_ཡན་ལག་གི་ཉེས་པ་བདུན་པ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_ཡན་ལག་བདུན་པའི་སྒྲུབ་ཐབས།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_ཡེ་ཤེས་མགོན་པོ་གྲི་གུག་ཅན་གྱི་བདག་བསྐྱེད་བཟླས་པ་བསྟོད་པ་རྣམས་བཞུགས།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_རང་བཞིན་གྲུབ་པ་མེད་པའི་གཞིའི་མན་ངག་ཅེས་བྱ་བ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_རབ་ཏུ་གནས་པའི་རྒྱན།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_རལ་པ་གཅིག་མའི་སྒྲུབ་ཐབས།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_རིམ་པ་ལྔ་པ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_རྒྱུད་སྣ་ཚོགས་ལས་བཏུས་པའི་གཏོར་མའི་ཆོ་ག_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_རྒྱུན་ཆགས་ཀྱི་ཚིགས་སུ་བཅད་པས་བསྟོད་པ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_རྟ་མགྲིན་གྱི་སྒྲུབ་ཐབས།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_རྟོག་པ་ལས་གསུངས་པའི་ལྷ་མོ་རིགས་བྱེད་མའི་སྒྲུབ་པའི་ཐབས།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_རྡོ་རྗེ་ཐེག་པའི་སྦོམ་པོའི་ལྟུང་བ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_རྡོ་རྗེ་ནག་པོ་ཆེན་པོའི་བསྟོད་པ་བརྒྱད་པ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_རྡོ་རྗེ་བྱ་བ་པའི་ལས་ཚོགས།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_རྡོ་རྗེ་སྒྲོལ་མའི་སྒྲུབ་ཐབས།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_རྣལ་འབྱོར་ཡན་ལག་དྲུག་པ་ཞེས་བྱ་བ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_ལེའུ་བཅོ་བརྒྱད་པའི་རྒྱ་ཆེར་འགྲེལ་པ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_ལྟུང་པ་བཅོ་ལྔ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_ཤེས་རབ་ཀྱི་ཕ་རོལ་ཏུ་ཕྱིན་པའི་སྙིང་པོའི་སྒྲུབ་ཐབས།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_སེང་ལྡེང་ནགས་ཀྱི་སྒྲོལ་མ་ལ་བསྟོད་པ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_སེང་ལྡེང་ནགས་ཀྱི་སྒྲོལ་མའི་སྒྲུབ་ཐབས།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_སྒྲུབ་པའི་ཐབས་མདོར་བྱས་པ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_སྒྲོལ་མའི་སྒྲུབ་ཐབས།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_སྔགས་ཀྱི་རྒྱན་གྱི་སྒྲུབ་ཐབས།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-སྐྱེས་རབས།_རྒྱལ་པོ་གཏམ་བྱ་བ་རིན་པོ་ཆེའི་ཕྲེང་བ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-སྐྱེས་རབས།_རྨི་ལམ་ཡིད་བཞིན་ནོར་བུའི་གཏམ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-སྐྱེས་རབས།_སྦྱིན་པའི་གཏམ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-སྐྱེས་རབས།_སྲིད་པ་ལས་འདས་པའི་གཏམ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-སྣ་ཚོགས།_བཀྲ་ཤིས་ཀྱི་ཚིགས་སུ་བཅད་པ།a_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-སྣ་ཚོགས།_བཀྲ་ཤིས་ཀྱི་ཚིགས་སུ་བཅད་པ།b_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-སྣ་ཚོགས།_བྱང་ཆུབ་འབྱུང་བའི་སྨོན་ལམ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-སྣ་ཚོགས།_མོ་རྩིས་འཇམ་པའི་དབྱངས་ཞེས་བྱ་བ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-སྣ་ཚོགས།_འཕགས་པ་ཀླུ་སྒྲུབ་ཀྱི་ཞལ་སྔ་ནས་མཛད་པའི་མན་ངག་ཟབ་མོ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-སྣ་ཚོགས།_འཕགས་པ་ཀླུ་སྒྲུབ་ཀྱི་སྨོན་ལམ་ཞེས་བྱ་བ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-སྣ་ཚོགས།_རྒྱལ་པོ་ལ་གཏམ་བྱ་བ་རིན་པོ་ཆེའི་ཕྲེང་བ་ལས་བྱུང་བའི་སྨོན་ལམ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-སྣ་ཚོགས།_རྟེན་ཅིང་འབྲེལ་པར་འབྱུང་བའི་དེ་ཁོ་ན་ཉིད་ཅེས་བྱ་བ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-སྣ་ཚོགས།_རྡོ་རྗེའི་སྨོན་ལམ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-སྣ་ཚོགས།_ལུགས་ཀྱི་བསྟན་བཅོས་ཤེས་རབ་སྡོང་བུ་ཞེས་བྱ་བ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-སྣ་ཚོགས།_ལུགས་ཀྱི་བསྟན་བཅོས་སྐྱེ་བོ་གསོ་བའི་ཐིགས་པ་ཞེས་བྱ་བ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-སྣ་ཚོགས།_ཤེས་རབ་བརྒྱ་པ་ཞེས་བྱ་བའི་རབ་ཏུ་བྱེད་པ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-སྣ་ཚོགས།_སྤོས་ཀྱི་སྦྱོར་བ་རེའུ་ཆར་བྱས་པ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-སྣ་ཚོགས།_སྤོས་སྦྱོར་རིན་པོ་ཆེའི་ཕྲེང་བ་ཞེས་བྱ་བ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-སྣ་ཚོགས།_སྨོན་ལམ་རིན་པོ་ཆེའི་རྒྱལ་པོ་ཞེས་བྱ་བ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-སྤྲིང་ཡིག།_བཤེས་པའི་སྤྲིང་ཡིག_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/3-a-revision_format/output/antconc_format/1-དབུ་མ།_ཞིབ་མོ་རྣམ་པར་འཐག་པ་ཞེས་བྱ་བའི་མདོ།_antconc_format.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/3-a-revision_format/output/antconc_format/1-དབུ་མ།_རིགས་པ་དྲུག་ཅུ་པའི་ཚིག་ལེའུར་བྱས་པ།_antconc_format.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/3-a-revision_format/output/updated_structure/1-དབུ་མ།_ཞིབ་མོ་རྣམ་པར་འཐག་པ་ཞེས་བྱ་བའི་མདོ།_updated_structure.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/3-a-revision_format/output/updated_structure/1-དབུ་མ།_རིགས་པ་དྲུག་ཅུ་པའི་ཚིག་ལེའུར་བྱས་པ།_updated_structure.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/3-b-reviewed_texts/1-དབུ་མ།_ཞིབ་མོ་རྣམ་པར་འཐག་པ་ཞེས་བྱ་བའི་མདོ།_DUCKed.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/3-b-reviewed_texts/1-དབུ་མ།_རིགས་པ་དྲུག་ཅུ་པའི་ཚིག་ལེའུར་བྱས་པ།_DUCKed.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/0-2_1_rawify.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/1-1_unmark.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/1-2_segment_final.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/1-3_copy_post_seg.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/3-1_reinsert_page_nums.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/3-3_copy_final.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/0-1-formatted/1-དབུ་མ།_ཞིབ་མོ་རྣམ་པར་འཐག་པ་ཞེས་བྱ་བའི་མདོ།_formatted.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/0-1-formatted/1-དབུ་མ།_རིགས་པ་དྲུག་ཅུ་པའི་ཚིག་ལེའུར་བྱས་པ།_formatted.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/0-2-raw_text/1-དབུ་མ།_ཞིབ་མོ་རྣམ་པར་འཐག་པ་ཞེས་བྱ་བའི་མདོ།_raw.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/0-2-raw_text/1-དབུ་མ།_རིགས་པ་དྲུག་ཅུ་པའི་ཚིག་ལེའུར་བྱས་པ།_raw.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/0-2-raw_text/1-སྤྲིང་ཡིག།_བཤེས་པའི་སྤྲིང་ཡིག_raw.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/0-3-corrected/1-དབུ་མ།_ཞིབ་མོ་རྣམ་པར་འཐག་པ་ཞེས་བྱ་བའི་མདོ།_corrected.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/0-3-corrected/1-དབུ་མ།_རིགས་པ་དྲུག་ཅུ་པའི་ཚིག་ལེའུར་བྱས་པ།_corrected.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-1-unmarked/1-དབུ་མ།_ཞིབ་མོ་རྣམ་པར་འཐག་པ་ཞེས་བྱ་བའི་མདོ།_unmarked.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-1-unmarked/1-དབུ་མ།_རིགས་པ་དྲུག་ཅུ་པའི་ཚིག་ལེའུར་བྱས་པ།_unmarked.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-2-segmented/1-དབུ་མ།_ཞིབ་མོ་རྣམ་པར་འཐག་པ་ཞེས་བྱ་བའི་མདོ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-2-segmented/1-དབུ་མ།_རིགས་པ་དྲུག་ཅུ་པའི་ཚིག་ལེའུར་བྱས་པ།_segmented.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-3-post_seg/1-དབུ་མ།_ཞིབ་མོ་རྣམ་པར་འཐག་པ་ཞེས་བྱ་བའི་མདོ།_post_seg.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-3-post_seg/1-དབུ་མ།_རིགས་པ་དྲུག་ཅུ་པའི་ཚིག་ལེའུར་བྱས་པ།_post_seg.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།/beita.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།/serajerigdzochenmo.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_ཞིབ་མོ་རྣམ་པར་འཐག་པ་ཞེས་བྱ་བའི་མདོ།/bo_jetsongkhapa_org.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_ཞིབ་མོ་རྣམ་པར་འཐག་པ་ཞེས་བྱ་བའི་མདོ།/sakya_library_com.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_ཞིབ་མོ་རྣམ་པར་འཐག་པ་ཞེས་བྱ་བའི་མདོ།/seraje.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_རིགས་པ་དྲུག་ཅུ་པའི་ཚིག་ལེའུར་བྱས་པ།/dharmadownload.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_རིགས་པ་དྲུག་ཅུ་པའི་ཚིག་ལེའུར་བྱས་པ།/itibetan_org.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-དབུ་མ།_རིགས་པ་དྲུག་ཅུ་པའི་ཚིག་ལེའུར་བྱས་པ།/seraje.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-སྤྲིང་ཡིག།_བཤེས་པའི་སྤྲིང་ཡིག/dharmadownload.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-4-extra_copies/1-སྤྲིང་ཡིག།_བཤེས་པའི་སྤྲིང་ཡིག/seraje.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/2-0-with_a/1-དབུ་མ།_ཞིབ་མོ་རྣམ་པར་འཐག་པ་ཞེས་བྱ་བའི་མདོ།_with_a.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/2-0-with_a/1-དབུ་མ།_རིགས་པ་དྲུག་ཅུ་པའི་ཚིག་ལེའུར་བྱས་པ།_with_a.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/2-0-with_a/1-སྤྲིང་ཡིག།_བཤེས་པའི་སྤྲིང་ཡིག_with_a.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/2-1-a_reinserted/1-དབུ་མ།_ཞིབ་མོ་རྣམ་པར་འཐག་པ་ཞེས་བྱ་བའི་མདོ།_a_reinserted.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/2-1-a_reinserted/1-དབུ་མ།_རིགས་པ་དྲུག་ཅུ་པའི་ཚིག་ལེའུར་བྱས་པ།_a_reinserted.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/3-1-page_reinserted/1-དབུ་མ།_ཞིབ་མོ་རྣམ་པར་འཐག་པ་ཞེས་བྱ་བའི་མདོ།_a_reinserted.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/3-1-page_reinserted/1-དབུ་མ།_རིགས་པ་དྲུག་ཅུ་པའི་ཚིག་ལེའུར་བྱས་པ།_a_reinserted.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/3-2-compared/1-དབུ་མ།_ཞིབ་མོ་རྣམ་པར་འཐག་པ་ཞེས་བྱ་བའི་མདོ།_compared.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/3-2-compared/1-དབུ་མ།_རིགས་པ་དྲུག་ཅུ་པའི་ཚིག་ལེའུར་བྱས་པ།_compared.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/3-3-final/1-དབུ་མ།_ཞིབ་མོ་རྣམ་པར་འཐག་པ་ཞེས་བྱ་བའི་མདོ།_final.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/3-3-final/1-དབུ་མ།_རིགས་པ་དྲུག་ཅུ་པའི་ཚིག་ལེའུར་བྱས་པ།_final.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/stats/1-དབུ་མ།_ཞིབ་མོ་རྣམ་པར་འཐག་པ་ཞེས་བྱ་བའི་མདོ།_stats.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/stats/1-དབུ་མ།_རིགས་པ་དྲུག་ཅུ་པའི་ཚིག་ལེའུར་བྱས་པ།_stats.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/regexes.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4-a-final_formatting/segment_final_data.txt" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-གསོ་རིག།_བཤད་པ་སྨན་ཨ་བའི་ཆོ་ག.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-གསོ་རིག།_སྦྱོར་བ་བརྒྱ་པ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-གསོ་རིག།_སྨན་འཚོ་བའི་མདོ་ཚིགས་སུ་བཅད་པ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-དབུ་མ།_ཐེག་པ་ཆེན་པོ་ཉི་ཤུ་པ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-དབུ་མ།_དབུ་མ་རྩ་བའི་འགྲེལ་པ་ག་ལས་འཇིགས་མེད།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-དབུ་མ།_བསྒོམ་པའི་རིམ་པ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-དབུ་མ།_བྱང་ཆུབ་ཏུ་སེམས་བསྐྱེད་པའི་ཆོ་ག.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-དབུ་མ།_མ་རྟོགས་པ་རྟོགས་པར་བྱེད་པ་ཞེས་བྱ་བའི་རབ་ཏུ་བྱེད་པ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-དབུ་མ།_མདོ་ཀུན་ལས་བཏུས་པ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-དབུ་མ།_ཞིབ་མོ་རྣམ་པར་འཐག་པ་ཞེས་བྱ་བའི་མདོ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-དབུ་མ།_ཞིབ་མོ་རྣམ་པར་འཐག་པ་ཞེས་བྱ་བའི་རབ་ཏུ་བྱེད་པ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-དབུ་མ།_ཡི་གེ་བརྒྱ་པ་ཞེས་བྱ་བའི་འགྲེལ་པ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-དབུ་མ།_ཡི་གེ་བརྒྱ་པ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-དབུ་མ།_རང་བཞིན་གསུམ་ལ་འཇུག་པའི་སྒྲུབ་པ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-དབུ་མ།_རིགས་པ་དྲུག་ཅུ་པའི་ཚིག་ལེའུར་བྱས་པ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-དབུ་མ།_རྟེན་ཅིང་འབྲེལ་པར་འབྱུང་བའི་སྙིང་པོའི་ཚིག་ལེའུར་བ.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-དབུ་མ།_རྟེན་ཅིང་འབྲེལ་པར་འབྱུང་བའི་སྙིང་པོའི་རྣམ་པར་བཤད་པ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-དབུ་མ།_རྩོད་པ་བཟློག་པའི་ཚིག་ལེའུར་བྱས་པ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-དབུ་མ།_རྩོད་པ་བཟློག་པའི་འགྲེལ་པ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-དབུ་མ།_སྐྱེ་མེད་རིན་པོ་ཆེའི་མཛོད།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-དབུ་མ།_སྟོང་པ་ཉིད་བདུན་ཅུ་པའི་ཚིག་ལེའུར་བྱས་པ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-དབུ་མ།_སྟོང་པ་བདུན་ཅུ་པའི་འགྲེལ་པ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-དབུ་མ།_སྲིད་པ་འཕོ་བ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-བསྟོད་ཚོགས།_གནས་ཆེན་པོ་བརྒྱད་ཀྱི་མཆོད་རྟེན་ལ་བསྟོད་པ།a.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-བསྟོད་ཚོགས།_གནས་ཆེན་པོ་བརྒྱད་ཀྱི་མཆོད་རྟེན་ལ་བསྟོད་པ།b.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-བསྟོད་ཚོགས།_ཆོས་ཀྱི་དབྱིངས་སུ་བསྟོད་པ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-བསྟོད་ཚོགས།_དཔེ་མེད་པར་བསྟོད་པ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-བསྟོད་ཚོགས།_དམྱལ་བ་ནས་འདོན་པ་ཞེས་བྱ་བ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-བསྟོད་ཚོགས།_དོན་དམ་པར་བསྟོད་པ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-བསྟོད་ཚོགས།_ཕྱག་འཚལ་བའི་བསྟོད་པ་ཞེས་བྱ་བ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-བསྟོད་ཚོགས།_བསམ་གྱིས་མི་ཁྱབ་པར་བསྟོད་པ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-བསྟོད་ཚོགས།_བསྟོད་པ་ལས་འདས་པར་བསྟོད་པ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-བསྟོད་ཚོགས།_བླ་ན་མེད་པའི་བསྟོད་པ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-བསྟོད་ཚོགས།_མཛད་པ་བཅུ་གཉིས་ཀྱི་ཚུལ་ལ་བསྟོད་པ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-བསྟོད་ཚོགས།_འཇིག་རྟེན་ལས་འདས་པར་བསྟོད་པ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-བསྟོད་ཚོགས།_འཕགས་པ་རྗེ་བཙུན་འཇམ་དཔལ་གྱི་དོན་དམ་པའི་བསྟོད་པ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-བསྟོད་ཚོགས།_རྗེ་བཙུན་འཕགས་པ་འཇམ་དཔལ་གྱི་སྙིང་རྗེ་ལ་བསྟོད་པ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-བསྟོད་ཚོགས།_ཤེས་རབ་ཀྱི་ཕ་རོལ་ཏུ་ཕྱིན་མའི་བསྟོད་པ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-བསྟོད་ཚོགས།_སེམས་ཀྱི་རྡོ་རྗེའི་བསྟོད་པ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-བསྟོད་ཚོགས།_སེམས་ཅན་མགུ་བར་བྱ་བའི་བསྟོད་པ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-བསྟོད་ཚོགས།_སྐུ་གསུམ་བསྟོད་པ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-བསྟོད་ཚོགས།_སྐུ་གསུམ་ལ་བསྟོད་པ་ཞེས་བྱ་བའི་རྣམ་པར་འགྲེལ་པ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-མངོན་པ།_འཕགས་པ་ཆོས་ཀྱི་དབྱིངས་ཀྱི་སྙིང་པོའི་རྣམ་པར་འགྲེལ་པ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-མདོ་སྡེ།_བྱང་ཆུབ་ཀྱི་ལྟུང་བ་བཤགས་པའི་འགྲེལ་པ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-མདོ་སྡེ།_འཕགས་པ་སཱ་ལུ་ལྗང་པའི་ཚིག་ལེའུར་བྱས་པ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-འདུལ་བ།_བསླབ་པ་བཅུའི་ཆོ་ག.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-འདུལ་བ།_འཕགས་པ་གཞི་ཐམས་ཅད་ཡོད་པར་སྨྲ་བའི་དགེ་ཚུལ་གྱི་ཚིག་ལེའུར་བྱས་པ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_ཀླུ་སྒྲུབ་ཀྱི་གླུ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_ཀླུའི་དབང་ཕྱུག་རྒྱལ་པོའི་སྒྲུབ་ཐབས།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_གནོད་པ་སེལ་བའི་བདུད་རྩི།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_གནོད་སྦྱིན་མ་ཀུན་ནས་འཁྱིལ་པའི་གྭ་ཐབས་ཀྱི་དོན་བསྡུས་པའི་འགྲེལ་པ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_གཡུའི་ཐང་མ་ཀྲས་དགུ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_གོས་སྔོན་པོ་ཅན་གྱི་དངོས་གྲུབ་ཉེ་བ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_གླང་པོ་རིན་པོ་ཆེ་ལ་ནོར་བླང་བའི་མན་ངག.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_ཉམ་གྱི་མན་ངག་ཐིག་ལེ་གསེར་གྱི་ཕྲེང་བ་ཞེས་བྱ་བ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_ཐམས་ཅད་གྲུབ་པ་དཔལ་འཕེལ་ལྷ་མོ་ལ་བསྟོད་པ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_ཐུགས་རྗེ་ཆེན་པོ་འཕགས་མ་སྒྲོལ་མའི་སྒྲུབ་ཐབས་སྤྱིའི་མངོན་པར་རྟོགས་པ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_དགེ་བའི་འདོད་འཇོ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_དགོངས་པའི་འགྲེལ་སྐད་ཀྱི་འགྲེལ་པ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_དངོས་པོ་སྦྱོང་བ་ཞེས་བྱ་བ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_དཔལ་གསང་བ་འདུས་པའི་དཀྱིལ་འཁོར་གྱི་ཆོ་ག.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_དཔལ་གསང་བ་འདུས་པའི་རྒྱུད་ཀྱི་རྒྱུད་འགྲེལ་ཞེས་བྱ་བ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_དཔལ་ནག་པོ་ཆེན་པོ་ཡུམ་ཅན་གྱི་སྒྲུབ་ཐབས་ཞེས་བྱ་བ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_དཔལ་ནག་པོ་ཆེན་པོ་ལ་བསྟོད་པ་བརྒྱད་པ་ཞེས་བྱ་བ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_དཔལ་ནག་པོ་ཆེན་པོ་ལ་བསྟོད་པ་རྐང་པ་བརྒྱད་པ་ཞེས་བྱ་བ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_དཔལ་ནག་པོ་ཆེན་པོའི་བསྟོད་པ་རྐང་པ་བརྒྱད་པ་ཞེས་བྱ་བ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_དཔལ་ནག་པོ་ཆེན་པོའི་སྒྲུབ་ཐབས་ཞེས་བྱ་བ།a.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_དཔལ་ནག་པོ་ཆེན་པོའི་སྒྲུབ་ཐབས་ཞེས་བྱ་བ།b.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_དཔལ་ནག་པོ་ཆེན་པོའི་སྒྲུབ་ཐབས།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_དཔལ་མགོན་པོ་ནག་པོ་ཆེན་པོའི་སྒྲུབ་ཐབས་ཀྱི་རིམ་པ་ཞེས་བྱ་བ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_དབང་གི་རིམ་པ་བསྟན་པ་ཞེས་བྱ་བ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_དབང་བཞི་པའི་རབ་ཏུ་བྱེད་པ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_དེ་ཁོ་ན་ཉིད་སྒྲོན་མ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_ནག་པོ་ཆེན་པོ་ཕྱག་བཞི་པའི་སྒྲུབ་ཐབས།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_ནག་པོ་ཆེན་པོའི་སྒྲུབ་ཐབས།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_ཕྱག་ན་རྡོ་རྗེ་གཏུམ་པོ་ཆེན་པོ་ཁྲོས་པ་ཞེས་བྱ་བའི་སྒྲུབ་ཐབས།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_ཕྱག་ན་རྡོ་རྗེའི་དཀྱིལ་འཁོར་གྱི་ཆོ་ག.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_ཕྱག་ན་རྡོ་རྗེའི་ལམ་ཡན་ལག་བརྒྱད་པ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_ཕྱག་རྒྱ་བཞི་གཏན་ལ་འབབ་པ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_བསྡུས་པའི་རིམ་པའི་སྒྲུབ་ཐབས།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_བྱང་ཆུབ་སེམས་ཀྱི་འགྲེལ་པ།a.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_བྱང་ཆུབ་སེམས་ཀྱི་འགྲེལ་པ།b.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_བླ་མ་གསང་བར་སྒྲུབ་པ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_མགོན་པོ་བྱ་རོག་གདོང་གི་གཏོར་མདོས།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_མཆན་ཁུང་གི་སྦྱོར་བ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_ཚིགས་སུ་བཅད་པ་ཕྱེད་དང་ལྔ་ཞེས་བྱ་བ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_ཞེན་ལོག་སྒྲོན་མ་བཞུགས།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_འཇམ་དཔལ་རྡོ་རྗེ་བློ་གྲོས་འཕེལ་བ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_འཇིག་རྟེན་དབང་ཕྱུག་གི་སྒྲུབ་ཐབས།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_འཇིག་རྟེན་ལས་རྣམ་པར་རྒྱལ་བ་འཕགས་མ་སྒྲོལ་མ་སྒྲུབ་པའི་ཐབས་ཞེས་བྱ་བ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_འཕགས་པ་འཇིག་རྟེན་དབང་ཕྱུག་ཡི་གེ་དྲུག་པའི་སྒྲུབ་ཐབས།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_འཕགས་པ་སྤྱན་རས་གཟིགས་དབང་ཕྱུག་ཕྱག་སྟོང་པའི་སྒྲུབ་ཐབས།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_འཕགས་མ་རིག་མ་ཆེན་མོ་སོ་སོར་འབྲང་མའི་འཁོར་ལོ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_ཡན་ལག་གི་ཉེས་པ་བདུན་པ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_ཡན་ལག་བདུན་པའི་སྒྲུབ་ཐབས།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_ཡེ་ཤེས་མགོན་པོ་གྲི་གུག་ཅན་གྱི་བདག་བསྐྱེད་བཟླས་པ་བསྟོད་པ་རྣམས་བཞུགས།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_རང་བཞིན་གྲུབ་པ་མེད་པའི་གཞིའི་མན་ངག་ཅེས་བྱ་བ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_རབ་ཏུ་གནས་པའི་རྒྱན།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_རལ་པ་གཅིག་མའི་སྒྲུབ་ཐབས།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_རིམ་པ་ལྔ་པ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_རྒྱུད་སྣ་ཚོགས་ལས་བཏུས་པའི་གཏོར་མའི་ཆོ་ག.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_རྒྱུན་ཆགས་ཀྱི་ཚིགས་སུ་བཅད་པས་བསྟོད་པ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_རྟ་མགྲིན་གྱི་སྒྲུབ་ཐབས།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_རྟོག་པ་ལས་གསུངས་པའི་ལྷ་མོ་རིགས་བྱེད་མའི་སྒྲུབ་པའི་ཐབས།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_རྡོ་རྗེ་ཐེག་པའི་སྦོམ་པོའི་ལྟུང་བ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_རྡོ་རྗེ་ནག་པོ་ཆེན་པོའི་བསྟོད་པ་བརྒྱད་པ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_རྡོ་རྗེ་བྱ་བ་པའི་ལས་ཚོགས།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_རྡོ་རྗེ་སྒྲོལ་མའི་སྒྲུབ་ཐབས།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_རྣལ་འབྱོར་ཡན་ལག་དྲུག་པ་ཞེས་བྱ་བ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_ལེའུ་བཅོ་བརྒྱད་པའི་རྒྱ་ཆེར་འགྲེལ་པ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_ལྟུང་པ་བཅོ་ལྔ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_ཤེས་རབ་ཀྱི་ཕ་རོལ་ཏུ་ཕྱིན་པའི་སྙིང་པོའི་སྒྲུབ་ཐབས།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_སེང་ལྡེང་ནགས་ཀྱི་སྒྲོལ་མ་ལ་བསྟོད་པ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_སེང་ལྡེང་ནགས་ཀྱི་སྒྲོལ་མའི་སྒྲུབ་ཐབས།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_སྒྲུབ་པའི་ཐབས་མདོར་བྱས་པ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_སྒྲོལ་མའི་སྒྲུབ་ཐབས།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-རྒྱུད།_སྔགས་ཀྱི་རྒྱན་གྱི་སྒྲུབ་ཐབས།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-སྐྱེས་རབས།_རྒྱལ་པོ་གཏམ་བྱ་བ་རིན་པོ་ཆེའི་ཕྲེང་བ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-སྐྱེས་རབས།_རྨི་ལམ་ཡིད་བཞིན་ནོར་བུའི་གཏམ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-སྐྱེས་རབས།_སྦྱིན་པའི་གཏམ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-སྐྱེས་རབས།_སྲིད་པ་ལས་འདས་པའི་གཏམ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-སྣ་ཚོགས།_བཀྲ་ཤིས་ཀྱི་ཚིགས་སུ་བཅད་པ།a.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-སྣ་ཚོགས།_བཀྲ་ཤིས་ཀྱི་ཚིགས་སུ་བཅད་པ།b.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-སྣ་ཚོགས།_བྱང་ཆུབ་འབྱུང་བའི་སྨོན་ལམ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-སྣ་ཚོགས།_མོ་རྩིས་འཇམ་པའི་དབྱངས་ཞེས་བྱ་བ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-སྣ་ཚོགས།_འཕགས་པ་ཀླུ་སྒྲུབ་ཀྱི་ཞལ་སྔ་ནས་མཛད་པའི་མན་ངག་ཟབ་མོ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-སྣ་ཚོགས།_འཕགས་པ་ཀླུ་སྒྲུབ་ཀྱི་སྨོན་ལམ་ཞེས་བྱ་བ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-སྣ་ཚོགས།_རྒྱལ་པོ་ལ་གཏམ་བྱ་བ་རིན་པོ་ཆེའི་ཕྲེང་བ་ལས་བྱུང་བའི་སྨོན་ལམ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-སྣ་ཚོགས།_རྟེན་ཅིང་འབྲེལ་པར་འབྱུང་བའི་དེ་ཁོ་ན་ཉིད་ཅེས་བྱ་བ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-སྣ་ཚོགས།_རྡོ་རྗེའི་སྨོན་ལམ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-སྣ་ཚོགས།_ལུགས་ཀྱི་བསྟན་བཅོས་ཤེས་རབ་སྡོང་བུ་ཞེས་བྱ་བ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-སྣ་ཚོགས།_ལུགས་ཀྱི་བསྟན་བཅོས་སྐྱེ་བོ་གསོ་བའི་ཐིགས་པ་ཞེས་བྱ་བ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-སྣ་ཚོགས།_ཤེས་རབ་བརྒྱ་པ་ཞེས་བྱ་བའི་རབ་ཏུ་བྱེད་པ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-སྣ་ཚོགས།_སྤོས་ཀྱི་སྦྱོར་བ་རེའུ་ཆར་བྱས་པ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-སྣ་ཚོགས།_སྤོས་སྦྱོར་རིན་པོ་ཆེའི་ཕྲེང་བ་ཞེས་བྱ་བ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-སྣ་ཚོགས།_སྨོན་ལམ་རིན་པོ་ཆེའི་རྒྱལ་པོ་ཞེས་བྱ་བ།.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-སྤྲིང་ཡིག།_བཤེས་པའི་སྤྲིང་ཡིག.segmented.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/Derge/pdfs/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/Derge/pdfs/1-སྤྲིང་ཡིག།_བཤེས་པའི་སྤྲིང་ཡིག.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/Derge/raw/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།_raw.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/Derge/raw/1-སྤྲིང་ཡིག།_བཤེས་པའི་སྤྲིང་ཡིག_raw.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/Derge/with_page_marker/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།_with_a.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/Derge/with_page_marker/1-སྤྲིང་ཡིག།_བཤེས་པའི་སྤྲིང་ཡིག_with_a.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/extra copies/shetring/dharmadownload.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/extra copies/shetring/seraje.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/extra copies/tsashé/beita.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/extra copies/tsashé/beita/Capture du 2016-11-23 00:32:05.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/extra copies/tsashé/beita/Capture du 2016-11-23 00:32:47.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/extra copies/tsashé/beita/Capture du 2016-11-23 00:33:09.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/extra copies/tsashé/beita/Capture du 2016-11-23 00:33:57.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/extra copies/tsashé/beita/Capture du 2016-11-23 00:34:29.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/extra copies/tsashé/beita/Capture du 2016-11-23 00:34:52.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/extra copies/tsashé/beita/Capture du 2016-11-23 00:35:21.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/extra copies/tsashé/beita/Capture du 2016-11-23 00:35:53.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/extra copies/tsashé/beita/Capture du 2016-11-23 00:36:23.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/extra copies/tsashé/beita/Capture du 2016-11-23 00:36:44.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/extra copies/tsashé/beita/Capture du 2016-11-23 00:37:25.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/extra copies/tsashé/beita/Capture du 2016-11-23 00:38:13.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/extra copies/tsashé/beita/Capture du 2016-11-23 00:39:11.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/extra copies/tsashé/beita/Capture du 2016-11-23 00:39:37.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/extra copies/tsashé/beita/Capture du 2016-11-23 00:39:59.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/extra copies/tsashé/seraje/Capture du 2016-11-23 00:43:13.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/extra copies/tsashé/seraje/Capture du 2016-11-23 00:44:11.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/extra copies/tsashé/seraje/Capture du 2016-11-23 00:44:34.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/extra copies/tsashé/seraje/Capture du 2016-11-23 00:44:59.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/extra copies/tsashé/seraje/Capture du 2016-11-23 00:45:18.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/extra copies/tsashé/seraje/Capture du 2016-11-23 00:45:40.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/extra copies/tsashé/seraje/Capture du 2016-11-23 00:46:10.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/extra copies/tsashé/seraje/Capture du 2016-11-23 00:46:26.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/extra copies/tsashé/seraje/Capture du 2016-11-23 00:46:50.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/extra copies/tsashé/seraje/Capture du 2016-11-23 00:47:08.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/extra copies/tsashé/seraje/Capture du 2016-11-23 00:47:42.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/extra copies/tsashé/seraje/Capture du 2016-11-23 00:48:00.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/extra copies/tsashé/seraje/Capture du 2016-11-23 00:48:15.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/extra copies/tsashé/seraje/Capture du 2016-11-23 00:48:31.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/extra copies/tsashé/seraje/Capture du 2016-11-23 00:48:58.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/extra copies/tsashé/seraje/Capture du 2016-11-23 00:49:17.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/extra copies/tsashé/seraje/Capture du 2016-11-23 00:49:45.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/extra copies/tsashé/seraje/Capture du 2016-11-23 00:50:05.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/extra copies/tsashé/seraje/Capture du 2016-11-23 00:50:28.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/extra copies/tsashé/seraje/Capture du 2016-11-23 00:50:46.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/extra copies/tsashé/seraje/Capture du 2016-11-23 00:51:06.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/extra copies/tsashé/seraje/Capture du 2016-11-23 00:52:17.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/extra copies/tsashé/seraje/Capture du 2016-11-23 00:52:46.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/extra copies/tsashé/seraje/Capture du 2016-11-23 00:53:21.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/extra copies/tsashé/seraje/Capture du 2016-11-23 00:53:42.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/extra copies/tsashé/seraje/Capture du 2016-11-23 00:54:13.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/extra copies/tsashé/seraje/Capture du 2016-11-23 00:54:34.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/extra copies/tsashé/seraje/Capture du 2016-11-23 00:54:57.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/extra copies/tsashé/seraje/Capture du 2016-11-23 00:55:31.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/extra copies/tsashé/seraje/Capture du 2016-11-23 00:55:58.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/extra copies/tsashé/seraje/Capture du 2016-11-23 00:56:12.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/extra copies/tsashé/seraje/Capture du 2016-11-23 00:56:28.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/extra copies/tsashé/seraje/Capture du 2016-11-23 00:57:05.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/extra copies/tsashé/seraje/Capture du 2016-11-23 00:57:31.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/extra copies/tsashé/seraje/Capture du 2016-11-23 00:58:47.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/extra copies/tsashé/seraje/Capture du 2016-11-23 01:00:11.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/extra copies/tsashé/seraje/Capture du 2016-11-23 01:00:35.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/extra copies/tsashé/seraje/Capture du 2016-11-23 01:01:04.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/extra copies/tsashé/seraje/Capture du 2016-11-23 01:01:24.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/extra copies/tsashé/seraje/Capture du 2016-11-23 01:01:54.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/extra copies/tsashé/seraje/Capture du 2016-11-23 01:02:09.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/extra copies/tsashé/seraje/Capture du 2016-11-23 01:02:32.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/extra copies/tsashé/seraje/Capture du 2016-11-23 01:02:54.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/extra copies/tsashé/seraje/Capture du 2016-11-23 01:03:17.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/extra copies/tsashé/seraje/Capture du 2016-11-23 01:03:36.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/extra copies/tsashé/seraje/Capture du 2016-11-23 01:04:29.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/extra copies/tsashé/seraje/Capture du 2016-11-23 01:05:10.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/extra copies/tsashé/seraje/Capture du 2016-11-23 05:26:45.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/extra copies/tsashé/serajerigdzochenmo.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/extra copies/tsashé/tsashé.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/output/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།_formatted.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/reinsert_page_nums.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4-a-final_formatting/segment_final.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/output/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།.odt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/layout/output/1-སྤྲིང་ཡིག།_བཤེས་པའི་སྤྲིང་ཡིག.odt" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/4-a-final_formatting/0-apply_note_choices.py" afterPath="$PROJECT_DIR$/4-a-final_formatting/0-1_apply_note_choices.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/4-a-final_formatting/output/0-2-corrected/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།_corrected.txt" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/0-3-corrected/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།_corrected.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/4-a-final_formatting/output/0-2-corrected/1-སྤྲིང་ཡིག།_བཤེས་པའི་སྤྲིང་ཡིག_corrected.txt" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/0-3-corrected/1-སྤྲིང་ཡིག།_བཤེས་པའི་སྤྲིང་ཡིག_corrected.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/4-a-final_formatting/output/2-1-tag_removed/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།_tag_removed.txt" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/0-2-raw_text/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།_raw.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/4-a-final_formatting/output/2-2-a_markers/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།_a_markers.txt" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/2-0-with_a/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།_with_a.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/4-a-final_formatting/output/2-3-a_reinserted/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།_a_reinserted.txt" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/2-1-a_reinserted/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།_a_reinserted.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/4-a-final_formatting/output/2-3-a_reinserted/1-སྤྲིང་ཡིག།_བཤེས་པའི་སྤྲིང་ཡིག_a_reinserted.txt" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/2-1-a_reinserted/1-སྤྲིང་ཡིག།_བཤེས་པའི་སྤྲིང་ཡིག_a_reinserted.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layout/output/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།.docx" afterPath="$PROJECT_DIR$/layout/output/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།.docx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layout/output/1-སྤྲིང་ཡིག།_བཤེས་པའི་སྤྲིང་ཡིག.docx" afterPath="$PROJECT_DIR$/layout/output/1-སྤྲིང་ཡིག།_བཤེས་པའི་སྤྲིང་ཡིག.docx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/1-a-reinsert_notes/input/1-དབུ་མ།_ཞིབ་མོ་རྣམ་པར་འཐག་པ་ཞེས་བྱ་བའི་རབ་ཏུ་བྱེད་པ།.txt" afterPath="$PROJECT_DIR$/1-a-reinsert_notes/input/1-དབུ་མ།_ཞིབ་མོ་རྣམ་པར་འཐག་པ་ཞེས་བྱ་བའི་རབ་ཏུ་བྱེད་པ།.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/1-a-reinsert_notes/reinsertion.py" afterPath="$PROJECT_DIR$/1-a-reinsert_notes/reinsertion.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2-automatic_categorisation/categorisation.py" afterPath="$PROJECT_DIR$/2-automatic_categorisation/categorisation.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2-automatic_categorisation/output/1-དབུ་མ།_ཞིབ་མོ་རྣམ་པར་འཐག་པ་ཞེས་བྱ་བའི་མདོ།_cats.json" afterPath="$PROJECT_DIR$/2-automatic_categorisation/output/1-དབུ་མ།_ཞིབ་མོ་རྣམ་པར་འཐག་པ་ཞེས་བྱ་བའི་མདོ།_cats.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2-automatic_categorisation/output/1-དབུ་མ།_རིགས་པ་དྲུག་ཅུ་པའི་ཚིག་ལེའུར་བྱས་པ།_cats.json" afterPath="$PROJECT_DIR$/2-automatic_categorisation/output/1-དབུ་མ།_རིགས་པ་དྲུག་ཅུ་པའི་ཚིག་ལེའུར་བྱས་པ།_cats.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2-automatic_categorisation/total_mistakes.txt" afterPath="$PROJECT_DIR$/2-automatic_categorisation/total_mistakes.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2-automatic_categorisation/total_stats.txt" afterPath="$PROJECT_DIR$/2-automatic_categorisation/total_stats.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2-b-manually_corrected_automatic_categorisation/1-དབུ་མ།_རིགས་པ་དྲུག་ཅུ་པའི་ཚིག་ལེའུར་བྱས་པ།_cats.json" afterPath="$PROJECT_DIR$/2-b-manually_corrected_automatic_categorisation/1-དབུ་མ།_རིགས་པ་དྲུག་ཅུ་པའི་ཚིག་ལེའུར་བྱས་པ།_cats.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3-a-revision_format/output/all_notes.txt" afterPath="$PROJECT_DIR$/3-a-revision_format/output/all_notes.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3-a-revision_format/parse_json.py" afterPath="$PROJECT_DIR$/3-a-revision_format/parse_json.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4-a-final_formatting/output/1-1-unmarked/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།_unmarked.txt" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-1-unmarked/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།_unmarked.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4-a-final_formatting/output/1-1-unmarked/1-སྤྲིང་ཡིག།_བཤེས་པའི་སྤྲིང་ཡིག_unmarked.txt" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-1-unmarked/1-སྤྲིང་ཡིག།_བཤེས་པའི་སྤྲིང་ཡིག_unmarked.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4-a-final_formatting/output/1-2-segmented/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།_segmented.txt" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-2-segmented/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།_segmented.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4-a-final_formatting/output/1-2-segmented/1-སྤྲིང་ཡིག།_བཤེས་པའི་སྤྲིང་ཡིག_segmented.txt" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/1-2-segmented/1-སྤྲིང་ཡིག།_བཤེས་པའི་སྤྲིང་ཡིག_segmented.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4-a-final_formatting/output/stats/1-སྤྲིང་ཡིག།_བཤེས་པའི་སྤྲིང་ཡིག_stats.txt" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/stats/1-སྤྲིང་ཡིག།_བཤེས་པའི་སྤྲིང་ཡིག_stats.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layout/layout.sh" afterPath="$PROJECT_DIR$/layout/layout.sh" />
     </list>
     <ignored path="canon_notes.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,41 +524,109 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="0-apply_note_choices.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/4-a-final_formatting/0-apply_note_choices.py">
+      <file leaf-file-name="0-2_1_rawify.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/4-a-final_formatting/0-2_1_rawify.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="91" column="0" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="22" selection-end-column="49" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="1-3_copy_post_seg.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/4-a-final_formatting/1-3_copy_post_seg.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="3-3_copy_final.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/4-a-final_formatting/3-3_copy_final.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="1-དབུ་མ།_ཞིབ་མོ་རྣམ་པར་འཐག་པ་ཞེས་བྱ་བའི་མདོ།_final.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/4-a-final_formatting/output/3-3-final/1-དབུ་མ།_ཞིབ་མོ་རྣམ་པར་འཐག་པ་ཞེས་བྱ་བའི་མདོ།_final.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="segment_final.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/4-a-final_formatting/segment_final.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="reinsert_page_nums.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/4-a-final_formatting/reinsert_page_nums.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="705">
-              <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="layout.sh" pinned="false" current-in-tab="true">
+      <file leaf-file-name="layout.sh" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/layout/layout.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+            <state relative-caret-position="180">
+              <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="0-1_apply_note_choices.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/4-a-final_formatting/0-1_apply_note_choices.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="83">
+              <caret line="32" column="77" selection-start-line="32" selection-start-column="77" selection-end-line="32" selection-end-column="77" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="segment.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/2-automatic_categorisation/segment.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="675">
+              <caret line="45" column="17" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
+              <folding>
+                <element signature="e#0#79#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="categorisation.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/2-automatic_categorisation/categorisation.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="814" column="46" selection-start-line="814" selection-start-column="46" selection-end-line="814" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="1-དབུ་མ།_ཞིབ་མོ་རྣམ་པར་འཐག་པ་ཞེས་བྱ་བའི་མདོ།_stats.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/4-a-final_formatting/output/stats/1-དབུ་མ།_ཞིབ་མོ་རྣམ་པར་འཐག་པ་ཞེས་བྱ་བའི་མདོ།_stats.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="2658" selection-start-line="9" selection-start-column="2658" selection-end-line="9" selection-end-column="2658" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="3-1_reinsert_page_nums.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/4-a-final_formatting/3-1_reinsert_page_nums.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="70" column="28" selection-start-line="70" selection-start-column="28" selection-end-line="70" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -88,20 +648,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/output/conc_yaml/i-1-11བསྟོད་པ་ལས་འདས་པར་བསྟོད་པ།_conc.yaml" />
-        <option value="$PROJECT_DIR$/output/conc_yaml/i-1-12བླ་ན་མེད་པའི་བསྟོད་པ།_conc.yaml" />
-        <option value="$PROJECT_DIR$/output/conc_yaml/i-1-8སེམས་ཅན་མགུ་བར་བྱ་བའི་བསྟོད་པ།_conc.yaml" />
-        <option value="$PROJECT_DIR$/input/1-གསོ་རིག།_བཤད་པ་སྨན་ཨ་བའི་ཆོ་ག.csv" />
-        <option value="$PROJECT_DIR$/test_columns.py" />
-        <option value="$PROJECT_DIR$/reinsertion.py" />
-        <option value="$PROJECT_DIR$/1-reinsert-notes/reinsertion.py" />
-        <option value="$PROJECT_DIR$/2-parse-errors/export_categories.py" />
-        <option value="$PROJECT_DIR$/2-a-parse_errors/export_categories.py" />
-        <option value="$PROJECT_DIR$/workflow" />
-        <option value="$PROJECT_DIR$/2-a-parse_errors/csv_parse.py" />
-        <option value="$PROJECT_DIR$/1-a-reinsert_notes/output/conc_yaml/1-རྒྱུད།_དབང་གི་རིམ་པ་བསྟན་པ་ཞེས་བྱ་བ།_conc.txt" />
-        <option value="$PROJECT_DIR$/workflow.mmd" />
-        <option value="$PROJECT_DIR$/2-automatic_categorisation/template.json" />
         <option value="$PROJECT_DIR$/2-automatic_categorisation/test.py" />
         <option value="$PROJECT_DIR$/2-automatic_categorisation/template/template.json" />
         <option value="$PROJECT_DIR$/2-automatic_categorisation/output/1-དབུ་མ།_ཞིབ་མོ་རྣམ་པར་འཐག་པ་ཞེས་བྱ་བའི་མདོ།_cats.json" />
@@ -109,7 +655,6 @@
         <option value="$PROJECT_DIR$/2-automatic_categorisation/output/1-བསྟོད་ཚོགས།_རྗེ་བཙུན་འཕགས་པ་འཇམ་དཔལ་གྱི་སྙིང་རྗེ་ལ་བསྟོད་པ།_cats.json" />
         <option value="$PROJECT_DIR$/2-automatic_categorisation/output/1-སྣ་ཚོགས།_ལུགས་ཀྱི་བསྟན་བཅོས་སྐྱེ་བོ་གསོ་བའི་ཐིགས་པ་ཞེས་བྱ་བ།_cats.json" />
         <option value="$PROJECT_DIR$/2-automatic_categorisation/truc.py" />
-        <option value="$PROJECT_DIR$/1-a-reinsert_notes/reinsertion.py" />
         <option value="$PROJECT_DIR$/2-automatic_categorisation/output/1-དབུ་མ།_མ་རྟོགས་པ་རྟོགས་པར་བྱེད་པ་ཞེས་བྱ་བའི་རབ་ཏུ་བྱེད་པ།_cats.json" />
         <option value="$PROJECT_DIR$/2-automatic_categorisation/output/1-དབུ་མ།_ཐེག་པ་ཆེན་པོ་ཉི་ཤུ་པ།_cats.json" />
         <option value="$PROJECT_DIR$/2-automatic_categorisation/output/1-དབུ་མ།_བསྒོམ་པའི་རིམ་པ།_cats.json" />
@@ -125,27 +670,41 @@
         <option value="/usr/local/lib/python3.4/dist-packages/PyTib/data/compound_lexicon.csv" />
         <option value="$PROJECT_DIR$/layout/page_num_n_lines.py" />
         <option value="$PROJECT_DIR$/truc.py" />
-        <option value="$PROJECT_DIR$/4-a-final_formatting/segment_final.py" />
         <option value="$PROJECT_DIR$/layout/formatting.py" />
         <option value="$PROJECT_DIR$/2-automatic_categorisation/segmented/1-སྤྲིང་ཡིག།_བཤེས་པའི་སྤྲིང་ཡིག.segmented.txt" />
         <option value="/usr/local/lib/python3.4/dist-packages/PyTib/data/exceptions.txt" />
         <option value="/usr/local/lib/python3.4/dist-packages/PyTib/data/uncompound_lexicon.txt" />
-        <option value="/usr/local/lib/python3.4/dist-packages/PyTib/Segmentation.py" />
         <option value="/usr/local/lib/python3.4/dist-packages/PyTib/common.py" />
         <option value="$PROJECT_DIR$/2-automatic_categorisation/segment.py" />
+        <option value="$PROJECT_DIR$/4-a-final_formatting/apply_note_choices.py" />
+        <option value="$PROJECT_DIR$/layout/layout.sh" />
+        <option value="$PROJECT_DIR$/2-automatic_categorisation/total_mistakes.txt" />
+        <option value="$PROJECT_DIR$/3-a-revision_format/output/antconc_format/1-དབུ་མ།_རིགས་པ་དྲུག་ཅུ་པའི་ཚིག་ལེའུར་བྱས་པ།_antconc_format.txt" />
+        <option value="$PROJECT_DIR$/4-a-final_formatting/output/1-2-segmented/1-དབུ་མ།_རིགས་པ་དྲུག་ཅུ་པའི་ཚིག་ལེའུར་བྱས་པ།_segmented.txt" />
+        <option value="$PROJECT_DIR$/4-a-final_formatting/segment_final.py" />
+        <option value="$PROJECT_DIR$/4-a-final_formatting/reinsert_page_nums.py" />
+        <option value="/usr/local/lib/python3.4/dist-packages/PyTib/Segmentation.py" />
         <option value="$PROJECT_DIR$/2-automatic_categorisation/categorisation.py" />
         <option value="$PROJECT_DIR$/3-a-revision_format/parse_json.py" />
-        <option value="$PROJECT_DIR$/4-a-final_formatting/apply_note_choices.py" />
         <option value="$PROJECT_DIR$/4-a-final_formatting/0-apply_note_choices.py" />
-        <option value="$PROJECT_DIR$/4-a-final_formatting/reinsert_page_nums.py" />
-        <option value="$PROJECT_DIR$/layout/layout.sh" />
+        <option value="$PROJECT_DIR$/4-a-final_formatting/output/0-2-corrected/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།_corrected.txt" />
+        <option value="$PROJECT_DIR$/4-a-final_formatting/1-1_unmark.py" />
+        <option value="$PROJECT_DIR$/4-a-final_formatting/segment_final_data.txt" />
+        <option value="$PROJECT_DIR$/4-a-final_formatting/1-2_segment_final.py" />
+        <option value="$PROJECT_DIR$/4-a-final_formatting/output/1-3-post_seg/1-དབུ་མ།_ཞིབ་མོ་རྣམ་པར་འཐག་པ་ཞེས་བྱ་བའི་མདོ།_post_seg.txt" />
+        <option value="$PROJECT_DIR$/4-a-final_formatting/1-3_copy_post_seg.py" />
+        <option value="$PROJECT_DIR$/1-a-reinsert_notes/reinsertion.py" />
+        <option value="$PROJECT_DIR$/4-a-final_formatting/0-2_1_rawify.py" />
+        <option value="$PROJECT_DIR$/4-a-final_formatting/3-2_extra_copies_folder.py" />
+        <option value="$PROJECT_DIR$/4-a-final_formatting/3-1_reinsert_page_nums.py" />
+        <option value="$PROJECT_DIR$/4-a-final_formatting/3-3_copy_final.py" />
+        <option value="$PROJECT_DIR$/4-a-final_formatting/0-1_apply_note_choices.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="-24" />
     <option name="width" value="1920" />
-    <option name="height" value="1200" />
+    <option name="height" value="1175" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -172,6 +731,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="NBKnowledgePane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -272,11 +832,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="4-a-final_formatting" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="output" />
+              <option name="myItemId" value="2-automatic_categorisation" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -290,15 +846,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="4-a-final_formatting" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="output" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="3-3-final" />
+              <option name="myItemId" value="2-a-parse_errors" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -312,68 +860,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="3-b-reviewed_texts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="canon_notes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="canon_notes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="3-a-revision_format" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="canon_notes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="canon_notes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="3-a-revision_format" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="output" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="canon_notes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="canon_notes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="3-a-revision_format" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="output" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="updated_structure" />
+              <option name="myItemId" value="1-a-reinsert_notes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="NBKnowledgePane" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -385,23 +878,23 @@
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/4-a-final_formatting/Derge_raw/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།_raw.txt" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/4-a-final_formatting/Derge_raw" />
-      <recent name="$PROJECT_DIR$/4-a-final_formatting/output/formatted" />
-      <recent name="$PROJECT_DIR$/2-automatic_categorisation" />
-      <recent name="$PROJECT_DIR$/3-revision_format/output" />
-      <recent name="$PROJECT_DIR$/1-b-manually_corrected_conc/corrected" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/layout" />
       <recent name="$PROJECT_DIR$/2-b-manually_corrected_automatic_categorisation" />
+      <recent name="$PROJECT_DIR$/layout" />
       <recent name="$PROJECT_DIR$/2-automatic_categorisation/resources/kangyur_ngrams" />
       <recent name="$PROJECT_DIR$/2-automatic_categorisation" />
       <recent name="$PROJECT_DIR$/1-b-manually_corrected_conc/notes_restored" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/4-a-final_formatting/output/0-2-raw_text" />
+      <recent name="$PROJECT_DIR$/4-a-final_formatting/output/2-0-with_a" />
+      <recent name="$PROJECT_DIR$/4-a-final_formatting/output" />
+      <recent name="$PROJECT_DIR$/4-a-final_formatting/output/3-2-compared/extra_copies/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།" />
+      <recent name="$PROJECT_DIR$/4-a-final_formatting/output/3-2-compared/extra_copies/1-སྤྲིང་ཡིག།_བཤེས་པའི་སྤྲིང་ཡིག" />
+    </key>
   </component>
-  <component name="RunManager" selected="Bash.layout.sh">
-    <configuration default="false" name="apply_note_choices" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.segment">
+    <configuration default="false" name="3-2_extra_copies_folder" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -413,12 +906,12 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="canon_notes" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/4-a-final_formatting/0-apply_note_choices.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/4-a-final_formatting/3-2_extra_copies_folder.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="segment_final" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="3-1_reinsert_page_nums" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -430,12 +923,12 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="canon_notes" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/4-a-final_formatting/segment_final.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/4-a-final_formatting/3-1_reinsert_page_nums.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="reinsert_page_nums" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="3-3_copy_final" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -447,24 +940,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="canon_notes" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/4-a-final_formatting/reinsert_page_nums.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="formatting" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/layout" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="canon_notes" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/layout/formatting.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/4-a-final_formatting/3-3_copy_final.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -478,6 +954,23 @@
       <option name="PARAMETERS" value="" />
       <module name="canon_notes" />
       <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="segment" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2-automatic_categorisation" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="canon_notes" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2-automatic_categorisation/segment.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="BashConfigurationType" factoryName="Bash">
@@ -626,19 +1119,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.apply_note_choices" />
-      <item index="1" class="java.lang.String" itemvalue="Python.segment_final" />
-      <item index="2" class="java.lang.String" itemvalue="Python.reinsert_page_nums" />
-      <item index="3" class="java.lang.String" itemvalue="Python.formatting" />
-      <item index="4" class="java.lang.String" itemvalue="Bash.layout.sh" />
+      <item index="0" class="java.lang.String" itemvalue="Python.3-2_extra_copies_folder" />
+      <item index="1" class="java.lang.String" itemvalue="Python.3-1_reinsert_page_nums" />
+      <item index="2" class="java.lang.String" itemvalue="Python.3-3_copy_final" />
+      <item index="3" class="java.lang.String" itemvalue="Bash.layout.sh" />
+      <item index="4" class="java.lang.String" itemvalue="Python.segment" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Bash.layout.sh" />
-        <item index="1" class="java.lang.String" itemvalue="Python.formatting" />
-        <item index="2" class="java.lang.String" itemvalue="Python.reinsert_page_nums" />
-        <item index="3" class="java.lang.String" itemvalue="Python.apply_note_choices" />
-        <item index="4" class="java.lang.String" itemvalue="Python.segment_final" />
+        <item index="0" class="java.lang.String" itemvalue="Python.segment" />
+        <item index="1" class="java.lang.String" itemvalue="Bash.layout.sh" />
+        <item index="2" class="java.lang.String" itemvalue="Python.3-3_copy_final" />
+        <item index="3" class="java.lang.String" itemvalue="Python.3-1_reinsert_page_nums" />
+        <item index="4" class="java.lang.String" itemvalue="Python.3-2_extra_copies_folder" />
       </list>
     </recent_temporary>
   </component>
@@ -823,26 +1316,27 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-24" width="1920" height="1200" extended-state="6" />
-    <editor active="false" />
+    <frame x="0" y="0" width="1920" height="1175" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20063192" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960597" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20619658" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24596392" sideWeight="0.5018528" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32670453" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33364838" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32986766" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2437673" sideWeight="0.49814716" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24242425" sideWeight="0.49814716" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281106" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3508772" sideWeight="0.49814716" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35037878" sideWeight="0.49814716" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Unicode Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3273073" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -921,7 +1415,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/1-a-reinsert_notes/reinsertion.py</url>
-          <line>322</line>
+          <line>323</line>
           <option name="timeStamp" value="326" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
@@ -930,14 +1424,23 @@
           <option name="timeStamp" value="373" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/4-a-final_formatting/0-apply_note_choices.py</url>
+          <url>file://$PROJECT_DIR$/4-a-final_formatting/0-1_apply_note_choices.py</url>
           <line>91</line>
           <option name="timeStamp" value="379" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/4-a-final_formatting/reinsert_page_nums.py</url>
-          <line>83</line>
+          <url>file://$PROJECT_DIR$/4-a-final_formatting/3-1_reinsert_page_nums.py</url>
+          <line>67</line>
           <option name="timeStamp" value="381" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/4-a-final_formatting/0-1_apply_note_choices.py</url>
+          <option name="timeStamp" value="385" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/4-a-final_formatting/3-3_copy_final.py</url>
+          <line>24</line>
+          <option name="timeStamp" value="388" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -950,99 +1453,15 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="382" />
+      <option name="time" value="389" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///usr/lib/python3.4/re.py">
+    <entry file="file://$PROJECT_DIR$/3-a-revision_format/output/antconc_format/1-དབུ་མ།_རིགས་པ་དྲུག་ཅུ་པའི་ཚིག་ལེའུར་བྱས་པ།_antconc_format.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="209" column="0" selection-start-line="209" selection-start-column="0" selection-end-line="209" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/3-revision_format/output/antconc_format/{}_antconc_format.txt" />
-    <entry file="file://$PROJECT_DIR$/2-a-parse_errors/export_categories.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2-a-parse_errors/csv_parse.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="739">
-          <caret line="222" column="14" selection-start-line="222" selection-start-column="14" selection-end-line="222" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2-automatic_categorisation/output/1-གསོ་རིག།_སྦྱོར་བ་བརྒྱ་པ།_cats.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-123687">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2-automatic_categorisation/1-སྣ་ཚོགས།_སྤོས་སྦྱོར་རིན་པོ་ཆེའི་ཕྲེང་བ་ཞེས་བྱ་བ།_cats.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/categories_legend.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="679">
-          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/workflow-tech-specs.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-296">
-          <caret line="60" column="47" selection-start-line="60" selection-start-column="47" selection-end-line="60" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/3-revision_format/output/antconc_format/1-རྒྱུད།_དེ་ཁོ་ན་ཉིད་སྒྲོན་མ།_automatic__min_mod__particle_groups_antconc_format.txt" />
-    <entry file="file://$PROJECT_DIR$/3-revision_format/output/antconc_format/1-རྒྱུད།_དེ་ཁོ་ན་ཉིད་སྒྲོན་མ།_automatic__min_mod__min_mod_groups_antconc_format.txt" />
-    <entry file="file://$PROJECT_DIR$/3-revision_format/output/antconc_format/1-རྒྱུད།_དེ་ཁོ་ན་ཉིད་སྒྲོན་མ།_automatic__particle_issues__dagdra_po_antconc_format.txt" />
-    <entry file="file://$PROJECT_DIR$/2-automatic_categorisation/resources/template.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="51" column="1" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="937" column="0" selection-start-line="937" selection-start-column="0" selection-end-line="937" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1-a-reinsert_notes/reinsertion.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1209">
-          <caret line="406" column="0" selection-start-line="406" selection-start-column="0" selection-end-line="406" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydevd_bundle/pydevd_exec2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydevd_bundle/pydevd_comm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="1078" column="0" selection-start-line="1078" selection-start-column="0" selection-end-line="1078" selection-end-column="0" />
+        <state relative-caret-position="585">
+          <caret line="20" column="257" selection-start-line="0" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1053,219 +1472,160 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/layout/page_num_n_lines.py" />
-    <entry file="file://$PROJECT_DIR$/4-a-final_formatting/output/4-segmented/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།_formatted_corrected_segmented.txt" />
-    <entry file="file://$PROJECT_DIR$/1-a-reinsert_notes/input/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།.txt">
+    <entry file="file://$PROJECT_DIR$/4-a-final_formatting/output/stats/1-དབུ་མ།_རིགས་པ་དྲུག་ཅུ་པའི་ཚིག་ལེའུར་བྱས་པ།_stats.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="53" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
+        <state relative-caret-position="165">
+          <caret line="9" column="407" selection-start-line="9" selection-start-column="407" selection-end-line="9" selection-end-column="407" />
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/lib/python3.4/dist-packages/PyTib/data/SylComponents.json">
+    <entry file="file://$PROJECT_DIR$/4-a-final_formatting/output/0-1-formatted/1-དབུ་མ།_རིགས་པ་དྲུག་ཅུ་པའི་ཚིག་ལེའུར་བྱས་པ།_formatted.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="1" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.4/dist-packages/PyTib/SylComponents.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="36" column="51" selection-start-line="36" selection-start-column="51" selection-end-line="36" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.4/dist-packages/PyTib/Agreement.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/truc.py" />
-    <entry file="file:///usr/local/lib/python3.4/dist-packages/PyTib/data/Agreement.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/4-a-final_formatting/output/2-3-a_reinserted/1-དབུམ_དབུམརྩབའིཚིགལེའུརབྱསཔཤེསརབ_a_reinserted.txt" />
-    <entry file="file://$PROJECT_DIR$/4-a-final_formatting/output/3-3-final/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།_final.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/lib/python3.4/tempfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="547" column="54" selection-start-line="547" selection-start-column="54" selection-end-line="547" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ordered_mistakes.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="43" column="40" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2-automatic_categorisation/segmented/1-སྣ་ཚོགས།_སྨོན་ལམ་རིན་པོ་ཆེའི་རྒྱལ་པོ་ཞེས་བྱ་བ།.segmented.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.4/dist-packages/PyTib/data/exceptions.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.4/dist-packages/PyTib/data/ancient.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.4/dist-packages/PyTib/data/compound_lexicon.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1380">
-          <caret line="92" column="0" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.4/dist-packages/PyTib/data/uncompound_lexicon.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8670">
-          <caret line="578" column="3" selection-start-line="578" selection-start-column="3" selection-end-line="578" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2-automatic_categorisation/segmented/1-སྤྲིང་ཡིག།_བཤེས་པའི་སྤྲིང་ཡིག.segmented.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2-automatic_categorisation/new_words.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="6" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.4/dist-packages/PyTib/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1275">
-          <caret line="87" column="0" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.4/dist-packages/PyTib/Segmentation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1035">
-          <caret line="70" column="88" selection-start-line="70" selection-start-column="88" selection-end-line="70" selection-end-column="88" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2-automatic_categorisation/segment.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1110">
-          <caret line="74" column="33" selection-start-line="74" selection-start-column="33" selection-end-line="74" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#79#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2-automatic_categorisation/total_mistakes.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2-automatic_categorisation/categorisation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="809" column="48" selection-start-line="809" selection-start-column="48" selection-end-line="809" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2-automatic_categorisation/total_stats.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/3-a-revision_format/parse_json.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8385">
-          <caret line="566" column="56" selection-start-line="566" selection-start-column="56" selection-end-line="566" selection-end-column="56" />
-          <folding />
+        <state relative-caret-position="75">
+          <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/3-a-revision_format/output/all_notes.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
+        <state relative-caret-position="375">
           <caret line="25" column="267" selection-start-line="25" selection-start-column="267" selection-end-line="25" selection-end-column="267" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/lib/python3.4/dist-packages/PyTib/common.py">
+    <entry file="file://$PROJECT_DIR$/4-a-final_formatting/output/3-3-final/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།_final.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="108" column="0" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="-2940">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/4-a-final_formatting/segment_final.py">
+    <entry file="file:///usr/local/lib/python3.4/dist-packages/PyTib/Segmentation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4-a-final_formatting/output/1-2-segmented/1-སྤྲིང་ཡིག།_བཤེས་པའི་སྤྲིང་ཡིག_segmented.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4-a-final_formatting/output/3-3-final/1-སྤྲིང་ཡིག།_བཤེས་པའི་སྤྲིང་ཡིག_final.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1328">
+          <caret line="12" column="43" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python3.4/dist-packages/PyTib/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="87" column="0" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4-a-final_formatting/output/3-2-compared/1-དབུ་མ།_རིགས་པ་དྲུག་ཅུ་པའི་ཚིག་ལེའུར་བྱས་པ།_compared.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="226" selection-start-line="6" selection-start-column="226" selection-end-line="6" selection-end-column="226" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4-a-final_formatting/output/1-2-segmented/1-དབུ་མ།_རིགས་པ་དྲུག་ཅུ་པའི་ཚིག་ལེའུར་བྱས་པ།_segmented.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4-a-final_formatting/output/1-2-segmented/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།_segmented.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-          <folding />
+          <caret line="9" column="55" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/4-a-final_formatting/0-apply_note_choices.py">
+    <entry file="file://$PROJECT_DIR$/2-a-parse_errors/i-6-1 བྱང་ཆུབ་སེམས་དཔའི་སྤྱོད་པ་ལ་འཇུག་པ།_conc_corrected_all_tocheck.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="91" column="0" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/4-a-final_formatting/reinsert_page_nums.py">
+    <entry file="file://$PROJECT_DIR$/2-a-parse_errors/i-6-1 བྱང་ཆུབ་སེམས་དཔའི་སྤྱོད་པ་ལ་འཇུག་པ།_conc_corrected_tense_tocheck.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/layout/formatting.py">
+    <entry file="file://$PROJECT_DIR$/2-a-parse_errors/reorder_notes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2-automatic_categorisation/segmented/1-དབུ་མ།_ཞིབ་མོ་རྣམ་པར་འཐག་པ་ཞེས་བྱ་བའི་མདོ།_segmented.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3-a-revision_format/parse_json.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="566" column="69" selection-start-line="566" selection-start-column="69" selection-end-line="566" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3-a-revision_format/output/antconc_format/1-དབུ་མ།_ཞིབ་མོ་རྣམ་པར་འཐག་པ་ཞེས་བྱ་བའི་མདོ།_antconc_format.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="8" column="249" selection-start-line="8" selection-start-column="249" selection-end-line="8" selection-end-column="249" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4-a-final_formatting/output/0-1-formatted/1-དབུ་མ།_ཞིབ་མོ་རྣམ་པར་འཐག་པ་ཞེས་བྱ་བའི་མདོ།_formatted.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4-a-final_formatting/Derge/raw/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།_raw.txt" />
+    <entry file="file://$PROJECT_DIR$/4-a-final_formatting/Derge/with_page_marker/1-དབུ་མ།_ཞིབ་མོ་རྣམ་པར་འཐག་པ་ཞེས་བྱ་བའི་མདོ།_with_a.txt" />
+    <entry file="file://$PROJECT_DIR$/4-a-final_formatting/Derge/raw/1-དབུ་མ།_ཞིབ་མོ་རྣམ་པར་འཐག་པ་ཞེས་བྱ་བའི་མདོ།_raw.txt" />
+    <entry file="file://$PROJECT_DIR$/4-a-final_formatting/output/0-3-corrected/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།_corrected.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="1848" column="37" selection-start-line="1848" selection-start-column="37" selection-end-line="1848" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4-a-final_formatting/output/1-1-unmarked/1-དབུ་མ།_ཞིབ་མོ་རྣམ་པར་འཐག་པ་ཞེས་བྱ་བའི་མདོ།_unmarked.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="97" column="30" selection-start-line="97" selection-start-column="30" selection-end-line="97" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4-a-final_formatting/output/1-1-unmarked/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།_unmarked.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="1849" column="2" selection-start-line="1849" selection-start-column="2" selection-end-line="1849" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4-a-final_formatting/output/1-1-unmarked/1-སྤྲིང་ཡིག།_བཤེས་པའི་སྤྲིང་ཡིག_unmarked.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="500" column="2" selection-start-line="500" selection-start-column="2" selection-end-line="500" selection-end-column="2" />
         </state>
       </provider>
     </entry>
@@ -1277,10 +1637,199 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/layout/layout.sh">
+    <entry file="file://$PROJECT_DIR$/4-a-final_formatting/1-1_unmark.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4-a-final_formatting/segment_final_data.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4-a-final_formatting/output/1-2-segmented/1-དབུ་མ།_ཞིབ་མོ་རྣམ་པར་འཐག་པ་ཞེས་བྱ་བའི་མདོ།_segmented.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="58" selection-start-line="6" selection-start-column="58" selection-end-line="6" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4-a-final_formatting/output/1-3-post_seg/1-དབུ་མ།_ཞིབ་མོ་རྣམ་པར་འཐག་པ་ཞེས་བྱ་བའི་མདོ།_post_seg.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1890">
+          <caret line="126" column="36" selection-start-line="126" selection-start-column="36" selection-end-line="126" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4-a-final_formatting/output/2-1-a_reinserted/1-དབུ་མ།_རིགས་པ་དྲུག་ཅུ་པའི་ཚིག་ལེའུར་བྱས་པ།_a_reinserted.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1-a-reinsert_notes/reinsertion.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="549">
+          <caret line="430" column="43" selection-start-line="430" selection-start-column="43" selection-end-line="430" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4-a-final_formatting/output/3-1-page_reinserted/1-དབུ་མ།_རིགས་པ་དྲུག་ཅུ་པའི་ཚིག་ལེའུར་བྱས་པ།_a_reinserted.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4-a-final_formatting/output/3-1-page_reinserted/1-དབུ་མ།_ཞིབ་མོ་རྣམ་པར་འཐག་པ་ཞེས་བྱ་བའི་མདོ།_a_reinserted.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4-a-final_formatting/output/2-1-a_reinserted/1-དབུ་མ།_ཞིབ་མོ་རྣམ་པར་འཐག་པ་ཞེས་བྱ་བའི་མདོ།_a_reinserted.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4-a-final_formatting/1-2_segment_final.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#69#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4-a-final_formatting/output/3-2-compared/1-དབུ་མ།_ཞིབ་མོ་རྣམ་པར་འཐག་པ་ཞེས་བྱ་བའི་མདོ།_compared.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" column="34" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4-a-final_formatting/3-2_extra_copies_folder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4-a-final_formatting/regexes.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4-a-final_formatting/0-2_1_rawify.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="22" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4-a-final_formatting/3-1_reinsert_page_nums.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="70" column="28" selection-start-line="70" selection-start-column="28" selection-end-line="70" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4-a-final_formatting/1-3_copy_post_seg.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4-a-final_formatting/output/stats/1-དབུ་མ།_ཞིབ་མོ་རྣམ་པར་འཐག་པ་ཞེས་བྱ་བའི་མདོ།_stats.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="2658" selection-start-line="9" selection-start-column="2658" selection-end-line="9" selection-end-column="2658" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4-a-final_formatting/3-3_copy_final.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4-a-final_formatting/output/3-3-final/1-དབུ་མ།_ཞིབ་མོ་རྣམ་པར་འཐག་པ་ཞེས་བྱ་བའི་མདོ།_final.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layout/layout.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4-a-final_formatting/0-1_apply_note_choices.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="32" column="77" selection-start-line="32" selection-start-column="77" selection-end-line="32" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2-automatic_categorisation/segment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="45" column="17" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#79#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2-automatic_categorisation/categorisation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="814" column="46" selection-start-line="814" selection-start-column="46" selection-end-line="814" selection-end-column="46" />
           <folding />
         </state>
       </provider>

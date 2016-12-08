@@ -4,6 +4,7 @@ from xlwt import Workbook
 import os
 import yaml
 
+
 def is_punct(string):
     # put in common
     if '༄' in string or '༅' in string or '༆' in string or '༇' in string or '༈' in string or \
@@ -404,7 +405,6 @@ def generate_outputs(text_name, notes_name, context, in_dir='input', out_dir='ou
     generate_comparison_spreadsheet(editions, context, work_name)
 
     generate_context_versions(editions, work_name, out_dir, left=context, right=context)
-
 
 
 # put in this list the pairs of works and their respective notes

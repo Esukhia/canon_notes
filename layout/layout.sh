@@ -9,5 +9,5 @@ do
   filename="${f#../4-a-final_formatting/output/3-3-final/}"
   filename="${filename%_final.*}"
   echo "Converting $f"
-  `pandoc --variable=mainfont:"Monlam Uni Ouchan2" -f markdown -t docx $f -o ./output/$filename.docx`
+  `pandoc -f markdown -t docx $f -o ./output/$filename.docx`
 done

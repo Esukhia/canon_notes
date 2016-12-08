@@ -1,8 +1,8 @@
 K: 73 notes (49.32%)
 U: 42 notes (28.38%)
 C: 6 notes (4.05%)
-D: 25 notes (16.89%)
 ?: 2 notes (1.35%)
+D: 25 notes (16.89%)
 Total notes: 148
 Discarded notes(D+U): 67 notes (45.27%)
 Kept notes(C+K+?): 81 notes (54.73%)

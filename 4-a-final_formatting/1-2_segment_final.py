@@ -35,9 +35,9 @@ for f in os.listdir(in_path):
     for r in replacements:
         bad_segmented = Segment().segment(r[0])
         if bad_segmented in segmented:
-            segmented = segmented.replace(bad_segmented, '#'+bad_segmented)
+            segmented = segmented.replace(' {} '.format(bad_segmented), ' @{} '.format(bad_segmented))
             new_notes.append(format_footnote(r[0], r[1]))
-    mistakes = [str(num)+line for num, line in enumerate(segmented.split('\n')) if '#' in line]
+    mistakes = [str(num)+line for num, line in enumerate(segmented.split('\n')) if '#' in line or '@' in line]
     write_file("{}/{}_segmented.txt".format(out_path, work_name), '\n'.join(mistakes+new_notes))
 
 # copy the corrected file in post_seg if it does not exist

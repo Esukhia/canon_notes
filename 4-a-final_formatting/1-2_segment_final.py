@@ -32,12 +32,25 @@ for f in os.listdir(in_path):
     content = open_file('{}/{}'.format(in_path, f))
     segmented = Segment().segment(content, danying=True)
     new_notes = ['\n']
+    suggestions = defaultdict(list)
     for r in replacements:
         bad_segmented = Segment().segment(r[0])
-        if bad_segmented in segmented:
-            segmented = segmented.replace(' {} '.format(bad_segmented), ' @{} '.format(bad_segmented))
-            new_notes.append(format_footnote(r[0], r[1]))
-    mistakes = [str(num)+line for num, line in enumerate(segmented.split('\n')) if '#' in line or '@' in line]
+        bads = [bad_segmented]
+        if not bad_segmented.endswith('་'):
+            bads.append(bad_segmented+'་')
+        for b in bads:
+            if b in segmented:
+                segmented = segmented.replace(' {} '.format(b), ' @{} '.format(b))
+                suggestions[' @{} '.format(b)] = []
+                new_notes.append(format_footnote(r[0], r[1]))
+    misspellings = [str(num)+line for num, line in enumerate(segmented.split('\n')) if '#' in line]
+
+    for num, line in enumerate(segmented.split('\n')):
+        for s in suggestions:
+            if s in line:
+                suggestions[s].append(str(num) + line)
+    all_suggestions = [a for k in tib_sort(suggestions.keys()) for a in suggestions[k]+['\n'] if suggestions[k] != []]
+    mistakes = misspellings + ['\n'] + all_suggestions
     write_file("{}/{}_segmented.txt".format(out_path, work_name), '\n'.join(mistakes+new_notes))
 
 # copy the corrected file in post_seg if it does not exist

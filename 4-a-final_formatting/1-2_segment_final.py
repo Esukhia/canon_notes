@@ -60,7 +60,7 @@ for f in os.listdir(in_path):
     mistakes = misspellings + ['\n'] + all_suggestions
     write_file("{}/{}_segmented.txt".format(out_path, work_name), '\n'.join(mistakes))
 
-# copy the corrected file in post_seg if it does not exist
+# copy the corrected file in post_seg if it does not exist stuff !
 for f in os.listdir('output/0-3-corrected'):
     work_name = f.replace('_corrected.txt', '')
     existing = [g.replace('_post_seg.txt', '') for g in os.listdir('output/1-3-post_seg')]

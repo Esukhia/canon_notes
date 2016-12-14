@@ -87,7 +87,7 @@ def format_footnote(note, chosen, ref):
 reviewed_path = '../3-b-reviewed_texts'
 structure_path = '../3-a-revision_format/output/updated_structure'
 for f in os.listdir(reviewed_path):
-    if f == '1-དབུ་མ།_ཞིབ་མོ་རྣམ་པར་འཐག་པ་ཞེས་བྱ་བའི་མདོ།_DUCKed.csv':
+    if f == '1-དབུ་མ།_ཞིབ་མོ་རྣམ་པར་འཐག་པ་ཞེས་བྱ་བའི་རབ་ཏུ་བྱེད་པ།_DUCKed.csv':
         work_name = f.replace('_DUCKed.csv', '')
         note_choice = parse_decisions(open_file('{}/{}'.format(reviewed_path, f)))
 

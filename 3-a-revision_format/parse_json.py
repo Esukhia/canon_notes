@@ -564,7 +564,7 @@ if __name__ == '__main__':
     in_dir = '../2-automatic_categorisation/output/'
     output = []
     for file_name in os.listdir(in_dir):
-        if file_name == '1-དབུ་མ།_ཞིབ་མོ་རྣམ་པར་འཐག་པ་ཞེས་བྱ་བའི་མདོ།_cats.json':
+        if file_name == '1-དབུ་མ།_ཞིབ་མོ་རྣམ་པར་འཐག་པ་ཞེས་བྱ་བའི་རབ་ཏུ་བྱེད་པ།_cats.json':
             work_name = file_name.replace('_cats.json', '')
             print(file_name)
             json_structure = jp.decode(open_file(in_dir+file_name))

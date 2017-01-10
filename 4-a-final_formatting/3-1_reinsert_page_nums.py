@@ -127,6 +127,20 @@ patterns = {
         [7],
         7,
         4
+    ],
+    '1-དབུ་མ།_ཐེག་པ་ཆེན་པོ་ཉི་ཤུ་པ།': [
+        ('start', 137, 'བ'),
+        ('end', 138, 'ན'),
+        [7],
+        7,
+        7
     ]
+    # '': [
+    #     ('start', 0, ''),  # page start + front/back
+    #     ('end', 0, ''),  # idem
+    #     [0],  # list of lines per page for the beginning of the text
+    #     0,  # general number of lines per page
+    #     0  # number of lines pertaining to the current text on the last page
+    # ]
 }
 reinsert(in_path, out_path1, out_path2, patterns)

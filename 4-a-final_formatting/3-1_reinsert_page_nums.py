@@ -65,7 +65,7 @@ def reinsert(in_path, out_path1, out_path2, patterns):
 
         output = '\n{}\n'.format('-'*100).join(pages) + '\n\n' + notes
 
-        write_file('{}/{}_a_reinserted.txt'.format(out_path1, work_name), output)
+        write_file('{}/{}_page_reinserted.txt'.format(out_path1, work_name), output)
 
         # write to the file to 3-2-compared if it is not yet there
         existing = [g.replace('_compared.txt', '') for g in os.listdir(out_path2) if g.endswith('.txt')]
@@ -136,11 +136,11 @@ patterns = {
         7
     ]
     # '': [
-    #     ('start', 0, ''),  # page start + front/back
-    #     ('end', 0, ''),  # idem
-    #     [0],  # list of lines per page for the beginning of the text
-    #     0,  # general number of lines per page
-    #     0  # number of lines pertaining to the current text on the last page
+    #     ('start', 0, ''),     # page start + front/back
+    #     ('end', 0, ''),       # idem
+    #     [0],                  # list of lines per page for the beginning of the text
+    #     0,                    # general number of lines per page
+    #     0                     # number of lines pertaining to the current text on the last page
     # ]
 }
 reinsert(in_path, out_path1, out_path2, patterns)

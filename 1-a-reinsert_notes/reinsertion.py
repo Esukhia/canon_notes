@@ -385,7 +385,7 @@ def generate_context_versions(editions, file_name, out_dir, left=5, right=5, bas
     output = re.sub(r'\n- -([^\n]+)\n  -', r'\n\1: ', output)
     output = re.sub(r"---\n '([0-9]+)':  ''", r'-\1-', output)
     output = re.sub(r"- - '1'\n  - ''", r'-1-', output).replace(" '", '').replace("'", '')
-    output = re.sub(r'\n', r',,,,,,,,,,,,,,,\n', output)
+    output = re.sub(r'\n', r',,,,,,,,,,,,,,,\n', output)  # Todo
     write_file('./{}/conc_yaml/{}_conc.txt'.format(out_dir, file_name), output)
 
 
@@ -414,10 +414,11 @@ def generate_outputs(text_name, notes_name, context, in_dir='input', out_dir='ou
 #         ('i-5-10 དབུ་མ་ལ་འཇུག་པ།.txt', '5-10 དབུ་མ་ལ་འཇུག་པ།.csv'),
 #         ('i-1-88 རིགས་པ་དྲུག་ཅུ་པའི་ཚིག་ལེའུར་བྱས་པ།.txt', '1-88 རིགས་པ་དྲུག་ཅུ་པའི་ཚིག་ལེའུར་བྱས་པ།.csv')]
 
-excluded = ['1-གསོ་རིག།_སྦྱོར་བ་བརྒྱ་པ།.txt', '1-དབུ་མ།_རྟེན་ཅིང་འབྲེལ་པར་འབྱུང་བའི་སྙིང་པོའི་ཚིག་ལེའུར་བ.txt', '1-དབུ་མ།_རྩོད་པ་བཟློག་པའི་འགྲེལ་པ།.txt', '1-བསྟོད་ཚོགས།_དམྱལ་བ་ནས་འདོན་པ་ཞེས་བྱ་བ།.txt', '1-བསྟོད་ཚོགས།_སེམས་ཅན་མགུ་བར་བྱ་བའི་བསྟོད་པ།.txt']
+excluded = ['1-རྒྱུད།_དཔལ་གསང་བ་འདུས་པའི་རྒྱུད་ཀྱི་རྒྱུད་འགྲེལ་ཞེས་བྱ་བ།.txt'
+]
 works = []
 for f in sorted(os.listdir('input')):
-    if f.endswith('txt'):# and f not in excluded:
+    if f.endswith('txt') and f not in excluded:
         csv = f.replace('.txt', '')+'.csv'
         works.append((f, csv))
 
@@ -431,9 +432,11 @@ def debug_files(vol_num):
             generate_outputs(w[0], w[1], 5)
 
 note_num = 213
-debug = 1
-debug_files(63)
+debug = 0
 
-# for w in works:
-#     print(w[0])
-#     generate_outputs(w[0], w[1], 5)
+if debug:
+    debug_files(63)
+else:
+    for w in works:
+        print(w[0])
+        generate_outputs(w[0], w[1], 5)

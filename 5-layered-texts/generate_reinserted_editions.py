@@ -1,4 +1,5 @@
 import os
+import re
 import yaml
 from PyTib.common import open_file, write_file
 
@@ -75,7 +76,9 @@ def copy_final_version(final_path):
 
 def copy_derge_layout(derge_layout):
     for f in os.listdir('output'):
-        write_file('output/{}/{}'.format(f, f+'_derge_layout.txt'), open_file('{}/{}_raw_page_reinserted.txt'.format(derge_layout, f)))
+        content = open_file('{}/{}_raw_page_reinserted.txt'.format(derge_layout, f))
+        reformated = re.sub(r'\n-+', '', content).replace('\\', '')
+        write_file('output/{}/{}'.format(f, f+'_derge_layout.txt'), reformated)
 
 
 def main():

@@ -75,6 +75,39 @@ def reinsert(in_path, out_path1, out_path2, patterns):
             if not os.path.exists(text_path):
                 os.makedirs(text_path)
 
+
+def reinsert_raw(in_path, out_path, patterns):
+    for f in os.listdir(in_path):
+        work_name = f.replace('_with_a.txt', '')
+        print('processing', work_name)
+        content = open_file('{}/{}'.format(in_path, f))
+        lines = deque(content.replace('\n', ' ').split('a'))
+
+        pages = []
+        text_pattern = patterns[work_name][2:]
+        counter = patterns[work_name][0][1]
+        side = patterns[work_name][0][2]
+
+        # beginning pages
+        for num in text_pattern[0]:
+            pages.append(create_page(lines, num, counter, side))
+            counter, side = increment_counter(counter, side)
+
+        # body of the text
+        while len(lines) > 0:
+            if len(lines) >= text_pattern[1]:
+                pages.append(create_page(lines, text_pattern[1], counter, side))
+                counter, side = increment_counter(counter, side)
+            elif text_pattern[2] == len(lines):
+                pages.append(create_page(lines, len(lines), counter, side))
+                counter, side = increment_counter(counter, side)
+            else:
+                pages.append(create_page(lines, len(lines), counter, side))
+                counter, side = increment_counter(counter, side)
+
+        output = '\n{}\n'.format('-' * 100).join(pages)
+
+        write_file('{}/{}_raw_page_reinserted.txt'.format(out_path, work_name), output)
 # # works, but not needed for now…
 # def create_missing_dir(origin_path, target_path, origin_name_end):
 #     to_compare_texts = [g.replace(origin_name_end, '') for g in os.listdir(origin_path) if g.endswith('.txt')]
@@ -92,6 +125,8 @@ def reinsert(in_path, out_path1, out_path2, patterns):
 in_path = './output/2-1-a_reinserted'
 out_path1 = './output/3-1-page_reinserted'
 out_path2 = './output/3-2-compared'
+raw_in_path = './output/2-0-with_a'
+raw_out_path = './output/2-2-raw_page_reinserted'
 patterns = {
     '1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།': [
         ('start', 1, 'ན'),
@@ -144,3 +179,4 @@ patterns = {
     # ]
 }
 reinsert(in_path, out_path1, out_path2, patterns)
+reinsert_raw(raw_in_path, raw_out_path, patterns)

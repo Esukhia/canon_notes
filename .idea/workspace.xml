@@ -3,13 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="aaa25fd1-4142-4d50-a2d0-e78d7f332a9d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/5-layered-texts/generate_reinserted_editions.py" afterPath="$PROJECT_DIR$/5-layered-texts/generate_reinserted_editions.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/5-layered-texts/output/1-དབུ་མ།_ཐེག་པ་ཆེན་པོ་ཉི་ཤུ་པ།/1-དབུ་མ།_ཐེག་པ་ཆེན་པོ་ཉི་ཤུ་པ།_derge_layout.txt" afterPath="$PROJECT_DIR$/5-layered-texts/output/1-དབུ་མ།_ཐེག་པ་ཆེན་པོ་ཉི་ཤུ་པ།/1-དབུ་མ།_ཐེག་པ་ཆེན་པོ་ཉི་ཤུ་པ།_derge_layout.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/5-layered-texts/output/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།_derge_layout.txt" afterPath="$PROJECT_DIR$/5-layered-texts/output/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།/1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།_derge_layout.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/5-layered-texts/output/1-དབུ་མ།_ཞིབ་མོ་རྣམ་པར་འཐག་པ་ཞེས་བྱ་བའི་མདོ།/1-དབུ་མ།_ཞིབ་མོ་རྣམ་པར་འཐག་པ་ཞེས་བྱ་བའི་མདོ།_derge_layout.txt" afterPath="$PROJECT_DIR$/5-layered-texts/output/1-དབུ་མ།_ཞིབ་མོ་རྣམ་པར་འཐག་པ་ཞེས་བྱ་བའི་མདོ།/1-དབུ་མ།_ཞིབ་མོ་རྣམ་པར་འཐག་པ་ཞེས་བྱ་བའི་མདོ།_derge_layout.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/5-layered-texts/output/1-དབུ་མ།_ཞིབ་མོ་རྣམ་པར་འཐག་པ་ཞེས་བྱ་བའི་རབ་ཏུ་བྱེད་པ།/1-དབུ་མ།_ཞིབ་མོ་རྣམ་པར་འཐག་པ་ཞེས་བྱ་བའི་རབ་ཏུ་བྱེད་པ།_derge_layout.txt" afterPath="$PROJECT_DIR$/5-layered-texts/output/1-དབུ་མ།_ཞིབ་མོ་རྣམ་པར་འཐག་པ་ཞེས་བྱ་བའི་རབ་ཏུ་བྱེད་པ།/1-དབུ་མ།_ཞིབ་མོ་རྣམ་པར་འཐག་པ་ཞེས་བྱ་བའི་རབ་ཏུ་བྱེད་པ།_derge_layout.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/5-layered-texts/output/1-དབུ་མ།_རིགས་པ་དྲུག་ཅུ་པའི་ཚིག་ལེའུར་བྱས་པ།/1-དབུ་མ།_རིགས་པ་དྲུག་ཅུ་པའི་ཚིག་ལེའུར་བྱས་པ།_derge_layout.txt" afterPath="$PROJECT_DIR$/5-layered-texts/output/1-དབུ་མ།_རིགས་པ་དྲུག་ཅུ་པའི་ཚིག་ལེའུར་བྱས་པ།/1-དབུ་མ།_རིགས་པ་དྲུག་ཅུ་པའི་ཚིག་ལེའུར་བྱས་པ།_derge_layout.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/5-layered-texts/output/1-སྤྲིང་ཡིག།_བཤེས་པའི་སྤྲིང་ཡིག/1-སྤྲིང་ཡིག།_བཤེས་པའི་སྤྲིང་ཡིག_derge_layout.txt" afterPath="$PROJECT_DIR$/5-layered-texts/output/1-སྤྲིང་ཡིག།_བཤེས་པའི་སྤྲིང་ཡིག/1-སྤྲིང་ཡིག།_བཤེས་པའི་སྤྲིང་ཡིག_derge_layout.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4-a-final_formatting/output/2-0-with_a/1-སྤྲིང་ཡིག།_བཤེས་པའི་སྤྲིང་ཡིག_with_a.txt" afterPath="$PROJECT_DIR$/4-a-final_formatting/output/2-0-with_a/1-སྤྲིང་ཡིག།_བཤེས་པའི་སྤྲིང་ཡིག_with_a.txt" />
     </list>
     <ignored path="canon_notes.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,7 +23,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="generate_reinserted_editions.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="generate_reinserted_editions.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/5-layered-texts/generate_reinserted_editions.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="169">
@@ -41,11 +35,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="1-དབུ་མ།_ཐེག་པ་ཆེན་པོ་ཉི་ཤུ་པ།_derge_layout.txt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="1-དབུ་མ།_ཐེག་པ་ཆེན་པོ་ཉི་ཤུ་པ།_derge_layout.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/5-layered-texts/output/1-དབུ་མ།_ཐེག་པ་ཆེན་པོ་ཉི་ཤུ་པ།/1-དབུ་མ།_ཐེག་པ་ཆེན་པོ་ཉི་ཤུ་པ།_derge_layout.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="252">
-              <caret line="14" column="7" lean-forward="false" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+              <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -256,60 +250,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="5-layered-texts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="canon_notes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="canon_notes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="5-layered-texts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="output" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="canon_notes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="canon_notes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="5-layered-texts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="output" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="1-དབུ་མ།_ཐེག་པ་ཆེན་པོ་ཉི་ཤུ་པ།" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="canon_notes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="canon_notes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="4-a-final_formatting" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -329,72 +269,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="output" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="canon_notes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="canon_notes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="4-a-final_formatting" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="output" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="3-3-final" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="canon_notes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="canon_notes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="4-a-final_formatting" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="output" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="2-2-raw_page_reinserted" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="canon_notes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="canon_notes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="4-a-final_formatting" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="output" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="2-1-a_reinserted" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1049,7 +923,14 @@
       <option name="project" value="LOCAL" />
       <updated>1485276451206</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="layout  files reformatted">
+      <created>1485276967293</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1485276967293</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1139,7 +1020,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Categorisation finished except for ngrams" />
     <MESSAGE value="all versions of ngrams generated." />
     <MESSAGE value="ngrams generated for each note" />
     <MESSAGE value="All json files complete with all the ngrams !" />
@@ -1164,7 +1044,8 @@
     <MESSAGE value="adjust the list of excluded files" />
     <MESSAGE value="layered text generation implemented" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="layout  files reformatted" />
+    <option name="LAST_COMMIT_MESSAGE" value="layout  files reformatted" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1616,14 +1497,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/5-layered-texts/output/1-དབུ་མ།_ཐེག་པ་ཆེན་པོ་ཉི་ཤུ་པ།/1-དབུ་མ།_ཐེག་པ་ཆེན་པོ་ཉི་ཤུ་པ།_derge_layout.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="7" lean-forward="false" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/5-layered-texts/generate_reinserted_editions.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="169">
@@ -1631,6 +1504,14 @@
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/5-layered-texts/output/1-དབུ་མ།_ཐེག་པ་ཆེན་པོ་ཉི་ཤུ་པ།/1-དབུ་མ།_ཐེག་པ་ཆེན་པོ་ཉི་ཤུ་པ།_derge_layout.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>

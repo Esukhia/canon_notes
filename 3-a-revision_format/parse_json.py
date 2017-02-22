@@ -408,9 +408,9 @@ def update_unified_structure(unified_structure, notes):
         el = unified[counter]
         if type(el) == dict:
             note_num += 1
-            print(note_num)
-            if note_num == 40:
-                print('ok')
+            # print(note_num)
+            # if note_num == 40:
+            #     print('ok')
             # find the syllable that precede and follow the current note
             # left_side, right_side = find_contexts(unified, counter, conc_length=20)
             # left_string = ''.join(left_side)
@@ -563,8 +563,9 @@ if __name__ == '__main__':
     #in_dir = '../2-b-manually_corrected_automatic_categorisation/'
     in_dir = '../2-automatic_categorisation/output/'
     output = []
+    exceptions = ['1-རྒྱུད།_སེང་ལྡེང་ནགས་ཀྱི་སྒྲོལ་མ་ལ་བསྟོད་པ།_cats.json', '1-བསྟོད་ཚོགས།_གནས་ཆེན་པོ་བརྒྱད་ཀྱི་མཆོད་རྟེན་ལ་བསྟོད་པ།b_cats.json']
     for file_name in os.listdir(in_dir):
-        if file_name == '1-དབུ་མ།_ཐེག་པ་ཆེན་པོ་ཉི་ཤུ་པ།_cats.json':
+        if file_name not in exceptions:
             work_name = file_name.replace('_cats.json', '')
             print(file_name)
             json_structure = jp.decode(open_file(in_dir+file_name))

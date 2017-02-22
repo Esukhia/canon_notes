@@ -15,8 +15,10 @@ def process(in_path, file_origin, name_end, out_path):
         content = content.replace('a', '')
         write_file(out_path[1].format(work_name), content)
 
-in_path = 'output/0-1-formatted'
-name_end = '_formatted.txt'  # part to delete to obtain the work name
+# in_path = 'output/0-1-formatted'
+# name_end = '_formatted.txt'  # part to delete to obtain the work name
+in_path = '../3-a-revision_format/output/antconc_format'
+name_end = '_antconc_format.txt'
 file_origin = '../1-a-reinsert_notes/input/{}.txt'
 out_path = ['output/2-0-with_a/{}_with_a.txt', 'output/0-2-raw_text/{}_raw.txt']
 

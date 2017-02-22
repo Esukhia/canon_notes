@@ -79,35 +79,36 @@ def reinsert(in_path, out_path1, out_path2, patterns):
 def reinsert_raw(in_path, out_path, patterns):
     for f in os.listdir(in_path):
         work_name = f.replace('_with_a.txt', '')
-        print('processing', work_name)
-        content = open_file('{}/{}'.format(in_path, f))
-        lines = deque(content.replace('\n', ' ').split('a'))
+        if work_name in patterns:
+            print('processing', work_name)
+            content = open_file('{}/{}'.format(in_path, f))
+            lines = deque(content.replace('\n', ' ').split('a'))
 
-        pages = []
-        text_pattern = patterns[work_name][2:]
-        counter = patterns[work_name][0][1]
-        side = patterns[work_name][0][2]
+            pages = []
+            text_pattern = patterns[work_name][2:]
+            counter = patterns[work_name][0][1]
+            side = patterns[work_name][0][2]
 
-        # beginning pages
-        for num in text_pattern[0]:
-            pages.append(create_page(lines, num, counter, side))
-            counter, side = increment_counter(counter, side)
-
-        # body of the text
-        while len(lines) > 0:
-            if len(lines) >= text_pattern[1]:
-                pages.append(create_page(lines, text_pattern[1], counter, side))
-                counter, side = increment_counter(counter, side)
-            elif text_pattern[2] == len(lines):
-                pages.append(create_page(lines, len(lines), counter, side))
-                counter, side = increment_counter(counter, side)
-            else:
-                pages.append(create_page(lines, len(lines), counter, side))
+            # beginning pages
+            for num in text_pattern[0]:
+                pages.append(create_page(lines, num, counter, side))
                 counter, side = increment_counter(counter, side)
 
-        output = '\n{}\n'.format('-' * 100).join(pages)
+            # body of the text
+            while len(lines) > 0:
+                if len(lines) >= text_pattern[1]:
+                    pages.append(create_page(lines, text_pattern[1], counter, side))
+                    counter, side = increment_counter(counter, side)
+                elif text_pattern[2] == len(lines):
+                    pages.append(create_page(lines, len(lines), counter, side))
+                    counter, side = increment_counter(counter, side)
+                else:
+                    pages.append(create_page(lines, len(lines), counter, side))
+                    counter, side = increment_counter(counter, side)
 
-        write_file('{}/{}_raw_page_reinserted.txt'.format(out_path, work_name), output)
+            output = '\n{}\n'.format('-' * 100).join(pages)
+
+            write_file('{}/{}_raw_page_reinserted.txt'.format(out_path, work_name), output)
 # # works, but not needed for now…
 # def create_missing_dir(origin_path, target_path, origin_name_end):
 #     to_compare_texts = [g.replace(origin_name_end, '') for g in os.listdir(origin_path) if g.endswith('.txt')]
@@ -127,49 +128,7 @@ out_path1 = './output/3-1-page_reinserted'
 out_path2 = './output/3-2-compared'
 raw_in_path = './output/2-0-with_a'
 raw_out_path = './output/2-2-raw_page_reinserted'
-patterns = {
-    '1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།': [
-        ('start', 1, 'ན'),
-        ('end', 19, 'ན'),
-        [1, 5, 5],
-        7,
-        6
-    ],
-    '1-སྤྲིང་ཡིག།_བཤེས་པའི་སྤྲིང་ཡིག': [
-        ('start', 40, 'བ'),
-        ('end', 46, 'བ'),
-        [4],
-        7,
-        3
-    ],
-    '1-དབུ་མ།_རིགས་པ་དྲུག་ཅུ་པའི་ཚིག་ལེའུར་བྱས་པ།': [
-        ('start', 20, 'བ'),
-        ('end', 22, 'བ'),
-        [7],
-        7,
-        6
-    ],
-    '1-དབུ་མ།_ཞིབ་མོ་རྣམ་པར་འཐག་པ་ཞེས་བྱ་བའི་མདོ།': [
-        ('start', 22, 'བ'),
-        ('end', 24, 'ན'),
-        [2],
-        7,
-        6
-    ],
-    '1-དབུ་མ།_ཞིབ་མོ་རྣམ་པར་འཐག་པ་ཞེས་བྱ་བའི་རབ་ཏུ་བྱེད་པ།': [
-        ('start', 99, 'བ'),
-        ('end', 110, 'ན'),
-        [7],
-        7,
-        4
-    ],
-    '1-དབུ་མ།_ཐེག་པ་ཆེན་པོ་ཉི་ཤུ་པ།': [
-        ('start', 137, 'བ'),
-        ('end', 138, 'ན'),
-        [7],
-        7,
-        7
-    ]
+
     # '': [
     #     ('start', 0, ''),     # page start + front/back
     #     ('end', 0, ''),       # idem
@@ -177,6 +136,21 @@ patterns = {
     #     0,                    # general number of lines per page
     #     0                     # number of lines pertaining to the current text on the last page
     # ]
-}
-reinsert(in_path, out_path1, out_path2, patterns)
+
+patterns_raw = open_file('../4-a-final_formatting/resources/page_info.csv').strip().split('\n')
+patterns = {}
+for line in patterns_raw[1:]:
+    parts = line.split(',')
+    title = parts[0]
+    b_page = int(parts[1])
+    b_side = parts[2]
+    e_page = int(parts[3])
+    e_side = parts[4]
+    lines_per_page = int(parts[5])
+    last_page_lines = int(parts[6])
+    first_pages_lines = [int(a) for a in parts[6+1:] if a != '']
+    patterns[title] = [('start', b_page, b_side), ('end', e_page, e_side), first_pages_lines, lines_per_page, last_page_lines]
+    print('ok')
+
+# reinsert(in_path, out_path1, out_path2, patterns)
 reinsert_raw(raw_in_path, raw_out_path, patterns)

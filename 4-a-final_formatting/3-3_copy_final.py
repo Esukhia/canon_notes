@@ -6,6 +6,7 @@ from PyTib.common import open_file, write_file
 def process(origin_path, target_path, origin_name_end, target_name_end):
     existing = [g.replace(target_name_end, '') for g in os.listdir(target_path)]
     for f in os.listdir(origin_path):
+        print(f)
         if f.endswith('.txt'):
             work_name = f.replace(origin_name_end, '')
             if work_name not in existing:

@@ -1,0 +1,159 @@
+﻿{
+    "Stats": {
+        "Categorised": "2 notes (100.00%)",
+        "Notes’ total": 2,
+        "Profiles": [
+            "པེ་ སྡེ་: 50.00% (1 notes)",
+            "པེ་=སྡེ་: 50.00% (1 notes)"
+        ],
+        "automatic_categorisation": {
+            "min_mod": {},
+            "particle_issues": {},
+            "spelling_mistake": {
+                "non_word": {
+                    "well_formed": 1
+                }
+            },
+            "verb_difference": {}
+        },
+        "dunno": {},
+        "empty_notes": 1,
+        "manual_categorisation": {
+            "long_difference": {},
+            "manual_evaluation": {
+                "meaning_difference": {}
+            }
+        },
+        "ngram_freq": {},
+        "profile": {}
+    },
+    "automatic_categorisation": {
+        "min_mod": {
+            "min_mod_groups": [],
+            "particle_groups": []
+        },
+        "particle_issues": {
+            "added_particle": [],
+            "agreement_issue": [],
+            "different_particles": [],
+            "other": [],
+            "po-bo-pa-ba": []
+        },
+        "spelling_mistake": {
+            "missing_vowel": [],
+            "nga_da": [],
+            "non_word": {
+                "ill_formed": [],
+                "well_formed": [
+                    {
+                        "1": [
+                            {
+                                "པེ་": [
+                                    "རྡོ་རྗེ་ སེམས་དཔ འི་",
+                                    "ཅོད་པན་",
+                                    "ཅན ། སེམས་དཔ འི་"
+                                ],
+                                "སྡེ་": [
+                                    "རྡོ་རྗེ་ སེམས་དཔ འི་",
+                                    "གཅོད་ #པན་",
+                                    "ཅན ། སེམས་དཔ འི་"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "sskrt": [],
+        "verb_difference": {
+            "diff_tense": [],
+            "diff_verb": [],
+            "not_sure": []
+        }
+    },
+    "dunno": {
+        "long_diff": [],
+        "no_diff": [],
+        "short_diff": []
+    },
+    "empty_notes": [
+        {
+            "2": [
+                {
+                    "པེ་": [
+                        "མཛད་པ་ འདི་ #རྫོགསོ །།།། ",
+                        "",
+                        ""
+                    ],
+                    "སྡེ་": [
+                        "མཛད་པ་ འདི་ #རྫོགསོ །།།། ",
+                        "",
+                        ""
+                    ]
+                }
+            ]
+        }
+    ],
+    "manual_categorisation": {
+        "long_difference": {
+            "differing_formulation": [],
+            "major_modification": []
+        },
+        "manual_evaluation": {
+            "derge_correct": [],
+            "meaning_difference": {
+                "great_diff": [],
+                "medium_diff": [],
+                "small_diff": []
+            }
+        }
+    },
+    "ngram_freq": {
+        "1": {
+            "པེ་": [
+                [
+                    "ཅོད་པན",
+                    "908"
+                ],
+                [
+                    "ཅོད་པན་ཅན",
+                    "61"
+                ]
+            ],
+            "སྡེ་": []
+        },
+        "2": {
+            "པེ་": [
+                [
+                    "",
+                    "1"
+                ],
+                [
+                    "།།།།",
+                    "22"
+                ]
+            ],
+            "སྡེ་": [
+                [
+                    "",
+                    "1"
+                ],
+                [
+                    "།།།།",
+                    "22"
+                ]
+            ]
+        }
+    },
+    "non_standard_notes": [],
+    "profile": {
+        "1": [
+            "པེ་ སྡེ་",
+            "50.00%"
+        ],
+        "2": [
+            "པེ་=སྡེ་",
+            "50.00%"
+        ]
+    }
+}

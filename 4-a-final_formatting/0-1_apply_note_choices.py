@@ -87,7 +87,8 @@ def format_footnote(note, chosen, ref):
 reviewed_path = '../3-b-reviewed_texts'
 structure_path = '../3-a-revision_format/output/updated_structure'
 for f in os.listdir(reviewed_path):
-    if f == '1-དབུ་མ།_ཐེག་པ་ཆེན་པོ་ཉི་ཤུ་པ།_DUCKed.csv':
+    print(f)
+    if f:  # == '1-85_གླང་པོ་རིན་པོ་ཆེ་ལ་ནོར་བླང་བའི་མན་ངག_DUCKed.csv':
         work_name = f.replace('_DUCKed.csv', '')
         note_choice = parse_decisions(open_file('{}/{}'.format(reviewed_path, f)))
 
@@ -183,17 +184,17 @@ for f in os.listdir(reviewed_path):
 
         # Stats
         total = 0
-        for type, value in stats.items():
+        for kind, value in stats.items():
             total += value
         percentages = {}
-        for type, value in stats.items():
-            percentages[type] = (value, value*100/total)
+        for kind, value in stats.items():
+            percentages[kind] = (value, value * 100 / total)
         discarted_notes = percentages['D'][0] + percentages['U'][0]
         kept_notes = percentages['C'][0] + percentages['K'][0] + percentages['?'][0]
 
         statistics = []
-        for type, value in stats.items():
-            statistics.append('{}: {} notes ({:02.2f}%)'.format(type, value, value*100/total))
+        for kind, value in stats.items():
+            statistics.append('{}: {} notes ({:02.2f}%)'.format(kind, value, value * 100 / total))
         statistics.append('Total notes: '+str(total))
         statistics.append('Discarded notes({}+{}): {} notes ({:02.2f}%)'.format('D', 'U', discarted_notes, discarted_notes*100/total))
         statistics.append('Kept notes({}+{}+{}): {} notes ({:02.2f}%)'.format('C', 'K', '?', kept_notes, kept_notes*100/total))

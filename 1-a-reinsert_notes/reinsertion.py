@@ -19,11 +19,12 @@ def reinsert_notes(raw_text, raw_notes, basis_edition='སྡེ་'):
     global note_num
     raw_text = raw_text.replace('a', '').split('\n')
     raw_notes = re.sub(r'《([^《》་]+)》', r'《\1་》', raw_notes)  # add a tsek in the edition names that lack one.
+    raw_notes = raw_notes.replace(';', ',')
     raw_notes = raw_notes.strip().split('\n')[1:]
 
     text = {}
     for t in raw_text:
-        parts = re.split(r'([0-9]+)\. ', t)[1:]
+        parts = re.split(r'([0-9]+)\.\s', t)[1:]
         if parts:
             text[parts[0]] = pre_process(parts[1], mode='syls')
 
@@ -414,11 +415,10 @@ def generate_outputs(text_name, notes_name, context, in_dir='input', out_dir='ou
 #         ('i-5-10 དབུ་མ་ལ་འཇུག་པ།.txt', '5-10 དབུ་མ་ལ་འཇུག་པ།.csv'),
 #         ('i-1-88 རིགས་པ་དྲུག་ཅུ་པའི་ཚིག་ལེའུར་བྱས་པ།.txt', '1-88 རིགས་པ་དྲུག་ཅུ་པའི་ཚིག་ལེའུར་བྱས་པ།.csv')]
 
-excluded = ['1-རྒྱུད།_དཔལ་གསང་བ་འདུས་པའི་རྒྱུད་ཀྱི་རྒྱུད་འགྲེལ་ཞེས་བྱ་བ།.txt'
-]
+excluded = ['4-1 སྒྲོལ་མ་གསལ་བར་བྱེད་པའི་དཀའ་བ་བཏུས་པའི་འགྲེལ་པ།.txt']
 works = []
 for f in sorted(os.listdir('input')):
-    if f.endswith('txt') and f not in excluded:
+    if f.endswith('txt'):
         csv = f.replace('.txt', '')+'.csv'
         works.append((f, csv))
 
@@ -431,11 +431,11 @@ def debug_files(vol_num):
         if c >= vol_num:
             generate_outputs(w[0], w[1], 5)
 
-note_num = 213
+note_num = 138
 debug = 0
 
 if debug:
-    debug_files(63)
+    debug_files(1)
 else:
     for w in works:
         print(w[0])

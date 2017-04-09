@@ -161,10 +161,12 @@ def prepare_data(raw):
         if id % 2 != 0:
             note = splitted[id]
             parts = note.split('\n')
-            #print(parts)
+            if debug:
+                print(parts)
             eds = {}
             for e in range(1, len(collection_eds)+1):
-                #print(e)
+                if debug:
+                    print(e)
                 ed = parts[e].split(':')[0].strip()
                 text = parts[e].split(',')[0].split(': ')[1].strip()
                 eds[ed] = text
@@ -801,97 +803,102 @@ def ngram_frequency(prepared, all_ngrams):
 
 
 def process(in_path, template_path, total_stats):
-    global collection_eds
+    global collection_eds, file, debug
     raw_template = open_file(template_path)
     verbs = jp.decode(open_file('./resources/monlam_verbs.json'))
     all_ngrams = open_ngrams()
     for f in os.listdir(in_path):
+        if debug and f != file:
+            continue
         print(f)
-        if f == '1-དབུ་མ།_ཞིབ་མོ་རྣམ་པར་འཐག་པ་ཞེས་བྱ་བའི་རབ་ཏུ་བྱེད་པ།_conc-corrected.txt':
-            work_name = f.replace('_conc-corrected.txt', '')
+        work_name = f.replace('_conc-corrected.txt', '')
 
-            raw = open_file('{}/{}'.format(in_path, f))
-            # setting collection_eds for the current file
-            collection_eds = list({a for a in re.findall(r' ([^ ]+): ', raw)})
+        raw = open_file('{}/{}'.format(in_path, f))
+        # setting collection_eds for the current file
+        collection_eds = list({a for a in re.findall(r' ([^ ]+): ', raw)})
 
-            data = prepare_data(raw)
-            profiles, profile_cats = find_profiles(data)
+        data = prepare_data(raw)
+        profiles, profile_cats = find_profiles(data)
 
-            # prepare
-            prepared = find_all_parts(data)
+        # prepare
+        prepared = find_all_parts(data)
 
-            # categorise
-            categorised_notes = jp.decode(raw_template)
+        # categorise
+        categorised_notes = jp.decode(raw_template)
 
-            # find ngram frequencies
-            frequencies = ngram_frequency(prepared, all_ngrams)
+        # find ngram frequencies
+        frequencies = ngram_frequency(prepared, all_ngrams)
 
-            if debug:
-                if file == f and note_num != 0:
-                    for note in prepared:
-                        if note[0] == note_num:
-                            categorise(note, categorised_notes, verbs)
-                elif file == f:
-                    for note in prepared:
-                        categorise(note, categorised_notes, verbs)
-            else:
+        if debug:
+            if file == f and note_num != 0:
                 for note in prepared:
-                    #print(note)
+                    if note[0] == note_num:
+                        categorise(note, categorised_notes, verbs)
+            elif file == f:
+                for note in prepared:
                     categorise(note, categorised_notes, verbs)
+        else:
+            for note in prepared:
+                #print(note)
+                categorise(note, categorised_notes, verbs)
 
-            # finally write the json file
-            stats = {}
-            total = 0
-            for key1, item1 in sorted(categorised_notes.items()):
-                if type(item1) == list:
-                    if len(item1) != 0:
-                        stats[key1] = len(item1)
-                        total += len(item1)
-                else:
-                    stats[key1] = {}
-                    for key2, item2 in sorted(item1.items()):
-                        if type(item2) == list:
-                            if len(item2) != 0:
-                                stats[key1][key2] = len(item2)
-                                total += len(item2)
-                        else:
-                            stats[key1][key2] = {}
-                            for key3, item3 in sorted(item2.items()):
-                                if type(item3) == list:
-                                    if len(item3) != 0:
-                                        stats[key1][key2][key3] = len(item3)
-                                        total += len(item3)
-                                else:
-                                    stats[key1][key2][key3] = {}
-                                    for key4, item4 in sorted(item3.items()):
-                                        if type(item4) == list:
-                                            if len(item4) != 0:
-                                                stats[key1][key2][key3][key4] = len(item4)
-                                                total += len(item4)
-            stats['Notes’ total'] = total
-            categorised = total
-            if 'long_diff' in stats['dunno'].keys():
-                categorised -= stats['dunno']['long_diff']
-            if 'short_diff' in stats['dunno'].keys():
-                categorised -= stats['dunno']['short_diff']
-            if 'no_diff' in stats['dunno'].keys():
-                categorised -= stats['dunno']['no_diff']
+        # finally write the json file
+        stats = {}
+        total = 0
+        for key1, item1 in sorted(categorised_notes.items()):
+            if type(item1) == list:
+                if len(item1) != 0:
+                    stats[key1] = len(item1)
+                    total += len(item1)
+            else:
+                stats[key1] = {}
+                for key2, item2 in sorted(item1.items()):
+                    if type(item2) == list:
+                        if len(item2) != 0:
+                            stats[key1][key2] = len(item2)
+                            total += len(item2)
+                    else:
+                        stats[key1][key2] = {}
+                        for key3, item3 in sorted(item2.items()):
+                            if type(item3) == list:
+                                if len(item3) != 0:
+                                    stats[key1][key2][key3] = len(item3)
+                                    total += len(item3)
+                            else:
+                                stats[key1][key2][key3] = {}
+                                for key4, item4 in sorted(item3.items()):
+                                    if type(item4) == list:
+                                        if len(item4) != 0:
+                                            stats[key1][key2][key3][key4] = len(item4)
+                                            total += len(item4)
+        stats['Notes’ total'] = total
+        categorised = total
+        if 'long_diff' in stats['dunno'].keys():
+            categorised -= stats['dunno']['long_diff']
+        if 'short_diff' in stats['dunno'].keys():
+            categorised -= stats['dunno']['short_diff']
+        if 'no_diff' in stats['dunno'].keys():
+            categorised -= stats['dunno']['no_diff']
+        if total == 0:
+            percentage = 0
+            print('the notes were not processed!')
+        else:
             percentage = categorised * 100 / total
-            stats['Categorised'] = '{} notes ({:02.2f}%)'.format(categorised, percentage)
-            stats['Profiles'] = profile_cats
-            total_stats.append('{}\n{}'.format(work_name, jp.encode(stats)))
+        stats['Categorised'] = '{} notes ({:02.2f}%)'.format(categorised, percentage)
+        stats['Profiles'] = profile_cats
+        total_stats.append('{}\n{}'.format(work_name, jp.encode(stats)))
 
-            encoded = jp.encode(categorised_notes)
-            if encoded != raw_template:
-                categorised_notes['Stats'] = stats
-                categorised_notes['profile'] = profiles
-                categorised_notes['ngram_freq'] = frequencies
-                write_file('output/{}_cats.json'.format(work_name), jp.encode(categorised_notes))
+        encoded = jp.encode(categorised_notes)
+        if encoded != raw_template:
+            categorised_notes['Stats'] = stats
+            categorised_notes['profile'] = profiles
+            categorised_notes['ngram_freq'] = frequencies
+            write_file('output/{}_cats.json'.format(work_name), jp.encode(categorised_notes))
 
 
 if __name__ == '__main__':
     debug = False
-    file = '1-དབུ་མ།_དབུ་མ་རྩ་བའི་ཚིག་ལེའུར་བྱས་པ་ཤེས་རབ།_conc-corrected.txt'
+    file = '1-34_དཔལ་གསང་བ་འདུས་པའི་རྒྱུད་ཀྱི་རྒྱུད་འགྲེལ།_conc-corrected.txt'
     note_num = 24
 
     in_path = '../1-b-manually_corrected_conc/notes_formatted'

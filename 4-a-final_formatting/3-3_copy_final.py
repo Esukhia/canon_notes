@@ -13,7 +13,12 @@ def process(origin_path, target_path, origin_name_end, target_name_end):
                 raw_content = open_file('{}/{}'.format(origin_path, f))
 
                 # actual processing
-                text, notes = raw_content.split('\n\n')
+                if not re.findall(r'\n\[\^[0-9A-Z]+\]\:', raw_content):
+                    text = raw_content
+                    notes = ''
+                else:
+                    text, notes = raw_content.split('\n\n')
+
                 text = text.replace('-'*100, '').replace('\n', '')
                 output = '\n\n'.join([text, notes])
 

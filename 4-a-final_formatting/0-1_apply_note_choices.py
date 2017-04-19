@@ -30,7 +30,7 @@ def group_syllables(structure):
         grouped.append(tmp)
     return grouped
 
-# Todo include ཞེས་པར་མ་གཞན་ནང་མེད། for all notes where Derge adds something.
+
 def format_footnote(note, chosen, ref):
     def agree_zhas(chosen_ed):
         last_syl = pre_process(chosen_ed, mode='syls')[-1]
@@ -57,13 +57,17 @@ def format_footnote(note, chosen, ref):
         ordered = defaultdict(list)
         for k, v in stripped_note.items():
             ordered[strip_punct(clean_ed_text(v))].append(k)
-        final = []
-        full_names = {'སྡེ་': 'སྡེ་དགེ', 'ཅོ་': 'ཅོ་ནེ', 'པེ་': 'པེ་ཅིན', 'སྣར་': 'སྣར་ཐང་'}
-        for text in tib_sort(ordered.keys()):
-            if text != '':
-                final.append(text)
-                final.extend([full_names[ed] for ed in tib_sort(ordered[text]) if ed != 'ཞོལ་'])
-        return '{}: {}།'.format(ref, '། '.join(final))
+        # ཞེས་པར་མ་གཞན་ནང་མེད། for all notes where Derge adds something.
+        if not [a for a in ordered.keys() if a != '']:
+            return '{}: {}། ཞེས་པར་མ་གཞན་ནང་མེད།'.format(ref, strip_punct(''.join(note['སྡེ་'])))
+        else:
+            final = []
+            full_names = {'སྡེ་': 'སྡེ་དགེ', 'ཅོ་': 'ཅོ་ནེ', 'པེ་': 'པེ་ཅིན', 'སྣར་': 'སྣར་ཐང་'}
+            for text in tib_sort(ordered.keys()):
+                if text != '':
+                    final.append(text)
+                    final.extend([full_names[ed] for ed in tib_sort(ordered[text]) if ed != 'ཞོལ་'])
+            return '{}: {}།'.format(ref, '། '.join(final))
 
     elif chosen == 'b':
         derge = strip_punct(clean_ed_text(note['སྡེ་']))
@@ -88,7 +92,7 @@ reviewed_path = '../3-b-reviewed_texts'
 structure_path = '../3-a-revision_format/output/updated_structure'
 for f in os.listdir(reviewed_path):
     print(f)
-    if f:  # == '1-85_གླང་པོ་རིན་པོ་ཆེ་ལ་ནོར་བླང་བའི་མན་ངག_DUCKed.csv':
+    if f:  # == '1-1_ཆོས་ཀྱི་དབྱིངས་སུ་བསྟོད་པ།_DUCKed.csv':
         work_name = f.replace('_DUCKed.csv', '')
         note_choice = parse_decisions(open_file('{}/{}'.format(reviewed_path, f)))
 
@@ -171,12 +175,19 @@ for f in os.listdir(reviewed_path):
                     note = ''.join(s['སྡེ་'])
                     ref = '[^{}K]'.format(note_num)
                     note = '{}{}'.format(note, ref)
-                    output.append(note)
-                    notes.append(format_footnote(s, decision, ref))
-                    note_map.append('K')
-                    stats[decision] += 1
-                    if grouped_unified[num] == s:
-                        similar_notes += 1
+                    if [a for a in s.values() if a != []]:
+                        output.append(note)
+                        notes.append(format_footnote(s, decision, ref))
+                        note_map.append('K')
+                        stats[decision] += 1
+                        if grouped_unified[num] == s:
+                            similar_notes += 1
+                    else:
+                        note_map.append('0')
+                        stats[decision] += 1
+                        if grouped_unified[num] == s:
+                            similar_notes += 1
+                        continue
 
         prepared = ''.join(output).replace(' ', '').replace('#', '').replace('_', ' ').replace(' ', '\n')
         write_file('output/0-1-formatted/{}_formatted.txt'.format(work_name), prepared+'\n\n'+'\n'.join(notes))

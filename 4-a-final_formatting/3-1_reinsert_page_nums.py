@@ -34,12 +34,17 @@ def create_page(lines, size, counter, side):
 
 
 def reinsert(in_path, out_path1, out_path2, patterns):
+    print('reinsertion with notes')
     for f in os.listdir(in_path):
         work_name = f.replace('_a_reinserted.txt', '')
         if work_name in patterns:
-            print('processing', work_name)
+            print('\t', work_name)
             content = open_file('{}/{}'.format(in_path, f))
-            text, notes = content.split('\n\n')
+            if not re.findall(r'\n\[\^[0-9A-Z]+\]\:', content):
+                text = content
+                notes = ''
+            else:
+                text, notes = content.split('\n\n')
             lines = deque(text.replace('\n', ' ').split('a'))
 
             pages = []
@@ -79,10 +84,11 @@ def reinsert(in_path, out_path1, out_path2, patterns):
 
 
 def reinsert_raw(in_path, out_path, patterns):
+    print('raw reinsertion')
     for f in os.listdir(in_path):
         work_name = f.replace('_with_a.txt', '')
         if work_name in patterns:
-            print('processing', work_name)
+            print('\t', work_name)
             content = open_file('{}/{}'.format(in_path, f))
             lines = deque(content.replace('\n', ' ').split('a'))
 
@@ -181,5 +187,6 @@ no_valid_lines = ['1-95_རྩོད་པ་བཟློག་པའི་འ�
 for problem in no_valid_lines:
     del patterns[problem]
 
-reinsert(in_path, out_path1, out_path2, patterns)
 reinsert_raw(raw_in_path, raw_out_path, patterns)
+reinsert(in_path, out_path1, out_path2, patterns)
+

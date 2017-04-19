@@ -1,4 +1,3 @@
-import os
 import re
 import zipfile
 from difflib import ndiff
@@ -207,25 +206,6 @@ class MLD:
         else:
             return 'non-valid file'
 
-from PyTib.common import open_file, write_file
-
-def reinsert_a(raw_path, with_a_path, with_notes_path):
-    for f in os.listdir(raw_path):
-        work_name = f.replace('_raw.txt', '')
-        raw = open_file('{}/{}_raw.txt'.format(raw_path, work_name))
-        with_a = open_file('{}/{}_with_a.txt'.format(with_a_path, work_name))
-        with_notes = open_file('{}/{}_post_seg.txt'.format(with_notes_path, work_name))
-
-        text = MLD(raw)
-        text.create_layer('witha', with_a)
-        text.create_layer('with_notes', with_notes)
-        write_file('output/2-1-a_reinserted/{}_a_reinserted.txt'.format(work_name), text.export_view(layers='with_notes+witha'))
-
-raw_path = 'output/0-2-raw_text'
-with_a_path = 'output/2-0-with_a'
-with_notes_path = 'output/1-3-post_seg'
-reinsert_a(raw_path, with_a_path, with_notes_path)
-
 '''
 Layers:
 
@@ -281,4 +261,22 @@ layer layout :
 
 
 
+import os
+from PyTib.common import open_file, write_file
 
+def reinsert_a(raw_path, with_a_path, with_notes_path):
+    for f in os.listdir(raw_path):
+        work_name = f.replace('_raw.txt', '')
+        raw = open_file('{}/{}_raw.txt'.format(raw_path, work_name))
+        with_a = open_file('{}/{}_with_a.txt'.format(with_a_path, work_name))
+        with_notes = open_file('{}/{}_post_seg.txt'.format(with_notes_path, work_name))
+
+        text = MLD(raw)
+        text.create_layer('witha', with_a)
+        text.create_layer('with_notes', with_notes)
+        write_file('output/2-1-a_reinserted/{}_a_reinserted.txt'.format(work_name), text.export_view(layers='with_notes+witha'))
+
+raw_path = 'output/0-2-raw_text'
+with_a_path = 'output/2-0-with_a'
+with_notes_path = 'output/1-3-post_seg'
+reinsert_a(raw_path, with_a_path, with_notes_path)

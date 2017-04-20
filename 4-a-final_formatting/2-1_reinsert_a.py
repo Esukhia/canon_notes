@@ -266,15 +266,22 @@ from PyTib.common import open_file, write_file
 
 def reinsert_a(raw_path, with_a_path, with_notes_path):
     for f in os.listdir(raw_path):
+        print(f)
         work_name = f.replace('_raw.txt', '')
         raw = open_file('{}/{}_raw.txt'.format(raw_path, work_name))
         with_a = open_file('{}/{}_with_a.txt'.format(with_a_path, work_name))
-        with_notes = open_file('{}/{}_post_seg.txt'.format(with_notes_path, work_name))
+        with_notes_raw = open_file('{}/{}_post_seg.txt'.format(with_notes_path, work_name))
+        if not re.findall(r'\n\[\^[0-9A-Z]+\]\:', with_notes_raw):
+            with_notes = with_notes_raw
+            notes = ''
+        else:
+            with_notes, notes = [a for a in re.split(r'((?:\n?\[\^[0-9A-Z]+\]\:[^\n]+\n?)+)', with_notes_raw) if a != '']
 
         text = MLD(raw)
         text.create_layer('witha', with_a)
         text.create_layer('with_notes', with_notes)
-        write_file('output/2-1-a_reinserted/{}_a_reinserted.txt'.format(work_name), text.export_view(layers='with_notes+witha'))
+        merged = text.export_view(layers='with_notes+witha')
+        write_file('output/2-1-a_reinserted/{}_a_reinserted.txt'.format(work_name), '{}{}'.format(merged, notes))
 
 raw_path = 'output/0-2-raw_text'
 with_a_path = 'output/2-0-with_a'

@@ -44,7 +44,7 @@ def reinsert(in_path, out_path1, out_path2, patterns):
                 text = content
                 notes = ''
             else:
-                text, notes = content.split('\n\n')
+                text, notes = [a for a in re.split(r'((?:\n?\[\^[0-9A-Z]+\]\:[^\n]+\n?)+)', content) if a != '']
             lines = deque(text.replace('\n', ' ').split('a'))
 
             pages = []

@@ -320,6 +320,8 @@ def generate_unified_version(editions):
     total = []
     # a. generate the list of editions’ names
     ed_names = [a for a in editions]
+    # the title of the text added by Esukhia is deleted by starting the range at 1 instead of 0
+    # this needs to be made into a function to process Atisha's works, where the beginning of the text is truncated.
     for syl_num in range(1, len(editions['སྡེ་'])):
         pre_processed = {}
         common = []
@@ -438,5 +440,9 @@ if debug:
     debug_files(1)
 else:
     for w in works:
+        # if w[0] == '1-118 བཤད་པ་སྨན་ཨ་བའི་ཆོ་ག.txt':
+        #     print('ok')
+        # else:
+        #     continue
         print(w[0])
         generate_outputs(w[0], w[1], 5)

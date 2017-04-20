@@ -17,7 +17,7 @@ def process(origin_path, target_path, origin_name_end, target_name_end):
                     text = raw_content
                     notes = ''
                 else:
-                    text, notes = raw_content.split('\n\n')
+                    text, notes = [a for a in re.split(r'((?:\n?\[\^[0-9A-Z]+\]\:[^\n]+\n?)+)', raw_content) if a != '']
 
                 text = text.replace('-'*100, '').replace('\n', '')
                 output = '\n\n'.join([text, notes])

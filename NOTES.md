@@ -1,0 +1,1 @@
+- remember to update the folder structure in [this script](0-0-folder_structure_setup.py).

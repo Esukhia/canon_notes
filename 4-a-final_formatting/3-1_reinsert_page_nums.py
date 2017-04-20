@@ -149,28 +149,46 @@ patterns_raw = open_file('../4-a-final_formatting/resources/དཀར་ཆག�
 patterns = {}
 for line in patterns_raw[1:]:
     parts = line.split(',')
-    title = re.sub(r'_conc.*', '', parts[0])
-    b_page = int(parts[1])
+    names = patterns_raw[0].split(',')
+    # 'ཆོས་ཚན།'
+    title = re.sub(r'_conc.*', '', parts[1])
+    # 'དབུ།'
+    b_page = int(parts[2])
     sides = {'a': 'ན', 'b': 'བ'}
-    b_side = sides[parts[2]]
-    e_page = int(parts[7])
-    e_side = sides[parts[8]]
-    lines_per_page = int(parts[6])
-    if int(parts[9]) == 7 and int(parts[6]) == 7:
+    # 'རྒྱབ་འདུན།' (of 'དབུ།')
+    b_side = sides[parts[3]]
+    # 'ཞབས།'
+    e_page = int(parts[6])
+    # 'རྒྱབ་འདུན།' (of 'ཞབས།')
+    e_side = sides[parts[7]]
+    # 'ཤོག་ངོས་གཞན་གྱི་ཐིག་གྲངས།'
+    lines_per_page = int(parts[5])
+    # lines on first pages excepting the first two
+    last_first_pages_lines = [int(a) for a in parts[11:] if a != '']
+    # if 'ཞབས་ཀྱི་ཐིག་གྲངས།' == 7 and 'ཤོག་ངོས་གཞན་གྱི་ཐིག་གྲངས།' == 7
+    if int(parts[8]) == 7 and int(parts[5]) == 7:
         last_page_lines = 7
     else:
-        last_page_lines = int(parts[6])-int(parts[9])+1
-    if int(parts[5]) == 7:
-        first_pages_lines = [int(parts[4]) - int(parts[3]) + 1]
+        # 'ཤོག་ངོས་གཞན་གྱི་ཐིག་གྲངས།' - 'ཞབས་ཀྱི་ཐིག་གྲངས།'
+        last_page_lines = int(parts[5])-int(parts[8])+1
+    # 'ཤོག་ངོས་༢ པའི་ཐིག་གྲངས།' == 7
+    if int(parts[10]) == 7:
+        # 'ཤོག་ངོས་༡ པོའི་ཐིག་གྲངས།' - 'དབུའི་ཐིག་ཕྲེང་།' + 1
+        first_pages_lines = [int(parts[9]) - int(parts[4]) + 1]
+        first_pages_lines += last_first_pages_lines
     else:
-        first_pages_lines = [int(parts[4])-int(parts[3])+1, int(parts[5])]
-    patterns[title] = [('start', b_page, b_side), ('end', e_page, e_side), first_pages_lines, lines_per_page, last_page_lines]
+        # ['ཤོག་ངོས་༡ པོའི་ཐིག་གྲངས།' - 'དབུའི་ཐིག་ཕྲེང་།' + 1, 'ཤོག་ངོས་༢ པའི་ཐིག་གྲངས།']
+        first_pages_lines = [int(parts[9])-int(parts[4])+1, int(parts[10])]
+        first_pages_lines += last_first_pages_lines
+    #patterns[title] = [('start', b_page, b_side), ('end', e_page, e_side), first_pages_lines, lines_per_page, last_page_lines]
     if e_page == b_page + 1 and b_side != e_side:
-        patterns[title] = [('start', b_page, b_side), ('end', e_page, e_side), [int(parts[4])-int(parts[3])+1], lines_per_page,
+        # ['ཤོག་ངོས་༡ པོའི་ཐིག་གྲངས།' - 'དབུའི་ཐིག་ཕྲེང་།' + 1]
+        patterns[title] = [('start', b_page, b_side), ('end', e_page, e_side), [int(parts[9])-int(parts[4])+1]+last_first_pages_lines, lines_per_page,
                            last_page_lines]
     elif b_page == e_page and b_side == e_side:
-        patterns[title] = [('start', b_page, b_side), ('end', e_page, e_side), [int(parts[9]) - int(parts[3]) + 1], lines_per_page,
-                           int(parts[9]) - int(parts[3]) + 1]
+        # ['ཞབས་ཀྱི་ཐིག་གྲངས།' - 'དབུའི་ཐིག་ཕྲེང་།' + 1] … ['ཞབས་ཀྱི་ཐིག་གྲངས།' - 'དབུའི་ཐིག་ཕྲེང་།' + 1]
+        patterns[title] = [('start', b_page, b_side), ('end', e_page, e_side), [int(parts[8]) - int(parts[4]) + 1]+last_first_pages_lines, lines_per_page,
+                           int(parts[8]) - int(parts[4]) + 1]
     else:
         patterns[title] = [('start', b_page, b_side), ('end', e_page, e_side), first_pages_lines, lines_per_page,
                            last_page_lines]

@@ -568,7 +568,8 @@ if __name__ == '__main__':
                   '1-119 སྤོས་སྦྱོར་རིན་པོ་ཆེའི་ཕྲེང་བ་ཞེས་བྱ་བ།_cats.json',
                   '522 མོ་རྩིས་འཇམ་པའི་དབྱངས་ཞེས་བྱ་བ།_cats.json',
                   '1-83 སེང་ལྡེང་ནགས་ཀྱི་སྒྲོལ་མ་ལ་བསྟོད་པ།_cats.json',
-                  '1-34_དཔལ་གསང་བ་འདུས་པའི་རྒྱུད་ཀྱི་རྒྱུད་འགྲེལ།_cats.json']
+                  '1-34_དཔལ་གསང་བ་འདུས་པའི་རྒྱུད་ཀྱི་རྒྱུད་འགྲེལ།_cats.json',
+                  '1-107 འཕགས་པ་སཱ་ལུ་ལྗང་པ་ཞེས་བྱ་བ།_cats.json']
     for file_name in os.listdir(in_dir):
         if file_name not in exceptions:
             work_name = file_name.replace('_cats.json', '')

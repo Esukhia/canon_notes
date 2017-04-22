@@ -37,15 +37,29 @@ def reinsert_notes(raw_text, raw_notes, basis_edition='སྡེ་'):
         editions[e] = []
 
     error = False
+    previous_note_num = False
     for n in raw_notes:
-        if debug == 1:
-            print('\t\t'+n)
+        # if debug == 1:
+        #     print('\t\t'+n)
         if error:
             break
         if n.replace(',', '').replace(' ', '') == '':
             continue
         parts = n.split(',')
         number = str(int(parts[2])-1)
+
+        # check if notes are left aside, if yes, add the corresponding text, else, continue normally
+        if previous_note_num:  # deals with the first note
+            if previous_note_num + 1 < int(number):
+                missing_text_parts = [str(a) for a in range(previous_note_num+1, int(number))]
+                for missing_number in missing_text_parts:
+                    for g in list(edition_names)+[basis_edition]:
+                        chunk = ''.join(text[missing_number])
+                        # remove the extra spaces inserted between the shad and the next verse
+                        chunk = chunk.replace('_།_', '_།').replace('_', ' ')
+                        editions[g].append((chunk, '', missing_number, 'left aside'))
+        previous_note_num = int(number)
+
         # DEBUG. Enables to start debugging at a given note
         #note_num = 304
         if number == str(note_num-1):
@@ -429,20 +443,20 @@ def debug_files(vol_num):
     c = 0
     for w in works:
         c += 1
+        if w[0] == '1-60 འཕགས་པ་སྤྱན་རས་གཟིགས་དབང་ཕྱུག་ཕྱག་སྟོང་པའི་སྒྲུབ་ཐབས།.txt':
+            print('ok')
+        else:
+            continue
         print(c, w[0])
         if c >= vol_num:
             generate_outputs(w[0], w[1], 5)
 
-note_num = 138
+note_num = 87
 debug = 0
 
 if debug:
     debug_files(1)
 else:
     for w in works:
-        # if w[0] == '1-118 བཤད་པ་སྨན་ཨ་བའི་ཆོ་ག.txt':
-        #     print('ok')
-        # else:
-        #     continue
         print(w[0])
         generate_outputs(w[0], w[1], 5)

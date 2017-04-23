@@ -57,7 +57,7 @@ def reinsert_notes(raw_text, raw_notes, basis_edition='སྡེ་'):
                         chunk = ''.join(text[missing_number])
                         # remove the extra spaces inserted between the shad and the next verse
                         chunk = chunk.replace('_།_', '_།').replace('_', ' ')
-                        editions[g].append((chunk, '', missing_number, 'left aside'))
+                        editions[g].append((chunk, '', missing_number, ''))
         previous_note_num = int(number)
 
         # DEBUG. Enables to start debugging at a given note

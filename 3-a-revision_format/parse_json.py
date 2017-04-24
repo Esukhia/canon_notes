@@ -521,7 +521,6 @@ def update_unified_structure(unified_structure, notes):
 
 
 def extract_categories(notes, text_name, cat_list=False):
-    text_name = text_name.replace(' ', '_')
     def find_cat_notes(notes, cat):
         differing_syls = {}  # {'note_num': ( {texts}, (left, right))}
         sorted_notes = sorted_strnum([(a, b) for a, b in notes.items() if a != 'Stats'])
@@ -566,10 +565,11 @@ if __name__ == '__main__':
     output = []
     exceptions = ['1-20 གནས་ཆེན་པོ་བརྒྱད་ཀྱི་མཆོད་རྟེན་ལ་བསྟོད་པ།b_cats.json',
                   '1-119 སྤོས་སྦྱོར་རིན་པོ་ཆེའི་ཕྲེང་བ་ཞེས་བྱ་བ།_cats.json',
-                  '522 མོ་རྩིས་འཇམ་པའི་དབྱངས་ཞེས་བྱ་བ།_cats.json',
                   '1-83 སེང་ལྡེང་ནགས་ཀྱི་སྒྲོལ་མ་ལ་བསྟོད་པ།_cats.json',
-                  '1-34_དཔལ་གསང་བ་འདུས་པའི་རྒྱུད་ཀྱི་རྒྱུད་འགྲེལ།_cats.json',
-                  '1-107 འཕགས་པ་སཱ་ལུ་ལྗང་པ་ཞེས་བྱ་བ།_cats.json']
+                  '1-34 དཔལ་གསང་བ་འདུས་པའི་རྒྱུད་ཀྱི་རྒྱུད་འགྲེལ།_cats.json',
+                  '1-145 རྒྱུད་སྣ་ཚོགས་ལས་བཏུས་པའི་གཏོར་མའི་ཆོ་ག_cats.json',
+                  '1-107 འཕགས་པ་སཱ་ལུ་ལྗང་པ་ཞེས་བྱ་བ།_cats.json'
+                  ]
     for file_name in os.listdir(in_dir):
         if file_name not in exceptions:
             work_name = file_name.replace('_cats.json', '')

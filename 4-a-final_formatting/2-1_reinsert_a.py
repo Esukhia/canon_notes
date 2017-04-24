@@ -265,9 +265,9 @@ import os
 from PyTib.common import open_file, write_file
 
 def reinsert_a(raw_path, with_a_path, with_notes_path):
-    for f in os.listdir(raw_path):
+    for f in os.listdir(with_notes_path):
         print(f)
-        work_name = f.replace('_raw.txt', '')
+        work_name = f.replace('_post_seg.txt', '')
         raw = open_file('{}/{}_raw.txt'.format(raw_path, work_name))
         with_a = open_file('{}/{}_with_a.txt'.format(with_a_path, work_name))
         with_notes_raw = open_file('{}/{}_post_seg.txt'.format(with_notes_path, work_name))

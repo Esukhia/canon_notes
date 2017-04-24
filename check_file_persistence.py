@@ -34,7 +34,7 @@ def find_intersection(section1, section2):
     set2 = set(list2)
     diff1 = list(set2.difference(set1))
     diff2 = list(set1.difference(set2))
-    return '< '+'\n< '.join(diff1) + '\n> '+'\n> '.join(diff2)
+    return '< '+'\n< '.join(diff1) + '\n> '+'\n> '.join(diff2) + '\n' + str(len(diff1+diff2))
 
 # 1 reinsertion
 print(len(os.listdir(structure['txt_raw'][0])), ': txt_raw')
@@ -100,6 +100,6 @@ print(len(os.listdir(structure['4_compared'][0])), ': 4_compared')
 print(find_intersection('4_compared', '4_final'))
 
 print(len(os.listdir(structure['4_final'][0])), ': 4_final')
-print(find_intersection('4_final', '4_docx'))
+#print(find_intersection('4_final', '4_docx'))
 
 print(len(os.listdir(structure['4_docx'][0])), ': 4_docx')

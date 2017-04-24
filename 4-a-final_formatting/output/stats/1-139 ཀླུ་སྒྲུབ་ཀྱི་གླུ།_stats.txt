@@ -1,8 +1,8 @@
 ﻿U: 0 notes (0.00%)
 ?: 0 notes (0.00%)
+D: 0 notes (0.00%)
 K: 3 notes (100.00%)
 C: 0 notes (0.00%)
-D: 0 notes (0.00%)
 Total notes: 3
 Discarded notes(D+U): 0 notes (0.00%)
 Kept notes(C+K+?): 3 notes (100.00%)

@@ -414,7 +414,7 @@ def export_unified_structure(editions, text_name, out_dir='output/unified_struct
 
 def generate_outputs(text_name, notes_name, context, in_dir='input', out_dir='output'):
     editions = reinsert_notes(open_file('{}/{}'.format(in_dir, text_name)), open_file('{}/{}'.format(in_dir, notes_name)))
-    work_name = text_name.split('.')[0].replace(' ', '_')
+    work_name = text_name.split('.')[0]
 
     #generate_editions(editions, out_dir, work_name)
     export_unified_structure(editions, work_name)
@@ -431,7 +431,7 @@ def generate_outputs(text_name, notes_name, context, in_dir='input', out_dir='ou
 #         ('i-5-10 དབུ་མ་ལ་འཇུག་པ།.txt', '5-10 དབུ་མ་ལ་འཇུག་པ།.csv'),
 #         ('i-1-88 རིགས་པ་དྲུག་ཅུ་པའི་ཚིག་ལེའུར་བྱས་པ།.txt', '1-88 རིགས་པ་དྲུག་ཅུ་པའི་ཚིག་ལེའུར་བྱས་པ།.csv')]
 
-excluded = ['4-1 སྒྲོལ་མ་གསལ་བར་བྱེད་པའི་དཀའ་བ་བཏུས་པའི་འགྲེལ་པ།.txt']
+excluded = []
 works = []
 for f in sorted(os.listdir('input')):
     if f.endswith('txt'):

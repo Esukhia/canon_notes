@@ -808,9 +808,9 @@ def process(in_path, template_path, total_stats):
     verbs = jp.decode(open_file('./resources/monlam_verbs.json'))
     all_ngrams = open_ngrams()
     for f in os.listdir(in_path):
+        print(f)
         if debug and f != file:
             continue
-        print(f)
         work_name = f.replace('_conc-corrected.txt', '')
 
         raw = open_file('{}/{}'.format(in_path, f))
@@ -898,7 +898,7 @@ def process(in_path, template_path, total_stats):
 
 if __name__ == '__main__':
     debug = False
-    file = '1-34_དཔལ་གསང་བ་འདུས་པའི་རྒྱུད་ཀྱི་རྒྱུད་འགྲེལ།_conc-corrected.txt'
+    file = '1-31 ནག་པོ་ཆེན་པོའི་སྒྲུབ་ཐབས།_conc-corrected.txt'
     note_num = 24
 
     in_path = '../1-b-manually_corrected_conc/notes_formatted'

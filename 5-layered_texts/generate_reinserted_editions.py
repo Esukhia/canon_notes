@@ -113,7 +113,7 @@ def main():
     # copy the categorisations in json format
     copy_cat_json_file(cats_json_path)
     # copy the final version
-    copy_final_version(final_path)
+    #copy_final_version(final_path)
     # reconstruct versions for each text
     reconstruct_version_texts(struct_path)
     # Todo implement a function that outputs the lines that are close to a multiple of the average line length

@@ -22,7 +22,7 @@ def process(origin_path, target_path, origin_name_end, target_name_end):
             text = text.replace('-'*100, '').replace('\n', '')
             output = '\n\n'.join([text, notes])
 
-            write_file('{}/{}{}'.format(target_path, work_name, target_name_end), output)
+            write_file('{}/{}{}'.format(target_path, work_name.replace(' ', '_'), target_name_end), output)
 
 origin_path = 'output/3-2-compared'
 target_path = 'output/3-3-final'

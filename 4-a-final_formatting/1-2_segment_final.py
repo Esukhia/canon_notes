@@ -64,5 +64,5 @@ for f in os.listdir(in_path):
 for f in os.listdir('output/0-3-corrected'):
     work_name = f.replace('_corrected.txt', '')
     existing = [g.replace('_post_seg.txt', '') for g in os.listdir('output/1-3-post_seg')]
-    if work_name not in existing:
-        write_file('output/1-3-post_seg/{}_post_seg.txt'.format(work_name), open_file('output/0-3-corrected/{}_corrected.txt'.format(work_name)))
+    # if work_name not in existing:
+    write_file('output/1-3-post_seg/{}_post_seg.txt'.format(work_name), open_file('output/0-3-corrected/{}_corrected.txt'.format(work_name)))

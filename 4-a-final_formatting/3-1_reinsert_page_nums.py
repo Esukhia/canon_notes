@@ -76,11 +76,11 @@ def reinsert(in_path, out_path1, out_path2, patterns):
 
             # write to the file to 3-2-compared if it is not yet there
             existing = [g.replace('_compared.txt', '') for g in os.listdir(out_path2) if g.endswith('.txt')]
-            if work_name not in existing:
-                write_file('{}/{}_compared.txt'.format(out_path2, work_name), output)
-                text_path = '{}/extra_copies/{}'.format(out_path2, work_name)
-                if not os.path.exists(text_path):
-                    os.makedirs(text_path)
+            #if work_name not in existing:
+            write_file('{}/{}_compared.txt'.format(out_path2, work_name), output)
+            text_path = '{}/extra_copies/{}'.format(out_path2, work_name)
+            if not os.path.exists(text_path):
+                os.makedirs(text_path)
 
 
 def reinsert_raw(in_path, out_path, patterns):

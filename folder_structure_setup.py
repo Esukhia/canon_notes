@@ -7,6 +7,7 @@ structure = [
     '1-a-reinsert_notes/output/comparison_xls',
     '1-a-reinsert_notes/output/conc_yaml',
     '1-a-reinsert_notes/output/mistakes',
+    '1-a-reinsert_notes/output/has_p',
     '1-a-reinsert_notes/output/unified_structure',
     '1-b-manually_corrected_conc/notes_formatted',
     '1-b-manually_corrected_conc',

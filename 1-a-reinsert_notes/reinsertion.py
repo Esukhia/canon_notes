@@ -3,6 +3,8 @@ import re
 from xlwt import Workbook
 import os
 import yaml
+import jsonpickle as jp
+jp.set_encoder_options('simplejson', sort_keys=True, indent=4, ensure_ascii=False, parse_int=True)
 
 
 def is_punct(string):
@@ -17,10 +19,16 @@ def is_punct(string):
 
 def reinsert_notes(raw_text, raw_notes, basis_edition='སྡེ་'):
     global note_num
+    global work_name
+    has_p = {}
+
     raw_text = raw_text.replace('a', '').split('\n')
     raw_notes = re.sub(r'《([^《》་]+)》', r'《\1་》', raw_notes)  # add a tsek in the edition names that lack one.
     raw_notes = raw_notes.replace(';', ',')
-    raw_notes = raw_notes.strip().split('\n')[1:]
+    raw_notes = raw_notes.strip().split('\n')[1:]  # removes the title line
+    # delete the first note if it is the title of the text
+    # if raw_notes[0].split(',')[0] != '':
+    #     raw_notes = raw_notes[1:]
 
     text = {}
     for t in raw_text:
@@ -98,6 +106,12 @@ def reinsert_notes(raw_text, raw_notes, basis_edition='སྡེ་'):
                     modif_type = 'm'
                 elif note.startswith('p'):
                     modif_type = 'p'
+                    p_num = int(number)-1
+                    with_p_editions = re.findall(edition_regex, content[a])
+                    if p_num not in has_p:
+                        has_p[p_num] = []
+                    for e in with_p_editions:
+                        has_p[p_num].append(e)
                 version = pre_process(note.replace(modif_type, ''), mode='syls')
                 # delete the last element in the list of the note
                 #if is_punct(version[-1]):
@@ -261,6 +275,9 @@ def reinsert_notes(raw_text, raw_notes, basis_edition='སྡེ་'):
         chunk = ''.join(text[str(len(text))])
         chunk = chunk.replace('_།_', '_།').replace('_', ' ')
         editions[g].append((chunk, '', '', ''))
+
+    # write has_p
+    write_file('output/has_p/{}_p.json'.format(work_name), jp.encode(has_p))
     return editions
 
 
@@ -411,10 +428,12 @@ def export_unified_structure(editions, text_name, out_dir='output/unified_struct
     out = yaml.dump(unified, allow_unicode=True, default_flow_style=False, width=float("inf"))
     write_file('{}/{}_unified_structure.yaml'.format(out_dir, text_name), out)
 
-
+work_name = ''
 def generate_outputs(text_name, notes_name, context, in_dir='input', out_dir='output'):
+    global work_name
+    work_name= text_name.split('.')[0]
     editions = reinsert_notes(open_file('{}/{}'.format(in_dir, text_name)), open_file('{}/{}'.format(in_dir, notes_name)))
-    work_name = text_name.split('.')[0]
+
 
     #generate_editions(editions, out_dir, work_name)
     export_unified_structure(editions, work_name)

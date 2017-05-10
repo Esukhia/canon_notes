@@ -59,14 +59,21 @@ def format_footnote(note, chosen, ref):
             ordered[strip_punct(clean_ed_text(v))].append(k)
         # ཞེས་པར་མ་གཞན་ནང་མེད། for all notes where Derge adds something.
         if not [a for a in ordered.keys() if a != '']:
-            return '{}: {}། ཞེས་པར་མ་གཞན་ནང་མེད།'.format(ref, strip_punct(''.join(note['སྡེ་'])))
+            return '{}: {}། ཞེས་པར་མ་གཞན་ནང་མེད།'.format(ref, strip_punct(''.join(note['སྡེ་'])).replace('_', ' '))
         else:
             final = []
             full_names = {'སྡེ་': 'སྡེ་དགེ', 'ཅོ་': 'ཅོ་ནེ', 'པེ་': 'པེ་ཅིན', 'སྣར་': 'སྣར་ཐང་'}
             for text in tib_sort(ordered.keys()):
                 if text != '':
-                    final.append(text)
+                    # add the + where there was a p in the original note
+                    p = ''
+                    if str(note_num) in notes_with_p.keys():
+                        for ed_with_p in notes_with_p[str(note_num)]:
+                            if p == '' and ed_with_p in ordered[text]:
+                                p = '+'
+                    final.append(p+text)
                     final.extend([full_names[ed] for ed in tib_sort(ordered[text]) if ed != 'ཞོལ་'])
+
             return '{}: {}།'.format(ref, '། '.join(final))
 
     elif chosen == 'b':
@@ -88,6 +95,11 @@ def format_footnote(note, chosen, ref):
         return '{}: མ་དཔེར་{}། བྱུང་ཡང་པེ་ཅིན་བཞིན། {}། {}་བཅོས།'.format(ref, derge, pecing, zhas)
 
 
+def load_initial_notes(raw_text):
+    lines = raw_text.strip().split('\n')
+    contain_plus = [int(a.split(',')[2])-2 for a in lines if 'p' in a]  # WARNING -2 will need to be amended in cases the first note is not deleted
+    return contain_plus
+
 reviewed_path = '../3-b-reviewed_texts'
 structure_path = '../3-a-revision_format/output/updated_structure'
 for f in os.listdir(reviewed_path):
@@ -101,6 +113,9 @@ for f in os.listdir(reviewed_path):
         unified_structure = yaml.load(open_file('../1-a-reinsert_notes/output/unified_structure/{}_unified_structure.yaml'.format(work_name)))
         grouped_unified = group_syllables(unified_structure)
         grouped_updated = group_syllables(updated_structure)
+
+        # find notes with "p" inside
+        notes_with_p = jp.decode(open_file('../1-a-reinsert_notes/output/has_p/{}_p.json'.format(work_name)))
 
         similar_notes = 0
         output = []

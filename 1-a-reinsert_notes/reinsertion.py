@@ -17,16 +17,19 @@ def is_punct(string):
 
 def reinsert_notes(raw_text, raw_notes, basis_edition='སྡེ་'):
     global note_num
-    raw_text = raw_text.replace('a', '').split('\n')
+    raw_text = raw_text.replace('a', '').replace('\t', ' ').split('\n')
     raw_notes = re.sub(r'《([^《》་]+)》', r'《\1་》', raw_notes)  # add a tsek in the edition names that lack one.
-    raw_notes = raw_notes.replace(';', ',')
     raw_notes = raw_notes.strip().split('\n')[1:]
 
     text = {}
     for t in raw_text:
-        parts = re.split(r'([0-9]+)\.\s', t)[1:]
+        parts = re.split(r'([0-9]+)\.[\t\s]', t)[1:]
         if parts:
-            text[parts[0]] = pre_process(parts[1], mode='syls')
+            note_number = parts[0]
+            note_text = pre_process(parts[1], mode='syls')
+            if note_text == []:
+                note_text = ['']
+            text[note_number] = note_text
 
     edition_regex = r'《([^《》]+)》'
 
@@ -37,29 +40,16 @@ def reinsert_notes(raw_text, raw_notes, basis_edition='སྡེ་'):
         editions[e] = []
 
     error = False
-    previous_note_num = False
     for n in raw_notes:
-        # if debug == 1:
-        #     print('\t\t'+n)
+        #if debug == 1:
+        if show_note == 1:
+            print('\t\t'+n)
         if error:
             break
         if n.replace(',', '').replace(' ', '') == '':
             continue
         parts = n.split(',')
         number = str(int(parts[2])-1)
-
-        # check if notes are left aside, if yes, add the corresponding text, else, continue normally
-        if previous_note_num:  # deals with the first note
-            if previous_note_num + 1 < int(number):
-                missing_text_parts = [str(a) for a in range(previous_note_num+1, int(number))]
-                for missing_number in missing_text_parts:
-                    for g in list(edition_names)+[basis_edition]:
-                        chunk = ''.join(text[missing_number])
-                        # remove the extra spaces inserted between the shad and the next verse
-                        chunk = chunk.replace('_།_', '_།').replace('_', ' ')
-                        editions[g].append((chunk, '', missing_number, 'left aside'))
-        previous_note_num = int(number)
-
         # DEBUG. Enables to start debugging at a given note
         #note_num = 304
         if number == str(note_num-1):
@@ -218,6 +208,8 @@ def reinsert_notes(raw_text, raw_notes, basis_edition='སྡེ་'):
                         # 2.b if there is no synchronising point
                     else:
                         for e in range(len(version)):
+                            #print(e) # གཞུང་འདིའི་བསླབ་པ་ལ་ནི་བསླབ་པར་   དབུ་མ་རིན་པོ་ཆེའི་སྒྲོན་མ།.txt
+                            #print(version[e])
                             edition_text[len(edition_text) - len(version) + e] = version[e]
 
                 # A.2 add the punctuation to the end if needed
@@ -334,8 +326,6 @@ def generate_unified_version(editions):
     total = []
     # a. generate the list of editions’ names
     ed_names = [a for a in editions]
-    # the title of the text added by Esukhia is deleted by starting the range at 1 instead of 0
-    # this needs to be made into a function to process Atisha's works, where the beginning of the text is truncated.
     for syl_num in range(1, len(editions['སྡེ་'])):
         pre_processed = {}
         common = []
@@ -363,6 +353,8 @@ def generate_context_versions(editions, file_name, out_dir, left=5, right=5, bas
         c = 0
         for num, syl in enumerate(unified_version):
             if type(syl) == dict:
+                if c == 137:
+                    print('ok')
                 versions = {}
                 for ed in syl:
                     # add left context
@@ -413,8 +405,8 @@ def export_unified_structure(editions, text_name, out_dir='output/unified_struct
 
 
 def generate_outputs(text_name, notes_name, context, in_dir='input', out_dir='output'):
-    editions = reinsert_notes(open_file('{}/{}'.format(in_dir, text_name)), open_file('{}/{}'.format(in_dir, notes_name)))
-    work_name = text_name.split('.')[0]
+    editions = reinsert_notes(open_file('{}/{}'.format(in_dir, text_name)), open_file('{}/{}'.format(in_dir, notes_name)).replace(';', ','))
+    work_name = text_name.split('.')[0].replace(' ', '_')
 
     #generate_editions(editions, out_dir, work_name)
     export_unified_structure(editions, work_name)
@@ -424,17 +416,13 @@ def generate_outputs(text_name, notes_name, context, in_dir='input', out_dir='ou
     generate_context_versions(editions, work_name, out_dir, left=context, right=context)
 
 
-# put in this list the pairs of works and their respective notes
-#works = [a.split('\t') for a in open_file('./note-text_correspondance.csv').strip().split('\n')]
-#works = [('i-6-1 བྱང་ཆུབ་སེམས་དཔའི་སྤྱོད་པ་ལ་འཇུག་པ།.txt', '6-1 བྱང་ཆུབ་སེམས་དཔའི་སྤྱོད་པ་ལ་འཇུག་པ།.csv'),
-#         ('i-1-92 རྩོད་པ་བཟློག་པའི་ཚིག་ལེའུར་བྱས་པ།.txt', '1-92 རྩོད་པ་བཟློག་པའི་ཚིག་ལེའུར་བྱས་པ།.csv'),
-#         ('i-5-10 དབུ་མ་ལ་འཇུག་པ།.txt', '5-10 དབུ་མ་ལ་འཇུག་པ།.csv'),
-#         ('i-1-88 རིགས་པ་དྲུག་ཅུ་པའི་ཚིག་ལེའུར་བྱས་པ།.txt', '1-88 རིགས་པ་དྲུག་ཅུ་པའི་ཚིག་ལེའུར་བྱས་པ།.csv')]
+excluded = [#'11-20_ཆོས་མངོན་པའི་འགྲེལ་པ་གནད་ཀྱི་སྒྲོན་མ།.txt',
+            ]
+vol_num = 0
 
-excluded = []
 works = []
 for f in sorted(os.listdir('input')):
-    if f.endswith('txt'):
+    if f.endswith('txt') and f not in excluded:
         csv = f.replace('.txt', '')+'.csv'
         works.append((f, csv))
 
@@ -443,19 +431,15 @@ def debug_files(vol_num):
     c = 0
     for w in works:
         c += 1
-        if w[0] == '1-60 འཕགས་པ་སྤྱན་རས་གཟིགས་དབང་ཕྱུག་ཕྱག་སྟོང་པའི་སྒྲུབ་ཐབས།.txt':
-            print('ok')
-        else:
-            continue
         print(c, w[0])
         if c >= vol_num:
             generate_outputs(w[0], w[1], 5)
 
-note_num = 87
+note_num = 13
 debug = 0
-
+show_note = 0
 if debug:
-    debug_files(1)
+    debug_files(vol_num)
 else:
     for w in works:
         print(w[0])

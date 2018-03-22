@@ -167,6 +167,7 @@ def prepare_data(raw):
             for e in range(1, len(collection_eds)+1):
                 if debug:
                     print(e)
+                    print(parts[e])
                 ed = parts[e].split(':')[0].strip()
                 text = parts[e].split(',')[0].split(': ')[1].strip()
                 eds[ed] = text
@@ -205,6 +206,10 @@ def strip_similar(list_of_lists):
         if len(list) > 0:
             for b, syl in enumerate(list):
                 if len(lists_copy[a]) != 0 and syl in lists_copy[a]:
+                    if debug:
+                        print(lists_copy)
+                        print(list, syl)
+                        print(a, b)
                     lists_copy[a][b] = lists_copy[a][b].rstrip('་')
 
     return lists_copy
@@ -442,7 +447,9 @@ def categorise(note, categorised, verbs):
                     categorised['automatic_categorisation']['particle_issues']['added_particle'].append(format_entry(note, same_diff[1][0]))
                 elif same_diff[0] == 'different_particles':
                     categorised['automatic_categorisation']['particle_issues']['different_particles'].append(format_entry(note, same_diff[1][0]))
-                elif same_diff[0] == 'other':
+                elif same_diff[0] == 'other' and same_diff[1]:
+                    if debug:
+                        print(note_texts)
                     categorised['automatic_categorisation']['particle_issues']['other'].append(format_entry(note, same_diff[1][0]))
 
     def verb_difference(note_texts, verbs):
@@ -811,12 +818,13 @@ def process(in_path, template_path, total_stats):
         print(f)
         if debug and f != file:
             continue
-        work_name = f.replace('_conc-corrected.txt', '')
+        work_name = f.replace('_conc.txt', '')
 
         raw = open_file('{}/{}'.format(in_path, f))
         # setting collection_eds for the current file
         collection_eds = list({a for a in re.findall(r' ([^ ]+): ', raw)})
-
+        if len(collection_eds) > 4:
+            print(collection_eds)
         data = prepare_data(raw)
         profiles, profile_cats = find_profiles(data)
 
@@ -897,9 +905,10 @@ def process(in_path, template_path, total_stats):
 
 
 if __name__ == '__main__':
-    debug = False
-    file = '1-31 ནག་པོ་ཆེན་པོའི་སྒྲུབ་ཐབས།_conc-corrected.txt'
-    note_num = 24
+    debug = True
+    #file = '563_རྒྱུད་ཀྱི་རྒྱལ་པོ་ཆེན་པོ་དཔལ་དགྱེས་པའི་རྡོ་རྗེའི་དཀའ་འགྲེལ་སྤྱན་འབྱེད།_conc.txt'
+    file = '10-34_འཕགས་པ་བཟང་པོ་སྤྱོད་པའི་སྨོན་ལམ་གྱི་འགྲེལ་པ།_conc.txt'
+    note_num = 0
 
     in_path = '../1-b-manually_corrected_conc/notes_formatted'
     template = './resources/template.json'
@@ -907,5 +916,3 @@ if __name__ == '__main__':
     process(in_path, template, total_stats)
 
     write_file('total_stats.txt', '\n\n'.join(total_stats))
-
-

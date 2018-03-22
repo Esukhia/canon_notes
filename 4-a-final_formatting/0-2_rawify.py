@@ -6,7 +6,8 @@ from PyTib.common import open_file, write_file
 def process(in_path, file_origin, name_end, out_path):
     for f in os.listdir(in_path):
         work_name = f.replace(name_end, '')
-        raw_content = open_file(file_origin.format(work_name.replace('_', ' ')))
+        # raw_content = open_file(file_origin.format(work_name.replace('_', ' ')))
+        raw_content = open_file(file_origin.format(work_name))
 
         content = re.sub(r'\n?[0-9]+\.\s+', '', raw_content)
         content = re.sub(r' ', '\n', content)

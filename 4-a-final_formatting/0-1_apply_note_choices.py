@@ -90,7 +90,7 @@ def format_footnote(note, chosen, ref):
 
 reviewed_path = '../3-b-reviewed_texts'
 structure_path = '../3-a-revision_format/output/updated_structure'
-for f in os.listdir(reviewed_path):
+for f in sorted(os.listdir(reviewed_path)):
     print(f)
     if f:  # == '1-1_ཆོས་ཀྱི་དབྱིངས་སུ་བསྟོད་པ།_DUCKed.csv':
         work_name = f.replace('_DUCKed.csv', '')

@@ -1,195 +1,164 @@
-Latest
+What is This Project?
+=====================
 
-# སྙེ་ཆས་འཚམས་སྦྱོར་ཨིན་བོད་ཤན་སྦྱར་མ།
-སྤྱིར་ལས་མི་དུ་མས་བསྒྲུབ་དགོས་པའི་བྱ་བ་གང་ཡིན་རུང་། དེ་ལ་སྒྲུབ་འབྲས་ཐོན་མི་ཐོན་ནི་འཆར་གཞི་ཡོད་མེད་དང་། ལས་མི་རེ་རེ་འཆར་གཞི་དེ་ལག་སྟར་བྱེད་ཐུབ་མིན་ལ་ཐུག་ཡོད། དེ་ཡང་ལས་འཆར་ལ་རྒྱས་བསྡུས་དང་རག་ཞིབ་གྱི་དབྱེ་བ་སྣ་ཚོགས་མཆིས་ཀྱང་། དེ་དག་སྙིང་པོར་སྒྲིལ་ན་ལྔ་སྟེ། 1. ལས་མི་ནི་སུ། 2. ཐོག་མའི་རྒྱུ་ཆ་ནི་གང་། 3. དེར་བྱེད་པའི་བྱ་བ་ནི་ཅི། 4. འབྲས་བུའི་ཁྱད་ཆོས་ནི་ཅི། 5. ཕྲད་པའི་དཀའ་ངལ་ནི་དུ་དང་སེལ་ཐབས་ནི་གང་། ཞེས་དང་བཞི་ཡིན། ཡིག་ཆ་བཀོལ་ཚེ་ཡིག་ཆ་དེ་རིགས་གང་ཡིན་དང་། ཁྱད་ཆོས་གང་ཡོད་སོགས་དང་། ལས་ཀ་བྱེད་ཐབས་ཡིན་ཚེ་དེའི་དམིགས་གསལ་གྱི་ཁྱད་ཆོས་རྣམས་གསལ་པོར་བཀོད་དགོས། མདོར་ན་ལས་ཀ་གང་དེ་བསྒྲུབས་རྗེས་ལས་ཀ་དེ་ག་རང་མི་གཞན་གྱིས་བྱེད་དགོས་བསམ་ན་ལས་འཆར་གྱི་མཆན་དེར་བལྟས་པས་ལས་འཆར་ལག་སྟར་བྱས་ནས་སྒྲུབ་འབྲས་གཅིག་པ་གཅིག་རྐྱང་བྱེད་ཐུབ་པ་ཞིག་ཡོང་དགོས། 
+Project Goal
+------------
 
-འདིར་པཎ་གྲུབ་བཅུ་བདུན་གྱི་གསུངས་འབུམ་བསྡུ་སྒྲིག་ཞུས་པའི་ལས་རིམ་སོ་སོར་སྦྱར་ན།
+Tackle the problem HHDL raised about the Peydurma. Something along the lines of "It is great, but it is not friendly for a regular reader. Plus, a lot of the notes are minor spelling mistakes/divergences that can very easily dealt with, thus greatly reducing the noise and improving readability."
 
-# དང་པོ། ཡིག་ཆ་འཚོལ་བསྡུ་དང་དཀར་ཆག་ཕྱོགས་སྒྲིག
+### Input
 
-1. ལས་མི་ནི། དགེ་བཤེས་ཐུབ་བསྟན་ཡར་འཕེལ་དང་བསྟན་འཛིན་རབ་བརྟན།
+Text (docx) + notes (xlsx) file pairs for every text in the Nalanda corpus.
 
-2. ཐོག་མའི་རྒྱུ་ཆ་ནི། བསྟན་འགྱུར་དཔེ་བསྡུར་མའི་དཀར་ཆག ཇོ་བོ་རྗེའི་གསུངས་འབུམ། ཆོས་བྱུང་ཁག
+### Output
 
-3. བྱ་བ་ནི། གོང་གསལ་ཡིག་ཆར་དཔྱད་ཞིབ་བྱས་ཏེ་པཎ་གྲུབ་སོ་སོའི་གསུངས་འབུམ་གྱི་དཀར་ཆག་སྒྲིག་པ། དཀར་ཆག་རེའུ་མིག་གི་གནས་ནི། ༡ ཨང། ༢ ཆོས་མཚན། ༣ སྡེ་ཚན། ༤ སྤྱིའི་དེབ་གྲངས།	༥ མཛད་པ་པོ།	༦ དཔེ་བསྡུར་གྱི་ཤོག་གྲངས།	༧ པེ་ཅིང་ཤོག་གྲངས།	༨ སྡེ་དགེའི་ཤོག་གྲངས།	༩ ཆོས་ཚན་ཨང་། ཤོག་གྲངས་ལ་རྒྱབ་བདུན་གསལ་ཡང་ཐིག་གྲངས་མི་གསལ།
+The regular user-friendly version of each text in two formats (docx and layered text)
 
-4. སྒྲུབ་འབྲས་ནི། [དཀར་ཆག་ཀུན་གསལ་མེ་ལོང་།](https://docs.google.com/spreadsheets/d/17QzUz_k4e4CMn7udWajOOvEiEYWjnk_Nf6POxL6KeOA/edit#gid=1028481854)(Wordཡིག་ཆའི་ནང་ན་ཡོད་པའི་རེའུ་མིག པཎ་གྲུབ་གྱི་མཚན་གཅིག་གྲུར་མེད། ཤོག་གྲངས་ནི་དཔེ་བསྡུར་མ་ལས་ཤུས་ཡོད་པས་ཡིག་ནོར་ལྡན།)
+Strategy:
+---------
 
-5. དཀའ་གནད་སེལ་བ་ནི། ༡ སྡེ་པར་ནང་ཡིག་ཆ་མི་ཚང་བ། སྡེ་པར་ནང་ཡིག་ཆ་ཚང་མེད་ཚེ་རིམ་བཞིན་པེ་ཅིན་དང་སྣར་ལ་ཞལ་འཕང་དགོས། 
+-   input all the Peydurma notes for the whole collection in xlsx files
 
-# གཉིས་པ། ཡིག་ཆ་གྲ་བསྒྲིགས།
+-   get a clean Derge version of each text in the collection
 
-1. ལས་མི་ནི། རབ་བརྟན། དོན་གྲུབ་སྐྱབས། ཚེ་རིང་། དཔེ་བསྡུར་སྡེ་ཚན།
+-   mark it with the note number so as to have a "copy" of the Peydurma files
 
-2. ཐོག་མའི་རྒྱུ་ཆ་ནི། དཀར་ཆག་ཀུན་གསལ་མེ་ལོང་།(གོང་དང་མཚུངས།) སྒོ་མང་དཔེ་མཛོད་ཀྱི་ནང་འཇུག(མ་ཕྱི་སྡེ་པར་དང་དཔེ་བསྡུར་མ་གཉིས་ཀ་ཡིན། དག་པོ་དེ་ཙམ་མེད། ཆ་མི་ཚང་།) ACIPནང་འཇུག(མ་ཕྱི་སྡེ་པར། དག་པོ་མེད། ཆ་མི་ཚང་།) དཔེ་བསྡུར་མའི་OCR(མཆན་གནས་མཚོན་རྟགས་དངོས་འཛིན་བྱས་མེད་པས་ཡིག་ནོར་མང་།) པར་མ་གཞན་གྱི་པར།(TBRCནང་དུ་ཡོད་པ་དེ་ཡིན།)
+-   reinsert the marks in the text
 
-3. བྱ་བ་ནི། ༡ བསྟན་འགྱུར་པར་མ་སོ་སོ་ལས་དགོས་པའི་ཡིག་ཆ་ལེན་པ། ༢ ཆ་སྒྲིག་ནས་ལས་གྲོགས་ལ་བགོ་བཤའ་བྱེད་པ།
+-   check for evident spelling mistakes and select the right spelling (noise reduction)
 
-4. སྒྲུབ་འབྲས་ནི། སྡེ་པར་ཡིག་ཆ་རེ་རེ་ལ་ནང་འཇུག་མི་འདྲ་བ་གསུམ་དང་། མེད་ཚེ་པར་མ་གཞན་གྱི་ཁ་སྐོང་བྱས་པ། (Wordཡིག་ཆ། )
+-   apply heuristics to discard un-necessary notes, ideally keeping only the notes that affect the understanding of a given passage. (noise reduction)
 
-5. དཀའ་གནད་སེལ་བ་ནི། ༡ ཡིག་ཆ་ནང་འཇུག་དགོས་པ། ཡིག་ཆ་བསྡུར་བའི་ཆེད་དུ་མ་ཕྱི་གཉིས་གསུམ་དགོས་པས་སྡེ་པར་མེད་ཚེ་ངག་འཕྲིན་གྱིས་བཤད་པ་ལྟར་སྣར་ཐང་ནང་འཇུག་བྱས། དེ་རྗེས་དཔེ་བསྡུར་མའི་བསྡུར་མཆན་པེ་ཅིན་ལ་གཞི་འཆོལ་ཡོད་པ་མཐོང་ནས་པེ་པར་གཞིར་བྱས་ཐོག་དེར་ཞུ་དག་བཏང་། ༢ དཀའ་ངལ་གཞན། 
+-   go from syllable-based notes to word-based notes to improve readability (and modify sufficiently Peydurma to not have copyright problems. leverages pytib)
 
-# གསུམ་པ། དམར་ཐིག་བསད་པ།
+-   improve the note format to increase readability
 
-1. ལས་མི་ནི། 
+-   provide a layered version of the final document for an online platform where users/scholars will be able to give feedback/provide choices between notes
 
-2. ཐོག་མའི་རྒྱུ་ཆ་ནི། 
+How is it done?
+===============
 
-3. བྱ་བ་ནི། 
+-1 Before canon-notes
+---------------------
 
-4. སྒྲུབ་འབྲས་ནི། 
+Where: Files are a bit scattered all over the place [here](https://drive.google.com/drive/folders/0B7LZlj4jGHpLTjhCTXVYaVNPYmc) and [here](https://github.com/Esukhia/nalanda-corpus).
 
-5. དཀའ་གནད་སེལ་བ་ནི། 
+Esukhia team in Dharamsala has produced the following for every text:
 
+-   text.docx contains:
 
-# བཞི་པ། སྡེ་པར་བསྟན་འགྱུར་པར་བརྒྱབ་པ།
+-   raw text
 
-1. ལས་མི་ནི། 
+-   page numbers in Derge edition
 
-2. ཐོག་མའི་རྒྱུ་ཆ་ནི། 
+-   note information from Peydurma
 
-3. བྱ་བ་ནི། 
+-   text.xlsx contains:
 
-4. སྒྲུབ་འབྲས་ནི། 
+-   note mark corresponding to what is found in text.docx
 
-5. དཀའ་གནད་སེལ་བ་ནི། 
+-   note content: what every edition says
 
-# ལྔ་པ། པར་གོ་རིམ་སྒྲིག་པ།
+-   notes added by the Esukhia staff (to be detected and ignored)
 
-1. ལས་མི་ནི། 
+-   formatting (color/background/size that has simply been ignored)
 
-2. ཐོག་མའི་རྒྱུ་ཆ་ནི། 
+Issues:
 
-3. བྱ་བ་ནི། 
+1.  notes number discrepancies: sizes of docx and xlsx don't correspond, ...
 
-4. སྒྲུབ་འབྲས་ནི། 
+1.  strategy: see where the scripts fail and manually detect and correct files
 
-5. དཀའ་གནད་སེལ་བ་ནི། 
+3.  the notes added by Esukhia staff has to be identified and ignored
 
-# དྲུག་པ། IDཆེད་གྲ་སྒྲིགས།
+1.  strategy implemented by Rabten: put all of them on the F row since there can't possibly be any note that far)
 
-1. ལས་མི་ནི། 
+5.  files were produced alongside the work was done, so the naming conventions are not consistent and my attempt to create a unified format met opposition with Tibetans.
 
-2. ཐོག་མའི་རྒྱུ་ཆ་ནི། 
+0 Preparing input
+-----------------
 
-3. བྱ་བ་ནི། 
+As shown in [this Drawing](https://docs.google.com/drawings/d/10VGIbmooQOT_Z2N73QP_1fGZe093BuOvEEtFvPmCi7s/edit), and lines 1 to 10 of [this table](https://docs.google.com/spreadsheets/d/1BdArgkswmSREsrig7CTl--H7kX_eqqqgdwxwcbxAQnw/edit#gid=0), the docx and xlsx have to be converted to txt and csv files using [this script](https://github.com/Esukhia/nalanda-corpus/blob/master/%E0%BC%A1%E0%BC%BD%20%E0%BD%98%E0%BD%82%E0%BD%BC%E0%BD%93%E0%BC%8B%E0%BD%94%E0%BD%BC%E0%BC%8B%E0%BD%80%E0%BE%B3%E0%BD%B4%E0%BC%8B%E0%BD%A6%E0%BE%92%E0%BE%B2%E0%BD%B4%E0%BD%96%E0%BC%8D/docx_txt.sh). The output files are then copied in canon-notes/1-a-reinsert_notes/input.
 
-4. སྒྲུབ་འབྲས་ནི། 
+Issues:
 
-5. དཀའ་གནད་སེལ་བ་ནི། 
+1 Reinserting notes
+-------------------
 
-# བདུན་པ། IDནང་དུ་བསྡུར་བ།
+-   csv_contains_pardrang.py:
 
-1. ལས་མི་ནི། 
+detects and deletes an additional column preventing the correct execution of reinsertion.py
 
-2. ཐོག་མའི་རྒྱུ་ཆ་ནི། 
+-   reinsertion.py:
 
-3. བྱ་བ་ནི། 
+loops over every pair of txt+csv files and attempts to reconstruct the passage for every of the existing editions for a given note.
 
-4. སྒྲུབ་འབྲས་ནི། 
+The aim is ultimately to reconstruct digital versions of all the editions from the txt file using the notes.
 
-5. དཀའ་གནད་སེལ་བ་ནི། 
+[output/comparison_xls/ ](https://github.com/Esukhia/canon_notes/tree/latest/1-a-reinsert_notes/output/comparison_xls)was the first attempt of reinsertion. It has better formatting than the yaml counterparts in [conc_yaml/](https://github.com/Esukhia/canon_notes/tree/latest/1-a-reinsert_notes/output/conc_yaml), but is not used in the workflow.
 
-# བརྒྱད་པ། བསྡུར་མཆན་ནང་འཇུག
+output/unified_structure/ contains a version of every text segmented in syllables.
 
-1. ལས་མི་ནི། 
+Every syllable subjected to a note is a yaml dict with the editions as keys, a list of syllables as values. It is used as the single-source-of-truth for all the workflow from that point onwards.
 
-2. ཐོག་མའི་རྒྱུ་ཆ་ནི། 
+2 Automatic Categorisation
+--------------------------
 
-3. བྱ་བ་ནི། (འདིར་པར་མ་སོ་སོའི་མིང་གི་ཚབ་ཏུ་ཨང་གང་དང་གང་བཀོལ་ཡོད་པ་བཀོད་དགོས་མཆན།)
+The rationale is to automatise as much as possible the process of categorising notes and enriching them with the relevant information so that human reviewers of each note will have the maximum information at hand, without having to resort to external sources such as dictionaries, verb lexicons, etc.
 
-4. སྒྲུབ་འབྲས་ནི། 
+This implies the categorisation is going to be modified/enhanced by humans, before moving to the next step, but this has never happened.
 
-5. དཀའ་གནད་སེལ་བ་ནི། 
+First, segment.py is ran, to produce a segmented version of the different editions, which will then individually checked for spelling mistakes, etc. (the whole categorization script)
 
-# དགུ་པ། མཉན་ཆས་བརྒྱུད་ནས་མཆན་གནས་དང་ཤོག་ངོས་རྒྱབ་མདུན་དང་ཐིག་ཕྲེང་སོགས་ལ་ཞིབ་འཇུག
+I hoped that for each file, the segmentation is reviewed by a human to reduce to the maximum the bad segmentations and thus reduce false positives and inaccuracies in the categorisation (based of words rather than syllables). I have processed a few files like that, but it implies a lot of manual work.
 
-1. བསྟན་འཛིན་རབ་བརྟན། 
+categorisation.py includes many different things, out of which the figures of n-gram frequencies in the Kangyur for all segmenting mistakes detected by pytib.
 
-2. ཇོ་སྒྲུབ་ཆེན་གྱིས་མཆན་གནས་སོ་སོ་བཀོད་པའི་མཉན་ཆས་ཀྱི་གྲུབ་དོན་དང་འགན་འཛིན་ངག་འཕྲིན་གྱིས་བཟོས་པའི་ཆོས་ཚན་གྱི་ཤོག་ངོས་དང་ཐིག་ཕྲེང་གཏན་འབེབས་ཀྱི་གྲུབ་དོན། 
+3 Revision format
+-----------------
 
-3. བྱ་བ་ནི། གོང་གི་གྲུབ་གཉིས་ལ་ཞིབ་འཇུག་གིས་ནོར་བ་ཁག་བཟོ་བཅོས་དང་གསལ་མཆན་འགོད་རྒྱུ། 
+The rationale is explained [here](https://docs.google.com/document/d/1vnwMYS_ZXcNwoGefX9vH9oKMg3iFNMzZOXsmIMDOY7M/edit#heading=h.j8jssqobvma).
 
-4. སྒྲུབ་འབྲས་ནི། མགོན་པོ་ཀླུ་སྒྲུབ་ཀྱི་ཆོས་ཚན་ཁག་ལ་ཞིབ་འཇུག་ནན་ཚགས་བྱས་ཏེ་སྡེ་དཔར་དུ་གསལ་བ་རྣམས་སྡེ་དཔར་དང། དེར་མི་གསལ་བ་རྣམས་སྣར་དཔར་དང་བསྟུན་བསྡུར་གྱིས་གཏན་འབེབས་ཞིབ་ཚགས་བྱས་ཡོད། 
+parse_json.py creates the "revision interface" that presents the alternatives of a given notes with left and right context (word-based, not syllable based as in the docx and xlsx or Peydurma). It also includes some information gathered during the automatic categorisation and provides a column where the reviewer will put his final decision for a given note.
 
-5. དཀའ་གནད་སེལ་བ་ནི། 
-- གཅིག མཆན་གྱི་གནད་དོན། པར་མ་གཞན་ལ་ལྷག་མ་ཡོད་པའི་སྡེ་ཚན་བཟོ་དགོས། དཔེར་ན། ཆོས་ཚན། 1-2 མཆན་གྲངས་ཞེ་གཅིག་པ། པེ་ཅིན་ལ་མངྒ་ལཾ། ལྷག་མ་ཡོད་པ་ལྟ་བུ་ལ་གསལ་ཁ་དང་རྟགས་སོགས་དམིགས་བསལ་མི་འདུག 
-Drupchen: གནས་སྐབས་བཟོ་ཐུབ་ས་མ་རེད། དུས་ཚོད་མང་པོ་འགོར་འགྲོ་ས་རེད།
-- གཉིས། འོག་གི་ཡིག་ཆ་རྣམས་ཞུ་དག་བཏང་མིན་འདུག
-> 1-156 དགེ་བའི་འདོད་འཇོ།
-> 117 ལག་ན་རྡོ་རྗེ་གོས་སྔོན་ཅན་གྱི་སྒྲུབ་ཐབས་ཀྱི་རྒྱ་འགྲེལ།
-> 260 རྒྱུན་ཆགས་ཀྱི་ཚིགས་སུ་བཅད་པས་བསྟོད་པ།
-> 1-140 ལྟུང་པ་བཅོ་ལྔ།
-> 1-100 རྟེན་འབྱུང་སྙིང་པོའི་ཚིག་ལེའུར་བྱས་པ།
-> 4-1 སྒྲོལ་མ་གསལ་བར་བྱེད་པའི་དཀའ་བ་བཏུས་པའི་འགྲེལ་པ།
-> 1-35 ལེའུ་བཅོ་བརྒྱད་པའི་རྒྱ་ཆེར་འགྲེལ་པ།
-> 1-145 རྒྱུད་སྣ་ཚོགས་ལས་བཏུས་པའི་གཏོར་མའི་ཆོ་ག
-> 1-109 འཕགས་པ་ཆོས་ཀྱི་དབྱིངས་ཀྱི་སྙིང་པོའི་རྣམ་པར་འགྲེལ་པ།
-> 1-151 འཕགས་པ་བཟང་པོ་སྤྱོད་པའི་སྨོན་ལམ་གྱི་རྒྱལ་པོ་ཆེན་པོའི་བཤད་སྦྱར།
-> 1-160 བླ་མ་གསང་བར་སྒྲུབ་པ།
-> 1-149 མདོ་ཀུན་ལས་བཏུས་པ།
+Notes in a text are grouped by type so the reviewing process is more effective and comparing similar notes or adjusting decisions is easier.
 
+parse_json.py also produced an updated version of the "unified_structure" from 1-a-reinsert_notes/output/unified_structure
 
+An example is [here](https://docs.google.com/spreadsheets/d/1BX5lj_8YygGspIseRBM14bAYoVr6s-x0sDTRc3TljbM/edit#gid=1304534009) or any other tab of the same document (I manually processed them). The choices are encoded in the letters of DUCK in the "new" column.
 
+An unimplemented attempt to automatize the DUCKing process based on heuristics is described [here](https://docs.google.com/presentation/d/1kU7lzTpAb-cBLSApH6VjGOUxLRzvNnsxVTkwHtb7PNo/edit#slide=id.p). The most difficult choices would then be left for scholars, while the easiest ones could be applied automatically, thus achieving the aim of reducing the noise of unnecessary notes.
 
-གཅིག ཤད་ཀྱི་གནད་དོན། 
-ཆོས་ཚན་རྫོགས་པའི་མཐར་ཤད་ཆད་འདུག་པ། དཔེར་ན། 1-4 འི་མཇུག་གི་ཀླུ་སྒྲུབ་ཀྱིས་མཛད་པ་རྫོགས་སོ     ཞེས་པ་ལྟ་བུ་ལ་མ་ཕྱི་(InDesign final) ལ་ཤད་གཉིས་ཡོད་ཀྱང་མཉན་ཆས་ཀྱིས་བཟོས་པ་མི་འདུག
-1-59 འི་མཇུག་གི་རྫོགས་སོ   ཞེས་པ་ལྟ་བུ་ལ་མ་ཕྱི་(InDesign final) ལ་ཤད་གཉིས་ཡོད་ཀྱང་མཉན་ཆས་ཀྱིས་བཟོས་པ་མི་འདུག
-1-94 པའི་མཇུག་ཏུ་“གཏན་ལ་ཕབ་པའོ   ཞེས་པ་ལྟ་བུ་ལ་མ་ཕྱི་(InDesign final) ལ་ཤད་གཉིས་ཡོད་ཀྱང་མཉན་ཆས་ཀྱིས་བཟོས་པ་མི་འདུག
-1-128 པའི་མཇུག་ཏུ་“གཏན་ལ་ཕབ་པའོ   ཞེས་པ་ལྟ་བུ་ལ་མ་ཕྱི་(InDesign final) ལ་ཤད་གཉིས་ཡོད་ཀྱང་མཉན་ཆས་ཀྱིས་བཟོས་པ་མི་འདུག
+create_ducked.py takes as input the output of parse_json in output/antconc_format/, applies a K(eep note) default choice to mimic what I have manually done in the Google Spreadsheet and allow to continue the workflow.
 
-གཉིས་པ། བརྗོད་པ་ཆད་པ།
-ཆོས་ཚན་1-11 གི་མཇུག་ཏུ་“བསོད་ནམས་གང་ཡིན་དེས། །འཇིག་རྟེན་ཡང་དག་རིག་མཆོག་ཤོག །བསྟོད་པ་ལས་འདས་པར་བསྟོད་པ་སློབ་དཔོན་ཆེན་པོ་འཕགས་པ་ཀླུ་སྒྲུབ་ཀྱི་ཞལ་སྔ་ནས་མཛད་པ་རྫོགས་སོ།། །།” ཞེས་པའི་བརྗོད་པ་ཆད་འདུག
-ཆོས་ཚན་1-63 གི་མཇུག་ཏུ་“བསྡུས་ཏེ་བསྒྱུར་བའོ།།” ཞེས་པ་ཆད་འདུག
+4 Final Formatting
+------------------
 
-གསུམ་པ། ཆོས་ཚན་ཆད་འདུག་པ། 
-མཉན་ཆས་ནང་དུ་1-3 ,1-20 ,1-31 ;1-34 ,1-51 ;1-58 ,1-75 ,1-76 ,1-79 ,1-82 ,1-83 ,1-95, 1-107 ,1-119 ,1-121 ,1-145 ,1-160 ,117 ,176 , 260 , 268 ,
-བཞི་པ། ལྡབ་སྐྱོན་བྱུང་བའི་སྡེ་ཚན། 
-ལྡབ་སྐྱོན་བྱུང་བ། 1-8 འི་མཐར་“ཀ་ར་ཤྲཱི་ཛྙཱ་ན་དང། ལོ་ཙཱ་བ་དགེ་སློང་ཚུལ་ཁྲིམས་རྒྱལ་བས་བསྒྱུར་ཅིང་ཞུས་ཏེ་གཏན་ལ་ཕབ་པའོ།། །།” ཞེས་པ་ལྡབ་སྐྱོན་བྱུང་འདུག
-1-87 གྱི་མཇུག་ཏུ་“བ་པ་ཚབ་ཉི་མ་གྲགས་ཀྱིས་མིའི་བདག་པོ་འཕགས་པ་ལྷའི་སྐུ་རིང་ལ་འགྲེལ་པ་ཚིག་གསལ་བ་དང་བསྟུན་ནས་བཅོས་པའོ།། །།སླད་ཀྱིས་ར་ས་འཕྲུལ་སྣང་གི་གཙུག་ལག་ཁང་དུ། རྒྱ་གར་གྱི་མཁན་པོ་ཀ་ན་ཀ་དང་། ལོཙྪ་བ་དེ་ཉིད་ཀྱིས་ཞུ་ཆེན་བགྱིས་པའོ།། །།” ལྡབ་སྐྱོན་བྱུང་འདུག
+0-1_apply_note_choices.py: applies the note choices in the DUCKed file onto the updated_structure to have the final edition.
 
-ལྔ་པ། ཐིག་ཕྲེང་ཟགས་པ་ཁག (བཟོས་ཚར་ཡིན།)
-དབུ་ཐིག་ཟགས་འདུག་པ། 1-26, 1-33, 1-35, 1-36, 1-56,1-87,1-88,1-141,118,145
- Enter འདུག་པ། 1-57 ཡི་ནང་གི་“ཡིས། །འགྲོ་Enter བ་”ཆད་འདུག 
-དྲུག་པ། མཚན་བྱང་ཆད་པ། 
-1-74, 1-87,1-118,1-153
-བདུན་པ། ཁྱད་མཚར་གྱི་སྡེ་ཚན། 
-1-140 དེའི་གཞུང་ན་དབུ་རུ་aལྷག་མ་མེད་ཀྱང་ཐིག་ཕྲེང་གཅིག་ཟགས་འདུག
-1-149 དེ་ཤོག་ངོས་170མདུན་ངོས་ནས་ཆད་འདུག་པ་མ་ཟད་མཆན་རྟགས་ཡོད་ཚད་མཉམ་དུ་སླེབས་འདུག
-བརྒྱད་པ། a གནས་ཡང་བསྐྱར་རྒྱག་དགོས་པའི་སྡེ་ཚན། (དང་པོ་པེ་ཅིང་དང་བསྟུན་ནས་བཟོས་པའི་རྐྱེན་ཡིན།)
-1-77,1-78,1-79,1-80,1-81,1-82,1-83,1-84,1-85,1-125,291
+0-2_rawify.py: create a version of the text without any formatting, segmented on shad and spaces (for later comparison)
 
-གསལ་བཤད། མགོན་པོ་ཀླུ་སྒྲུབ་ཀྱི་ཆོས་ཚན་260 དེ a གནས་བསྐྱར་བཀོད་བྱས་མེད། རྒྱུ་མཚན་ནི་སྔགས་ཡིག་དང་འགྲེལ་བ་མ་དཔེའི་ནང་དུ་ཐིག་ཕྲེང་སོ་སོར་བཟོས་ཡོད་པས་རྐྱེན་ཡིན། 
+1-1_unmark.py: creates a version of the text without note marks so as not to hinder segmentation and spell check in subsequent step.
 
+1-2_segment_final.py: use pytib to find any newly introduced spelling errors/inaccuracies, and propose pre-formatted notes in case we want to correct the spelling.
 
+1-3_copy_post_seg.py: glueware to ensure manually modified files do not overwrite the ones generated automatically.
 
-མཆན་གྱི་གནད་དོན། གསལ་བཤད་ཙམ། 
-ཆོས་ཚན། 1-2 མཆན། 36   དཔེ་བསྡུར་མའི་ནང་དུ་སྐུང་བཞག་ཡོད། 
-ཆོས་ཚན། 1-4 རྫོགས་ཚིག་གི་བཞི་ཤད་ཆད་འདུག 
-ཆོས་ཚན། 1-6 མཆན་3 དང་4 འཐེན་རྟགས་ཡོད་པའི་མཆན་གཉིས་ལ་འགྱུར་བ་ཐེབས་འདུག
-1-7 མཆན་རྟགས་གཉིས་པ་མཆན་དུ་'བརྗོད་'ལས་མེད་ཀྱང་བསྡུར་མཆན་དུ་'བརྗོད་པ་'ཞེས་བཟོས་པ་སོགས་མང། མཆན་རྟགས་བཅུ་པ་'+པ་'ལས་མེད་ཀྱང་བསྡུར་མཆན་དུ་'+མེད་པ་'སོགས་འགྱུར་བ་བཏང་འདུག་པས་བསྡུར་མཆན་འགྱུར་བ་གང་ཡིན་པ་ཚང་མ་ནོར་འདུག
+2-1_reinsert_a.py: get the line breaks("a"s) from the Derge Kangyur (eKangyur) and apply them on our final edition.
 
+3-1_reinsert_page_nums.py: take the data from resources/དཀར་ཆག་ཀུན་གསལ་མེ་ལོང་། - format example.csv (contains the pagination information compiled from various sources by NT)
 
+and infers the exact page start location, number and side in the Derge Edition (wanted by the Geshe at Namgyal Tratsang). (this implies the titles of each work corresponds to the name of our files, so implies some manual work)
 
-མཆན་གནས་ཞིབ་འཇུག་དང་འབྲེལ་བའི་ལས་རིམ། 
-1-2  པའི་མཆན་རྟགས་12 པར་'སྤུངས་པ་མ་མཆིས་པ་'ལྷག་མ་ཤོར་འདུག 
-	21 པར་'མེད་ཀྱང་'ལྷག་མ་ཤོར་འདུག 
-1-4 པའི་རྫོགས་ཚིག་གི་བཞི་ཤད་ཆད་འདུག 
-1-8 པའི་མཆན་8 པར་ 'པའོ་ཀ་ར་ཤྲཱི་ཛྙཱ་ན་དང། ལོ་ཙཱ་བ་དགེ་སློང་ཚུལ་ཁྲིམས་རྒྱལ་བས་བསྒྱུར་ཅིང་ཞུས་ཏེ་གཏན་ལ་ཕབ་' འདི་ལྷག་མ་ཤོར་འདུག་པ་མ་ཟད། མཆན་གནས་གཅིག་ཆད་འདུག། དེ་ལ་[w] རྒྱབ་ཡོད། 
-1-11 པའི་མཆན་མཇུག་གི་ 'བསོད་ནམས་གང་ཡིན་དེས། །འཇིག་རྟེན་ཡང་དག་རིག་མཆོག་ཤོག །བསྟོད་པ་ལས་འདས་པར་བསྟོད་པ་སློབ་དཔོན་ཆེན་པོ་འཕགས་པ་ཀླུ་སྒྲུབ་ཀྱི་ཞལ་སྔ་ནས་མཛད་པ་རྫོགས་སོ།། །།'ཞེས་པ་ཆད་འདུག
-1-17 པའི་མཆན་ཨང་གསུམ་པའི་ནང་དུ་'བཏགས་'དེ་'རྟེན་'ལ་བཟོས་འདུག 
-1-22 པའི་མཆན་དང་པོར་'ད་ན་'ཞིག་ལྷག་མ་ཤོར་འདུག
-1-23 པའི་མཇུག་ཏུ་'མཛད་པ་རྫོགས་'ལྷག་མ་ཤོར་འདུག
-1-24 པའི་མཆན་རེ་བཞི་པར་'ལོ་ཙཱ་'ལྷག་མ་ཤོར་འདུག
-1-26 པའི་མཆན་བཅུ་གཅིག་གི་མདུན་དུ་'ཨཱ་ཧཱུཾ་'ཆད་འདུག
-མཆན་རེ་བདུན་པའིུ་མཇུག་ཏུ་'ཟླ་བ་ཏཱཾ་ལ་ཐིམ།' ཞེས་པ་ལྷག་མ་ཤོར་འདུག
-མཆན་རེ་བརྒྱད་པར་'ཐིམ་མོ།' ཞེས་པ་ལྷག་མ་ཤོར་འདུག
-1-27  མཆན་ཉེར་བཞིའི་མདུན་དུ་'སྔགས་'ཞེས་པ་ཆད་འདུག
-1-28 མཆན་བརྒྱད་པའི་མདུན་དུ་'བ་'ཡིག་ཆད་འདུག་པ་མ་ཟད་རྗེས་སུ་'ཧཾ་'ལྷག་མ་ཤོར་འདུག
-མཆན་བཅུ་པར་'རྡེབས་[^10K]མཛད་ཅིང།' ཞེས་པར་'རྡེབས་མཛད་རྡེབས།[^10K]' ཞེས་བྲིས་འདུག
-མཆན་བཅུ་བཞི་པར་'ས་'ལྷག་མ་ཤོར་འདུག
-མཆན་བཅོ་བརྒྱད་པར'་དང་'ལྷག་མ་ཤོར་འདུག
-མཆན་ཞེ་དྲུག་གི་མདུན་དུ་'ན། །རང་'ཞེས་པ་ཆད་འདུག
+3-3_copy_final.py: glueware that puts the result of the whole workflow in output/3-3-final/ (any file [here](https://github.com/Esukhia/canon_notes/tree/nagarjuna/4-a-final_formatting/output/3-3-final), for ex)
 
+files [here](https://github.com/Esukhia/canon_notes/tree/nagarjuna/4-a-final_formatting/output/stats) provide statistics oriented towards estimating the risk of having copyright problems (amount of similar notes) and a visual representation of text where syllables are converted to dots and the modified syllables bear the letter of the DUCKing decision that was made.
 
+layout
+------
 
+contains a .sh script to convert the final files into docx files with page + side marks and the notes reformatted and DUCKed.
+
+Any question or remark is welcome!
+
+the latest branch of canon-notes includes all the data for the whole Nalanda corpus, while the nagarjuna branch focuses on this specific author. It was meant as a work basis with Rabten, but the Indian internet connection forced me to create a "code" branch, that is stripped of all data files.

@@ -1,10 +1,13 @@
+import sys, os
+grandParentDir = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
+sys.path.append(grandParentDir)
+
 import jsonpickle as jp
 from collections import defaultdict
 from PyTib.common import open_file, write_file, pre_process, de_pre_process
 import PyTib
 import copy
 import re
-import os
 
 jp.set_encoder_options('simplejson', sort_keys=True, indent=4, ensure_ascii=False)
 seg = PyTib.Segment()

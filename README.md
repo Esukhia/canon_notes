@@ -4,7 +4,7 @@ What is This Project?
 Project Goal
 ------------
 
-Tackle the problem HHDL raised about the Peydurma. Something along the lines of "It is great, but it is not friendly for a regular reader. Plus, a lot of the notes are minor spelling mistakes/divergences that can very easily dealt with, thus greatly reducing the noise and improving readability."
+Improve the readability of the Peydurma going somethhing along the line of: "It is great, but it is not friendly for a regular reader. Plus, a lot of the notes are minor spelling mistakes/divergences that can very easily dealt with, thus greatly reducing the noise and improving readability."
 
 ### Input
 

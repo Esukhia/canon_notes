@@ -1,3 +1,7 @@
+import sys, os
+grandParentDir = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
+sys.path.append(grandParentDir)
+
 import jsonpickle as jp
 from PyTib.common import open_file, write_file, tib_sort, pre_process, get_longest_common_subseq, find_sub_list_indexes
 import PyTib

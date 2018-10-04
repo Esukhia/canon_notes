@@ -1,6 +1,9 @@
+import sys, os
+grandParentDir = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
+sys.path.append(grandParentDir)
+
 from PyTib.common import open_file, write_file, tib_sort, is_sskrt, pre_process
 import PyTib
-import os
 import re
 from collections import defaultdict
 

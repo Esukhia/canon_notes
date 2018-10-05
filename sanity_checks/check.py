@@ -38,6 +38,12 @@ def check_empty_lines():
         if lines:
             total.append((a.name, lines))
 
+        # remove ending empty lines
+        if content and len(content) >= 2 and content[-2].strip() == '':
+            while content and len(content) >= 2 and content[-2].strip() == '':
+                del content[-2]
+            a.write_text('\n'.join(content), encoding='utf-8-sig')
+
     # formatting
     out = ''
     for t in total:
@@ -70,7 +76,7 @@ def check_txt_formatting():
 
         bad = []
         for num, line in enumerate(content):
-            if not re.findall(line_format, line):
+            if not re.findall(line_format, line) and num + 1 != len(content):
                 if len(line) > 50:
                     line = line[:50] + '(...)'
                 bad.append((num + 1, line))

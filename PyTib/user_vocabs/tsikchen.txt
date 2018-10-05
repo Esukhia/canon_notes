@@ -1,4 +1,4 @@
-﻿# Entries starting with '#' are ignored during import time
+# Entries starting with '#' are ignored during import time
 ཀ
 ཀ་ཀཱ
 ཀ་ཀུ་བྷ་ཡ

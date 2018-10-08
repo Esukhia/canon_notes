@@ -137,6 +137,18 @@ def check_txt_note_sequence():
            f'\n\t{len(total)} files have bad sequences:{out}\n'
 
 
+def check_number(previous, current, mismatches):
+    try:
+        line_num = int(current)
+        if previous + 1 != line_num:
+            mismatches.append([previous, line_num])
+        previous = line_num
+    except ValueError:
+        mismatches.append([previous, current])
+        previous += 1
+    return previous
+
+
 # 2. test Csv files
 def check_csv_line_nums():
     """
@@ -152,8 +164,6 @@ def check_csv_line_nums():
 
     total = []
     for c in Csv:
-        # if not c.stem.startswith('11-10_'):
-        #     continue
         content = list(csv.reader(c.open(newline='')))
 
         # delete ending empty rows
@@ -165,14 +175,7 @@ def check_csv_line_nums():
         mismatches = []
         previous = 0
         for row in content:
-            try:
-                line_num = int(row[2])
-                if previous + 1 != line_num:
-                    mismatches.append((previous, line_num))
-                previous = line_num
-            except ValueError:
-                mismatches.append((previous, row[2]))
-                previous += 1
+            previous = check_number(previous, row[2], mismatches)
         if mismatches:
             total.append((c.name, mismatches))
 
@@ -181,8 +184,55 @@ def check_csv_line_nums():
         out += f'\n\t\t{filename}'
         for prev, nxt in pairs:
             out += f'\n\t\t\t\t{prev}-->{nxt} (expected: {prev}-->{prev+1})'
-    return f'\n5. Checking note sequence in csv files:' \
+    return f'\n5. Checking line sequence in csv files:' \
            f'\n\t{len(total)} files have bad sequences:{out}\n'
+
+
+def check_csv_note_nums():
+    """
+    Checks the sequences of notes in csv files
+    """
+    note_total = []
+    page_total = []
+    for c in Csv:
+        content = list(csv.reader(c.open(newline='')))
+
+        note_mismatches = []
+        page_mismatches = []
+        prev_note = 0
+        prev_page = -1
+        for row in content[1:]:
+            if prev_page == -1:
+                try:
+                    prev_page = int(content[1][1])
+                except ValueError:
+                    prev_page = 0
+            else:
+                if row[1].strip():
+                    prev_page = check_number(prev_page, row[1], page_mismatches)
+                    prev_note = 0
+
+            prev_note = check_number(prev_note, row[3], note_mismatches)
+            if note_mismatches and len(note_mismatches[-1]) == 2:
+                note_mismatches[-1] = [prev_page] + note_mismatches[-1]
+        if note_mismatches:
+            note_total.append((c.name, note_mismatches))
+        if page_mismatches:
+            page_total.append((c.name, page_mismatches))
+
+    out = ''
+    # out += f'\n\t{len(page_total)} files have bad page sequences:\n'
+    # for filename, pairs in page_total:
+    #     out += f'\n\t\t{filename}'
+    #     for prev, nxt in pairs:
+    #         out += f'\n\t\t\t\t{prev}-->{nxt} (expected: {prev}-->{prev+1})'
+    out += f'\n\n\t{len(note_total)} files have bad note sequences:'
+    for filename, pairs in note_total:
+        out += f'\n\t\t{filename}'
+        for note, prev, nxt in pairs:
+            out += f'\n\t\t\t\tpage {note} — {prev}-->{nxt} (expected: {prev}-->{prev+1})'
+    print('ok')
+    return f'\n6. Checking note sequence in csv files:{out}\n'
 
 
 if __name__ == '__main__':
@@ -192,5 +242,6 @@ if __name__ == '__main__':
     log += check_txt_formatting()
     log += check_txt_note_sequence()
     log += check_csv_line_nums()
+    log += check_csv_note_nums()
     print('ok')
     Path('log.txt').write_text(log, encoding='utf-8-sig')

@@ -280,7 +280,7 @@ def check_note_quantities():
             issues += abs(txt_num - csv_num)
             files[t.name] += 1
     return f'\n7. Checking how many notes in txt and csv:' \
-           f'{"".join(total)}\n'
+           f'\n\t{len(total)} files have problems.{"".join(total)}\n'
 
 
 if __name__ == '__main__':

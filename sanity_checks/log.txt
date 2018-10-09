@@ -710,6 +710,7 @@
 				page 1066 — 6-->6 (expected: 6-->7)
 
 7. Checking how many notes in txt and csv:
+	56 files have problems.
 		017 missing. txt: 05395; csv: 05378 notes: 10-11_འཕགས་པ་བློ་གྲོས་མི་ཟད་པས་བསྟན་པ་རྒྱ་ཆེར་འགྲེལ་པ།
 		001 missing. txt: 01129; csv: 01130 notes: 10-16_དོན་གསང་བ་རྣམ་པར་ཕྱེ་བ་བསྡུས་ཏེ་བཤད་པ།
 		003 missing. txt: 04321; csv: 04318 notes: 10-33_ཆོས་མངོན་པའི་མཛོད་ཀྱི་བཤད་པ།_(A)

@@ -1,3 +1,4 @@
+from collections import defaultdict
 from pathlib import Path
 import re
 import csv
@@ -6,9 +7,13 @@ input_folder = Path('../1-a-reinsert_notes/input')
 txt = sorted(list(input_folder.glob('*.txt')))
 Csv = sorted(list(input_folder.glob('*.csv')))
 
+issues = 0
+files = 0
+
 
 # Common checks
 def check_csv_txt_pairs():
+    global issues, files
     """
     Each work must be a pair of a .txt and a .Csv file
     Checks for empty files and removes them for the following checking functions
@@ -17,6 +22,8 @@ def check_csv_txt_pairs():
     csvs = [c.stem for c in Csv]
     csv_only = [c+'.csv' for c in csvs if c not in txts]
     txt_only = [t+'.txt' for t in txts if t not in csvs]
+    issues += len(csv_only) + len(txt_only)
+    files += len(csv_only) + len(txt_only)
 
     # empty files
     empty = []
@@ -24,6 +31,8 @@ def check_csv_txt_pairs():
         content = a.read_text(encoding='utf-8-sig').strip()
         if not content:
             empty.append(a.name)
+            issues += 1
+            files += 1
             if a in txt:
                 txt.remove(a)
             else:
@@ -40,6 +49,7 @@ def check_csv_txt_pairs():
 
 
 def check_empty_lines():
+    global issues, files
     """
     No empty lines are allowed in either .txt or .Csv files
     """
@@ -52,7 +62,8 @@ def check_empty_lines():
                 lines.append(num + 1)
         if lines:
             total.append((a.name, lines))
-
+            issues += len(lines)
+            files += 1
         # remove ending empty lines
         if content and len(content) >= 2 and content[-2].strip() == '':
             while content and len(content) >= 2 and content[-2].strip() == '':
@@ -70,6 +81,7 @@ def check_empty_lines():
 
 # Check .txt files
 def check_txt_formatting():
+    global issues, files
     """
     Each .txt file must be formatted as follows:
         - int + ".": the note number
@@ -96,6 +108,8 @@ def check_txt_formatting():
                     line = line[:50] + '(...)'
                 bad.append((num + 1, line))
         if bad:
+            issues += len(bad)
+            files += 1
             total.append((a.name, bad))
 
     # formatting
@@ -109,6 +123,7 @@ def check_txt_formatting():
 
 
 def check_txt_note_sequence():
+    global issues, files
     total = []
     for a in txt:
         content = a.read_text(encoding='utf-8-sig').split('\n')
@@ -125,6 +140,8 @@ def check_txt_note_sequence():
                     bad.append((previous_num, current_num))
                 previous_num = current_num
         if bad:
+            issues += len(bad)
+            files += 1
             total.append((a.name, bad))
 
     # formatting
@@ -151,6 +168,7 @@ def check_number(previous, current, mismatches):
 
 # 2. test Csv files
 def check_csv_line_nums():
+    global issues, files
     """
     Checks if the line numbers are correct
     Deletes any trailing empty rows
@@ -178,6 +196,8 @@ def check_csv_line_nums():
             previous = check_number(previous, row[2], mismatches)
         if mismatches:
             total.append((c.name, mismatches))
+            issues += len(mismatches)
+            files += 1
 
     out = ''
     for filename, pairs in total:
@@ -189,6 +209,7 @@ def check_csv_line_nums():
 
 
 def check_csv_note_nums():
+    global issues, files
     """
     Checks the sequences of notes in csv files
     """
@@ -217,8 +238,13 @@ def check_csv_note_nums():
                 note_mismatches[-1] = [prev_page] + note_mismatches[-1]
         if note_mismatches:
             note_total.append((c.name, note_mismatches))
+            issues += len(note_mismatches)
+            files += 1
         if page_mismatches:
             page_total.append((c.name, page_mismatches))
+            issues += len(note_mismatches)
+            files += 1
+
 
     out = ''
     # out += f'\n\t{len(page_total)} files have bad page sequences:\n'
@@ -231,8 +257,29 @@ def check_csv_note_nums():
         out += f'\n\t\t{filename}'
         for note, prev, nxt in pairs:
             out += f'\n\t\t\t\tpage {note} — {prev}-->{nxt} (expected: {prev}-->{prev+1})'
-    print('ok')
     return f'\n6. Checking note sequence in csv files:{out}\n'
+
+
+def check_note_quantities():
+    global issues, files
+    stems = defaultdict(int)
+    for a in txt + Csv:
+        stems[a.stem] += 1
+
+    total = []
+    for t in txt:
+        if t.stem not in stems and stems[t.stem] != 2:
+            continue
+        txt_lines = t.read_text(encoding='utf-8-sig').strip().split('\n')
+        csv_lines = Path(str(t).replace('.txt', '.csv')).read_text(encoding='utf-8-sig').strip().split('\n')
+        txt_num, csv_num = (len(txt_lines), len(csv_lines))
+        if txt_num != csv_num:
+            total.append(f'\n\t\t{str(abs(txt_num - csv_num)).zfill(3)} missing. txt: {str(txt_num).zfill(5)}; '
+                         f'csv: {str(csv_num).zfill(5)} notes: {t.stem}')
+            issues += abs(txt_num - csv_num)
+            files += 1
+    return f'\n7. Checking how many notes in txt and csv:' \
+           f'{"".join(total)}\n'
 
 
 if __name__ == '__main__':
@@ -243,5 +290,7 @@ if __name__ == '__main__':
     log += check_txt_note_sequence()
     log += check_csv_line_nums()
     log += check_csv_note_nums()
+    log += check_note_quantities()
+    log = f'{issues} issues in {files} files.\n\n{log}'
     print('ok')
     Path('log.txt').write_text(log, encoding='utf-8-sig')

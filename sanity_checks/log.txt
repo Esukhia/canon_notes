@@ -1,4 +1,4 @@
-﻿1229 issues in 311 files.
+﻿1229 issues in 211 files.
 
 1. Checking file pairs:
 	3 txt files missing:

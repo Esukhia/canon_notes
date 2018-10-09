@@ -8,7 +8,7 @@ txt = sorted(list(input_folder.glob('*.txt')))
 Csv = sorted(list(input_folder.glob('*.csv')))
 
 issues = 0
-files = 0
+files = defaultdict(int)
 
 
 # Common checks
@@ -23,7 +23,8 @@ def check_csv_txt_pairs():
     csv_only = [c+'.csv' for c in csvs if c not in txts]
     txt_only = [t+'.txt' for t in txts if t not in csvs]
     issues += len(csv_only) + len(txt_only)
-    files += len(csv_only) + len(txt_only)
+    for a in csv_only + txt_only:
+        files[a] += 1
 
     # empty files
     empty = []
@@ -32,7 +33,7 @@ def check_csv_txt_pairs():
         if not content:
             empty.append(a.name)
             issues += 1
-            files += 1
+            files[a.name] += 1
             if a in txt:
                 txt.remove(a)
             else:
@@ -63,7 +64,7 @@ def check_empty_lines():
         if lines:
             total.append((a.name, lines))
             issues += len(lines)
-            files += 1
+            files[a.name] += 1
         # remove ending empty lines
         if content and len(content) >= 2 and content[-2].strip() == '':
             while content and len(content) >= 2 and content[-2].strip() == '':
@@ -109,7 +110,7 @@ def check_txt_formatting():
                 bad.append((num + 1, line))
         if bad:
             issues += len(bad)
-            files += 1
+            files[a.name] += 1
             total.append((a.name, bad))
 
     # formatting
@@ -141,7 +142,7 @@ def check_txt_note_sequence():
                 previous_num = current_num
         if bad:
             issues += len(bad)
-            files += 1
+            files[a.name] += 1
             total.append((a.name, bad))
 
     # formatting
@@ -197,7 +198,7 @@ def check_csv_line_nums():
         if mismatches:
             total.append((c.name, mismatches))
             issues += len(mismatches)
-            files += 1
+            files[c.name] += 1
 
     out = ''
     for filename, pairs in total:
@@ -239,11 +240,11 @@ def check_csv_note_nums():
         if note_mismatches:
             note_total.append((c.name, note_mismatches))
             issues += len(note_mismatches)
-            files += 1
+            files[c.name] += 1
         if page_mismatches:
             page_total.append((c.name, page_mismatches))
             issues += len(note_mismatches)
-            files += 1
+            files[c.name] += 1
 
 
     out = ''
@@ -277,7 +278,7 @@ def check_note_quantities():
             total.append(f'\n\t\t{str(abs(txt_num - csv_num)).zfill(3)} missing. txt: {str(txt_num).zfill(5)}; '
                          f'csv: {str(csv_num).zfill(5)} notes: {t.stem}')
             issues += abs(txt_num - csv_num)
-            files += 1
+            files[t.name] += 1
     return f'\n7. Checking how many notes in txt and csv:' \
            f'{"".join(total)}\n'
 
@@ -291,6 +292,6 @@ if __name__ == '__main__':
     log += check_csv_line_nums()
     log += check_csv_note_nums()
     log += check_note_quantities()
-    log = f'{issues} issues in {files} files.\n\n{log}'
+    log = f'{issues} issues in {len(files)} files.\n\n{log}'
     print('ok')
     Path('log.txt').write_text(log, encoding='utf-8-sig')

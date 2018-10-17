@@ -1,6 +1,6 @@
 ﻿1229 issues in 211 files.
 
-1. Checking file pairs:
+1. ཡིག་ཆ་ཡ་རྐྱང་། Checking file pairs:
 	3 txt files missing:
 		10-13_དབུས་དང་མཐའ་རྣམ་པར་འབྱེད་པའི་འགྲེལ་པ།.csv
 		10-20_རང་བཞིན་གསུམ་ངེས་པར་བསྟན་པ།.csv
@@ -10,7 +10,7 @@
 	1 empty files:
 		17-44_རྣམ་འཇོམས་ཀྱི་སྒྲུབ་ཐབས་བརྒྱ་རྩ་བརྒྱད་གྲགས་པ།.csv
 
-2. Checking empty lines:
+2. ཐིང་འཕྲེང་སྟོང་པ། Checking empty lines:
 	5 files have empty lines:
 		15-6_འདུལ་བའི་མདོའི་འགྲེལ།.txt
 			1
@@ -23,7 +23,7 @@
 		556_སྐྱེས་པའི་རབས་ཀྱི་རྒྱ་ཆེར་བཤད་པ།.txt
 			1
 
-3. Checking txt file format:
+3. txtཡིག་ཆ་སྐྱོན་ཅན། Checking txt file format:
 	34 files are badly formatted:
 		10-11_འཕགས་པ་བློ་གྲོས་མི་ཟད་པས་བསྟན་པ་རྒྱ་ཆེར་འགྲེལ་པ།.txt
 			n. 575: "aདག་པའི་ལྟ་བ་སྟོན་ཏོ། །དེ་ལྟར་ན་"
@@ -303,12 +303,12 @@
 		9-9_ཐེག་པ་ཆེན་པོ་རྒྱུད་བླ་མའི་བསྟན་བཅོས་རྣམ་པར་བཤད་པ།.txt
 			n. 1185: "aབྱང་ཆུབ་ཐོབ་པའི་"
 
-4. Checking note sequence in txt files:
+4. ཡིག་ཆ་གོ་རིམ་མི་འགྲིག་པ། Checking note sequence in txt files:
 	1 files have bad sequences:
 		17-81_བྱང་ཆུབ་སེམས་དཔའི་སྤྱོད་པ་མདོ་ཙམ་གདམས་ངག་ཏུ་བྱས་པ།.txt
 			1-->1 (expected: 1-->2)
 
-5. Checking line sequence in csv files:
+5. ཐིག་འཕྲེང་གོ་རིམ་མི་འགྲིག་པ། Checking line sequence in csv files:
 	6 files have bad sequences:
 		11-10_ཚད་མ་ཀུན་ལས་བཏུས་པ་ཞེས་བྱ་བའི་རབ་ཏུ་བྱེད་པ།.csv
 				0--> (expected: 0-->1)
@@ -323,7 +323,7 @@
 		9-11_རྣལ་འབྱོར་སྤྱོད་པའི་ས་རྣམ་པར་གཏན་ལ་དབབ་པ་བསྡུ་བ།.csv
 				0-->ཤོག་གྲངས། (expected: 0-->1)
 
-6. Checking note sequence in csv files:
+6. མཆན་གོ་རིམ་མི་འགྲིག་པ། Checking note sequence in csv files:
 
 	87 files have bad note sequences:
 		10-11_འཕགས་པ་བློ་གྲོས་མི་ཟད་པས་བསྟན་པ་རྒྱ་ཆེར་འགྲེལ་པ།.csv
@@ -709,7 +709,7 @@
 				page 1064 — 14-->13 (expected: 14-->15)
 				page 1066 — 6-->6 (expected: 6-->7)
 
-7. Checking how many notes in txt and csv:
+7. མཆན་གྲངས་མི་མཐུན་པ། Checking how many notes in txt and csv:
 	56 files have problems.
 		017 missing. txt: 05395; csv: 05378 notes: 10-11_འཕགས་པ་བློ་གྲོས་མི་ཟད་པས་བསྟན་པ་རྒྱ་ཆེར་འགྲེལ་པ།
 		001 missing. txt: 01129; csv: 01130 notes: 10-16_དོན་གསང་བ་རྣམ་པར་ཕྱེ་བ་བསྡུས་ཏེ་བཤད་པ།

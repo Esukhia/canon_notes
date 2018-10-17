@@ -1,1 +1,160 @@
-﻿{"automatic_categorisation": {"spelling_mistake": {"nga_da": [], "missing_vowel": [], "non_word": {"ill_formed": [], "well_formed": [{"1": [{"\u0f54\u0f7a\u0f0b": ["\u0f66\u0f92\u0fb2\u0f74\u0f56\u0f0b \u0f50\u0f56\u0f66 \u0f0d \u0f54\u0f4e\u0f9c\u0f72\u0f0b\u0f4f\u0f0b", "#\u0f4f\u0f72\u0f0b", ""], "\u0f66\u0fa1\u0f7a\u0f0b": ["\u0f66\u0f92\u0fb2\u0f74\u0f56\u0f0b \u0f50\u0f56\u0f66 \u0f0d \u0f54\u0f4e\u0f9c\u0f72\u0f0b\u0f4f\u0f0b", "#\u0f51\u0f72\u0f0b", ""]}]}]}}, "min_mod": {"min_mod_groups": [], "particle_groups": []}, "verb_difference": {"not_sure": [], "diff_tense": [], "diff_verb": []}, "particle_issues": {"different_particles": [], "agreement_issue": [], "other": [], "added_particle": [], "po-bo-pa-ba": []}, "sskrt": []}, "non_standard_notes": [], "profile": {"1": ["\u0f54\u0f7a\u0f0b \u0f66\u0fa1\u0f7a\u0f0b", "50.00%"], "2": ["\u0f54\u0f7a\u0f0b=\u0f66\u0fa1\u0f7a\u0f0b", "50.00%"]}, "empty_notes": [{"2": [{"\u0f54\u0f7a\u0f0b": ["\u0f50\u0f56\u0f66 \u0f0d \u0f54\u0f4e\u0f9c\u0f72\u0f0b\u0f4f\u0f0b #\u0f51\u0f72\u0f0b", "", ""], "\u0f66\u0fa1\u0f7a\u0f0b": ["\u0f50\u0f56\u0f66 \u0f0d \u0f54\u0f4e\u0f9c\u0f72\u0f0b\u0f4f\u0f0b #\u0f51\u0f72\u0f0b", "", ""]}]}], "manual_categorisation": {"manual_evaluation": {"derge_correct": [], "meaning_difference": {"small_diff": [], "medium_diff": [], "great_diff": []}}, "long_difference": {"major_modification": [], "differing_formulation": []}}, "Stats": {"automatic_categorisation": {"spelling_mistake": {"non_word": {"well_formed": 1}}, "min_mod": {}, "verb_difference": {}, "particle_issues": {}}, "profile": {}, "Categorised": "2 notes (100.00%)", "manual_categorisation": {"manual_evaluation": {"meaning_difference": {}}, "long_difference": {}}, "empty_notes": 1, "Notes\u2019 total": 2, "dunno": {}, "Profiles": ["\u0f54\u0f7a\u0f0b=\u0f66\u0fa1\u0f7a\u0f0b: 50.00% (1 notes)", "\u0f54\u0f7a\u0f0b \u0f66\u0fa1\u0f7a\u0f0b: 50.00% (1 notes)"], "ngram_freq": {}}, "dunno": {"long_diff": [], "no_diff": [], "short_diff": []}, "ngram_freq": {"1": {"\u0f54\u0f7a\u0f0b": [["\u0f4f\u0f72", "1484"]], "\u0f66\u0fa1\u0f7a\u0f0b": [["\u0f51\u0f72", "31"]]}, "2": {"\u0f54\u0f7a\u0f0b": [["", "1"], ["\u0f51\u0f72", "31"]], "\u0f66\u0fa1\u0f7a\u0f0b": [["", "1"], ["\u0f51\u0f72", "31"]]}}}
+﻿{
+    "Stats": {
+        "Categorised": "2 notes (100.00%)",
+        "Notes’ total": 2,
+        "Profiles": [
+            "པེ་ སྡེ་: 50.00% (1 notes)",
+            "པེ་=སྡེ་: 50.00% (1 notes)"
+        ],
+        "automatic_categorisation": {
+            "min_mod": {},
+            "particle_issues": {},
+            "spelling_mistake": {
+                "non_word": {
+                    "well_formed": 1
+                }
+            },
+            "verb_difference": {}
+        },
+        "dunno": {},
+        "empty_notes": 1,
+        "manual_categorisation": {
+            "long_difference": {},
+            "manual_evaluation": {
+                "meaning_difference": {}
+            }
+        },
+        "ngram_freq": {},
+        "profile": {}
+    },
+    "automatic_categorisation": {
+        "min_mod": {
+            "min_mod_groups": [],
+            "particle_groups": []
+        },
+        "particle_issues": {
+            "added_particle": [],
+            "agreement_issue": [],
+            "different_particles": [],
+            "other": [],
+            "po-bo-pa-ba": []
+        },
+        "spelling_mistake": {
+            "missing_vowel": [],
+            "nga_da": [],
+            "non_word": {
+                "ill_formed": [],
+                "well_formed": [
+                    {
+                        "1": [
+                            {
+                                "པེ་": [
+                                    "སྒྲུབ་ ཐབས ། པཎྜི་ཏ་",
+                                    "#ཏི་",
+                                    ""
+                                ],
+                                "སྡེ་": [
+                                    "སྒྲུབ་ ཐབས ། པཎྜི་ཏ་",
+                                    "#དི་",
+                                    ""
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "sskrt": [],
+        "verb_difference": {
+            "diff_tense": [],
+            "diff_verb": [],
+            "not_sure": []
+        }
+    },
+    "dunno": {
+        "long_diff": [],
+        "no_diff": [],
+        "short_diff": []
+    },
+    "empty_notes": [
+        {
+            "2": [
+                {
+                    "པེ་": [
+                        "ཐབས ། པཎྜི་ཏ་ #དི་",
+                        "",
+                        ""
+                    ],
+                    "སྡེ་": [
+                        "ཐབས ། པཎྜི་ཏ་ #དི་",
+                        "",
+                        ""
+                    ]
+                }
+            ]
+        }
+    ],
+    "manual_categorisation": {
+        "long_difference": {
+            "differing_formulation": [],
+            "major_modification": []
+        },
+        "manual_evaluation": {
+            "derge_correct": [],
+            "meaning_difference": {
+                "great_diff": [],
+                "medium_diff": [],
+                "small_diff": []
+            }
+        }
+    },
+    "ngram_freq": {
+        "1": {
+            "པེ་": [
+                [
+                    "ཏི",
+                    "1484"
+                ]
+            ],
+            "སྡེ་": [
+                [
+                    "དི",
+                    "31"
+                ]
+            ]
+        },
+        "2": {
+            "པེ་": [
+                [
+                    "",
+                    "1"
+                ],
+                [
+                    "དི",
+                    "31"
+                ]
+            ],
+            "སྡེ་": [
+                [
+                    "",
+                    "1"
+                ],
+                [
+                    "དི",
+                    "31"
+                ]
+            ]
+        }
+    },
+    "non_standard_notes": [],
+    "profile": {
+        "1": [
+            "པེ་ སྡེ་",
+            "50.00%"
+        ],
+        "2": [
+            "པེ་=སྡེ་",
+            "50.00%"
+        ]
+    }
+}

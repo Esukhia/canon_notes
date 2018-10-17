@@ -1,1 +1,95 @@
-﻿{"automatic_categorisation": {"spelling_mistake": {"nga_da": [], "missing_vowel": [], "non_word": {"ill_formed": [], "well_formed": []}}, "min_mod": {"min_mod_groups": [], "particle_groups": []}, "verb_difference": {"not_sure": [], "diff_tense": [], "diff_verb": []}, "particle_issues": {"different_particles": [], "agreement_issue": [], "other": [], "added_particle": [], "po-bo-pa-ba": []}, "sskrt": []}, "non_standard_notes": [], "profile": {"1": ["", "100.00%"]}, "empty_notes": [{"1": [{}]}, {"1": [{}]}], "manual_categorisation": {"manual_evaluation": {"derge_correct": [], "meaning_difference": {"small_diff": [], "medium_diff": [], "great_diff": []}}, "long_difference": {"major_modification": [], "differing_formulation": []}}, "Stats": {"automatic_categorisation": {"spelling_mistake": {"non_word": {}}, "min_mod": {}, "verb_difference": {}, "particle_issues": {}}, "profile": {}, "Categorised": "2 notes (100.00%)", "manual_categorisation": {"manual_evaluation": {"meaning_difference": {}}, "long_difference": {}}, "empty_notes": 2, "Notes\u2019 total": 2, "dunno": {}, "Profiles": [": 100.00% (2 notes)"], "ngram_freq": {}}, "dunno": {"long_diff": [], "no_diff": [], "short_diff": []}, "ngram_freq": {"1": {}}}
+﻿{
+    "Stats": {
+        "Categorised": "2 notes (100.00%)",
+        "Notes’ total": 2,
+        "Profiles": [
+            ": 100.00% (2 notes)"
+        ],
+        "automatic_categorisation": {
+            "min_mod": {},
+            "particle_issues": {},
+            "spelling_mistake": {
+                "non_word": {}
+            },
+            "verb_difference": {}
+        },
+        "dunno": {},
+        "empty_notes": 2,
+        "manual_categorisation": {
+            "long_difference": {},
+            "manual_evaluation": {
+                "meaning_difference": {}
+            }
+        },
+        "ngram_freq": {},
+        "profile": {}
+    },
+    "automatic_categorisation": {
+        "min_mod": {
+            "min_mod_groups": [],
+            "particle_groups": []
+        },
+        "particle_issues": {
+            "added_particle": [],
+            "agreement_issue": [],
+            "different_particles": [],
+            "other": [],
+            "po-bo-pa-ba": []
+        },
+        "spelling_mistake": {
+            "missing_vowel": [],
+            "nga_da": [],
+            "non_word": {
+                "ill_formed": [],
+                "well_formed": []
+            }
+        },
+        "sskrt": [],
+        "verb_difference": {
+            "diff_tense": [],
+            "diff_verb": [],
+            "not_sure": []
+        }
+    },
+    "dunno": {
+        "long_diff": [],
+        "no_diff": [],
+        "short_diff": []
+    },
+    "empty_notes": [
+        {
+            "1": [
+                {}
+            ]
+        },
+        {
+            "1": [
+                {}
+            ]
+        }
+    ],
+    "manual_categorisation": {
+        "long_difference": {
+            "differing_formulation": [],
+            "major_modification": []
+        },
+        "manual_evaluation": {
+            "derge_correct": [],
+            "meaning_difference": {
+                "great_diff": [],
+                "medium_diff": [],
+                "small_diff": []
+            }
+        }
+    },
+    "ngram_freq": {
+        "1": {}
+    },
+    "non_standard_notes": [],
+    "profile": {
+        "1": [
+            "",
+            "100.00%"
+        ]
+    }
+}

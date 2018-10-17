@@ -1,1 +1,1208 @@
-﻿{"automatic_categorisation": {"spelling_mistake": {"nga_da": [], "missing_vowel": [], "non_word": {"ill_formed": [], "well_formed": [{"11": [{"\u0f54\u0f7a\u0f0b": ["\u0f63\u0f66\u0f0b \u0f56\u0fb1\u0f74\u0f44\u0f0b \u0f51\u0f7a\u0f0b \u0f53\u0f72\u0f0b \u0f44\u0f7a\u0f66\u0f0b", "#\u0f56\u0f63\u0f9f\u0f7c\u0f66\u0f0b", "\u0f63 \u0f0d_\u0f0d \u0f58\u0f72\u0f0b \u0f62\u0f9f\u0f7c\u0f42\u0f0b"], "\u0f66\u0fa3\u0f62\u0f0b": ["\u0f63\u0f66\u0f0b \u0f56\u0fb1\u0f74\u0f44\u0f0b \u0f51\u0f7a\u0f0b \u0f53\u0f72\u0f0b \u0f44\u0f7a\u0f66\u0f0b", "#\u0f56\u0f63\u0f9f\u0f7c\u0f66\u0f0b", "\u0f63 \u0f0d_\u0f0d \u0f58\u0f72\u0f0b \u0f62\u0f9f\u0f7c\u0f42\u0f0b"], "\u0f66\u0fa1\u0f7a\u0f0b": ["\u0f63\u0f66\u0f0b \u0f56\u0fb1\u0f74\u0f44\u0f0b \u0f51\u0f7a\u0f0b \u0f53\u0f72\u0f0b \u0f44\u0f7a\u0f66\u0f0b", "\u0f63\u0f9f\u0f7c\u0f66\u0f0b", "\u0f63 \u0f0d_\u0f0d \u0f58\u0f72\u0f0b \u0f62\u0f9f\u0f7c\u0f42\u0f0b"]}]}, {"20": [{"\u0f54\u0f7a\u0f0b": ["\u0f66\u0f0b\u0f54 \u0f60\u0f72\u0f0b \u0f5a\u0f7a\u0f0b \u0f66\u0f90\u0fb1\u0f72\u0f0b \u0f64\u0f7c\u0f51\u0f0b", "#\u0f42\u0f49\u0f7a\u0f0b", "\u0f50\u0f44\u0f0b \u0f56\u0f40\u0fb2\u0f0b\u0f64\u0f72\u0f66\u0f0b \u0f51\u0f54\u0f63\u0f0b \u0f42\u0fb1\u0f72\u0f0b"], "\u0f66\u0fa3\u0f62\u0f0b": ["\u0f66\u0f0b\u0f54 \u0f60\u0f72\u0f0b \u0f5a\u0f7a\u0f0b \u0f66\u0f90\u0fb1\u0f72\u0f0b \u0f64\u0f7c\u0f51\u0f0b", "#\u0f42\u0f49\u0f7a\u0f0b", "\u0f50\u0f44\u0f0b \u0f56\u0f40\u0fb2\u0f0b\u0f64\u0f72\u0f66\u0f0b \u0f51\u0f54\u0f63\u0f0b \u0f42\u0fb1\u0f72\u0f0b"], "\u0f66\u0fa1\u0f7a\u0f0b": ["\u0f66\u0f0b\u0f54 \u0f60\u0f72\u0f0b \u0f5a\u0f7a\u0f0b \u0f66\u0f90\u0fb1\u0f72\u0f0b \u0f64\u0f7c\u0f51\u0f0b", "\u0f66\u0f99\u0f7a\u0f0b", "\u0f50\u0f44\u0f0b \u0f56\u0f40\u0fb2\u0f0b\u0f64\u0f72\u0f66\u0f0b \u0f51\u0f54\u0f63\u0f0b \u0f42\u0fb1\u0f72\u0f0b"]}]}]}}, "min_mod": {"min_mod_groups": [], "particle_groups": [{"8": [["jedra"], {"\u0f54\u0f7a\u0f0b": ["\u0f54 \u0f60\u0f72 \u0f0d_\u0f0d \u0f4f\u0f72\u0f44\u0f0b\u0f60\u0f5b\u0f72\u0f53\u0f0b", "\u0f62\u0f7c\u0f63\u0f0b\u0f54\u0f0b", "\u0f56\u0f66\u0f58\u0f0b \u0f58\u0f72\u0f0b \u0f41\u0fb1\u0f56\u0f0b\u0f54 \u0f62\u0f0b \u0f66\u0fa4\u0fb2\u0f7c"], "\u0f66\u0fa3\u0f62\u0f0b": ["\u0f54 \u0f60\u0f72 \u0f0d_\u0f0d \u0f4f\u0f72\u0f44\u0f0b\u0f60\u0f5b\u0f72\u0f53\u0f0b", "\u0f62\u0f7c\u0f63\u0f0b\u0f54\u0f0b", "\u0f56\u0f66\u0f58\u0f0b \u0f58\u0f72\u0f0b \u0f41\u0fb1\u0f56\u0f0b\u0f54 \u0f62\u0f0b \u0f66\u0fa4\u0fb2\u0f7c"], "\u0f66\u0fa1\u0f7a\u0f0b": ["\u0f54 \u0f60\u0f72 \u0f0d_\u0f0d \u0f4f\u0f72\u0f44\u0f0b\u0f60\u0f5b\u0f72\u0f53\u0f0b", "\u0f62\u0f7c\u0f63\u0f0b\u0f54 \u0f66\u0f0b", "\u0f56\u0f66\u0f58\u0f0b \u0f58\u0f72\u0f0b \u0f41\u0fb1\u0f56\u0f0b\u0f54 \u0f62\u0f0b \u0f66\u0fa4\u0fb2\u0f7c"]}]}, {"9": [["dreldra", "jedra"], {"\u0f54\u0f7a\u0f0b": ["\u0f58\u0f7a\u0f51 \u0f0d_\u0f0d \u0f44\u0f7a\u0f66\u0f0b\u0f54\u0f62\u0f0b \u0f61\u0f72\u0f51\u0f0b", "\u0f40\u0fb1\u0f72\u0f66\u0f0b", "\u0f56\u0fb1\u0f0b \u0f62\u0f92\u0f7c\u0f51\u0f0b \u0f56\u0f45\u0f72\u0f44\u0f66\u0f0b \u0f56\u0f66\u0f51\u0f0b \u0f53"], "\u0f66\u0fa3\u0f62\u0f0b": ["\u0f58\u0f7a\u0f51 \u0f0d_\u0f0d \u0f44\u0f7a\u0f66\u0f0b\u0f54\u0f62\u0f0b \u0f61\u0f72\u0f51\u0f0b", "\u0f40\u0fb1\u0f72\u0f66\u0f0b", "\u0f56\u0fb1\u0f0b \u0f62\u0f92\u0f7c\u0f51\u0f0b \u0f56\u0f45\u0f72\u0f44\u0f66\u0f0b \u0f56\u0f66\u0f51\u0f0b \u0f53"], "\u0f66\u0fa1\u0f7a\u0f0b": ["\u0f58\u0f7a\u0f51 \u0f0d_\u0f0d \u0f44\u0f7a\u0f66\u0f0b\u0f54\u0f62\u0f0b \u0f61\u0f72\u0f51\u0f0b", "\u0f40\u0fb1\u0f72\u0f0b", "\u0f56\u0fb1\u0f0b \u0f62\u0f92\u0f7c\u0f51\u0f0b \u0f56\u0f45\u0f72\u0f44\u0f66\u0f0b \u0f56\u0f66\u0f51\u0f0b \u0f53"]}]}, {"10": [["dreldra", "jedra"], {"\u0f54\u0f7a\u0f0b": ["\u0f58\u0f7a\u0f51 \u0f0d_\u0f0d \u0f66\u0f9f\u0f7c\u0f44\u0f0b \u0f49\u0f72\u0f51\u0f0b \u0f56\u0f62\u0f9f\u0f53\u0f0b", "\u0f42\u0fb1\u0f72\u0f0b", "\u0f60\u0f41\u0fb2\u0f74\u0f63\u0f0b\u0f54\u0f0b \u0f66\u0fa4\u0f44\u0f0b \u0f51\u0f74\u0f0b \u0f58\u0f7a\u0f51"], "\u0f66\u0fa3\u0f62\u0f0b": ["\u0f58\u0f7a\u0f51 \u0f0d_\u0f0d \u0f66\u0f9f\u0f7c\u0f44\u0f0b \u0f49\u0f72\u0f51\u0f0b \u0f56\u0f62\u0f9f\u0f53\u0f0b", "\u0f42\u0fb1\u0f72\u0f0b", "\u0f60\u0f41\u0fb2\u0f74\u0f63\u0f0b\u0f54\u0f0b \u0f66\u0fa4\u0f44\u0f0b \u0f51\u0f74\u0f0b \u0f58\u0f7a\u0f51"], "\u0f66\u0fa1\u0f7a\u0f0b": ["\u0f58\u0f7a\u0f51 \u0f0d_\u0f0d \u0f66\u0f9f\u0f7c\u0f44\u0f0b \u0f49\u0f72\u0f51\u0f0b \u0f56\u0f62\u0f9f\u0f53\u0f0b", "\u0f42\u0fb1\u0f72\u0f66\u0f0b", "\u0f60\u0f41\u0fb2\u0f74\u0f63\u0f0b\u0f54\u0f0b \u0f66\u0fa4\u0f44\u0f0b \u0f51\u0f74\u0f0b \u0f58\u0f7a\u0f51"]}]}, {"13": [["jedra"], {"\u0f54\u0f7a\u0f0b": ["\u0f53\u0f58\u0f0b\u0f58\u0f41 \u0f60\u0f72\u0f0b \u0f58\u0f7a\u0f0b\u0f4f\u0f7c\u0f42\u0f0b", "\u0f56\u0f74\u0f44\u0f0b\u0f56\u0f0b", "\u0f60\u0f47\u0f72\u0f56\u0f0b\u0f54\u0f0b \u0f58\u0f50\u0f7c\u0f44\u0f0b\u0f56\u0f0b \u0f60\u0f51\u0fb2"], "\u0f66\u0fa3\u0f62\u0f0b": ["\u0f53\u0f58\u0f0b\u0f58\u0f41 \u0f60\u0f72\u0f0b \u0f58\u0f7a\u0f0b\u0f4f\u0f7c\u0f42\u0f0b", "\u0f56\u0f74\u0f44\u0f0b\u0f56\u0f0b", "\u0f60\u0f47\u0f72\u0f56\u0f0b\u0f54\u0f0b \u0f58\u0f50\u0f7c\u0f44\u0f0b\u0f56\u0f0b \u0f60\u0f51\u0fb2"], "\u0f66\u0fa1\u0f7a\u0f0b": ["\u0f53\u0f58\u0f0b\u0f58\u0f41 \u0f60\u0f72\u0f0b \u0f58\u0f7a\u0f0b\u0f4f\u0f7c\u0f42\u0f0b", "\u0f56\u0f74\u0f44\u0f0b\u0f56 \u0f66\u0f0b", "\u0f60\u0f47\u0f72\u0f56\u0f0b\u0f54\u0f0b \u0f58\u0f50\u0f7c\u0f44\u0f0b\u0f56\u0f0b \u0f60\u0f51\u0fb2"]}]}, {"14": [["jedra"], {"\u0f54\u0f7a\u0f0b": ["\u0f53\u0f58\u0f0b\u0f58\u0f41 \u0f60\u0f72\u0f0b \u0f58\u0f7a\u0f0b\u0f4f\u0f7c\u0f42\u0f0b", "\u0f56\u0f74\u0f44\u0f0b\u0f56\u0f0b", "\u0f60\u0f47\u0f72\u0f56\u0f0b\u0f54\u0f0b \u0f60\u0f51\u0fb2\u0f0b\u0f56\u0f0b \u0f61\u0f72"], "\u0f66\u0fa3\u0f62\u0f0b": ["\u0f53\u0f58\u0f0b\u0f58\u0f41 \u0f60\u0f72\u0f0b \u0f58\u0f7a\u0f0b\u0f4f\u0f7c\u0f42\u0f0b", "\u0f56\u0f74\u0f44\u0f0b\u0f56\u0f0b", "\u0f60\u0f47\u0f72\u0f56\u0f0b\u0f54\u0f0b \u0f60\u0f51\u0fb2\u0f0b\u0f56\u0f0b \u0f61\u0f72"], "\u0f66\u0fa1\u0f7a\u0f0b": ["\u0f53\u0f58\u0f0b\u0f58\u0f41 \u0f60\u0f72\u0f0b \u0f58\u0f7a\u0f0b\u0f4f\u0f7c\u0f42\u0f0b", "\u0f56\u0f74\u0f44\u0f0b\u0f56 \u0f66\u0f0b", "\u0f60\u0f47\u0f72\u0f56\u0f0b\u0f54\u0f0b \u0f60\u0f51\u0fb2\u0f0b\u0f56\u0f0b \u0f61\u0f72"]}]}]}, "verb_difference": {"not_sure": [{"16": [["\u300a\u0f60\u0f47\u0f72\u0f42\u300b\u0f5e\u0f7a\u0f66\u0f0b\u0f54\u0f0d\u3010\u3008\u0f60\u0f47\u0f72\u0f42\u3009\u0f42\u0f72\u0f0b \u0f51\u0f0b\u0f63\u0f9f\u0f0b\u0f56\u0f0d \u0f50\u0f0b\u0f51\u0f51\u0f0b\u0f54\u0f0d\u3011\u3010\u3008\u0f60\u0f47\u0f72\u0f42\u3009\u0f42\u0f72\u0f0b \u0f51\u0f0b\u0f63\u0f9f\u0f0b\u0f56\u0f0d \u0f50\u0f0b\u0f58\u0f72\u0f0b\u0f51\u0f51\u0f0b\u0f54\u0f0d\u3011\u3010\u3008\u0f60\u0f47\u0f72\u0f42\u3009\u0f42\u0f72\u0f0b \u0f58\u0f0b\u0f60\u0f7c\u0f44\u0f66\u0f0b\u0f54\u0f0d \u0f50\u0f0b\u0f58\u0f72\u0f0b\u0f51\u0f51\u0f0b\u0f54\u0f0d\u3011", "\u300a\u0f60\u0f47\u0f72\u0f42\u0f66\u300b\u0f5e\u0f7a\u0f66\u0f0b\u0f54\u0f0d\u3010\u3011"], {"\u0f54\u0f7a\u0f0b": ["\u0f62\u0f97\u0f7a\u0f0b \u0f55\u0f56\u0f0b \u0f53\u0f66\u0f0b \u0f53\u0f72 \u0f0d_\u0f0d", "\u0f60\u0f47\u0f72\u0f42\u0f66\u0f0b", "\u0f60\u0f5b\u0f72\u0f53\u0f0b \u0f44\u0f7c\u0f0b\u0f5a\u0f0b \u0f68\u0f0b \u0f5d\u0f0b #\u0f52\u0f71\u0f74\u0f0b"], "\u0f66\u0fa3\u0f62\u0f0b": ["\u0f62\u0f97\u0f7a\u0f0b \u0f55\u0f56\u0f0b \u0f53\u0f66\u0f0b \u0f53\u0f72 \u0f0d_\u0f0d", "\u0f60\u0f47\u0f72\u0f42\u0f66\u0f0b", "\u0f60\u0f5b\u0f72\u0f53\u0f0b \u0f44\u0f7c\u0f0b\u0f5a\u0f0b \u0f68\u0f0b \u0f5d\u0f0b #\u0f52\u0f71\u0f74\u0f0b"], "\u0f66\u0fa1\u0f7a\u0f0b": ["\u0f62\u0f97\u0f7a\u0f0b \u0f55\u0f56\u0f0b \u0f53\u0f66\u0f0b \u0f53\u0f72 \u0f0d_\u0f0d", "\u0f60\u0f47\u0f72\u0f42\u0f0b", "\u0f60\u0f5b\u0f72\u0f53\u0f0b \u0f44\u0f7c\u0f0b\u0f5a\u0f0b \u0f68\u0f0b \u0f5d\u0f0b #\u0f52\u0f71\u0f74\u0f0b"]}]}], "diff_tense": [{"3": [["\u300a\u0f56\u0f62\u0f9f\u0f42\u0f66\u300b\u0f5e\u0f7a\u0f66\u0f0b\u0f54\u0f0d\u3010\u3008\u0f62\u0f9f\u0f7c\u0f42\u3009\u0f42\u0f72\u0f0b \u0f60\u0f51\u0f66\u0f0b\u0f54\u0f0d \u0f50\u0f0b\u0f51\u0f51\u0f0b\u0f54\u0f0d\u3011", "\u300a\u0f56\u0f62\u0f9f\u0f42\u300b\u0f5e\u0f7a\u0f66\u0f0b\u0f54\u0f0d\u3010\u3008\u0f62\u0f9f\u0f7c\u0f42\u3009\u0f42\u0f72\u0f0b \u0f58\u0f0b\u0f60\u0f7c\u0f44\u0f66\u0f0b\u0f54\u0f0d \u0f50\u0f0b\u0f51\u0f51\u0f0b\u0f54\u0f0d\u3011"], {"\u0f54\u0f7a\u0f0b": ["\u0f54 \u0f62\u0f0b \u0f61\u0f7c\u0f44\u0f66\u0f0b\u0f66\u0f74\u0f0b \u0f66\u0fa3\u0f44 \u0f0b\u0f0d_\u0f0d", "\u0f56\u0f62\u0f9f\u0f42\u0f66\u0f0b\u0f54 \u0f60\u0f72\u0f0b", "\u0f66\u0fa4\u0fb2\u0f7c\u0f66\u0f0b\u0f54 \u0f66\u0f0b \u0f56\u0f66\u0f90\u0fb1\u0f7a\u0f51\u0f0b \u0f63\u0f0b"], "\u0f66\u0fa3\u0f62\u0f0b": ["\u0f54 \u0f62\u0f0b \u0f61\u0f7c\u0f44\u0f66\u0f0b\u0f66\u0f74\u0f0b \u0f66\u0fa3\u0f44 \u0f0b\u0f0d_\u0f0d", "\u0f56\u0f62\u0f9f\u0f42\u0f66\u0f0b\u0f54 \u0f60\u0f72\u0f0b", "\u0f66\u0fa4\u0fb2\u0f7c\u0f66\u0f0b\u0f54 \u0f66\u0f0b \u0f56\u0f66\u0f90\u0fb1\u0f7a\u0f51\u0f0b \u0f63\u0f0b"], "\u0f66\u0fa1\u0f7a\u0f0b": ["\u0f54 \u0f62\u0f0b \u0f61\u0f7c\u0f44\u0f66\u0f0b\u0f66\u0f74\u0f0b \u0f66\u0fa3\u0f44 \u0f0b\u0f0d_\u0f0d", "\u0f56\u0f62\u0f9f\u0f42\u0f0b\u0f54 \u0f60\u0f72\u0f0b", "\u0f66\u0fa4\u0fb2\u0f7c\u0f66\u0f0b\u0f54 \u0f66\u0f0b \u0f56\u0f66\u0f90\u0fb1\u0f7a\u0f51\u0f0b \u0f63\u0f0b"]}]}, {"5": [["\u300a\u0f56\u0f62\u0f92\u0fb1\u0f74\u0f42\u300b\u0f5e\u0f7a\u0f66\u0f0b\u0f54\u0f0d\u3010\u3008\u0f62\u0f92\u0fb1\u0f74\u0f42\u3009\u0f42\u0f72\u0f0b \u0f58\u0f0b\u0f60\u0f7c\u0f44\u0f66\u0f0b\u0f54\u0f0d\u3011\u3010\u3008\u0f62\u0f92\u0fb1\u0f74\u0f42\u3009\u0f42\u0f72\u0f0b \u0f58\u0f0b\u0f60\u0f7c\u0f44\u0f66\u0f0b\u0f54\u0f0d \u0f50\u0f0b\u0f58\u0f72\u0f0b\u0f51\u0f51\u0f0b\u0f54\u0f0d\u3011", "\u300a\u0f62\u0f92\u0fb1\u0f74\u0f42\u300b\u0f5e\u0f7a\u0f66\u0f0b\u0f54\u0f0d\u3010\u3008\u0f62\u0f92\u0fb1\u0f74\u0f42\u3009\u0f42\u0f72\u0f0b \u0f51\u0f0b\u0f63\u0f9f\u0f0b\u0f56\u0f0d\u3011\u3010\u3008\u0f62\u0f92\u0fb1\u0f74\u0f42\u3009\u0f42\u0f72\u0f0b \u0f51\u0f0b\u0f63\u0f9f\u0f0b\u0f56\u0f0d \u0f50\u0f0b\u0f58\u0f72\u0f0b\u0f51\u0f51\u0f0b\u0f54\u0f0d\u3011"], {"\u0f54\u0f7a\u0f0b": ["\u0f66\u0fa8\u0f72\u0f42\u0f0b\u0f62\u0f92\u0fb1\u0f74\u0f0b \u0f46\u0f74\u0f62\u0f0b \u0f58\u0f50\u0f7c\u0f44\u0f0b \u0f61\u0f7c\u0f44\u0f66\u0f0b", "\u0f56\u0f62\u0f92\u0fb1\u0f74\u0f42\u0f0b", "\u0f40\u0fb1\u0f44 \u0f0b\u0f0d_\u0f0d \u0f51\u0f74\u0f56\u0f0b\u0f54 \u0f66\u0f0b \u0f60\u0f46\u0f72\u0f0b"], "\u0f66\u0fa3\u0f62\u0f0b": ["\u0f66\u0fa8\u0f72\u0f42\u0f0b\u0f62\u0f92\u0fb1\u0f74\u0f0b \u0f46\u0f74\u0f62\u0f0b \u0f58\u0f50\u0f7c\u0f44\u0f0b \u0f61\u0f7c\u0f44\u0f66\u0f0b", "\u0f56\u0f62\u0f92\u0fb1\u0f74\u0f42\u0f0b", "\u0f40\u0fb1\u0f44 \u0f0b\u0f0d_\u0f0d \u0f51\u0f74\u0f56\u0f0b\u0f54 \u0f66\u0f0b \u0f60\u0f46\u0f72\u0f0b"], "\u0f66\u0fa1\u0f7a\u0f0b": ["\u0f66\u0fa8\u0f72\u0f42\u0f0b\u0f62\u0f92\u0fb1\u0f74\u0f0b \u0f46\u0f74\u0f62\u0f0b \u0f58\u0f50\u0f7c\u0f44\u0f0b \u0f61\u0f7c\u0f44\u0f66\u0f0b", "\u0f62\u0f92\u0fb1\u0f74\u0f42\u0f0b", "\u0f40\u0fb1\u0f44 \u0f0b\u0f0d_\u0f0d \u0f51\u0f74\u0f56\u0f0b\u0f54 \u0f66\u0f0b \u0f60\u0f46\u0f72\u0f0b"]}]}, {"6": [["\u300a\u0f56\u0f62\u0f92\u0fb1\u0f74\u0f42\u300b\u0f5e\u0f7a\u0f66\u0f0b\u0f54\u0f0d\u3010\u3008\u0f62\u0f92\u0fb1\u0f74\u0f42\u3009\u0f42\u0f72\u0f0b \u0f58\u0f0b\u0f60\u0f7c\u0f44\u0f66\u0f0b\u0f54\u0f0d\u3011\u3010\u3008\u0f62\u0f92\u0fb1\u0f74\u0f42\u3009\u0f42\u0f72\u0f0b \u0f58\u0f0b\u0f60\u0f7c\u0f44\u0f66\u0f0b\u0f54\u0f0d \u0f50\u0f0b\u0f58\u0f72\u0f0b\u0f51\u0f51\u0f0b\u0f54\u0f0d\u3011", "\u300a\u0f62\u0f92\u0fb1\u0f74\u0f42\u300b\u0f5e\u0f7a\u0f66\u0f0b\u0f54\u0f0d\u3010\u3008\u0f62\u0f92\u0fb1\u0f74\u0f42\u3009\u0f42\u0f72\u0f0b \u0f51\u0f0b\u0f63\u0f9f\u0f0b\u0f56\u0f0d\u3011\u3010\u3008\u0f62\u0f92\u0fb1\u0f74\u0f42\u3009\u0f42\u0f72\u0f0b \u0f51\u0f0b\u0f63\u0f9f\u0f0b\u0f56\u0f0d \u0f50\u0f0b\u0f58\u0f72\u0f0b\u0f51\u0f51\u0f0b\u0f54\u0f0d\u3011"], {"\u0f54\u0f7a\u0f0b": ["\u0f66\u0fa8\u0f72\u0f42\u0f0b\u0f62\u0f92\u0fb1\u0f74\u0f0b \u0f63\u0f0b \u0f53\u0f72\u0f0b \u0f58\u0f0b", "\u0f56\u0f62\u0f92\u0fb1\u0f74\u0f42\u0f0b", "\u0f51\u0f44 \u0f0b\u0f0d_\u0f0d \u0f61\u0f74\u0f63\u0f0b \u0f42\u0fb1\u0f72\u0f0b"], "\u0f66\u0fa3\u0f62\u0f0b": ["\u0f66\u0fa8\u0f72\u0f42\u0f0b\u0f62\u0f92\u0fb1\u0f74\u0f0b \u0f63\u0f0b \u0f53\u0f72\u0f0b \u0f58\u0f0b", "\u0f56\u0f62\u0f92\u0fb1\u0f74\u0f42\u0f0b", "\u0f51\u0f44 \u0f0b\u0f0d_\u0f0d \u0f61\u0f74\u0f63\u0f0b \u0f42\u0fb1\u0f72\u0f0b"], "\u0f66\u0fa1\u0f7a\u0f0b": ["\u0f66\u0fa8\u0f72\u0f42\u0f0b\u0f62\u0f92\u0fb1\u0f74\u0f0b \u0f63\u0f0b \u0f53\u0f72\u0f0b \u0f58\u0f0b", "\u0f62\u0f92\u0fb1\u0f74\u0f42\u0f0b", "\u0f51\u0f44 \u0f0b\u0f0d_\u0f0d \u0f61\u0f74\u0f63\u0f0b \u0f42\u0fb1\u0f72\u0f0b"]}]}, {"7": [["\u300a\u0f56\u0f62\u0f92\u0fb1\u0f74\u0f42\u300b\u0f5e\u0f7a\u0f66\u0f0b\u0f54\u0f0d\u3010\u3008\u0f62\u0f92\u0fb1\u0f74\u0f42\u3009\u0f42\u0f72\u0f0b \u0f58\u0f0b\u0f60\u0f7c\u0f44\u0f66\u0f0b\u0f54\u0f0d\u3011\u3010\u3008\u0f62\u0f92\u0fb1\u0f74\u0f42\u3009\u0f42\u0f72\u0f0b \u0f58\u0f0b\u0f60\u0f7c\u0f44\u0f66\u0f0b\u0f54\u0f0d \u0f50\u0f0b\u0f58\u0f72\u0f0b\u0f51\u0f51\u0f0b\u0f54\u0f0d\u3011", "\u300a\u0f62\u0f92\u0fb1\u0f74\u0f42\u300b\u0f5e\u0f7a\u0f66\u0f0b\u0f54\u0f0d\u3010\u3008\u0f62\u0f92\u0fb1\u0f74\u0f42\u3009\u0f42\u0f72\u0f0b \u0f51\u0f0b\u0f63\u0f9f\u0f0b\u0f56\u0f0d\u3011\u3010\u3008\u0f62\u0f92\u0fb1\u0f74\u0f42\u3009\u0f42\u0f72\u0f0b \u0f51\u0f0b\u0f63\u0f9f\u0f0b\u0f56\u0f0d \u0f50\u0f0b\u0f58\u0f72\u0f0b\u0f51\u0f51\u0f0b\u0f54\u0f0d\u3011"], {"\u0f54\u0f7a\u0f0b": ["\u0f64\u0f7a\u0f66\u0f0b \u0f45\u0f72\u0f0b\u0f5e\u0f72\u0f42\u0f0b \u0f60\u0f51\u0f7c\u0f51\u0f0b\u0f54 \u0f66\u0f0b", "\u0f56\u0f62\u0f92\u0fb1\u0f74\u0f42", "_\u0f0d \u0f42\u0fb2\u0f7c\u0f44\u0f0b \u0f51\u0f74\u0f0b \u0f63\u0f7c\u0f44\u0f66\u0f0b\u0f66\u0fa4\u0fb1\u0f7c\u0f51\u0f0b"], "\u0f66\u0fa3\u0f62\u0f0b": ["\u0f64\u0f7a\u0f66\u0f0b \u0f45\u0f72\u0f0b\u0f5e\u0f72\u0f42\u0f0b \u0f60\u0f51\u0f7c\u0f51\u0f0b\u0f54 \u0f66\u0f0b", "\u0f56\u0f62\u0f92\u0fb1\u0f74\u0f42", "_\u0f0d \u0f42\u0fb2\u0f7c\u0f44\u0f0b \u0f51\u0f74\u0f0b \u0f63\u0f7c\u0f44\u0f66\u0f0b\u0f66\u0fa4\u0fb1\u0f7c\u0f51\u0f0b"], "\u0f66\u0fa1\u0f7a\u0f0b": ["\u0f64\u0f7a\u0f66\u0f0b \u0f45\u0f72\u0f0b\u0f5e\u0f72\u0f42\u0f0b \u0f60\u0f51\u0f7c\u0f51\u0f0b\u0f54 \u0f66\u0f0b", "\u0f62\u0f92\u0fb1\u0f74\u0f42", "_\u0f0d \u0f42\u0fb2\u0f7c\u0f44\u0f0b \u0f51\u0f74\u0f0b \u0f63\u0f7c\u0f44\u0f66\u0f0b\u0f66\u0fa4\u0fb1\u0f7c\u0f51\u0f0b"]}]}, {"12": [["\u300a\u0f62\u0f9f\u0f7c\u0f42\u300b\u0f5e\u0f7a\u0f66\u0f0b\u0f54\u0f0d\u3010\u3008\u0f62\u0f9f\u0f7c\u0f42\u3009\u0f42\u0f72\u0f0b \u0f51\u0f0b\u0f63\u0f9f\u0f0b\u0f56\u0f0d \u0f50\u0f0b\u0f51\u0f51\u0f0b\u0f54\u0f0d\u3011", "\u300a\u0f62\u0f9f\u0f7c\u0f42\u0f66\u300b\u0f5e\u0f7a\u0f66\u0f0b\u0f54\u0f0d\u3010\u3008\u0f62\u0f9f\u0f7c\u0f42\u3009\u0f42\u0f72\u0f0b \u0f66\u0f90\u0f74\u0f63\u0f0b\u0f5a\u0f72\u0f42 \u0f50\u0f0b\u0f51\u0f51\u0f0b\u0f54\u0f0d\u3011"], {"\u0f54\u0f7a\u0f0b": ["\u0f60\u0f51\u0fb2\u0f0b \u0f51\u0f44\u0f7c\u0f66\u0f0b\u0f54\u0f7c\u0f0b \u0f58\u0f49\u0f58\u0f0b\u0f54 \u0f62\u0f0b", "\u0f62\u0f9f\u0f7c\u0f42\u0f66", "\u0f0d \u0f51\u0f7a \u0f66\u0f0b \u0f66\u0fa6\u0fb1\u0f44\u0f66\u0f0b \u0f56\u0f42\u0f0b\u0f46\u0f42\u0f66\u0f0b"], "\u0f66\u0fa3\u0f62\u0f0b": ["\u0f60\u0f51\u0fb2\u0f0b \u0f51\u0f44\u0f7c\u0f66\u0f0b\u0f54\u0f7c\u0f0b \u0f58\u0f49\u0f58\u0f0b\u0f54 \u0f62\u0f0b", "\u0f62\u0f9f\u0f7c\u0f42\u0f66", "\u0f0d \u0f51\u0f7a \u0f66\u0f0b \u0f66\u0fa6\u0fb1\u0f44\u0f66\u0f0b \u0f56\u0f42\u0f0b\u0f46\u0f42\u0f66\u0f0b"], "\u0f66\u0fa1\u0f7a\u0f0b": ["\u0f60\u0f51\u0fb2\u0f0b \u0f51\u0f44\u0f7c\u0f66\u0f0b\u0f54\u0f7c\u0f0b \u0f58\u0f49\u0f58\u0f0b\u0f54 \u0f62\u0f0b", "\u0f62\u0f9f\u0f7c\u0f42", "\u0f0d \u0f51\u0f7a \u0f66\u0f0b \u0f66\u0fa6\u0fb1\u0f44\u0f66\u0f0b \u0f56\u0f42\u0f0b\u0f46\u0f42\u0f66\u0f0b"]}]}, {"15": [["\u300a\u0f63\u0f9f\u300b\u0f5e\u0f7a\u0f66\u0f0b\u0f54\u0f0d\u3010\u3008\u0f63\u0f9f\u3009\u0f42\u0f72\u0f0b \u0f51\u0f0b\u0f63\u0f9f\u0f0b\u0f56\u0f0d\u3011\u3010\u3008\u0f63\u0f9f\u3009\u0f42\u0f72\u0f0b \u0f51\u0f0b\u0f63\u0f9f\u0f0b\u0f56\u0f0d \u0f50\u0f0b\u0f51\u0f51\u0f0b\u0f54\u0f0d\u3011", "\u300a\u0f56\u0f63\u0f9f\u300b\u0f5e\u0f7a\u0f66\u0f0b\u0f54\u0f0d\u3010\u3008\u0f63\u0f9f\u3009\u0f42\u0f72\u0f0b \u0f58\u0f0b\u0f60\u0f7c\u0f44\u0f66\u0f0b\u0f54\u0f0d\u3011\u3010\u3008\u0f63\u0f9f\u3009\u0f42\u0f72\u0f0b \u0f58\u0f0b\u0f60\u0f7c\u0f44\u0f66\u0f0b\u0f54\u0f0d \u0f50\u0f0b\u0f51\u0f51\u0f0b\u0f54\u0f0d\u3011"], {"\u0f54\u0f7a\u0f0b": [" \u0f0d_\u0f0d \u0f56\u0f51\u0f42\u0f0b \u0f51\u0f44\u0f0b \u0f42\u0f5e\u0f53\u0f0b \u0f51\u0f74\u0f0b", "\u0f56\u0f63\u0f9f\u0f0b\u0f56 \u0f60\u0f72\u0f0b", "\u0f60\u0f41\u0fb2\u0f74\u0f63\u0f0b\u0f54\u0f0b \u0f46\u0f7c\u0f58 \u0f0d_\u0f0d "], "\u0f66\u0fa3\u0f62\u0f0b": [" \u0f0d_\u0f0d \u0f56\u0f51\u0f42\u0f0b \u0f51\u0f44\u0f0b \u0f42\u0f5e\u0f53\u0f0b \u0f51\u0f74\u0f0b", "\u0f56\u0f63\u0f9f\u0f0b\u0f56 \u0f60\u0f72\u0f0b", "\u0f60\u0f41\u0fb2\u0f74\u0f63\u0f0b\u0f54\u0f0b \u0f46\u0f7c\u0f58 \u0f0d_\u0f0d "], "\u0f66\u0fa1\u0f7a\u0f0b": [" \u0f0d_\u0f0d \u0f56\u0f51\u0f42\u0f0b \u0f51\u0f44\u0f0b \u0f42\u0f5e\u0f53\u0f0b \u0f51\u0f74\u0f0b", "\u0f63\u0f9f\u0f0b\u0f56 \u0f60\u0f72\u0f0b", "\u0f60\u0f41\u0fb2\u0f74\u0f63\u0f0b\u0f54\u0f0b \u0f46\u0f7c\u0f58 \u0f0d_\u0f0d "]}]}], "diff_verb": []}, "particle_issues": {"different_particles": [], "agreement_issue": [], "other": [], "added_particle": [], "po-bo-pa-ba": [{"18": ["dagdra_pa", {"\u0f54\u0f7a\u0f0b": ["\u0f67\u0f7a\u0f0b\u0f62\u0f74\u0f0b\u0f40 \u0f62\u0f0b", "\u0f60\u0f42\u0fb1\u0f74\u0f62\u0f0b", "\u0f61\u0f72\u0f53 \u0f0d_\u0f0d \u0f62\u0f92\u0fb1\u0f74\u0f0b \u0f58\u0f7a\u0f51\u0f0b \u0f66\u0f7c\u0f42\u0f66\u0f0b"], "\u0f66\u0fa3\u0f62\u0f0b": ["\u0f67\u0f7a\u0f0b\u0f62\u0f74\u0f0b\u0f40 \u0f62\u0f0b", "\u0f60\u0f42\u0fb1\u0f74\u0f62\u0f0b", "\u0f61\u0f72\u0f53 \u0f0d_\u0f0d \u0f62\u0f92\u0fb1\u0f74\u0f0b \u0f58\u0f7a\u0f51\u0f0b \u0f66\u0f7c\u0f42\u0f66\u0f0b"], "\u0f66\u0fa1\u0f7a\u0f0b": ["\u0f67\u0f7a\u0f0b\u0f62\u0f74\u0f0b\u0f40 \u0f62\u0f0b", "\u0f60\u0f42\u0fb1\u0f74\u0f62\u0f0b\u0f54\u0f0b", "\u0f61\u0f72\u0f53 \u0f0d_\u0f0d \u0f62\u0f92\u0fb1\u0f74\u0f0b \u0f58\u0f7a\u0f51\u0f0b \u0f66\u0f7c\u0f42\u0f66\u0f0b"]}]}]}, "sskrt": [{"17": [{"\u0f54\u0f7a\u0f0b": ["\u0f60\u0f47\u0f72\u0f42\u0f0b \u0f60\u0f5b\u0f72\u0f53\u0f0b \u0f44\u0f7c\u0f0b\u0f5a\u0f0b", "\u0f68\u0f0b\u0f56\u0f0b #\u0f51\u0fb7\u0f74\u0f0b #\u0f4f\u0f71\u0f72\u0f0b", "\u0f66\u0fa4\u0f7c\u0f44\u0f66 \u0f0d_\u0f0d \u0f56\u0fb1\u0f44\u0f0b\u0f46\u0f74\u0f56\u0f0b \u0f66\u0fa8\u0f7c\u0f53\u0f0b"], "\u0f66\u0fa3\u0f62\u0f0b": ["\u0f60\u0f47\u0f72\u0f42\u0f0b \u0f60\u0f5b\u0f72\u0f53\u0f0b \u0f44\u0f7c\u0f0b\u0f5a\u0f0b", "\u0f68\u0f0b\u0f56\u0f0b #\u0f51\u0fb7\u0f74\u0f0b #\u0f4f\u0f71\u0f72\u0f0b", "\u0f66\u0fa4\u0f7c\u0f44\u0f66 \u0f0d_\u0f0d \u0f56\u0fb1\u0f44\u0f0b\u0f46\u0f74\u0f56\u0f0b \u0f66\u0fa8\u0f7c\u0f53\u0f0b"], "\u0f66\u0fa1\u0f7a\u0f0b": ["\u0f60\u0f47\u0f72\u0f42\u0f0b \u0f60\u0f5b\u0f72\u0f53\u0f0b \u0f44\u0f7c\u0f0b\u0f5a\u0f0b", "\u0f68\u0f0b \u0f5d\u0f0b #\u0f52\u0f71\u0f74\u0f0b #\u0f4f\u0f71\u0f72\u0f66\u0f0b", "\u0f66\u0fa4\u0f7c\u0f44\u0f66 \u0f0d_\u0f0d \u0f56\u0fb1\u0f44\u0f0b\u0f46\u0f74\u0f56\u0f0b \u0f66\u0fa8\u0f7c\u0f53\u0f0b"]}]}]}, "non_standard_notes": [], "profile": {"20": ["\u0f54\u0f7a\u0f0b=\u0f66\u0fa3\u0f62\u0f0b \u0f66\u0fa1\u0f7a\u0f0b", "95.24%"], "1": ["\u0f54\u0f7a\u0f0b=\u0f66\u0fa3\u0f62\u0f0b \u0f66\u0fa1\u0f7a\u0f0b", "95.24%"], "21": ["\u0f54\u0f7a\u0f0b=\u0f66\u0fa1\u0f7a\u0f0b=\u0f66\u0fa3\u0f62\u0f0b", "4.76%"], "4": ["\u0f54\u0f7a\u0f0b=\u0f66\u0fa3\u0f62\u0f0b \u0f66\u0fa1\u0f7a\u0f0b", "95.24%"], "6": ["\u0f54\u0f7a\u0f0b=\u0f66\u0fa3\u0f62\u0f0b \u0f66\u0fa1\u0f7a\u0f0b", "95.24%"], "7": ["\u0f54\u0f7a\u0f0b=\u0f66\u0fa3\u0f62\u0f0b \u0f66\u0fa1\u0f7a\u0f0b", "95.24%"], "9": ["\u0f54\u0f7a\u0f0b=\u0f66\u0fa3\u0f62\u0f0b \u0f66\u0fa1\u0f7a\u0f0b", "95.24%"], "13": ["\u0f54\u0f7a\u0f0b=\u0f66\u0fa3\u0f62\u0f0b \u0f66\u0fa1\u0f7a\u0f0b", "95.24%"], "3": ["\u0f54\u0f7a\u0f0b=\u0f66\u0fa3\u0f62\u0f0b \u0f66\u0fa1\u0f7a\u0f0b", "95.24%"], "12": ["\u0f54\u0f7a\u0f0b=\u0f66\u0fa3\u0f62\u0f0b \u0f66\u0fa1\u0f7a\u0f0b", "95.24%"], "15": ["\u0f54\u0f7a\u0f0b=\u0f66\u0fa3\u0f62\u0f0b \u0f66\u0fa1\u0f7a\u0f0b", "95.24%"], "17": ["\u0f54\u0f7a\u0f0b=\u0f66\u0fa3\u0f62\u0f0b \u0f66\u0fa1\u0f7a\u0f0b", "95.24%"], "18": ["\u0f54\u0f7a\u0f0b=\u0f66\u0fa3\u0f62\u0f0b \u0f66\u0fa1\u0f7a\u0f0b", "95.24%"], "16": ["\u0f54\u0f7a\u0f0b=\u0f66\u0fa3\u0f62\u0f0b \u0f66\u0fa1\u0f7a\u0f0b", "95.24%"], "2": ["\u0f54\u0f7a\u0f0b=\u0f66\u0fa3\u0f62\u0f0b \u0f66\u0fa1\u0f7a\u0f0b", "95.24%"], "8": ["\u0f54\u0f7a\u0f0b=\u0f66\u0fa3\u0f62\u0f0b \u0f66\u0fa1\u0f7a\u0f0b", "95.24%"], "10": ["\u0f54\u0f7a\u0f0b=\u0f66\u0fa3\u0f62\u0f0b \u0f66\u0fa1\u0f7a\u0f0b", "95.24%"], "5": ["\u0f54\u0f7a\u0f0b=\u0f66\u0fa3\u0f62\u0f0b \u0f66\u0fa1\u0f7a\u0f0b", "95.24%"], "19": ["\u0f54\u0f7a\u0f0b=\u0f66\u0fa3\u0f62\u0f0b \u0f66\u0fa1\u0f7a\u0f0b", "95.24%"], "14": ["\u0f54\u0f7a\u0f0b=\u0f66\u0fa3\u0f62\u0f0b \u0f66\u0fa1\u0f7a\u0f0b", "95.24%"], "11": ["\u0f54\u0f7a\u0f0b=\u0f66\u0fa3\u0f62\u0f0b \u0f66\u0fa1\u0f7a\u0f0b", "95.24%"]}, "empty_notes": [{"21": [{"\u0f54\u0f7a\u0f0b": ["\u0f56\u0fb3\u0f44\u0f66\u0f0b\u0f54\u0f0b \u0f62\u0fab\u0f7c\u0f42\u0f66\u0f0b \u0f66\u0f7c \u0f0d\u0f0d ", "", ""], "\u0f66\u0fa3\u0f62\u0f0b": ["\u0f56\u0fb3\u0f44\u0f66\u0f0b\u0f54\u0f0b \u0f62\u0fab\u0f7c\u0f42\u0f66\u0f0b \u0f66\u0f7c \u0f0d\u0f0d ", "", ""], "\u0f66\u0fa1\u0f7a\u0f0b": ["\u0f56\u0fb3\u0f44\u0f66\u0f0b\u0f54\u0f0b \u0f62\u0fab\u0f7c\u0f42\u0f66\u0f0b \u0f66\u0f7c \u0f0d\u0f0d ", "", ""]}]}], "manual_categorisation": {"manual_evaluation": {"derge_correct": [], "meaning_difference": {"small_diff": [], "medium_diff": [], "great_diff": []}}, "long_difference": {"major_modification": [], "differing_formulation": []}}, "Stats": {"automatic_categorisation": {"spelling_mistake": {"non_word": {"well_formed": 2}}, "min_mod": {"particle_groups": 5}, "verb_difference": {"not_sure": 1, "diff_tense": 6}, "particle_issues": {"po-bo-pa-ba": 1}, "sskrt": 1}, "profile": {}, "Categorised": "17 notes (77.27%)", "manual_categorisation": {"manual_evaluation": {"meaning_difference": {}}, "long_difference": {}}, "empty_notes": 1, "Notes\u2019 total": 22, "dunno": {"short_diff": 1, "no_diff": 4}, "Profiles": ["\u0f54\u0f7a\u0f0b=\u0f66\u0fa1\u0f7a\u0f0b=\u0f66\u0fa3\u0f62\u0f0b: 4.76% (1 notes)", "\u0f54\u0f7a\u0f0b=\u0f66\u0fa3\u0f62\u0f0b \u0f66\u0fa1\u0f7a\u0f0b: 95.24% (20 notes)"], "ngram_freq": {}}, "dunno": {"long_diff": [], "no_diff": [{"1": [{"\u0f54\u0f7a\u0f0b": ["\u0f4f\u0f72\u0f44\u0f0b\u0f60\u0f5b\u0f72\u0f53\u0f0b \u0f56\u0fb3\u0f0b \u0f53\u0f0b", "\u0f58\u0f7a\u0f51\u0f0b\u0f54 \u0f66\u0f0b", "\u0f63\u0f58\u0f0b \u0f60\u0f51\u0f72 \u0f66\u0f0b \u0f40\u0fb1\u0f7a \u0f0d_\u0f0d \u0f56\u0f51\u0f74\u0f51\u0f0b"], "\u0f66\u0fa3\u0f62\u0f0b": ["\u0f4f\u0f72\u0f44\u0f0b\u0f60\u0f5b\u0f72\u0f53\u0f0b \u0f56\u0fb3\u0f0b \u0f53\u0f0b", "\u0f58\u0f7a\u0f51\u0f0b\u0f54 \u0f66\u0f0b", "\u0f63\u0f58\u0f0b \u0f60\u0f51\u0f72 \u0f66\u0f0b \u0f40\u0fb1\u0f7a \u0f0d_\u0f0d \u0f56\u0f51\u0f74\u0f51\u0f0b"], "\u0f66\u0fa1\u0f7a\u0f0b": ["\u0f4f\u0f72\u0f44\u0f0b\u0f60\u0f5b\u0f72\u0f53\u0f0b \u0f56\u0fb3\u0f0b \u0f53\u0f0b", "\u0f58\u0f7a\u0f51\u0f0b\u0f54 \u0f60\u0f72\u0f0b", "\u0f63\u0f58\u0f0b \u0f60\u0f51\u0f72 \u0f66\u0f0b \u0f40\u0fb1\u0f7a \u0f0d_\u0f0d \u0f56\u0f51\u0f74\u0f51\u0f0b"]}]}, {"2": [{"\u0f54\u0f7a\u0f0b": [" \u0f0d_\u0f0d \u0f53\u0f58\u0f0b\u0f58\u0f41 \u0f60\u0f72\u0f0b \u0f44\u0f7c\u0f0b\u0f56\u0f7c\u0f0b", "\u0f61\u0f7c\u0f44\u0f66\u0f0b \u0f51\u0f42\u0f0b", "\u0f47\u0f72\u0f0b\u0f63\u0f9f\u0f0b \u0f56\u0f62 \u0f0d_\u0f0d "], "\u0f66\u0fa3\u0f62\u0f0b": [" \u0f0d_\u0f0d \u0f53\u0f58\u0f0b\u0f58\u0f41 \u0f60\u0f72\u0f0b \u0f44\u0f7c\u0f0b\u0f56\u0f7c\u0f0b", "\u0f61\u0f7c\u0f44\u0f66\u0f0b \u0f51\u0f42\u0f0b", "\u0f47\u0f72\u0f0b\u0f63\u0f9f\u0f0b \u0f56\u0f62 \u0f0d_\u0f0d "], "\u0f66\u0fa1\u0f7a\u0f0b": [" \u0f0d_\u0f0d \u0f53\u0f58\u0f0b\u0f58\u0f41 \u0f60\u0f72\u0f0b \u0f44\u0f7c\u0f0b\u0f56\u0f7c\u0f0b", "\u0f61\u0f44\u0f0b\u0f51\u0f42\u0f0b", "\u0f47\u0f72\u0f0b\u0f63\u0f9f\u0f0b \u0f56\u0f62 \u0f0d_\u0f0d "]}]}, {"4": [{"\u0f54\u0f7a\u0f0b": ["\u0f60\u0f47\u0f72\u0f42\u0f66\u0f0b \u0f51\u0f44\u0f0b \u0f41\u0fb2\u0f7c\u0f0b \u0f63\u0f66\u0f0b \u0f51\u0f7a\u0f0b", "\u0f56\u0f5e\u0f72\u0f53\u0f0b", "\u0f58\u0f72\u0f53 \u0f0d_\u0f0d \u0f42\u0f44\u0f0b \u0f42\u0f44\u0f0b \u0f62\u0fa3\u0f58\u0f0b"], "\u0f66\u0fa3\u0f62\u0f0b": ["\u0f60\u0f47\u0f72\u0f42\u0f66\u0f0b \u0f51\u0f44\u0f0b \u0f41\u0fb2\u0f7c\u0f0b \u0f63\u0f66\u0f0b \u0f51\u0f7a\u0f0b", "\u0f56\u0f5e\u0f72\u0f53\u0f0b", "\u0f58\u0f72\u0f53 \u0f0d_\u0f0d \u0f42\u0f44\u0f0b \u0f42\u0f44\u0f0b \u0f62\u0fa3\u0f58\u0f0b"], "\u0f66\u0fa1\u0f7a\u0f0b": ["\u0f60\u0f47\u0f72\u0f42\u0f66\u0f0b \u0f51\u0f44\u0f0b \u0f41\u0fb2\u0f7c\u0f0b \u0f63\u0f66\u0f0b \u0f51\u0f7a\u0f0b", "\u0f42\u0f5e\u0f53\u0f0b", "\u0f58\u0f72\u0f53 \u0f0d_\u0f0d \u0f42\u0f44\u0f0b \u0f42\u0f44\u0f0b \u0f62\u0fa3\u0f58\u0f0b"]}]}, {"19": [{"\u0f54\u0f7a\u0f0b": [" \u0f0d_\u0f0d \u0f66\u0fb2\u0f72\u0f51\u0f0b \u0f51\u0f44\u0f0b \u0f58\u0fb1\u0f0b\u0f44\u0f53\u0f0b", "", "\u0f58\u0f7a\u0f51\u0f0b \u0f61\u0f72\u0f0b\u0f42\u0f7a\u0f0b \u0f40\u0f0b \u0f60\u0f51\u0f72 \u0f66\u0f0b"], "\u0f66\u0fa3\u0f62\u0f0b": [" \u0f0d_\u0f0d \u0f66\u0fb2\u0f72\u0f51\u0f0b \u0f51\u0f44\u0f0b \u0f58\u0fb1\u0f0b\u0f44\u0f53\u0f0b", "", "\u0f58\u0f7a\u0f51\u0f0b \u0f61\u0f72\u0f0b\u0f42\u0f7a\u0f0b \u0f40\u0f0b \u0f60\u0f51\u0f72 \u0f66\u0f0b"], "\u0f66\u0fa1\u0f7a\u0f0b": [" \u0f0d_\u0f0d \u0f66\u0fb2\u0f72\u0f51\u0f0b \u0f51\u0f44\u0f0b \u0f58\u0fb1\u0f0b\u0f44\u0f53\u0f0b", "\u0f60\u0f51\u0f66\u0f0b", "\u0f58\u0f7a\u0f51\u0f0b \u0f61\u0f72\u0f0b\u0f42\u0f7a\u0f0b \u0f40\u0f0b \u0f60\u0f51\u0f72 \u0f66\u0f0b"]}]}], "short_diff": [{"18": [{"\u0f54\u0f7a\u0f0b": ["\u0f67\u0f7a\u0f0b\u0f62\u0f74\u0f0b\u0f40 \u0f62\u0f0b", "\u0f60\u0f42\u0fb1\u0f74\u0f62\u0f0b", "\u0f61\u0f72\u0f53 \u0f0d_\u0f0d \u0f62\u0f92\u0fb1\u0f74\u0f0b \u0f58\u0f7a\u0f51\u0f0b \u0f66\u0f7c\u0f42\u0f66\u0f0b"], "\u0f66\u0fa3\u0f62\u0f0b": ["\u0f67\u0f7a\u0f0b\u0f62\u0f74\u0f0b\u0f40 \u0f62\u0f0b", "\u0f60\u0f42\u0fb1\u0f74\u0f62\u0f0b", "\u0f61\u0f72\u0f53 \u0f0d_\u0f0d \u0f62\u0f92\u0fb1\u0f74\u0f0b \u0f58\u0f7a\u0f51\u0f0b \u0f66\u0f7c\u0f42\u0f66\u0f0b"], "\u0f66\u0fa1\u0f7a\u0f0b": ["\u0f67\u0f7a\u0f0b\u0f62\u0f74\u0f0b\u0f40 \u0f62\u0f0b", "\u0f60\u0f42\u0fb1\u0f74\u0f62\u0f0b\u0f54\u0f0b", "\u0f61\u0f72\u0f53 \u0f0d_\u0f0d \u0f62\u0f92\u0fb1\u0f74\u0f0b \u0f58\u0f7a\u0f51\u0f0b \u0f66\u0f7c\u0f42\u0f66\u0f0b"]}]}]}, "ngram_freq": {"20": {"\u0f54\u0f7a\u0f0b": [["\u0f42\u0f49\u0f7a", "52"]], "\u0f66\u0fa3\u0f62\u0f0b": [["\u0f42\u0f49\u0f7a", "52"]], "\u0f66\u0fa1\u0f7a\u0f0b": [["\u0f66\u0f99\u0f7a", "4"]]}, "1": {"\u0f54\u0f7a\u0f0b": [["\u0f58\u0f7a\u0f51\u0f0b\u0f54\u0f66", "593"], ["\u0f53\u0f0b\u0f58\u0f7a\u0f51\u0f0b\u0f54\u0f66", "63"]], "\u0f66\u0fa3\u0f62\u0f0b": [["\u0f58\u0f7a\u0f51\u0f0b\u0f54\u0f66", "593"], ["\u0f53\u0f0b\u0f58\u0f7a\u0f51\u0f0b\u0f54\u0f66", "63"]], "\u0f66\u0fa1\u0f7a\u0f0b": [["\u0f58\u0f7a\u0f51\u0f0b\u0f54\u0f60\u0f72", "267"], ["\u0f53\u0f0b\u0f58\u0f7a\u0f51\u0f0b\u0f54\u0f60\u0f72", "1369"], ["\u0f58\u0f7a\u0f51\u0f0b\u0f54\u0f60\u0f72\u0f0b\u0f63\u0f58", "104"]]}, "21": {"\u0f54\u0f7a\u0f0b": [["", "1"], ["\u0f0d\u0f0d", "216"]], "\u0f66\u0fa3\u0f62\u0f0b": [["", "1"], ["\u0f0d\u0f0d", "216"]], "\u0f66\u0fa1\u0f7a\u0f0b": [["", "1"], ["\u0f0d\u0f0d", "216"]]}, "4": {"\u0f54\u0f7a\u0f0b": [["\u0f56\u0f5e\u0f72\u0f53", "3439"], ["\u0f51\u0f7a\u0f0b\u0f56\u0f5e\u0f72\u0f53", "629"]], "\u0f66\u0fa3\u0f62\u0f0b": [["\u0f56\u0f5e\u0f72\u0f53", "3439"], ["\u0f51\u0f7a\u0f0b\u0f56\u0f5e\u0f72\u0f53", "629"]], "\u0f66\u0fa1\u0f7a\u0f0b": [["\u0f42\u0f5e\u0f53", "1356"], ["\u0f51\u0f7a\u0f0b\u0f42\u0f5e\u0f53", "597"], ["\u0f42\u0f5e\u0f53\u0f0b\u0f58\u0f72\u0f53", "86"]]}, "6": {"\u0f54\u0f7a\u0f0b": [["\u0f56\u0f62\u0f92\u0fb1\u0f74\u0f42", "18"]], "\u0f66\u0fa3\u0f62\u0f0b": [["\u0f56\u0f62\u0f92\u0fb1\u0f74\u0f42", "18"]], "\u0f66\u0fa1\u0f7a\u0f0b": [["\u0f62\u0f92\u0fb1\u0f74\u0f42", "59"]]}, "7": {"\u0f54\u0f7a\u0f0b": [["\u0f56\u0f62\u0f92\u0fb1\u0f74\u0f42", "18"]], "\u0f66\u0fa3\u0f62\u0f0b": [["\u0f56\u0f62\u0f92\u0fb1\u0f74\u0f42", "18"]], "\u0f66\u0fa1\u0f7a\u0f0b": [["\u0f62\u0f92\u0fb1\u0f74\u0f42", "59"], ["\u0f62\u0f92\u0fb1\u0f74\u0f42_\u0f0d", "57"]]}, "9": {"\u0f54\u0f7a\u0f0b": [["\u0f40\u0fb1\u0f72\u0f66", "6156"], ["\u0f40\u0fb1\u0f72\u0f66\u0f0b\u0f56\u0fb1", "148"], ["\u0f61\u0f72\u0f51\u0f0b\u0f40\u0fb1\u0f72\u0f66", "133"]], "\u0f66\u0fa3\u0f62\u0f0b": [["\u0f40\u0fb1\u0f72\u0f66", "6156"], ["\u0f40\u0fb1\u0f72\u0f66\u0f0b\u0f56\u0fb1", "148"], ["\u0f61\u0f72\u0f51\u0f0b\u0f40\u0fb1\u0f72\u0f66", "133"]], "\u0f66\u0fa1\u0f7a\u0f0b": [["\u0f40\u0fb1\u0f72", "5256"], ["\u0f40\u0fb1\u0f72\u0f0b\u0f56\u0fb1", "598"], ["\u0f61\u0f72\u0f51\u0f0b\u0f40\u0fb1\u0f72", "6835"]]}, "13": {"\u0f54\u0f7a\u0f0b": [["\u0f56\u0f74\u0f44\u0f0b\u0f56", "291"]], "\u0f66\u0fa3\u0f62\u0f0b": [["\u0f56\u0f74\u0f44\u0f0b\u0f56", "291"]], "\u0f66\u0fa1\u0f7a\u0f0b": []}, "3": {"\u0f54\u0f7a\u0f0b": [["\u0f56\u0f62\u0f9f\u0f42\u0f66\u0f0b\u0f54\u0f60\u0f72", "641"]], "\u0f66\u0fa3\u0f62\u0f0b": [["\u0f56\u0f62\u0f9f\u0f42\u0f66\u0f0b\u0f54\u0f60\u0f72", "641"]], "\u0f66\u0fa1\u0f7a\u0f0b": [["\u0f56\u0f62\u0f9f\u0f42\u0f0b\u0f54\u0f60\u0f72", "168"]]}, "12": {"\u0f54\u0f7a\u0f0b": [["\u0f62\u0f9f\u0f7c\u0f42\u0f66", "481"]], "\u0f66\u0fa3\u0f62\u0f0b": [["\u0f62\u0f9f\u0f7c\u0f42\u0f66", "481"]], "\u0f66\u0fa1\u0f7a\u0f0b": [["\u0f62\u0f9f\u0f7c\u0f42", "711"]]}, "15": {"\u0f54\u0f7a\u0f0b": [["\u0f56\u0f63\u0f9f\u0f0b\u0f56\u0f60\u0f72", "603"]], "\u0f66\u0fa3\u0f62\u0f0b": [["\u0f56\u0f63\u0f9f\u0f0b\u0f56\u0f60\u0f72", "603"]], "\u0f66\u0fa1\u0f7a\u0f0b": [["\u0f63\u0f9f\u0f0b\u0f56\u0f60\u0f72", "1898"]]}, "17": {"\u0f54\u0f7a\u0f0b": [], "\u0f66\u0fa3\u0f62\u0f0b": [], "\u0f66\u0fa1\u0f7a\u0f0b": []}, "18": {"\u0f54\u0f7a\u0f0b": [["\u0f60\u0f42\u0fb1\u0f74\u0f62", "31151"]], "\u0f66\u0fa3\u0f62\u0f0b": [["\u0f60\u0f42\u0fb1\u0f74\u0f62", "31151"]], "\u0f66\u0fa1\u0f7a\u0f0b": []}, "16": {"\u0f54\u0f7a\u0f0b": [["\u0f60\u0f47\u0f72\u0f42\u0f66", "153"], ["\u0f0d_\u0f0d\u0f60\u0f47\u0f72\u0f42\u0f66", "1209"]], "\u0f66\u0fa3\u0f62\u0f0b": [["\u0f60\u0f47\u0f72\u0f42\u0f66", "153"], ["\u0f0d_\u0f0d\u0f60\u0f47\u0f72\u0f42\u0f66", "1209"]], "\u0f66\u0fa1\u0f7a\u0f0b": [["\u0f60\u0f47\u0f72\u0f42", "226"], ["\u0f0d_\u0f0d\u0f60\u0f47\u0f72\u0f42", "6745"]]}, "2": {"\u0f54\u0f7a\u0f0b": [["\u0f61\u0f7c\u0f44\u0f66\u0f0b\u0f51\u0f42", "117"]], "\u0f66\u0fa3\u0f62\u0f0b": [["\u0f61\u0f7c\u0f44\u0f66\u0f0b\u0f51\u0f42", "117"]], "\u0f66\u0fa1\u0f7a\u0f0b": [["\u0f61\u0f44\u0f0b\u0f51\u0f42", "71201"]]}, "8": {"\u0f54\u0f7a\u0f0b": [["\u0f62\u0f7c\u0f63\u0f0b\u0f54", "655"]], "\u0f66\u0fa3\u0f62\u0f0b": [["\u0f62\u0f7c\u0f63\u0f0b\u0f54", "655"]], "\u0f66\u0fa1\u0f7a\u0f0b": [["\u0f62\u0f7c\u0f63\u0f0b\u0f54\u0f66", "109"]]}, "10": {"\u0f54\u0f7a\u0f0b": [["\u0f42\u0fb1\u0f72", "3024"], ["\u0f56\u0f62\u0f9f\u0f53\u0f0b\u0f42\u0fb1\u0f72", "141"]], "\u0f66\u0fa3\u0f62\u0f0b": [["\u0f42\u0fb1\u0f72", "3024"], ["\u0f56\u0f62\u0f9f\u0f53\u0f0b\u0f42\u0fb1\u0f72", "141"]], "\u0f66\u0fa1\u0f7a\u0f0b": [["\u0f42\u0fb1\u0f72\u0f66", "7492"], ["\u0f56\u0f62\u0f9f\u0f53\u0f0b\u0f42\u0fb1\u0f72\u0f66", "215"]]}, "5": {"\u0f54\u0f7a\u0f0b": [["\u0f56\u0f62\u0f92\u0fb1\u0f74\u0f42", "18"]], "\u0f66\u0fa3\u0f62\u0f0b": [["\u0f56\u0f62\u0f92\u0fb1\u0f74\u0f42", "18"]], "\u0f66\u0fa1\u0f7a\u0f0b": [["\u0f62\u0f92\u0fb1\u0f74\u0f42", "59"]]}, "19": {"\u0f54\u0f7a\u0f0b": [["", "1"], ["\u0f58\u0f7a\u0f51", "12565"], ["\u0f58\u0fb1\u0f0b\u0f44\u0f53", "13707"], ["\u0f58\u0fb1\u0f0b\u0f44\u0f53\u0f0b\u0f58\u0f7a\u0f51", "46"]], "\u0f66\u0fa3\u0f62\u0f0b": [["", "1"], ["\u0f58\u0f7a\u0f51", "12565"], ["\u0f58\u0fb1\u0f0b\u0f44\u0f53", "13707"], ["\u0f58\u0fb1\u0f0b\u0f44\u0f53\u0f0b\u0f58\u0f7a\u0f51", "46"]], "\u0f66\u0fa1\u0f7a\u0f0b": [["\u0f60\u0f51\u0f66", "949"], ["\u0f58\u0fb1\u0f0b\u0f44\u0f53\u0f0b\u0f60\u0f51\u0f66", "196"]]}, "14": {"\u0f54\u0f7a\u0f0b": [["\u0f56\u0f74\u0f44\u0f0b\u0f56", "291"]], "\u0f66\u0fa3\u0f62\u0f0b": [["\u0f56\u0f74\u0f44\u0f0b\u0f56", "291"]], "\u0f66\u0fa1\u0f7a\u0f0b": []}, "11": {"\u0f54\u0f7a\u0f0b": [["\u0f56\u0f63\u0f9f\u0f7c\u0f66", "7"]], "\u0f66\u0fa3\u0f62\u0f0b": [["\u0f56\u0f63\u0f9f\u0f7c\u0f66", "7"]], "\u0f66\u0fa1\u0f7a\u0f0b": [["\u0f63\u0f9f\u0f7c\u0f66", "546"]]}}}
+﻿{
+    "Stats": {
+        "Categorised": "17 notes (77.27%)",
+        "Notes’ total": 22,
+        "Profiles": [
+            "པེ་=སྣར་ སྡེ་: 95.24% (20 notes)",
+            "པེ་=སྡེ་=སྣར་: 4.76% (1 notes)"
+        ],
+        "automatic_categorisation": {
+            "min_mod": {
+                "particle_groups": 5
+            },
+            "particle_issues": {
+                "po-bo-pa-ba": 1
+            },
+            "spelling_mistake": {
+                "non_word": {
+                    "well_formed": 2
+                }
+            },
+            "sskrt": 1,
+            "verb_difference": {
+                "diff_tense": 6,
+                "not_sure": 1
+            }
+        },
+        "dunno": {
+            "no_diff": 4,
+            "short_diff": 1
+        },
+        "empty_notes": 1,
+        "manual_categorisation": {
+            "long_difference": {},
+            "manual_evaluation": {
+                "meaning_difference": {}
+            }
+        },
+        "ngram_freq": {},
+        "profile": {}
+    },
+    "automatic_categorisation": {
+        "min_mod": {
+            "min_mod_groups": [],
+            "particle_groups": [
+                {
+                    "8": [
+                        [
+                            "jedra"
+                        ],
+                        {
+                            "པེ་": [
+                                "པ འི །_། ཏིང་འཛིན་",
+                                "རོལ་པ་",
+                                "བསམ་ མི་ ཁྱབ་པ ར་ སྤྲོ"
+                            ],
+                            "སྡེ་": [
+                                "པ འི །_། ཏིང་འཛིན་",
+                                "རོལ་པ ས་",
+                                "བསམ་ མི་ ཁྱབ་པ ར་ སྤྲོ"
+                            ],
+                            "སྣར་": [
+                                "པ འི །_། ཏིང་འཛིན་",
+                                "རོལ་པ་",
+                                "བསམ་ མི་ ཁྱབ་པ ར་ སྤྲོ"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "9": [
+                        [
+                            "dreldra",
+                            "jedra"
+                        ],
+                        {
+                            "པེ་": [
+                                "མེད །_། ངེས་པར་ ཡིད་",
+                                "ཀྱིས་",
+                                "བྱ་ རྒོད་ བཅིངས་ བསད་ ན"
+                            ],
+                            "སྡེ་": [
+                                "མེད །_། ངེས་པར་ ཡིད་",
+                                "ཀྱི་",
+                                "བྱ་ རྒོད་ བཅིངས་ བསད་ ན"
+                            ],
+                            "སྣར་": [
+                                "མེད །_། ངེས་པར་ ཡིད་",
+                                "ཀྱིས་",
+                                "བྱ་ རྒོད་ བཅིངས་ བསད་ ན"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "10": [
+                        [
+                            "dreldra",
+                            "jedra"
+                        ],
+                        {
+                            "པེ་": [
+                                "མེད །_། སྟོང་ ཉིད་ བརྟན་",
+                                "གྱི་",
+                                "འཁྲུལ་པ་ སྤང་ དུ་ མེད"
+                            ],
+                            "སྡེ་": [
+                                "མེད །_། སྟོང་ ཉིད་ བརྟན་",
+                                "གྱིས་",
+                                "འཁྲུལ་པ་ སྤང་ དུ་ མེད"
+                            ],
+                            "སྣར་": [
+                                "མེད །_། སྟོང་ ཉིད་ བརྟན་",
+                                "གྱི་",
+                                "འཁྲུལ་པ་ སྤང་ དུ་ མེད"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "13": [
+                        [
+                            "jedra"
+                        ],
+                        {
+                            "པེ་": [
+                                "ནམ་མཁ འི་ མེ་ཏོག་",
+                                "བུང་བ་",
+                                "འཇིབ་པ་ མཐོང་བ་ འདྲ"
+                            ],
+                            "སྡེ་": [
+                                "ནམ་མཁ འི་ མེ་ཏོག་",
+                                "བུང་བ ས་",
+                                "འཇིབ་པ་ མཐོང་བ་ འདྲ"
+                            ],
+                            "སྣར་": [
+                                "ནམ་མཁ འི་ མེ་ཏོག་",
+                                "བུང་བ་",
+                                "འཇིབ་པ་ མཐོང་བ་ འདྲ"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "14": [
+                        [
+                            "jedra"
+                        ],
+                        {
+                            "པེ་": [
+                                "ནམ་མཁ འི་ མེ་ཏོག་",
+                                "བུང་བ་",
+                                "འཇིབ་པ་ འདྲ་བ་ ཡི"
+                            ],
+                            "སྡེ་": [
+                                "ནམ་མཁ འི་ མེ་ཏོག་",
+                                "བུང་བ ས་",
+                                "འཇིབ་པ་ འདྲ་བ་ ཡི"
+                            ],
+                            "སྣར་": [
+                                "ནམ་མཁ འི་ མེ་ཏོག་",
+                                "བུང་བ་",
+                                "འཇིབ་པ་ འདྲ་བ་ ཡི"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "particle_issues": {
+            "added_particle": [],
+            "agreement_issue": [],
+            "different_particles": [],
+            "other": [],
+            "po-bo-pa-ba": [
+                {
+                    "18": [
+                        "dagdra_pa",
+                        {
+                            "པེ་": [
+                                "ཧེ་རུ་ཀ ར་",
+                                "འགྱུར་",
+                                "ཡིན །_། རྒྱུ་ མེད་ སོགས་"
+                            ],
+                            "སྡེ་": [
+                                "ཧེ་རུ་ཀ ར་",
+                                "འགྱུར་པ་",
+                                "ཡིན །_། རྒྱུ་ མེད་ སོགས་"
+                            ],
+                            "སྣར་": [
+                                "ཧེ་རུ་ཀ ར་",
+                                "འགྱུར་",
+                                "ཡིན །_། རྒྱུ་ མེད་ སོགས་"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "spelling_mistake": {
+            "missing_vowel": [],
+            "nga_da": [],
+            "non_word": {
+                "ill_formed": [],
+                "well_formed": [
+                    {
+                        "11": [
+                            {
+                                "པེ་": [
+                                    "ལས་ བྱུང་ དེ་ ནི་ ངེས་",
+                                    "#བལྟོས་",
+                                    "ལ །_། མི་ རྟོག་"
+                                ],
+                                "སྡེ་": [
+                                    "ལས་ བྱུང་ དེ་ ནི་ ངེས་",
+                                    "ལྟོས་",
+                                    "ལ །_། མི་ རྟོག་"
+                                ],
+                                "སྣར་": [
+                                    "ལས་ བྱུང་ དེ་ ནི་ ངེས་",
+                                    "#བལྟོས་",
+                                    "ལ །_། མི་ རྟོག་"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "20": [
+                            {
+                                "པེ་": [
+                                    "ས་པ འི་ ཚེ་ སྐྱི་ ཤོད་",
+                                    "#གཉེ་",
+                                    "ཐང་ བཀྲ་ཤིས་ དཔལ་ གྱི་"
+                                ],
+                                "སྡེ་": [
+                                    "ས་པ འི་ ཚེ་ སྐྱི་ ཤོད་",
+                                    "སྙེ་",
+                                    "ཐང་ བཀྲ་ཤིས་ དཔལ་ གྱི་"
+                                ],
+                                "སྣར་": [
+                                    "ས་པ འི་ ཚེ་ སྐྱི་ ཤོད་",
+                                    "#གཉེ་",
+                                    "ཐང་ བཀྲ་ཤིས་ དཔལ་ གྱི་"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "sskrt": [
+            {
+                "17": [
+                    {
+                        "པེ་": [
+                            "འཇིག་ འཛིན་ ངོ་ཚ་",
+                            "ཨ་བ་ #དྷུ་ #ཏཱི་",
+                            "སྤོངས །_། བྱང་ཆུབ་ སྨོན་"
+                        ],
+                        "སྡེ་": [
+                            "འཇིག་ འཛིན་ ངོ་ཚ་",
+                            "ཨ་ ཝ་ #དྷཱུ་ #ཏཱིས་",
+                            "སྤོངས །_། བྱང་ཆུབ་ སྨོན་"
+                        ],
+                        "སྣར་": [
+                            "འཇིག་ འཛིན་ ངོ་ཚ་",
+                            "ཨ་བ་ #དྷུ་ #ཏཱི་",
+                            "སྤོངས །_། བྱང་ཆུབ་ སྨོན་"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "verb_difference": {
+            "diff_tense": [
+                {
+                    "3": [
+                        [
+                            "《བརྟགས》ཞེས་པ།【〈རྟོག〉གི་ འདས་པ། ཐ་དད་པ།】",
+                            "《བརྟག》ཞེས་པ།【〈རྟོག〉གི་ མ་འོངས་པ། ཐ་དད་པ།】"
+                        ],
+                        {
+                            "པེ་": [
+                                "པ ར་ ཡོངས་སུ་ སྣང ་།_།",
+                                "བརྟགས་པ འི་",
+                                "སྤྲོས་པ ས་ བསྐྱེད་ ལ་"
+                            ],
+                            "སྡེ་": [
+                                "པ ར་ ཡོངས་སུ་ སྣང ་།_།",
+                                "བརྟག་པ འི་",
+                                "སྤྲོས་པ ས་ བསྐྱེད་ ལ་"
+                            ],
+                            "སྣར་": [
+                                "པ ར་ ཡོངས་སུ་ སྣང ་།_།",
+                                "བརྟགས་པ འི་",
+                                "སྤྲོས་པ ས་ བསྐྱེད་ ལ་"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "5": [
+                        [
+                            "《བརྒྱུག》ཞེས་པ།【〈རྒྱུག〉གི་ མ་འོངས་པ།】【〈རྒྱུག〉གི་ མ་འོངས་པ། ཐ་མི་དད་པ།】",
+                            "《རྒྱུག》ཞེས་པ།【〈རྒྱུག〉གི་ ད་ལྟ་བ།】【〈རྒྱུག〉གི་ ད་ལྟ་བ། ཐ་མི་དད་པ།】"
+                        ],
+                        {
+                            "པེ་": [
+                                "སྨིག་རྒྱུ་ ཆུར་ མཐོང་ ཡོངས་",
+                                "བརྒྱུག་",
+                                "ཀྱང ་།_། དུབ་པ ས་ འཆི་"
+                            ],
+                            "སྡེ་": [
+                                "སྨིག་རྒྱུ་ ཆུར་ མཐོང་ ཡོངས་",
+                                "རྒྱུག་",
+                                "ཀྱང ་།_། དུབ་པ ས་ འཆི་"
+                            ],
+                            "སྣར་": [
+                                "སྨིག་རྒྱུ་ ཆུར་ མཐོང་ ཡོངས་",
+                                "བརྒྱུག་",
+                                "ཀྱང ་།_། དུབ་པ ས་ འཆི་"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "6": [
+                        [
+                            "《བརྒྱུག》ཞེས་པ།【〈རྒྱུག〉གི་ མ་འོངས་པ།】【〈རྒྱུག〉གི་ མ་འོངས་པ། ཐ་མི་དད་པ།】",
+                            "《རྒྱུག》ཞེས་པ།【〈རྒྱུག〉གི་ ད་ལྟ་བ།】【〈རྒྱུག〉གི་ ད་ལྟ་བ། ཐ་མི་དད་པ།】"
+                        ],
+                        {
+                            "པེ་": [
+                                "སྨིག་རྒྱུ་ ལ་ ནི་ མ་",
+                                "བརྒྱུག་",
+                                "དང ་།_། ཡུལ་ གྱི་"
+                            ],
+                            "སྡེ་": [
+                                "སྨིག་རྒྱུ་ ལ་ ནི་ མ་",
+                                "རྒྱུག་",
+                                "དང ་།_། ཡུལ་ གྱི་"
+                            ],
+                            "སྣར་": [
+                                "སྨིག་རྒྱུ་ ལ་ ནི་ མ་",
+                                "བརྒྱུག་",
+                                "དང ་།_། ཡུལ་ གྱི་"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "7": [
+                        [
+                            "《བརྒྱུག》ཞེས་པ།【〈རྒྱུག〉གི་ མ་འོངས་པ།】【〈རྒྱུག〉གི་ མ་འོངས་པ། ཐ་མི་དད་པ།】",
+                            "《རྒྱུག》ཞེས་པ།【〈རྒྱུག〉གི་ ད་ལྟ་བ།】【〈རྒྱུག〉གི་ ད་ལྟ་བ། ཐ་མི་དད་པ།】"
+                        ],
+                        {
+                            "པེ་": [
+                                "ཤེས་ ཅི་ཞིག་ འདོད་པ ས་",
+                                "བརྒྱུག",
+                                "_། གྲོང་ དུ་ ལོངས་སྤྱོད་"
+                            ],
+                            "སྡེ་": [
+                                "ཤེས་ ཅི་ཞིག་ འདོད་པ ས་",
+                                "རྒྱུག",
+                                "_། གྲོང་ དུ་ ལོངས་སྤྱོད་"
+                            ],
+                            "སྣར་": [
+                                "ཤེས་ ཅི་ཞིག་ འདོད་པ ས་",
+                                "བརྒྱུག",
+                                "_། གྲོང་ དུ་ ལོངས་སྤྱོད་"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "12": [
+                        [
+                            "《རྟོགས》ཞེས་པ།【〈རྟོག〉གི་ སྐུལ་ཚིག ཐ་དད་པ།】",
+                            "《རྟོག》ཞེས་པ།【〈རྟོག〉གི་ ད་ལྟ་བ། ཐ་དད་པ།】"
+                        ],
+                        {
+                            "པེ་": [
+                                "འདྲ་ དངོས་པོ་ མཉམ་པ ར་",
+                                "རྟོགས",
+                                "། དེ ས་ སྦྱངས་ བག་ཆགས་"
+                            ],
+                            "སྡེ་": [
+                                "འདྲ་ དངོས་པོ་ མཉམ་པ ར་",
+                                "རྟོག",
+                                "། དེ ས་ སྦྱངས་ བག་ཆགས་"
+                            ],
+                            "སྣར་": [
+                                "འདྲ་ དངོས་པོ་ མཉམ་པ ར་",
+                                "རྟོགས",
+                                "། དེ ས་ སྦྱངས་ བག་ཆགས་"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "15": [
+                        [
+                            "《བལྟ》ཞེས་པ།【〈ལྟ〉གི་ མ་འོངས་པ།】【〈ལྟ〉གི་ མ་འོངས་པ། ཐ་དད་པ།】",
+                            "《ལྟ》ཞེས་པ།【〈ལྟ〉གི་ ད་ལྟ་བ།】【〈ལྟ〉གི་ ད་ལྟ་བ། ཐ་དད་པ།】"
+                        ],
+                        {
+                            "པེ་": [
+                                " །_། བདག་ དང་ གཞན་ དུ་",
+                                "བལྟ་བ འི་",
+                                "འཁྲུལ་པ་ ཆོམ །_། "
+                            ],
+                            "སྡེ་": [
+                                " །_། བདག་ དང་ གཞན་ དུ་",
+                                "ལྟ་བ འི་",
+                                "འཁྲུལ་པ་ ཆོམ །_། "
+                            ],
+                            "སྣར་": [
+                                " །_། བདག་ དང་ གཞན་ དུ་",
+                                "བལྟ་བ འི་",
+                                "འཁྲུལ་པ་ ཆོམ །_། "
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "diff_verb": [],
+            "not_sure": [
+                {
+                    "16": [
+                        [
+                            "《འཇིགས》ཞེས་པ།【】",
+                            "《འཇིག》ཞེས་པ།【〈འཇིག〉གི་ ད་ལྟ་བ། ཐ་དད་པ།】【〈འཇིག〉གི་ ད་ལྟ་བ། ཐ་མི་དད་པ།】【〈འཇིག〉གི་ མ་འོངས་པ། ཐ་མི་དད་པ།】"
+                        ],
+                        {
+                            "པེ་": [
+                                "རྗེ་ ཕབ་ ནས་ ནི །_།",
+                                "འཇིགས་",
+                                "འཛིན་ ངོ་ཚ་ ཨ་ ཝ་ #དྷཱུ་"
+                            ],
+                            "སྡེ་": [
+                                "རྗེ་ ཕབ་ ནས་ ནི །_།",
+                                "འཇིག་",
+                                "འཛིན་ ངོ་ཚ་ ཨ་ ཝ་ #དྷཱུ་"
+                            ],
+                            "སྣར་": [
+                                "རྗེ་ ཕབ་ ནས་ ནི །_།",
+                                "འཇིགས་",
+                                "འཛིན་ ངོ་ཚ་ ཨ་ ཝ་ #དྷཱུ་"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "dunno": {
+        "long_diff": [],
+        "no_diff": [
+            {
+                "1": [
+                    {
+                        "པེ་": [
+                            "ཏིང་འཛིན་ བླ་ ན་",
+                            "མེད་པ ས་",
+                            "ལམ་ འདི ས་ ཀྱེ །_། བདུད་"
+                        ],
+                        "སྡེ་": [
+                            "ཏིང་འཛིན་ བླ་ ན་",
+                            "མེད་པ འི་",
+                            "ལམ་ འདི ས་ ཀྱེ །_། བདུད་"
+                        ],
+                        "སྣར་": [
+                            "ཏིང་འཛིན་ བླ་ ན་",
+                            "མེད་པ ས་",
+                            "ལམ་ འདི ས་ ཀྱེ །_། བདུད་"
+                        ]
+                    }
+                ]
+            },
+            {
+                "2": [
+                    {
+                        "པེ་": [
+                            " །_། ནམ་མཁ འི་ ངོ་བོ་",
+                            "ཡོངས་ དག་",
+                            "ཇི་ལྟ་ བར །_། "
+                        ],
+                        "སྡེ་": [
+                            " །_། ནམ་མཁ འི་ ངོ་བོ་",
+                            "ཡང་དག་",
+                            "ཇི་ལྟ་ བར །_། "
+                        ],
+                        "སྣར་": [
+                            " །_། ནམ་མཁ འི་ ངོ་བོ་",
+                            "ཡོངས་ དག་",
+                            "ཇི་ལྟ་ བར །_། "
+                        ]
+                    }
+                ]
+            },
+            {
+                "4": [
+                    {
+                        "པེ་": [
+                            "འཇིགས་ དང་ ཁྲོ་ ལས་ དེ་",
+                            "བཞིན་",
+                            "མིན །_། གང་ གང་ རྣམ་"
+                        ],
+                        "སྡེ་": [
+                            "འཇིགས་ དང་ ཁྲོ་ ལས་ དེ་",
+                            "གཞན་",
+                            "མིན །_། གང་ གང་ རྣམ་"
+                        ],
+                        "སྣར་": [
+                            "འཇིགས་ དང་ ཁྲོ་ ལས་ དེ་",
+                            "བཞིན་",
+                            "མིན །_། གང་ གང་ རྣམ་"
+                        ]
+                    }
+                ]
+            },
+            {
+                "19": [
+                    {
+                        "པེ་": [
+                            " །_། སྲིད་ དང་ མྱ་ངན་",
+                            "",
+                            "མེད་ ཡི་གེ་ ཀ་ འདི ས་"
+                        ],
+                        "སྡེ་": [
+                            " །_། སྲིད་ དང་ མྱ་ངན་",
+                            "འདས་",
+                            "མེད་ ཡི་གེ་ ཀ་ འདི ས་"
+                        ],
+                        "སྣར་": [
+                            " །_། སྲིད་ དང་ མྱ་ངན་",
+                            "",
+                            "མེད་ ཡི་གེ་ ཀ་ འདི ས་"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "short_diff": [
+            {
+                "18": [
+                    {
+                        "པེ་": [
+                            "ཧེ་རུ་ཀ ར་",
+                            "འགྱུར་",
+                            "ཡིན །_། རྒྱུ་ མེད་ སོགས་"
+                        ],
+                        "སྡེ་": [
+                            "ཧེ་རུ་ཀ ར་",
+                            "འགྱུར་པ་",
+                            "ཡིན །_། རྒྱུ་ མེད་ སོགས་"
+                        ],
+                        "སྣར་": [
+                            "ཧེ་རུ་ཀ ར་",
+                            "འགྱུར་",
+                            "ཡིན །_། རྒྱུ་ མེད་ སོགས་"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "empty_notes": [
+        {
+            "21": [
+                {
+                    "པེ་": [
+                        "བླངས་པ་ རྫོགས་ སོ །། ",
+                        "",
+                        ""
+                    ],
+                    "སྡེ་": [
+                        "བླངས་པ་ རྫོགས་ སོ །། ",
+                        "",
+                        ""
+                    ],
+                    "སྣར་": [
+                        "བླངས་པ་ རྫོགས་ སོ །། ",
+                        "",
+                        ""
+                    ]
+                }
+            ]
+        }
+    ],
+    "manual_categorisation": {
+        "long_difference": {
+            "differing_formulation": [],
+            "major_modification": []
+        },
+        "manual_evaluation": {
+            "derge_correct": [],
+            "meaning_difference": {
+                "great_diff": [],
+                "medium_diff": [],
+                "small_diff": []
+            }
+        }
+    },
+    "ngram_freq": {
+        "1": {
+            "པེ་": [
+                [
+                    "མེད་པས",
+                    "593"
+                ],
+                [
+                    "ན་མེད་པས",
+                    "63"
+                ]
+            ],
+            "སྡེ་": [
+                [
+                    "མེད་པའི",
+                    "267"
+                ],
+                [
+                    "ན་མེད་པའི",
+                    "1369"
+                ],
+                [
+                    "མེད་པའི་ལམ",
+                    "104"
+                ]
+            ],
+            "སྣར་": [
+                [
+                    "མེད་པས",
+                    "593"
+                ],
+                [
+                    "ན་མེད་པས",
+                    "63"
+                ]
+            ]
+        },
+        "10": {
+            "པེ་": [
+                [
+                    "གྱི",
+                    "3024"
+                ],
+                [
+                    "བརྟན་གྱི",
+                    "141"
+                ]
+            ],
+            "སྡེ་": [
+                [
+                    "གྱིས",
+                    "7492"
+                ],
+                [
+                    "བརྟན་གྱིས",
+                    "215"
+                ]
+            ],
+            "སྣར་": [
+                [
+                    "གྱི",
+                    "3024"
+                ],
+                [
+                    "བརྟན་གྱི",
+                    "141"
+                ]
+            ]
+        },
+        "11": {
+            "པེ་": [
+                [
+                    "བལྟོས",
+                    "7"
+                ]
+            ],
+            "སྡེ་": [
+                [
+                    "ལྟོས",
+                    "546"
+                ]
+            ],
+            "སྣར་": [
+                [
+                    "བལྟོས",
+                    "7"
+                ]
+            ]
+        },
+        "12": {
+            "པེ་": [
+                [
+                    "རྟོགས",
+                    "481"
+                ]
+            ],
+            "སྡེ་": [
+                [
+                    "རྟོག",
+                    "711"
+                ]
+            ],
+            "སྣར་": [
+                [
+                    "རྟོགས",
+                    "481"
+                ]
+            ]
+        },
+        "13": {
+            "པེ་": [
+                [
+                    "བུང་བ",
+                    "291"
+                ]
+            ],
+            "སྡེ་": [],
+            "སྣར་": [
+                [
+                    "བུང་བ",
+                    "291"
+                ]
+            ]
+        },
+        "14": {
+            "པེ་": [
+                [
+                    "བུང་བ",
+                    "291"
+                ]
+            ],
+            "སྡེ་": [],
+            "སྣར་": [
+                [
+                    "བུང་བ",
+                    "291"
+                ]
+            ]
+        },
+        "15": {
+            "པེ་": [
+                [
+                    "བལྟ་བའི",
+                    "603"
+                ]
+            ],
+            "སྡེ་": [
+                [
+                    "ལྟ་བའི",
+                    "1898"
+                ]
+            ],
+            "སྣར་": [
+                [
+                    "བལྟ་བའི",
+                    "603"
+                ]
+            ]
+        },
+        "16": {
+            "པེ་": [
+                [
+                    "འཇིགས",
+                    "153"
+                ],
+                [
+                    "།_།འཇིགས",
+                    "1209"
+                ]
+            ],
+            "སྡེ་": [
+                [
+                    "འཇིག",
+                    "226"
+                ],
+                [
+                    "།_།འཇིག",
+                    "6745"
+                ]
+            ],
+            "སྣར་": [
+                [
+                    "འཇིགས",
+                    "153"
+                ],
+                [
+                    "།_།འཇིགས",
+                    "1209"
+                ]
+            ]
+        },
+        "17": {
+            "པེ་": [],
+            "སྡེ་": [],
+            "སྣར་": []
+        },
+        "18": {
+            "པེ་": [
+                [
+                    "འགྱུར",
+                    "31151"
+                ]
+            ],
+            "སྡེ་": [],
+            "སྣར་": [
+                [
+                    "འགྱུར",
+                    "31151"
+                ]
+            ]
+        },
+        "19": {
+            "པེ་": [
+                [
+                    "",
+                    "1"
+                ],
+                [
+                    "མེད",
+                    "12565"
+                ],
+                [
+                    "མྱ་ངན",
+                    "13707"
+                ],
+                [
+                    "མྱ་ངན་མེད",
+                    "46"
+                ]
+            ],
+            "སྡེ་": [
+                [
+                    "འདས",
+                    "949"
+                ],
+                [
+                    "མྱ་ངན་འདས",
+                    "196"
+                ]
+            ],
+            "སྣར་": [
+                [
+                    "",
+                    "1"
+                ],
+                [
+                    "མེད",
+                    "12565"
+                ],
+                [
+                    "མྱ་ངན",
+                    "13707"
+                ],
+                [
+                    "མྱ་ངན་མེད",
+                    "46"
+                ]
+            ]
+        },
+        "2": {
+            "པེ་": [
+                [
+                    "ཡོངས་དག",
+                    "117"
+                ]
+            ],
+            "སྡེ་": [
+                [
+                    "ཡང་དག",
+                    "71201"
+                ]
+            ],
+            "སྣར་": [
+                [
+                    "ཡོངས་དག",
+                    "117"
+                ]
+            ]
+        },
+        "20": {
+            "པེ་": [
+                [
+                    "གཉེ",
+                    "52"
+                ]
+            ],
+            "སྡེ་": [
+                [
+                    "སྙེ",
+                    "4"
+                ]
+            ],
+            "སྣར་": [
+                [
+                    "གཉེ",
+                    "52"
+                ]
+            ]
+        },
+        "21": {
+            "པེ་": [
+                [
+                    "",
+                    "1"
+                ],
+                [
+                    "།།",
+                    "216"
+                ]
+            ],
+            "སྡེ་": [
+                [
+                    "",
+                    "1"
+                ],
+                [
+                    "།།",
+                    "216"
+                ]
+            ],
+            "སྣར་": [
+                [
+                    "",
+                    "1"
+                ],
+                [
+                    "།།",
+                    "216"
+                ]
+            ]
+        },
+        "3": {
+            "པེ་": [
+                [
+                    "བརྟགས་པའི",
+                    "641"
+                ]
+            ],
+            "སྡེ་": [
+                [
+                    "བརྟག་པའི",
+                    "168"
+                ]
+            ],
+            "སྣར་": [
+                [
+                    "བརྟགས་པའི",
+                    "641"
+                ]
+            ]
+        },
+        "4": {
+            "པེ་": [
+                [
+                    "བཞིན",
+                    "3439"
+                ],
+                [
+                    "དེ་བཞིན",
+                    "629"
+                ]
+            ],
+            "སྡེ་": [
+                [
+                    "གཞན",
+                    "1356"
+                ],
+                [
+                    "དེ་གཞན",
+                    "597"
+                ],
+                [
+                    "གཞན་མིན",
+                    "86"
+                ]
+            ],
+            "སྣར་": [
+                [
+                    "བཞིན",
+                    "3439"
+                ],
+                [
+                    "དེ་བཞིན",
+                    "629"
+                ]
+            ]
+        },
+        "5": {
+            "པེ་": [
+                [
+                    "བརྒྱུག",
+                    "18"
+                ]
+            ],
+            "སྡེ་": [
+                [
+                    "རྒྱུག",
+                    "59"
+                ]
+            ],
+            "སྣར་": [
+                [
+                    "བརྒྱུག",
+                    "18"
+                ]
+            ]
+        },
+        "6": {
+            "པེ་": [
+                [
+                    "བརྒྱུག",
+                    "18"
+                ]
+            ],
+            "སྡེ་": [
+                [
+                    "རྒྱུག",
+                    "59"
+                ]
+            ],
+            "སྣར་": [
+                [
+                    "བརྒྱུག",
+                    "18"
+                ]
+            ]
+        },
+        "7": {
+            "པེ་": [
+                [
+                    "བརྒྱུག",
+                    "18"
+                ]
+            ],
+            "སྡེ་": [
+                [
+                    "རྒྱུག",
+                    "59"
+                ],
+                [
+                    "རྒྱུག_།",
+                    "57"
+                ]
+            ],
+            "སྣར་": [
+                [
+                    "བརྒྱུག",
+                    "18"
+                ]
+            ]
+        },
+        "8": {
+            "པེ་": [
+                [
+                    "རོལ་པ",
+                    "655"
+                ]
+            ],
+            "སྡེ་": [
+                [
+                    "རོལ་པས",
+                    "109"
+                ]
+            ],
+            "སྣར་": [
+                [
+                    "རོལ་པ",
+                    "655"
+                ]
+            ]
+        },
+        "9": {
+            "པེ་": [
+                [
+                    "ཀྱིས",
+                    "6156"
+                ],
+                [
+                    "ཀྱིས་བྱ",
+                    "148"
+                ],
+                [
+                    "ཡིད་ཀྱིས",
+                    "133"
+                ]
+            ],
+            "སྡེ་": [
+                [
+                    "ཀྱི",
+                    "5256"
+                ],
+                [
+                    "ཀྱི་བྱ",
+                    "598"
+                ],
+                [
+                    "ཡིད་ཀྱི",
+                    "6835"
+                ]
+            ],
+            "སྣར་": [
+                [
+                    "ཀྱིས",
+                    "6156"
+                ],
+                [
+                    "ཀྱིས་བྱ",
+                    "148"
+                ],
+                [
+                    "ཡིད་ཀྱིས",
+                    "133"
+                ]
+            ]
+        }
+    },
+    "non_standard_notes": [],
+    "profile": {
+        "1": [
+            "པེ་=སྣར་ སྡེ་",
+            "95.24%"
+        ],
+        "10": [
+            "པེ་=སྣར་ སྡེ་",
+            "95.24%"
+        ],
+        "11": [
+            "པེ་=སྣར་ སྡེ་",
+            "95.24%"
+        ],
+        "12": [
+            "པེ་=སྣར་ སྡེ་",
+            "95.24%"
+        ],
+        "13": [
+            "པེ་=སྣར་ སྡེ་",
+            "95.24%"
+        ],
+        "14": [
+            "པེ་=སྣར་ སྡེ་",
+            "95.24%"
+        ],
+        "15": [
+            "པེ་=སྣར་ སྡེ་",
+            "95.24%"
+        ],
+        "16": [
+            "པེ་=སྣར་ སྡེ་",
+            "95.24%"
+        ],
+        "17": [
+            "པེ་=སྣར་ སྡེ་",
+            "95.24%"
+        ],
+        "18": [
+            "པེ་=སྣར་ སྡེ་",
+            "95.24%"
+        ],
+        "19": [
+            "པེ་=སྣར་ སྡེ་",
+            "95.24%"
+        ],
+        "2": [
+            "པེ་=སྣར་ སྡེ་",
+            "95.24%"
+        ],
+        "20": [
+            "པེ་=སྣར་ སྡེ་",
+            "95.24%"
+        ],
+        "21": [
+            "པེ་=སྡེ་=སྣར་",
+            "4.76%"
+        ],
+        "3": [
+            "པེ་=སྣར་ སྡེ་",
+            "95.24%"
+        ],
+        "4": [
+            "པེ་=སྣར་ སྡེ་",
+            "95.24%"
+        ],
+        "5": [
+            "པེ་=སྣར་ སྡེ་",
+            "95.24%"
+        ],
+        "6": [
+            "པེ་=སྣར་ སྡེ་",
+            "95.24%"
+        ],
+        "7": [
+            "པེ་=སྣར་ སྡེ་",
+            "95.24%"
+        ],
+        "8": [
+            "པེ་=སྣར་ སྡེ་",
+            "95.24%"
+        ],
+        "9": [
+            "པེ་=སྣར་ སྡེ་",
+            "95.24%"
+        ]
+    }
+}

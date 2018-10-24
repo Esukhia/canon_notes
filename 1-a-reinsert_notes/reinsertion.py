@@ -427,7 +427,7 @@ vol_num = 0
 works = []
 for f in sorted(os.listdir('input')):
     if f.endswith('txt') and f not in excluded:
-        csv = f.replace('.txt', '')+'.Csv'
+        csv = f.replace('.txt', '')+'.csv'
         works.append((f, csv))
 
 

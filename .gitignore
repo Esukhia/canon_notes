@@ -9,7 +9,7 @@ __pycache__/
 *.so
 
 # canon_notes data
-output/
+# output/
 
 # Distribution / packaging
 .Python

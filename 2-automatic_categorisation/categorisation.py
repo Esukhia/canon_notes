@@ -812,18 +812,45 @@ def ngram_frequency(prepared, all_ngrams):
     return note_ngrams
 
 
+def find_file_path(prefered, fallback):
+    """
+    makes a list of files
+    :param prefered: manually processed
+    :param fallback: automatically generated
+    :return:
+    """
+    more = os.listdir(fallback)
+    pref = os.listdir(prefered)
+    out = []
+    missing = []
+    for m in more:
+        if 'T3117' in m:
+            print('ok')
+        # for p in pref:
+        p = m.replace('_conc', '')
+        if p in pref:
+            out.append('{}/{}'.format(prefered, p))
+        else:
+            out.append('{}/{}'.format(fallback, m))
+            missing.append(m)
+    print('missing:', ', '.join(missing))
+    return sorted(list(set(out)))
+
+
 def process(in_path, template_path, total_stats):
     global collection_eds, file, debug
     raw_template = open_file(template_path)
     verbs = jp.decode(open_file('./resources/monlam_verbs.json'))
     all_ngrams = open_ngrams()
-    for f in os.listdir(in_path):
+    files = find_file_path(in_path, '../1-a-reinsert_notes/output/conc_yaml')
+    for filename in files:
+        f = filename.split('/')[-1]
         print(f)
         if debug and f != file:
             continue
-        work_name = f.replace('_conc.txt', '')
+        work_name = f.replace('_conc.txt', '').replace('.txt', '')
 
-        raw = open_file('{}/{}'.format(in_path, f))
+        raw = open_file(filename)
         # setting collection_eds for the current file
         collection_eds = list({a for a in re.findall(r' ([^ ]+): ', raw)})
         if len(collection_eds) > 4:
@@ -908,9 +935,9 @@ def process(in_path, template_path, total_stats):
 
 
 if __name__ == '__main__':
-    debug = True
+    debug = False
     #file = '563_རྒྱུད་ཀྱི་རྒྱལ་པོ་ཆེན་པོ་དཔལ་དགྱེས་པའི་རྡོ་རྗེའི་དཀའ་འགྲེལ་སྤྱན་འབྱེད།_conc.txt'
-    file = '10-34_འཕགས་པ་བཟང་པོ་སྤྱོད་པའི་སྨོན་ལམ་གྱི་འགྲེལ་པ།_conc.txt'
+    file = 'T4393.txt'
     note_num = 0
 
     in_path = '../1-b-manually_corrected_conc/notes_formatted'

@@ -422,12 +422,12 @@ def generate_outputs(text_name, notes_name, context, in_dir='input', out_dir='ou
 
 excluded = [#'11-20_ཆོས་མངོན་པའི་འགྲེལ་པ་གནད་ཀྱི་སྒྲོན་མ།.txt',
             ]
-vol_num = 0
+vol_num = 165
 
 works = []
 for f in sorted(os.listdir('input')):
     if f.endswith('txt') and f not in excluded:
-        csv = f.replace('.txt', '')+'.Csv'
+        csv = f.replace('.txt', '')+'.csv'
         works.append((f, csv))
 
 

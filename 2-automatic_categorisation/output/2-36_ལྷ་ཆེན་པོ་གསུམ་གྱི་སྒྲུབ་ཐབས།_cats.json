@@ -1,0 +1,190 @@
+﻿{
+    "Stats": {
+        "Categorised": "3 notes (100.00%)",
+        "Notes’ total": 3,
+        "Profiles": [
+            "པེ་ སྡེ་: 66.67% (2 notes)",
+            "པེ་=སྡེ་: 33.33% (1 notes)"
+        ],
+        "automatic_categorisation": {
+            "min_mod": {},
+            "particle_issues": {},
+            "spelling_mistake": {
+                "non_word": {}
+            },
+            "sskrt": 1,
+            "verb_difference": {
+                "diff_verb": 1
+            }
+        },
+        "dunno": {},
+        "empty_notes": 1,
+        "manual_categorisation": {
+            "long_difference": {},
+            "manual_evaluation": {
+                "meaning_difference": {}
+            }
+        },
+        "ngram_freq": {},
+        "profile": {}
+    },
+    "automatic_categorisation": {
+        "min_mod": {
+            "min_mod_groups": [],
+            "particle_groups": []
+        },
+        "particle_issues": {
+            "added_particle": [],
+            "agreement_issue": [],
+            "different_particles": [],
+            "other": [],
+            "po-bo-pa-ba": []
+        },
+        "spelling_mistake": {
+            "missing_vowel": [],
+            "nga_da": [],
+            "non_word": {
+                "ill_formed": [],
+                "well_formed": []
+            }
+        },
+        "sskrt": [
+            {
+                "2": [
+                    {
+                        "པེ་": [
+                            "བྱེད་ ཀྱི་ བསྒྲུབ་ ཐབས་ #ཨརྱ་",
+                            "#ཨེ་ ཀ་ #པྲྀཙྪ །_ #མངྒ་ #ལཾ",
+                            "_།། "
+                        ],
+                        "སྡེ་": [
+                            "བྱེད་ ཀྱི་ བསྒྲུབ་ ཐབས་ #ཨརྱ་",
+                            "#དྷེ་བ ས་ མཛད་པ །།_ #ཨྠིྀ",
+                            "_།། "
+                        ]
+                    }
+                ]
+            }
+        ],
+        "verb_difference": {
+            "diff_tense": [],
+            "diff_verb": [
+                {
+                    "1": [
+                        [
+                            "《བཀྲིས》ཞེས་པ།【〈འཁྲིད〉གི་ འདས་པ།】",
+                            "《དཀྲིས》ཞེས་པ།【〈དཀྲིས〉གི་ འདས་པ། ཐ་དད་པ།】【〈དཀྲིས〉གི་ སྐུལ་ཚིག ཐ་དད་པ།】【〈དཀྲི〉གི་ འདས་པ།】【〈དཀྲི〉གི་ འདས་པ། ཐ་དད་པ།】【〈དཀྲི〉གི་ སྐུལ་ཚིག】【〈དཀྲི〉གི་ སྐུལ་ཚིག ཐ་དད་པ།】"
+                        ],
+                        {
+                            "པེ་": [
+                                "རལ་ ནག་ སྐུད་པ ར་ ལེགས་",
+                                "བཀྲིས་",
+                                "ལ །_། དེ་ ལ་ སྒྲོལ་"
+                            ],
+                            "སྡེ་": [
+                                "རལ་ ནག་ སྐུད་པ ར་ ལེགས་",
+                                "དཀྲིས་",
+                                "ལ །_། དེ་ ལ་ སྒྲོལ་"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "not_sure": []
+        }
+    },
+    "dunno": {
+        "long_diff": [],
+        "no_diff": [],
+        "short_diff": []
+    },
+    "empty_notes": [
+        {
+            "3": [
+                {
+                    "པེ་": [
+                        "བསྒྲུབ་ ཐབས་ #ཨརྱ་ #དྷེ་བ ས་ མཛད་པ །།_ #ཨྠིྀ _།། ",
+                        "",
+                        ""
+                    ],
+                    "སྡེ་": [
+                        "བསྒྲུབ་ ཐབས་ #ཨརྱ་ #དྷེ་བ ས་ མཛད་པ །།_ #ཨྠིྀ _།། ",
+                        "",
+                        ""
+                    ]
+                }
+            ]
+        }
+    ],
+    "manual_categorisation": {
+        "long_difference": {
+            "differing_formulation": [],
+            "major_modification": []
+        },
+        "manual_evaluation": {
+            "derge_correct": [],
+            "meaning_difference": {
+                "great_diff": [],
+                "medium_diff": [],
+                "small_diff": []
+            }
+        }
+    },
+    "ngram_freq": {
+        "1": {
+            "པེ་": [
+                [
+                    "བཀྲིས",
+                    "2"
+                ]
+            ],
+            "སྡེ་": [
+                [
+                    "དཀྲིས",
+                    "54"
+                ]
+            ]
+        },
+        "2": {
+            "པེ་": [],
+            "སྡེ་": []
+        },
+        "3": {
+            "པེ་": [
+                [
+                    "",
+                    "1"
+                ],
+                [
+                    "_།།",
+                    "7"
+                ]
+            ],
+            "སྡེ་": [
+                [
+                    "",
+                    "1"
+                ],
+                [
+                    "_།།",
+                    "7"
+                ]
+            ]
+        }
+    },
+    "non_standard_notes": [],
+    "profile": {
+        "1": [
+            "པེ་ སྡེ་",
+            "66.67%"
+        ],
+        "2": [
+            "པེ་ སྡེ་",
+            "66.67%"
+        ],
+        "3": [
+            "པེ་=སྡེ་",
+            "33.33%"
+        ]
+    }
+}

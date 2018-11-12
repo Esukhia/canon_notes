@@ -49,16 +49,16 @@ def mistake_conc(segmented, work_name, context=5):
 
 
 def pybo_segment(content):
-    tokens = tok.tokenize(content)
+    tkns = tok.tokenize(content)  # tokens
     out = []
-    for token in tokens:
-        if token.type == 'syl':
-            if token.pos == 'oov' or token.pos == 'non-word':
-                out.append('#' + token.content)
+    for t in tkns:
+        if t.type == 'syl' or t.type == 'non-bo':
+            if t.pos == 'oov' or t.pos == 'non-word' or t.type == 'non-bo':
+                out.append('#' + t.content)
             else:
-                out.append(token.content)
+                out.append(t.content)
         else:
-            out.append(token.content.replace(' ', '_'))
+            out.append(t.content.replace(' ', '_'))
     return ' '.join(out)
 
 

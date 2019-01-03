@@ -53,7 +53,10 @@ def format_footnote(note, chosen, ref):
         return stripped
 
     if chosen == 'K':
-        stripped_note = strip_similar_to_chosen(note, 'སྡེ་')
+        try:
+            stripped_note = strip_similar_to_chosen(note, 'སྡེ་')
+        except KeyError:
+            stripped_note = strip_similar_to_chosen(note, 'པེ་')
         ordered = defaultdict(list)
         for k, v in stripped_note.items():
             ordered[strip_punct(clean_ed_text(v))].append(k)
@@ -90,10 +93,16 @@ def format_footnote(note, chosen, ref):
 
 reviewed_path = '../3-b-reviewed_texts'
 structure_path = '../3-a-revision_format/output/updated_structure'
+limit = False
 for f in sorted(os.listdir(reviewed_path)):
     print(f)
     if f:  # == '1-1_ཆོས་ཀྱི་དབྱིངས་སུ་བསྟོད་པ།_DUCKed.csv':
         work_name = f.replace('_DUCKed.csv', '')
+        if work_name == 'N3118':
+            limit = True
+
+        if not limit:
+            continue
         note_choice = parse_decisions(open_file('{}/{}'.format(reviewed_path, f)))
 
         # parse the file to keep only the decision and the note number
@@ -172,7 +181,10 @@ for f in sorted(os.listdir(reviewed_path)):
                         if grouped_unified[num] == s:
                             similar_notes += 1
                 elif decision == 'K':
-                    note = ''.join(s['སྡེ་'])
+                    try:
+                        note = ''.join(s['སྡེ་'])
+                    except KeyError:
+                        note = ''.join(s['པེ་'])
                     ref = '[^{}K]'.format(note_num)
                     note = '{}{}'.format(note, ref)
                     if [a for a in s.values() if a != []]:

@@ -1,15 +1,22 @@
 from pathlib import Path
-from diff_match_patch import diff_match_patch
+from formated_dmp import FormattedDMP as diff_match_patch
+# from diff_match_patch import diff_match_patch
 import re
 
 
-def is_derge_page_diff(diff):
+def is_notemark_diff(diff):
     op, text = diff
-    return '[' in text and ']' in text and op == 1
+    text = text.replace('\n', '')
+    decision = False
+    if '[' in text or ']' in text:
+
+        decision = True
+
+    return decision
 
 
-def match_derge_page(text):
-    regex = r'(\\\[.*?\\\])'
+def match_notemark(text):
+    regex = r'(\[\^[0-9]+K\])'
     match = re.findall(regex, text)
     return match[0] if match else None
 
@@ -33,18 +40,20 @@ def clean_patches(orig_patches, is_needed_diff, find_needed):
         new_diffs = []
         for diff in patch.diffs:
 
+            # Important: keep the diffs with no modification used as context
+            # (used by DMP to calculate the correct patching location)
+            if diff[0] == 0:
+                new_diffs.append(diff)
+
             # find diff to modify
-            if is_needed_diff(diff):
+            elif is_needed_diff(diff):
                 op, text = diff
+                if text == '\n།རྣམས་':
+                    print('ok')
                 needed = find_needed(text)
                 if needed:
                     new_diffs.append((op, needed))
                     keep = True
-
-            # Important: keep the diffs with no modification used as context
-            # (used by DMP to calculate the correct patching location)
-            elif diff[0] == 0:
-                new_diffs.append(diff)
 
         # select only relevant patches
         if keep:
@@ -71,19 +80,26 @@ def format_page_ref(string):
     return ''.join(chunks)
 
 
-def insert_derge_pages(base, modified):
-    # generate patches
+def insert_corrections(base, modified):
+    # 0. prepare
+    # input from derge-tengyur: with pages + corrections
     with_page = Path(modified).read_text()
-    with_page = format_page_ref(with_page)  # apply formatting to derge page reference
-    base = Path(base).read_text()
-    patches = dmp.patch_make(base, with_page)
+    with_page = format_page_ref(with_page)
 
-    page_patches = clean_patches(patches, is_derge_page_diff, match_derge_page)
-    page_inserted, res = dmp.patch_apply(page_patches, base)
+    # 1. get the corrections in base
+    base, notes = Path(base).read_text().rsplit('\n\n', maxsplit=1)
+
+    patches = dmp.patch_make(with_page, base)
+    # 2. apply note patches
+
+    page_patches = clean_patches(patches, is_notemark_diff, match_notemark)
+    page_inserted, res = dmp.patch_apply(page_patches, with_page)
     log = ''
     for num, r in enumerate(res):
-        if not r:
-            log += f'{num} not applied:\n\t{page_patches[num]}\n'
+        if not r and num < len(page_patches):
+            log += f'{num} not applied:\n\t{dmp.decode_patch(str(page_patches[num]))}\n'
+
+    page_inserted += '\n\n' + notes
     return page_inserted, log
 
 
@@ -96,8 +112,11 @@ def process(base_dir, mod_dir, out_dir):
         toh = base.stem.split('_')[0]
         mod = mod_dir / f'{toh}.txt'
         if mod.is_file():
-            out, log = insert_derge_pages(base, mod)
+            print(mod)
+            out, log = insert_corrections(base, mod)
             Path(out_dir / f'{toh}_final.txt').write_text(out)
+            if log:
+                Path(out_dir / f'{toh}_final.log').write_text(log)
         else:
             print(mod)
 
@@ -107,5 +126,5 @@ if __name__ == '__main__':
 
     base_dir = 'output/1-3-post_seg/'
     mod_dir = 'output/3a-1-page_refs/'
-    out_dir = 'output/3-3-final/'
+    out_dir = 'output/3-3-final'
     process(base_dir, mod_dir, out_dir)

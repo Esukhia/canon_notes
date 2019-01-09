@@ -67,10 +67,12 @@ def format_page_ref(string):
     replacement = [('1', '༡'), ('2', '༢'), ('3', '༣'), ('4', '༤'), ('5', '༥'),
                    ('6', '༦'), ('7', '༧'), ('8', '༨'), ('9', '༩'), ('0', '༠'),
                    ('a', 'ན'), ('b', 'བ')]
-    chunks = re.split(r'(\[.*?\])', string)
+    chunks = re.split(r'(\[[0-9]+[ab]?\])', string)
     i = 0
     while i < len(chunks):
-        if '[' in chunks[i]:
+        if i == 810:
+            print('ok')
+        if '[' in chunks[i] and ']' in chunks[i] and ('a' in chunks[i] or 'b' in chunks[i]):
             c = chunks[i].replace('[', '\[').replace(']', '\]')
             for x, y in replacement:
                 c = c.replace(x, y)
@@ -83,7 +85,9 @@ def format_page_ref(string):
 def insert_corrections(base, modified):
     # 0. prepare
     # input from derge-tengyur: with pages + corrections
-    with_page = Path(modified).read_text()
+    with_page = Path(modified).read_text().strip('\ufeff')
+    if '(' in with_page:
+        print('ok')
     with_page = format_page_ref(with_page)
 
     # 1. get the corrections in base
@@ -108,9 +112,19 @@ def process(base_dir, mod_dir, out_dir):
     mod_dir = Path(mod_dir)
     out_dir = Path(out_dir)
 
-    for base in base_dir.glob('*.txt'):
+    limit = True
+    for base in sorted([p for p in base_dir.glob('*.txt')])[:100]:
+        if not base.is_file():
+            continue
         toh = base.stem.split('_')[0]
         mod = mod_dir / f'{toh}.txt'
+
+        if 'D4040' in str(mod):
+            limit = True
+
+        if not limit:
+            continue
+
         if mod.is_file():
             print(mod)
             out, log = insert_corrections(base, mod)
@@ -118,13 +132,14 @@ def process(base_dir, mod_dir, out_dir):
             if log:
                 Path(out_dir / f'{toh}_final.log').write_text(log)
         else:
-            print(mod)
+            print('missing', mod)
 
 
 if __name__ == '__main__':
     dmp = diff_match_patch()
+    dmp.Diff_Timeout = 0  # allow diff to take as much time as needed
 
-    base_dir = 'output/1-3-post_seg/'
-    mod_dir = 'output/3a-1-page_refs/'
+    base_dir = 'output/3a-1-page_refs/'
+    mod_dir = 'output/1-3-post_seg/'
     out_dir = 'output/3-3-final'
     process(base_dir, mod_dir, out_dir)

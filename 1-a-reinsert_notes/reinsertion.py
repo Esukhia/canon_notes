@@ -422,7 +422,7 @@ def generate_outputs(text_name, notes_name, context, in_dir='input', out_dir='ou
 
 excluded = [#'11-20_ཆོས་མངོན་པའི་འགྲེལ་པ་གནད་ཀྱི་སྒྲོན་མ།.txt',
             ]
-vol_num = 165
+vol_num = 0
 
 works = []
 for f in sorted(os.listdir('input')):
@@ -439,12 +439,15 @@ def debug_files(vol_num):
         if c >= vol_num:
             generate_outputs(w[0], w[1], 5)
 
-note_num = 13
+
+note_num = 738
 debug = 0
 show_note = 0
 if debug:
     debug_files(vol_num)
 else:
     for w in works:
+        if 'N5000' not in w[0]:
+            continue
         print(w[0])
         generate_outputs(w[0], w[1], 5)

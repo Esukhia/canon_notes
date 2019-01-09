@@ -149,7 +149,7 @@ def find_note_parts(note, on_syls=True):
 
 def find_all_parts(notes):
     all_parts = []
-    for note in notes:
+    for num, note in enumerate(notes):
         note_parts = find_note_parts(note[1], on_syls=False)
         all_parts.append((note[0], note_parts))
     return all_parts
@@ -833,7 +833,7 @@ def find_file_path(prefered, fallback):
         else:
             out.append('{}/{}'.format(fallback, m))
             missing.append(m)
-    print('missing:', ', '.join(missing))
+    print(len(missing), 'missing:', ', '.join(missing))
     return sorted(list(set(out)))
 
 
@@ -844,6 +844,8 @@ def process(in_path, template_path, total_stats):
     all_ngrams = open_ngrams()
     files = find_file_path(in_path, '../1-a-reinsert_notes/output/conc_yaml')
     for filename in files:
+        if 'N5000' not in filename:
+            continue
         f = filename.split('/')[-1]
         print(f)
         if debug and f != file:
@@ -877,7 +879,6 @@ def process(in_path, template_path, total_stats):
                     categorise(note, categorised_notes, verbs)
         else:
             for note in prepared:
-                #print(note)
                 categorise(note, categorised_notes, verbs)
 
         # finally write the json file

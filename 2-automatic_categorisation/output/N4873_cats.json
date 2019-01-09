@@ -1,0 +1,224 @@
+﻿{
+    "Stats": {
+        "Categorised": "3 notes (100.00%)",
+        "Notes’ total": 3,
+        "Profiles": [
+            "པེ་ སྡེ་: 66.67% (2 notes)",
+            "པེ་=སྡེ་: 33.33% (1 notes)"
+        ],
+        "automatic_categorisation": {
+            "min_mod": {
+                "particle_groups": 1
+            },
+            "particle_issues": {},
+            "spelling_mistake": {
+                "non_word": {}
+            },
+            "verb_difference": {
+                "diff_tense": 1
+            }
+        },
+        "dunno": {},
+        "empty_notes": 1,
+        "manual_categorisation": {
+            "long_difference": {},
+            "manual_evaluation": {
+                "meaning_difference": {}
+            }
+        },
+        "ngram_freq": {},
+        "profile": {}
+    },
+    "automatic_categorisation": {
+        "min_mod": {
+            "min_mod_groups": [],
+            "particle_groups": [
+                {
+                    "1": [
+                        [
+                            "ladon"
+                        ],
+                        {
+                            "པེ་": [
+                                "མ །_ དེ འི་",
+                                "ལྟེ་བ",
+                                "_། ཨ་ ལས་ ཟླ་བ འི་"
+                            ],
+                            "སྡེ་": [
+                                "མ །_ དེ འི་",
+                                "ལྟེ་བ ར",
+                                "_། ཨ་ ལས་ ཟླ་བ འི་"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "particle_issues": {
+            "added_particle": [],
+            "agreement_issue": [],
+            "different_particles": [],
+            "other": [],
+            "po-bo-pa-ba": []
+        },
+        "spelling_mistake": {
+            "missing_vowel": [],
+            "nga_da": [],
+            "non_word": {
+                "ill_formed": [],
+                "well_formed": []
+            }
+        },
+        "sskrt": [],
+        "verb_difference": {
+            "diff_tense": [
+                {
+                    "2": [
+                        [
+                            "《བསྒྲུབ》ཞེས་པ།【〈སྒྲུབ〉གི་ མ་འོངས་པ།】【〈སྒྲུབ〉གི་ མ་འོངས་པ། ཐ་དད་པ།】",
+                            "《བསྒྲུབས》ཞེས་པ།【〈སྒྲུབ〉གི་ འདས་པ།】【〈སྒྲུབ〉གི་ འདས་པ། ཐ་དད་པ།】"
+                        ],
+                        {
+                            "པེ་": [
+                                " །_། རྡོ་རྗེ་ ཚེ་",
+                                "བསྒྲུབ་པ འི་",
+                                "ཐབས་ རྫོགས་ སོ །།_།། "
+                            ],
+                            "སྡེ་": [
+                                " །_། རྡོ་རྗེ་ ཚེ་",
+                                "བསྒྲུབས་པ འི་",
+                                "ཐབས་ རྫོགས་ སོ །།_།། "
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "diff_verb": [],
+            "not_sure": []
+        }
+    },
+    "dunno": {
+        "long_diff": [],
+        "no_diff": [],
+        "short_diff": []
+    },
+    "empty_notes": [
+        {
+            "3": [
+                {
+                    "པེ་": [
+                        "པ འི་ ཐབས་ རྫོགས་ སོ །།_།། ",
+                        "",
+                        ""
+                    ],
+                    "སྡེ་": [
+                        "པ འི་ ཐབས་ རྫོགས་ སོ །།_།། ",
+                        "",
+                        ""
+                    ]
+                }
+            ]
+        }
+    ],
+    "manual_categorisation": {
+        "long_difference": {
+            "differing_formulation": [],
+            "major_modification": []
+        },
+        "manual_evaluation": {
+            "derge_correct": [],
+            "meaning_difference": {
+                "great_diff": [],
+                "medium_diff": [],
+                "small_diff": []
+            }
+        }
+    },
+    "ngram_freq": {
+        "1": {
+            "པེ་": [
+                [
+                    "ལྟེ་བ",
+                    "644"
+                ]
+            ],
+            "སྡེ་": [
+                [
+                    "ལྟེ་བར",
+                    "382"
+                ]
+            ]
+        },
+        "2": {
+            "པེ་": [
+                [
+                    "བསྒྲུབ་པའི",
+                    "1015"
+                ],
+                [
+                    "བསྒྲུབ་པའི་ཐབས",
+                    "55"
+                ]
+            ],
+            "སྡེ་": [
+                [
+                    "བསྒྲུབས་པའི",
+                    "313"
+                ]
+            ]
+        },
+        "3": {
+            "པེ་": [
+                [
+                    "",
+                    "1"
+                ],
+                [
+                    "།།_།།",
+                    "7586"
+                ],
+                [
+                    "སོ།།_།།",
+                    "1472"
+                ],
+                [
+                    "རྫོགས་སོ།།_།།",
+                    "1081"
+                ]
+            ],
+            "སྡེ་": [
+                [
+                    "",
+                    "1"
+                ],
+                [
+                    "།།_།།",
+                    "7586"
+                ],
+                [
+                    "སོ།།_།།",
+                    "1472"
+                ],
+                [
+                    "རྫོགས་སོ།།_།།",
+                    "1081"
+                ]
+            ]
+        }
+    },
+    "non_standard_notes": [],
+    "profile": {
+        "1": [
+            "པེ་ སྡེ་",
+            "66.67%"
+        ],
+        "2": [
+            "པེ་ སྡེ་",
+            "66.67%"
+        ],
+        "3": [
+            "པེ་=སྡེ་",
+            "33.33%"
+        ]
+    }
+}

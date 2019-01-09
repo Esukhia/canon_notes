@@ -10,10 +10,10 @@ from collections import defaultdict
 
 
 tok = pybo.BoTokenizer('GMD')
-lex_path = '../PyTib/data/uncompound_lexicon.txt'
-lexicon = open_file(lex_path).strip().split('\n')
-lexicon = '\n'.join(tib_sort(list(set(lexicon))))
-write_file(lex_path, lexicon)
+# lex_path = '../PyTib/data/uncompound_lexicon.txt'
+# lexicon = open_file(lex_path).strip().split('\n')
+# lexicon = '\n'.join(tib_sort(list(set(lexicon))))
+# write_file(lex_path, lexicon)
 
 
 def rawify(string):
@@ -62,7 +62,7 @@ def pybo_segment(content):
     return ' '.join(out)
 
 
-in_path = '../1-a-reinsert_notes/input'
+in_path = 'out'
 out_path = 'segmented'
 # populate total with the mistakes of all files in in_path
 total = defaultdict(list)

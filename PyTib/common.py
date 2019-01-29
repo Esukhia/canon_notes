@@ -188,7 +188,7 @@ def write_csv(path, rows, header=None, delimiter=',', dialect='excel'):
                 norm_rows.append(r)
         return norm_rows
 
-    with codecs.open(path, mode='w', encoding='utf-8-sig') as csvfile:
+    with open(path, mode='w', encoding='utf-8-sig') as csvfile:
         file_writer = csv.writer(csvfile, dialect=dialect, delimiter=delimiter)
         if header:
             rows = [header]+rows

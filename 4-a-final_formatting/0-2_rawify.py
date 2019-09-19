@@ -7,7 +7,10 @@ def process(in_path, file_origin, name_end, out_path):
     for f in os.listdir(in_path):
         work_name = f.replace(name_end, '')
         # raw_content = open_file(file_origin.format(work_name.replace('_', ' ')))
-        raw_content = open_file(file_origin.format(work_name))
+        try:
+            raw_content = open_file(file_origin.format(work_name))
+        except FileNotFoundError:
+            continue
 
         content = re.sub(r'\n?[0-9]+\.\s+', '', raw_content)
         content = re.sub(r' ', '\n', content)

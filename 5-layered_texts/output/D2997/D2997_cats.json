@@ -1,0 +1,228 @@
+﻿{
+    "Stats": {
+        "Categorised": "2 notes (100.00%)",
+        "Notes’ total": 2,
+        "Profiles": [
+            "པེ་=སྣར་ སྡེ་: 50.00% (1 notes)",
+            "པེ་=སྡེ་=སྣར་: 50.00% (1 notes)"
+        ],
+        "automatic_categorisation": {
+            "min_mod": {
+                "min_mod_groups": 1
+            },
+            "particle_issues": {},
+            "spelling_mistake": {
+                "non_word": {}
+            },
+            "verb_difference": {}
+        },
+        "dunno": {},
+        "empty_notes": 1,
+        "manual_categorisation": {
+            "long_difference": {},
+            "manual_evaluation": {
+                "meaning_difference": {}
+            }
+        },
+        "ngram_freq": {},
+        "profile": {}
+    },
+    "automatic_categorisation": {
+        "min_mod": {
+            "min_mod_groups": [
+                {
+                    "1": [
+                        [
+                            [
+                                "ལས",
+                                "ལ"
+                            ]
+                        ],
+                        {
+                            "པེ་": [
+                                "ཏེ་ དེ་དག་ རེ་རེ་",
+                                "ལ་",
+                                "སྤྲུལ་པ འི་ ཁྱུང་ གྲངས་མེད་"
+                            ],
+                            "སྡེ་": [
+                                "ཏེ་ དེ་དག་ རེ་རེ་",
+                                "ལས་",
+                                "སྤྲུལ་པ འི་ ཁྱུང་ གྲངས་མེད་"
+                            ],
+                            "སྣར་": [
+                                "ཏེ་ དེ་དག་ རེ་རེ་",
+                                "ལ་",
+                                "སྤྲུལ་པ འི་ ཁྱུང་ གྲངས་མེད་"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "particle_groups": []
+        },
+        "particle_issues": {
+            "added_particle": [],
+            "agreement_issue": [],
+            "different_particles": [],
+            "other": [],
+            "po-bo-pa-ba": []
+        },
+        "spelling_mistake": {
+            "missing_vowel": [],
+            "nga_da": [],
+            "non_word": {
+                "ill_formed": [],
+                "well_formed": []
+            }
+        },
+        "sskrt": [],
+        "verb_difference": {
+            "diff_tense": [],
+            "diff_verb": [],
+            "not_sure": []
+        }
+    },
+    "dunno": {
+        "long_diff": [],
+        "no_diff": [],
+        "short_diff": []
+    },
+    "empty_notes": [
+        {
+            "2": [
+                {
+                    "པེ་": [
+                        "མཛད་པ་ རྫོགས་ སོ །_། ",
+                        "",
+                        ""
+                    ],
+                    "སྡེ་": [
+                        "མཛད་པ་ རྫོགས་ སོ །_། ",
+                        "",
+                        ""
+                    ],
+                    "སྣར་": [
+                        "མཛད་པ་ རྫོགས་ སོ །_། ",
+                        "",
+                        ""
+                    ]
+                }
+            ]
+        }
+    ],
+    "manual_categorisation": {
+        "long_difference": {
+            "differing_formulation": [],
+            "major_modification": []
+        },
+        "manual_evaluation": {
+            "derge_correct": [],
+            "meaning_difference": {
+                "great_diff": [],
+                "medium_diff": [],
+                "small_diff": []
+            }
+        }
+    },
+    "ngram_freq": {
+        "1": {
+            "པེ་": [
+                [
+                    "ལ",
+                    "33965"
+                ],
+                [
+                    "རེ་རེ་ལ",
+                    "47"
+                ]
+            ],
+            "སྡེ་": [
+                [
+                    "ལས",
+                    "5885"
+                ],
+                [
+                    "རེ་རེ་ལས",
+                    "128"
+                ]
+            ],
+            "སྣར་": [
+                [
+                    "ལ",
+                    "33965"
+                ],
+                [
+                    "རེ་རེ་ལ",
+                    "47"
+                ]
+            ]
+        },
+        "2": {
+            "པེ་": [
+                [
+                    "",
+                    "1"
+                ],
+                [
+                    "།_།",
+                    "997103"
+                ],
+                [
+                    "སོ།_།",
+                    "78917"
+                ],
+                [
+                    "རྫོགས་སོ།_།",
+                    "105"
+                ]
+            ],
+            "སྡེ་": [
+                [
+                    "",
+                    "1"
+                ],
+                [
+                    "།_།",
+                    "997103"
+                ],
+                [
+                    "སོ།_།",
+                    "78917"
+                ],
+                [
+                    "རྫོགས་སོ།_།",
+                    "105"
+                ]
+            ],
+            "སྣར་": [
+                [
+                    "",
+                    "1"
+                ],
+                [
+                    "།_།",
+                    "997103"
+                ],
+                [
+                    "སོ།_།",
+                    "78917"
+                ],
+                [
+                    "རྫོགས་སོ།_།",
+                    "105"
+                ]
+            ]
+        }
+    },
+    "non_standard_notes": [],
+    "profile": {
+        "1": [
+            "པེ་=སྣར་ སྡེ་",
+            "50.00%"
+        ],
+        "2": [
+            "པེ་=སྡེ་=སྣར་",
+            "50.00%"
+        ]
+    }
+}

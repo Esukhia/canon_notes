@@ -53,7 +53,10 @@ def create_dirs(jsons, structures, raws, derge_layouts, with_as):
     json_files = [a.replace('_cats.json', '') for a in os.listdir(jsons)]
     structure_files = [a.replace('_updated_structure.txt', '') for a in os.listdir(structures)]
     raw_files = [a.replace('_raw.txt', '') for a in os.listdir(raws)]
-    derge_layout_files = [a.replace('_raw_page_reinserted.txt', '') for a in os.listdir(derge_layouts)]
+    try:
+        derge_layout_files = [a.replace('_raw_page_reinserted.txt', '') for a in os.listdir(derge_layouts)]
+    except FileNotFoundError:
+        return
     with_a_files = [a.replace('_with_a.txt', '') for a in os.listdir(with_as)]
 
     for f in structure_files:

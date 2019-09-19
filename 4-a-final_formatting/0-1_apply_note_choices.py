@@ -106,8 +106,14 @@ for f in sorted(os.listdir(reviewed_path)):
         note_choice = parse_decisions(open_file('{}/{}'.format(reviewed_path, f)))
 
         # parse the file to keep only the decision and the note number
-        updated_structure = yaml.load(open_file('{}/{}_updated_structure.txt'.format(structure_path, work_name)))
-        unified_structure = yaml.load(open_file('../1-a-reinsert_notes/output/unified_structure/{}_unified_structure.yaml'.format(work_name)))
+        try:
+            updated_structure = yaml.load(open_file('{}/{}_updated_structure.txt'.format(structure_path, work_name)))
+        except FileNotFoundError:
+            continue
+        try:
+            unified_structure = yaml.load(open_file('../1-a-reinsert_notes/output/unified_structure/{}_unified_structure.yaml'.format(work_name)))
+        except FileNotFoundError:
+            continue
         grouped_unified = group_syllables(unified_structure)
         grouped_updated = group_syllables(updated_structure)
 

@@ -605,7 +605,10 @@ if __name__ == '__main__':
             except FileNotFoundError:
                 file_name = file_name.replace(' ', '_')
                 work_name = work_name.replace(' ', '_')
-                json_structure = jp.decode(open_file(in_dir + file_name + '_cats.json'))
+                try:
+                    json_structure = jp.decode(open_file(in_dir + file_name + '_cats.json'))
+                except FileNotFoundError:
+                    continue
             reordered_structure = reorder_by_note(json_structure)
 
             cat_lists = ['automatic__min_mod__min_mod_groups', 'automatic__min_mod__particle_groups', 'automatic__particle_issues__added_particle', 'automatic__particle_issues__agreement_issue', 'automatic__particle_issues__po-bo-pa-ba', 'automatic__particle_issues__different_particles', 'automatic__particle_issues__other', 'automatic__spelling_mistake__missing_vowel', 'automatic__spelling_mistake__nga_da', 'automatic__spelling_mistake__non_word__ill_formed', 'automatic__spelling_mistake__non_word__well_formed', 'automatic__sskrt', 'automatic__verb_difference__diff_tense', 'automatic__verb_difference__diff_verb', 'automatic__verb_difference__not_sure', 'dunno__long_diff', 'dunno__no_diff', 'dunno__short_diff', 'empty_notes']

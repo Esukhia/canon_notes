@@ -87,6 +87,7 @@ def reinsert_raw(in_path, out_path, patterns):
     print('raw reinsertion')
     for f in os.listdir(in_path):
         work_name = f.replace('_with_a.txt', '')
+        print(work_name)
         if work_name in patterns:
             print('\t', work_name)
             content = open_file('{}/{}'.format(in_path, f))
@@ -117,6 +118,7 @@ def reinsert_raw(in_path, out_path, patterns):
             output = '\n{}\n'.format('-' * 100).join(pages)
 
             write_file('{}/{}_raw_page_reinserted.txt'.format(out_path, work_name), output)
+            print('2-2!')
 # # works, but not needed for now…
 # def create_missing_dir(origin_path, target_path, origin_name_end):
 #     to_compare_texts = [g.replace(origin_name_end, '') for g in os.listdir(origin_path) if g.endswith('.txt')]

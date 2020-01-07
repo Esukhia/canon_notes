@@ -429,7 +429,7 @@ for f in sorted(os.listdir('input')):
     if f.endswith('txt') and f not in excluded:
         csv = f.replace('.txt', '')+'.csv'
         works.append((f, csv))
-
+print(works)
 
 def debug_files(vol_num):
     c = 0
@@ -441,7 +441,7 @@ def debug_files(vol_num):
 
 
 note_num = 738
-debug = 0
+debug = 1
 show_note = 0
 if debug:
     debug_files(vol_num)

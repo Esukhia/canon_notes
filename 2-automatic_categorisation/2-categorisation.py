@@ -843,9 +843,10 @@ def process(in_path, template_path, total_stats):
     verbs = jp.decode(open_file('./resources/monlam_verbs.json'))
     all_ngrams = open_ngrams()
     files = find_file_path(in_path, '../1-a-reinsert_notes/output/conc_yaml')
+    # print(files)
     for filename in files:
-        if 'N5000' not in filename:
-            continue
+        # if 'N5000' not in filename:
+        #     continue
         f = filename.split('/')[-1]
         print(f)
         if debug and f != file:
@@ -937,12 +938,12 @@ def process(in_path, template_path, total_stats):
 
 if __name__ == '__main__':
     debug = False
-    #file = '563_རྒྱུད་ཀྱི་རྒྱལ་པོ་ཆེན་པོ་དཔལ་དགྱེས་པའི་རྡོ་རྗེའི་དཀའ་འགྲེལ་སྤྱན་འབྱེད།_conc.txt'
-    file = 'T4393.txt'
+    # file = '563_རྒྱུད་ཀྱི་རྒྱལ་པོ་ཆེན་པོ་དཔལ་དགྱེས་པའི་རྡོ་རྗེའི་དཀའ་འགྲེལ་སྤྱན་འབྱེད།_conc.txt'
+    file = ''
     note_num = 0
 
     in_path = '../1-b-manually_corrected_conc/notes_formatted'
-    template = './resources/template.json'
+    template = 'resources/template.json'
     total_stats = []
     process(in_path, template, total_stats)
 

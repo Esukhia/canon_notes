@@ -1,8 +1,12 @@
 # -*- coding: UTF-8 -*-
 import os
+import sys
 import re
 import yaml
 from PyTib.common import open_file, write_file
+
+grandParentDir = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
+sys.path.append(grandParentDir)
 
 
 def find_ed_names(structure):

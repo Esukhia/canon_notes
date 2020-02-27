@@ -147,11 +147,11 @@ raw_out_path = './output/2-2-raw_page_reinserted'
     #     0                     # number of lines pertaining to the current text on the last page
     # ]
 
-patterns_raw = open_file('../4-a-final_formatting/resources/དཀར་ཆག་ཀུན་གསལ་མེ་ལོང་། - format example.csv').strip().split('\n')
+patterns_raw = open_file('C:/Users/trinley/github/canon_notes/4-a-final_formatting/resources/དཀར་ཆག་ཀུན་གསལ་མེ་ལོང་།.csv').strip().split('\n')
 patterns = {}
 for line in patterns_raw[1:]:
-    parts = line.split(',')
-    names = patterns_raw[0].split(',')
+    parts = line.split('\t')
+    names = patterns_raw[0].split('\t')
     # 'ཆོས་ཚན།'
     title = re.sub(r'_conc.*', '', parts[1])
     # 'དབུ།'
